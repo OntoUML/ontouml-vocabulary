@@ -7,20 +7,24 @@
 @base <https://purl.org/ontouml-metamodel> .
 
 <https://purl.org/ontouml-metamodel> rdf:type owl:Ontology ;
-                                      owl:versionIRI <https://purl.org/ontouml-metamodel/1.0> .
+                                      owl:versionIRI <https://purl.org/ontouml-metamodel/1.0> ;
+                                      rdfs:comment "An implementation of the OntoUML metamodel in OWL."@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
+###  https://purl.org/ontouml-metamodel#aggregationKind
+:aggregationKind rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Property ;
+                 rdfs:range :AggregationKind .
+
+
 ###  https://purl.org/ontouml-metamodel#attribute
 :attribute rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :property ;
            rdfs:domain :Class ;
            rdfs:range :Property .
-
-:owner rdf:type owl:ObjectProperty ;
-           rdfs:domain :Diagram ;
-           rdfs:range :ModelElement .
 
 
 ###  https://purl.org/ontouml-metamodel#cardinality
@@ -35,46 +39,40 @@
              rdfs:range :Class .
 
 
-###  https://purl.org/ontouml-metamodel#content
+###  https://purl.org/ontouml-metamodel#containsModelElement
 :containsModelElement rdf:type owl:ObjectProperty ;
-         rdfs:domain :Package ;
-         rdfs:range :ModelElement .
+                      rdfs:domain :Package ;
+                      rdfs:range :ModelElement .
 
+
+###  https://purl.org/ontouml-metamodel#containsView
 :containsView rdf:type owl:ObjectProperty ;
-         rdfs:domain :Diagram ;
-         rdfs:range :ElementView .
+              rdfs:domain :Diagram ;
+              rdfs:range :ElementView .
 
-:isViewOf rdf:type owl:ObjectProperty ;
-         rdfs:domain :ElementView ;
-         rdfs:range :ModelElement .
-
-:shape rdf:type owl:ObjectProperty ;
-         rdfs:domain :ElementView ;
-         rdfs:range :Shape .
 
 ###  https://purl.org/ontouml-metamodel#diagram
 :diagram rdf:type owl:ObjectProperty ;
          rdfs:domain :Project ;
          rdfs:range :Diagram .
 
-:pointInPath rdf:type owl:ObjectProperty ;
-         rdfs:domain :Path ;
-         rdfs:range :Point .
 
 ###  https://purl.org/ontouml-metamodel#general
 :general rdf:type owl:ObjectProperty ;
          rdfs:domain :Generalization ;
          rdfs:range :Classifier .
 
-:topLeftPosition rdf:type owl:ObjectProperty ;
-         rdfs:domain :RectangularShape ;
-         rdfs:range :Point .
-
 
 ###  https://purl.org/ontouml-metamodel#generalization
 :generalization rdf:type owl:ObjectProperty ;
                 rdfs:domain :GeneralizationSet ;
                 rdfs:range :Generalization .
+
+
+###  https://purl.org/ontouml-metamodel#isViewOf
+:isViewOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :ElementView ;
+          rdfs:range :ModelElement .
 
 
 ###  https://purl.org/ontouml-metamodel#literal
@@ -87,6 +85,18 @@
 :model rdf:type owl:ObjectProperty ;
        rdfs:domain :Project ;
        rdfs:range :Package .
+
+
+###  https://purl.org/ontouml-metamodel#owner
+:owner rdf:type owl:ObjectProperty ;
+       rdfs:domain :Diagram ;
+       rdfs:range :ModelElement .
+
+
+###  https://purl.org/ontouml-metamodel#pointInPath
+:pointInPath rdf:type owl:ObjectProperty ;
+             rdfs:domain :Path ;
+             rdfs:range :Point .
 
 
 ###  https://purl.org/ontouml-metamodel#property
@@ -109,6 +119,7 @@
 
 ###  https://purl.org/ontouml-metamodel#relationEnd
 :relationEnd rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :property ;
              rdfs:domain :Relation ;
              rdfs:range :Property .
 
@@ -117,6 +128,19 @@
 :restrictedTo rdf:type owl:ObjectProperty ;
               rdfs:domain :Class ;
               rdfs:range :OntologicalNature .
+
+
+###  https://purl.org/ontouml-metamodel#shape
+:shape rdf:type owl:ObjectProperty ;
+       rdfs:domain :ElementView ;
+       rdfs:range :Shape .
+
+
+###  https://purl.org/ontouml-metamodel#sourceEnd
+:sourceEnd rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :relationEnd ;
+           rdfs:domain :Relation ;
+           rdfs:range :Property .
 
 
 ###  https://purl.org/ontouml-metamodel#specific
@@ -142,13 +166,37 @@
                  rdfs:range :Property .
 
 
+###  https://purl.org/ontouml-metamodel#targetEnd
+:targetEnd rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :relationEnd ;
+           rdfs:domain :Relation ;
+           rdfs:range :Property .
+
+
+###  https://purl.org/ontouml-metamodel#topLeftPosition
+:topLeftPosition rdf:type owl:ObjectProperty ;
+                 rdfs:domain :RectangularShape ;
+                 rdfs:range :Point .
+
+
 #################################################################
 #    Data properties
 #################################################################
 
+###  https://purl.org/ontouml-metamodel#cardinalityValue
+:cardinalityValue rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Cardinality .
+
+
 ###  https://purl.org/ontouml-metamodel#description
 :description rdf:type owl:DatatypeProperty ;
              rdfs:domain :OntoUmlElement .
+
+
+###  https://purl.org/ontouml-metamodel#height
+:height rdf:type owl:DatatypeProperty ;
+        rdfs:domain :RectangularShape ;
+        rdfs:range xsd:positiveInteger .
 
 
 ###  https://purl.org/ontouml-metamodel#id
@@ -207,6 +255,11 @@
             rdfs:range xsd:boolean .
 
 
+###  https://purl.org/ontouml-metamodel#lowerBound
+:lowerBound rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Cardinality .
+
+
 ###  https://purl.org/ontouml-metamodel#name
 :name rdf:type owl:DatatypeProperty ;
       rdfs:domain :OntoUmlElement .
@@ -217,33 +270,26 @@
        rdfs:domain :Class ;
        rdfs:range xsd:positiveInteger .
 
-###  https://purl.org/ontouml-metamodel#order
+
+###  https://purl.org/ontouml-metamodel#upperBound
+:upperBound rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Cardinality .
+
+
+###  https://purl.org/ontouml-metamodel#width
 :width rdf:type owl:DatatypeProperty ;
        rdfs:domain :RectangularShape ;
        rdfs:range xsd:positiveInteger .
 
-###  https://purl.org/ontouml-metamodel#order
-:height rdf:type owl:DatatypeProperty ;
-       rdfs:domain :RectangularShape ;
-       rdfs:range xsd:positiveInteger .
 
-###  https://purl.org/ontouml-metamodel#order
+###  https://purl.org/ontouml-metamodel#xCoordinate
 :xCoordinate rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Point .
+             rdfs:domain :Point .
 
-###  https://purl.org/ontouml-metamodel#order
+
+###  https://purl.org/ontouml-metamodel#yCoordinate
 :yCoordinate rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Point .
-
-###  https://purl.org/ontouml-metamodel#order
-:lowerBound rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Cardinality .
-
-:upperBound rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Cardinality .
-
-:cardinalityValue rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Cardinality .
+             rdfs:domain :Point .
 
 
 #################################################################
@@ -252,6 +298,12 @@
 
 ###  https://purl.org/ontouml-metamodel#AggregationKind
 :AggregationKind rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:oneOf ( :composite
+                                                   :none
+                                                   :shared
+                                                 )
+                                     ] ;
                  rdfs:subClassOf :OntoUmlElement .
 
 
