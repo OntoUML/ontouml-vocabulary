@@ -93,10 +93,10 @@
        rdfs:range :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#pointInPath
-:pointInPath rdf:type owl:ObjectProperty ;
-             rdfs:domain :Path ;
-             rdfs:range :Point .
+###  https://purl.org/ontouml-metamodel#point
+:point rdf:type owl:ObjectProperty ;
+       rdfs:domain :Path ;
+       rdfs:range :Point .
 
 
 ###  https://purl.org/ontouml-metamodel#property
@@ -143,6 +143,12 @@
            rdfs:range :Property .
 
 
+###  https://purl.org/ontouml-metamodel#sourceView
+:sourceView rdf:type owl:ObjectProperty ;
+            rdfs:domain :ConnectorView ;
+            rdfs:range :ElementView .
+
+
 ###  https://purl.org/ontouml-metamodel#specific
 :specific rdf:type owl:ObjectProperty ;
           rdfs:domain :Generalization ;
@@ -171,6 +177,12 @@
            rdfs:subPropertyOf :relationEnd ;
            rdfs:domain :Relation ;
            rdfs:range :Property .
+
+
+###  https://purl.org/ontouml-metamodel#targetView
+:targetView rdf:type owl:ObjectProperty ;
+            rdfs:domain :ConnectorView ;
+            rdfs:range :ElementView .
 
 
 ###  https://purl.org/ontouml-metamodel#topLeftPosition
