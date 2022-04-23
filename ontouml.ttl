@@ -1,162 +1,200 @@
-@prefix : <https://purl.org/ontouml-metamodel#> .
+@prefix : <https://purl.org/ontouml-models/vocabulary/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://purl.org/ontouml-metamodel> .
+@base <https://purl.org/ontouml-models/vocabulary> .
 
-<https://purl.org/ontouml-metamodel> rdf:type owl:Ontology ;
-                                      owl:versionIRI <https://purl.org/ontouml-metamodel/1.0> ;
-                                      rdfs:comment "An implementation of the OntoUML metamodel in OWL."@en .
+<https://purl.org/ontouml-models/vocabulary> rdf:type owl:Ontology ;
+                                              owl:versionIRI <https://purl.org/ontouml-models/vocabulary/1.0> ;
+                                              rdfs:comment "An implementation of the OntoUML metamodel in OWL."@en .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://purl.org/ontouml-metamodel#aggregationKind
+###  https://purl.org/ontouml-models/vocabulary/aggregationKind
 :aggregationKind rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :metamodelProperty ;
                  rdfs:domain :Property ;
                  rdfs:range :AggregationKind .
 
 
-###  https://purl.org/ontouml-metamodel#attribute
+###  https://purl.org/ontouml-models/vocabulary/attribute
 :attribute rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :property ;
            rdfs:domain :Class ;
            rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#cardinality
+###  https://purl.org/ontouml-models/vocabulary/cardinality
 :cardinality rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :metamodelProperty ;
              rdfs:domain :Property ;
              rdfs:range :Cardinality .
 
 
-###  https://purl.org/ontouml-metamodel#categorizer
+###  https://purl.org/ontouml-models/vocabulary/categorizer
 :categorizer rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :metamodelProperty ;
              rdfs:domain :GeneralizationSet ;
              rdfs:range :Class .
 
 
-###  https://purl.org/ontouml-metamodel#containsModelElement
+###  https://purl.org/ontouml-models/vocabulary/containsModelElement
 :containsModelElement rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :metamodelProperty ;
                       rdfs:domain :Package ;
                       rdfs:range :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#containsView
+###  https://purl.org/ontouml-models/vocabulary/containsView
 :containsView rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :metamodelProperty ;
               rdfs:domain :Diagram ;
               rdfs:range :ElementView .
 
 
-###  https://purl.org/ontouml-metamodel#diagram
+###  https://purl.org/ontouml-models/vocabulary/context
+:context rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :metadataProperty ;
+         rdfs:domain :Project ;
+         rdfs:range :OntologyDevelopmentContext .
+
+
+###  https://purl.org/ontouml-models/vocabulary/diagram
 :diagram rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :metamodelProperty ;
          rdfs:domain :Project ;
          rdfs:range :Diagram .
 
 
-###  https://purl.org/ontouml-metamodel#general
+###  https://purl.org/ontouml-models/vocabulary/general
 :general rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :metamodelProperty ;
          rdfs:domain :Generalization ;
          rdfs:range :Classifier .
 
 
-###  https://purl.org/ontouml-metamodel#generalization
+###  https://purl.org/ontouml-models/vocabulary/generalization
 :generalization rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :metamodelProperty ;
                 rdfs:domain :GeneralizationSet ;
                 rdfs:range :Generalization .
 
 
-###  https://purl.org/ontouml-metamodel#isViewOf
+###  https://purl.org/ontouml-models/vocabulary/isViewOf
 :isViewOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :metamodelProperty ;
           rdfs:domain :ElementView ;
           rdfs:range :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#literal
+###  https://purl.org/ontouml-models/vocabulary/literal
 :literal rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :metamodelProperty ;
          rdfs:domain :Class ;
          rdfs:range :Literal .
 
 
-###  https://purl.org/ontouml-metamodel#model
+###  https://purl.org/ontouml-models/vocabulary/metadataProperty
+:metadataProperty rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://purl.org/ontouml-models/vocabulary/metamodelProperty
+:metamodelProperty rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  https://purl.org/ontouml-models/vocabulary/model
 :model rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :metamodelProperty ;
        rdfs:domain :Project ;
        rdfs:range :Package .
 
 
-###  https://purl.org/ontouml-metamodel#owner
+###  https://purl.org/ontouml-models/vocabulary/owner
 :owner rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :metamodelProperty ;
        rdfs:domain :Diagram ;
        rdfs:range :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#point
+###  https://purl.org/ontouml-models/vocabulary/point
 :point rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :metamodelProperty ;
        rdfs:domain :Path ;
        rdfs:range :Point .
 
 
-###  https://purl.org/ontouml-metamodel#property
+###  https://purl.org/ontouml-models/vocabulary/property
 :property rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :metamodelProperty ;
           rdfs:domain :Classifier ;
           rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#propertyType
+###  https://purl.org/ontouml-models/vocabulary/propertyType
 :propertyType rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :metamodelProperty ;
               rdfs:domain :Property ;
               rdfs:range :Classifier .
 
 
-###  https://purl.org/ontouml-metamodel#redefinesProperty
+###  https://purl.org/ontouml-models/vocabulary/redefinesProperty
 :redefinesProperty rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :metamodelProperty ;
                    rdfs:domain :Property ;
                    rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#relationEnd
+###  https://purl.org/ontouml-models/vocabulary/relationEnd
 :relationEnd rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :property ;
              rdfs:domain :Relation ;
              rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#restrictedTo
+###  https://purl.org/ontouml-models/vocabulary/restrictedTo
 :restrictedTo rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :metamodelProperty ;
               rdfs:domain :Class ;
               rdfs:range :OntologicalNature .
 
 
-###  https://purl.org/ontouml-metamodel#shape
+###  https://purl.org/ontouml-models/vocabulary/shape
 :shape rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :metamodelProperty ;
        rdfs:domain :ElementView ;
        rdfs:range :Shape .
 
 
-###  https://purl.org/ontouml-metamodel#sourceEnd
+###  https://purl.org/ontouml-models/vocabulary/sourceEnd
 :sourceEnd rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :relationEnd ;
            rdfs:domain :Relation ;
            rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#sourceView
+###  https://purl.org/ontouml-models/vocabulary/sourceView
 :sourceView rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :metamodelProperty ;
             rdfs:domain :ConnectorView ;
             rdfs:range :ElementView .
 
 
-###  https://purl.org/ontouml-metamodel#specific
+###  https://purl.org/ontouml-models/vocabulary/specific
 :specific rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :metamodelProperty ;
           rdfs:domain :Generalization ;
           rdfs:range :Classifier .
 
 
-###  https://purl.org/ontouml-metamodel#stereotype
+###  https://purl.org/ontouml-models/vocabulary/stereotype
 :stereotype rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :metamodelProperty ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :Class
                                         :Property
@@ -166,27 +204,30 @@
             rdfs:range :Stereotype .
 
 
-###  https://purl.org/ontouml-metamodel#subsetsProperty
+###  https://purl.org/ontouml-models/vocabulary/subsetsProperty
 :subsetsProperty rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :metamodelProperty ;
                  rdfs:domain :Property ;
                  rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#targetEnd
+###  https://purl.org/ontouml-models/vocabulary/targetEnd
 :targetEnd rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :relationEnd ;
            rdfs:domain :Relation ;
            rdfs:range :Property .
 
 
-###  https://purl.org/ontouml-metamodel#targetView
+###  https://purl.org/ontouml-models/vocabulary/targetView
 :targetView rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :metamodelProperty ;
             rdfs:domain :ConnectorView ;
             rdfs:range :ElementView .
 
 
-###  https://purl.org/ontouml-metamodel#topLeftPosition
+###  https://purl.org/ontouml-models/vocabulary/topLeftPosition
 :topLeftPosition rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :metamodelProperty ;
                  rdfs:domain :RectangularShape ;
                  rdfs:range :Point .
 
@@ -195,39 +236,39 @@
 #    Data properties
 #################################################################
 
-###  https://purl.org/ontouml-metamodel#cardinalityValue
+###  https://purl.org/ontouml-models/vocabulary/cardinalityValue
 :cardinalityValue rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Cardinality .
 
 
-###  https://purl.org/ontouml-metamodel#description
+###  https://purl.org/ontouml-models/vocabulary/description
 :description rdf:type owl:DatatypeProperty ;
-             rdfs:domain :OntoUmlElement .
+             rdfs:domain :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#height
+###  https://purl.org/ontouml-models/vocabulary/height
 :height rdf:type owl:DatatypeProperty ;
         rdfs:domain :RectangularShape ;
         rdfs:range xsd:positiveInteger .
 
 
-###  https://purl.org/ontouml-metamodel#id
+###  https://purl.org/ontouml-models/vocabulary/id
 :id rdf:type owl:DatatypeProperty .
 
 
-###  https://purl.org/ontouml-metamodel#isAbstract
+###  https://purl.org/ontouml-models/vocabulary/isAbstract
 :isAbstract rdf:type owl:DatatypeProperty ;
             rdfs:domain :Classifier ;
             rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isComplete
+###  https://purl.org/ontouml-models/vocabulary/isComplete
 :isComplete rdf:type owl:DatatypeProperty ;
             rdfs:domain :GeneralizationSet ;
             rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isDerived
+###  https://purl.org/ontouml-models/vocabulary/isDerived
 :isDerived rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( :Classifier
@@ -237,69 +278,69 @@
            rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isDisjoint
+###  https://purl.org/ontouml-models/vocabulary/isDisjoint
 :isDisjoint rdf:type owl:DatatypeProperty ;
             rdfs:domain :GeneralizationSet ;
             rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isExtensional
+###  https://purl.org/ontouml-models/vocabulary/isExtensional
 :isExtensional rdf:type owl:DatatypeProperty ;
                rdfs:domain :Class ;
                rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isOrdered
+###  https://purl.org/ontouml-models/vocabulary/isOrdered
 :isOrdered rdf:type owl:DatatypeProperty ;
            rdfs:domain :Property ;
            rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isPowertype
+###  https://purl.org/ontouml-models/vocabulary/isPowertype
 :isPowertype rdf:type owl:DatatypeProperty ;
              rdfs:domain :Class ;
              rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#isReadOnly
+###  https://purl.org/ontouml-models/vocabulary/isReadOnly
 :isReadOnly rdf:type owl:DatatypeProperty ;
             rdfs:domain :Property ;
             rdfs:range xsd:boolean .
 
 
-###  https://purl.org/ontouml-metamodel#lowerBound
+###  https://purl.org/ontouml-models/vocabulary/lowerBound
 :lowerBound rdf:type owl:DatatypeProperty ;
             rdfs:domain :Cardinality .
 
 
-###  https://purl.org/ontouml-metamodel#name
+###  https://purl.org/ontouml-models/vocabulary/name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :OntoUmlElement .
+      rdfs:domain :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#order
+###  https://purl.org/ontouml-models/vocabulary/order
 :order rdf:type owl:DatatypeProperty ;
        rdfs:domain :Class ;
        rdfs:range xsd:positiveInteger .
 
 
-###  https://purl.org/ontouml-metamodel#upperBound
+###  https://purl.org/ontouml-models/vocabulary/upperBound
 :upperBound rdf:type owl:DatatypeProperty ;
             rdfs:domain :Cardinality .
 
 
-###  https://purl.org/ontouml-metamodel#width
+###  https://purl.org/ontouml-models/vocabulary/width
 :width rdf:type owl:DatatypeProperty ;
        rdfs:domain :RectangularShape ;
        rdfs:range xsd:positiveInteger .
 
 
-###  https://purl.org/ontouml-metamodel#xCoordinate
+###  https://purl.org/ontouml-models/vocabulary/xCoordinate
 :xCoordinate rdf:type owl:DatatypeProperty ;
              rdfs:domain :Point .
 
 
-###  https://purl.org/ontouml-metamodel#yCoordinate
+###  https://purl.org/ontouml-models/vocabulary/yCoordinate
 :yCoordinate rdf:type owl:DatatypeProperty ;
              rdfs:domain :Point .
 
@@ -308,7 +349,7 @@
 #    Classes
 #################################################################
 
-###  https://purl.org/ontouml-metamodel#AggregationKind
+###  https://purl.org/ontouml-models/vocabulary/AggregationKind
 :AggregationKind rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Class ;
                                        owl:oneOf ( :composite
@@ -316,20 +357,20 @@
                                                    :shared
                                                  )
                                      ] ;
-                 rdfs:subClassOf :OntoUmlElement .
+                 rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#Cardinality
+###  https://purl.org/ontouml-models/vocabulary/Cardinality
 :Cardinality rdf:type owl:Class ;
-             rdfs:subClassOf :OntoUmlElement .
+             rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#Class
+###  https://purl.org/ontouml-models/vocabulary/Class
 :Class rdf:type owl:Class ;
        rdfs:subClassOf :Classifier .
 
 
-###  https://purl.org/ontouml-metamodel#ClassStereotype
+###  https://purl.org/ontouml-models/vocabulary/ClassStereotype
 :ClassStereotype rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Class ;
                                        owl:oneOf ( :abstract
@@ -358,180 +399,236 @@
                  rdfs:subClassOf :Stereotype .
 
 
-###  https://purl.org/ontouml-metamodel#ClassView
+###  https://purl.org/ontouml-models/vocabulary/ClassView
 :ClassView rdf:type owl:Class ;
            rdfs:subClassOf :NodeView .
 
 
-###  https://purl.org/ontouml-metamodel#Classifier
+###  https://purl.org/ontouml-models/vocabulary/Classifier
 :Classifier rdf:type owl:Class ;
             rdfs:subClassOf :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#ConnectorView
+###  https://purl.org/ontouml-models/vocabulary/ConnectorView
 :ConnectorView rdf:type owl:Class ;
                rdfs:subClassOf :ElementView .
 
 
-###  https://purl.org/ontouml-metamodel#Diagram
+###  https://purl.org/ontouml-models/vocabulary/Diagram
 :Diagram rdf:type owl:Class ;
-         rdfs:subClassOf :OntoUmlElement .
+         rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#DiagramElement
+###  https://purl.org/ontouml-models/vocabulary/DiagramElement
 :DiagramElement rdf:type owl:Class ;
-                rdfs:subClassOf :OntoUmlElement .
+                rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#ElementView
+###  https://purl.org/ontouml-models/vocabulary/ElementView
 :ElementView rdf:type owl:Class ;
              rdfs:subClassOf :DiagramElement .
 
 
-###  https://purl.org/ontouml-metamodel#Generalization
+###  https://purl.org/ontouml-models/vocabulary/Generalization
 :Generalization rdf:type owl:Class ;
                 rdfs:subClassOf :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#GeneralizationSet
+###  https://purl.org/ontouml-models/vocabulary/GeneralizationSet
 :GeneralizationSet rdf:type owl:Class ;
                    rdfs:subClassOf :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#GeneralizationSetView
+###  https://purl.org/ontouml-models/vocabulary/GeneralizationSetView
 :GeneralizationSetView rdf:type owl:Class ;
                        rdfs:subClassOf :NodeView .
 
 
-###  https://purl.org/ontouml-metamodel#GeneralizationView
+###  https://purl.org/ontouml-models/vocabulary/GeneralizationView
 :GeneralizationView rdf:type owl:Class ;
                     rdfs:subClassOf :ConnectorView .
 
 
-###  https://purl.org/ontouml-metamodel#IdentityProviderStereotype
+###  https://purl.org/ontouml-models/vocabulary/IdentityProviderStereotype
 :IdentityProviderStereotype rdf:type owl:Class ;
                             rdfs:subClassOf :SortalStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#Literal
+###  https://purl.org/ontouml-models/vocabulary/Literal
 :Literal rdf:type owl:Class ;
          rdfs:subClassOf :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#ModelElement
+###  https://purl.org/ontouml-models/vocabulary/MetadataElement
+:MetadataElement rdf:type owl:Class ;
+                 rdfs:comment "An element used in the metadata description of OntoUML models."@en .
+
+
+###  https://purl.org/ontouml-models/vocabulary/MetamodelElement
+:MetamodelElement rdf:type owl:Class ;
+                  rdfs:comment "An element that is part of the OntoUML metamodel, and thus used to represent OntoUML models."@en .
+
+
+###  https://purl.org/ontouml-models/vocabulary/ModelElement
 :ModelElement rdf:type owl:Class ;
-              rdfs:subClassOf :OntoUmlElement .
+              rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#NodeView
+###  https://purl.org/ontouml-models/vocabulary/NodeView
 :NodeView rdf:type owl:Class ;
           rdfs:subClassOf :ElementView .
 
 
-###  https://purl.org/ontouml-metamodel#NonSortalStereotype
+###  https://purl.org/ontouml-models/vocabulary/NonSortalStereotype
 :NonSortalStereotype rdf:type owl:Class ;
                      rdfs:subClassOf :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#OntoUmlElement
-:OntoUmlElement rdf:type owl:Class .
-
-
-###  https://purl.org/ontouml-metamodel#OntologicalNature
+###  https://purl.org/ontouml-models/vocabulary/OntologicalNature
 :OntologicalNature rdf:type owl:Class ;
                    owl:equivalentClass [ rdf:type owl:Class ;
-                                         owl:oneOf ( :abstract
-                                                     :collective
-                                                     :event
-                                                     :extrinsicMode
-                                                     :functionalComplex
-                                                     :intrinsicMode
-                                                     :quality
-                                                     :quantity
-                                                     :relator
-                                                     :situation
-                                                     :type
+                                         owl:oneOf ( :abstractNature
+                                                     :collectiveNature
+                                                     :eventNature
+                                                     :extrinsicModeNature
+                                                     :functionalComplexNature
+                                                     :intrinsicModeNature
+                                                     :qualityNature
+                                                     :quantityNature
+                                                     :relatorNature
+                                                     :situationNature
+                                                     :typeNature
                                                    )
                                        ] ;
-                   rdfs:subClassOf :OntoUmlElement .
+                   rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#Package
+###  https://purl.org/ontouml-models/vocabulary/OntologyDevelopmentContext
+:OntologyDevelopmentContext rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Class ;
+                                                  owl:oneOf ( :Classroom
+                                                              :Industry
+                                                              :Research
+                                                            )
+                                                ] ;
+                            rdfs:subClassOf :MetadataElement .
+
+
+###  https://purl.org/ontouml-models/vocabulary/OntologyPurpose
+:OntologyPurpose rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:oneOf ( :ConceptualClarification
+                                                   :DataPublication
+                                                   :DecisionSupportSystem
+                                                   :Example
+                                                   :InformationRetrieval
+                                                   :Interoperability
+                                                   :LanguageEngineering
+                                                   :Learning
+                                                   :OntologicalAnalysis
+                                                   :SoftwareEngineering
+                                                 )
+                                     ] ;
+                 rdfs:subClassOf :MetadataElement .
+
+
+###  https://purl.org/ontouml-models/vocabulary/OntologyRepresentationStyle
+:OntologyRepresentationStyle rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Class ;
+                                                   owl:oneOf ( :OntoumlStyle
+                                                               :UfoStyle
+                                                             )
+                                                 ] ;
+                             rdfs:subClassOf :MetadataElement .
+
+
+###  https://purl.org/ontouml-models/vocabulary/OntologyType
+:OntologyType rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:oneOf ( :Application
+                                                :Core
+                                                :Domain
+                                              )
+                                  ] ;
+              rdfs:subClassOf :MetadataElement .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Package
 :Package rdf:type owl:Class ;
          rdfs:subClassOf :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#PackageView
+###  https://purl.org/ontouml-models/vocabulary/PackageView
 :PackageView rdf:type owl:Class ;
              rdfs:subClassOf :NodeView .
 
 
-###  https://purl.org/ontouml-metamodel#Path
+###  https://purl.org/ontouml-models/vocabulary/Path
 :Path rdf:type owl:Class ;
       rdfs:subClassOf :Shape .
 
 
-###  https://purl.org/ontouml-metamodel#Point
+###  https://purl.org/ontouml-models/vocabulary/Point
 :Point rdf:type owl:Class ;
-       rdfs:subClassOf :OntoUmlElement .
+       rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#Project
+###  https://purl.org/ontouml-models/vocabulary/Project
 :Project rdf:type owl:Class ;
-         rdfs:subClassOf :OntoUmlElement .
+         rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#Property
+###  https://purl.org/ontouml-models/vocabulary/Property
 :Property rdf:type owl:Class ;
           rdfs:subClassOf :ModelElement .
 
 
-###  https://purl.org/ontouml-metamodel#PropertyStereotype
+###  https://purl.org/ontouml-models/vocabulary/PropertyStereotype
 :PropertyStereotype rdf:type owl:Class ;
                     rdfs:subClassOf :Stereotype .
 
 
-###  https://purl.org/ontouml-metamodel#Rectangle
+###  https://purl.org/ontouml-models/vocabulary/Rectangle
 :Rectangle rdf:type owl:Class ;
            rdfs:subClassOf :RectangularShape .
 
 
-###  https://purl.org/ontouml-metamodel#RectangularShape
+###  https://purl.org/ontouml-models/vocabulary/RectangularShape
 :RectangularShape rdf:type owl:Class ;
                   rdfs:subClassOf :Shape .
 
 
-###  https://purl.org/ontouml-metamodel#Relation
+###  https://purl.org/ontouml-models/vocabulary/Relation
 :Relation rdf:type owl:Class ;
           rdfs:subClassOf :Classifier .
 
 
-###  https://purl.org/ontouml-metamodel#RelationStereotype
+###  https://purl.org/ontouml-models/vocabulary/RelationStereotype
 :RelationStereotype rdf:type owl:Class ;
                     rdfs:subClassOf :Stereotype .
 
 
-###  https://purl.org/ontouml-metamodel#RelationView
+###  https://purl.org/ontouml-models/vocabulary/RelationView
 :RelationView rdf:type owl:Class ;
               rdfs:subClassOf :ConnectorView .
 
 
-###  https://purl.org/ontouml-metamodel#Shape
+###  https://purl.org/ontouml-models/vocabulary/Shape
 :Shape rdf:type owl:Class ;
        rdfs:subClassOf :DiagramElement .
 
 
-###  https://purl.org/ontouml-metamodel#SortalStereotype
+###  https://purl.org/ontouml-models/vocabulary/SortalStereotype
 :SortalStereotype rdf:type owl:Class ;
                   rdfs:subClassOf :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#Stereotype
+###  https://purl.org/ontouml-models/vocabulary/Stereotype
 :Stereotype rdf:type owl:Class ;
-            rdfs:subClassOf :OntoUmlElement .
+            rdfs:subClassOf :MetamodelElement .
 
 
-###  https://purl.org/ontouml-metamodel#Text
+###  https://purl.org/ontouml-models/vocabulary/Text
 :Text rdf:type owl:Class ;
       rdfs:subClassOf :RectangularShape .
 
@@ -540,217 +637,339 @@
 #    Individuals
 #################################################################
 
-###  https://purl.org/ontouml-metamodel#abstract
+###  https://purl.org/ontouml-models/vocabulary/Application
+:Application rdf:type owl:NamedIndividual ,
+                      :OntologyType .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Classroom
+:Classroom rdf:type owl:NamedIndividual ,
+                    :OntologyDevelopmentContext .
+
+
+###  https://purl.org/ontouml-models/vocabulary/ConceptualClarification
+:ConceptualClarification rdf:type owl:NamedIndividual ,
+                                  :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Core
+:Core rdf:type owl:NamedIndividual ,
+               :OntologyType .
+
+
+###  https://purl.org/ontouml-models/vocabulary/DataPublication
+:DataPublication rdf:type owl:NamedIndividual ,
+                          :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/DecisionSupportSystem
+:DecisionSupportSystem rdf:type owl:NamedIndividual ,
+                                :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Domain
+:Domain rdf:type owl:NamedIndividual ,
+                 :OntologyType .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Example
+:Example rdf:type owl:NamedIndividual ,
+                  :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Industry
+:Industry rdf:type owl:NamedIndividual ,
+                   :OntologyDevelopmentContext .
+
+
+###  https://purl.org/ontouml-models/vocabulary/InformationRetrieval
+:InformationRetrieval rdf:type owl:NamedIndividual ,
+                               :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Interoperability
+:Interoperability rdf:type owl:NamedIndividual ,
+                           :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/LanguageEngineering
+:LanguageEngineering rdf:type owl:NamedIndividual ,
+                              :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Learning
+:Learning rdf:type owl:NamedIndividual ,
+                   :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/OntologicalAnalysis
+:OntologicalAnalysis rdf:type owl:NamedIndividual ,
+                              :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/OntoumlStyle
+:OntoumlStyle rdf:type owl:NamedIndividual ,
+                       :OntologyRepresentationStyle .
+
+
+###  https://purl.org/ontouml-models/vocabulary/Research
+:Research rdf:type owl:NamedIndividual ,
+                   :OntologyDevelopmentContext .
+
+
+###  https://purl.org/ontouml-models/vocabulary/SoftwareEngineering
+:SoftwareEngineering rdf:type owl:NamedIndividual ,
+                              :OntologyPurpose .
+
+
+###  https://purl.org/ontouml-models/vocabulary/UfoStyle
+:UfoStyle rdf:type owl:NamedIndividual ,
+                   :OntologyRepresentationStyle .
+
+
+###  https://purl.org/ontouml-models/vocabulary/abstract
 :abstract rdf:type owl:NamedIndividual ,
-                   :ClassStereotype ,
-                   :OntologicalNature .
+                   :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#begin
+###  https://purl.org/ontouml-models/vocabulary/abstractNature
+:abstractNature rdf:type owl:NamedIndividual ,
+                         :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/begin
 :begin rdf:type owl:NamedIndividual ,
                 :PropertyStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#category
+###  https://purl.org/ontouml-models/vocabulary/category
 :category rdf:type owl:NamedIndividual ,
                    :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#characterization
+###  https://purl.org/ontouml-models/vocabulary/characterization
 :characterization rdf:type owl:NamedIndividual ,
                            :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#collective
+###  https://purl.org/ontouml-models/vocabulary/collective
 :collective rdf:type owl:NamedIndividual ,
-                     :ClassStereotype ,
-                     :OntologicalNature .
+                     :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#comparative
+###  https://purl.org/ontouml-models/vocabulary/collectiveNature
+:collectiveNature rdf:type owl:NamedIndividual ,
+                           :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/comparative
 :comparative rdf:type owl:NamedIndividual ,
                       :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#componentOf
+###  https://purl.org/ontouml-models/vocabulary/componentOf
 :componentOf rdf:type owl:NamedIndividual ,
                       :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#composite
+###  https://purl.org/ontouml-models/vocabulary/composite
 :composite rdf:type owl:NamedIndividual ,
                     :AggregationKind .
 
 
-###  https://purl.org/ontouml-metamodel#datatype
+###  https://purl.org/ontouml-models/vocabulary/datatype
 :datatype rdf:type owl:NamedIndividual ,
                    :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#end
+###  https://purl.org/ontouml-models/vocabulary/end
 :end rdf:type owl:NamedIndividual ,
               :PropertyStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#enumeration
+###  https://purl.org/ontouml-models/vocabulary/enumeration
 :enumeration rdf:type owl:NamedIndividual ,
                       :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#event
+###  https://purl.org/ontouml-models/vocabulary/event
 :event rdf:type owl:NamedIndividual ,
-                :ClassStereotype ,
-                :OntologicalNature .
+                :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#externalDependency
+###  https://purl.org/ontouml-models/vocabulary/eventNature
+:eventNature rdf:type owl:NamedIndividual ,
+                      :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/externalDependency
 :externalDependency rdf:type owl:NamedIndividual ,
                              :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#extrinsicMode
-:extrinsicMode rdf:type owl:NamedIndividual ,
-                        :OntologicalNature .
+###  https://purl.org/ontouml-models/vocabulary/extrinsicModeNature
+:extrinsicModeNature rdf:type owl:NamedIndividual ,
+                              :OntologicalNature .
 
 
-###  https://purl.org/ontouml-metamodel#functionalComplex
-:functionalComplex rdf:type owl:NamedIndividual ,
-                            :OntologicalNature .
+###  https://purl.org/ontouml-models/vocabulary/functionalComplexNature
+:functionalComplexNature rdf:type owl:NamedIndividual ,
+                                  :OntologicalNature .
 
 
-###  https://purl.org/ontouml-metamodel#historicalDependence
+###  https://purl.org/ontouml-models/vocabulary/historicalDependence
 :historicalDependence rdf:type owl:NamedIndividual ,
                                :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#historicalRole
+###  https://purl.org/ontouml-models/vocabulary/historicalRole
 :historicalRole rdf:type owl:NamedIndividual ,
                          :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#historicalRoleMixin
+###  https://purl.org/ontouml-models/vocabulary/historicalRoleMixin
 :historicalRoleMixin rdf:type owl:NamedIndividual ,
                               :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#intrinsicMode
-:intrinsicMode rdf:type owl:NamedIndividual ,
-                        :OntologicalNature .
+###  https://purl.org/ontouml-models/vocabulary/intrinsicModeNature
+:intrinsicModeNature rdf:type owl:NamedIndividual ,
+                              :OntologicalNature .
 
 
-###  https://purl.org/ontouml-metamodel#kind
+###  https://purl.org/ontouml-models/vocabulary/kind
 :kind rdf:type owl:NamedIndividual ,
                :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#material
+###  https://purl.org/ontouml-models/vocabulary/material
 :material rdf:type owl:NamedIndividual ,
                    :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#mediation
+###  https://purl.org/ontouml-models/vocabulary/mediation
 :mediation rdf:type owl:NamedIndividual ,
                     :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#memberOf
+###  https://purl.org/ontouml-models/vocabulary/memberOf
 :memberOf rdf:type owl:NamedIndividual ,
                    :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#mixin
+###  https://purl.org/ontouml-models/vocabulary/mixin
 :mixin rdf:type owl:NamedIndividual ,
                 :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#mode
+###  https://purl.org/ontouml-models/vocabulary/mode
 :mode rdf:type owl:NamedIndividual ,
                :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#none
+###  https://purl.org/ontouml-models/vocabulary/none
 :none rdf:type owl:NamedIndividual ,
                :AggregationKind .
 
 
-###  https://purl.org/ontouml-metamodel#participation
+###  https://purl.org/ontouml-models/vocabulary/participation
 :participation rdf:type owl:NamedIndividual ,
                         :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#participational
+###  https://purl.org/ontouml-models/vocabulary/participational
 :participational rdf:type owl:NamedIndividual ,
                           :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#phase
+###  https://purl.org/ontouml-models/vocabulary/phase
 :phase rdf:type owl:NamedIndividual ,
                 :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#phaseMixin
+###  https://purl.org/ontouml-models/vocabulary/phaseMixin
 :phaseMixin rdf:type owl:NamedIndividual ,
                      :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#quality
+###  https://purl.org/ontouml-models/vocabulary/quality
 :quality rdf:type owl:NamedIndividual ,
-                  :ClassStereotype ,
-                  :OntologicalNature .
+                  :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#quantity
+###  https://purl.org/ontouml-models/vocabulary/qualityNature
+:qualityNature rdf:type owl:NamedIndividual ,
+                        :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/quantity
 :quantity rdf:type owl:NamedIndividual ,
-                   :ClassStereotype ,
-                   :OntologicalNature .
+                   :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#relator
+###  https://purl.org/ontouml-models/vocabulary/quantityNature
+:quantityNature rdf:type owl:NamedIndividual ,
+                         :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/relator
 :relator rdf:type owl:NamedIndividual ,
-                  :ClassStereotype ,
-                  :OntologicalNature .
+                  :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#role
+###  https://purl.org/ontouml-models/vocabulary/relatorNature
+:relatorNature rdf:type owl:NamedIndividual ,
+                        :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/role
 :role rdf:type owl:NamedIndividual ,
                :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#roleMixin
+###  https://purl.org/ontouml-models/vocabulary/roleMixin
 :roleMixin rdf:type owl:NamedIndividual ,
                     :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#shared
+###  https://purl.org/ontouml-models/vocabulary/shared
 :shared rdf:type owl:NamedIndividual ,
                  :AggregationKind .
 
 
-###  https://purl.org/ontouml-metamodel#situation
+###  https://purl.org/ontouml-models/vocabulary/situation
 :situation rdf:type owl:NamedIndividual ,
-                    :ClassStereotype ,
-                    :OntologicalNature .
+                    :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#subCollectionOf
+###  https://purl.org/ontouml-models/vocabulary/situationNature
+:situationNature rdf:type owl:NamedIndividual ,
+                          :OntologicalNature .
+
+
+###  https://purl.org/ontouml-models/vocabulary/subCollectionOf
 :subCollectionOf rdf:type owl:NamedIndividual ,
                           :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#subQuantityOf
+###  https://purl.org/ontouml-models/vocabulary/subQuantityOf
 :subQuantityOf rdf:type owl:NamedIndividual ,
                         :RelationStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#subkind
+###  https://purl.org/ontouml-models/vocabulary/subkind
 :subkind rdf:type owl:NamedIndividual ,
                   :ClassStereotype .
 
 
-###  https://purl.org/ontouml-metamodel#type
+###  https://purl.org/ontouml-models/vocabulary/type
 :type rdf:type owl:NamedIndividual ,
-               :ClassStereotype ,
-               :OntologicalNature .
+               :ClassStereotype .
+
+
+###  https://purl.org/ontouml-models/vocabulary/typeNature
+:typeNature rdf:type owl:NamedIndividual ,
+                     :OntologicalNature .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
