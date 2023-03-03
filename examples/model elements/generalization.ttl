@@ -1,0 +1,11 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:g1 a ontouml:Generalization;
+      ontouml:general ex:c1 ;
+      ontouml:specific ex:c2 ;
+      ontouml:project ex:p1 .
+
+ex:c1 a ontouml:Class .
+ex:c2 a ontouml:Class .
+ex:p1 a ontouml:Project .

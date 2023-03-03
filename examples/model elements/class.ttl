@@ -1,0 +1,20 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:c1 a ontouml:Class ;
+      ontouml:id "c1" ; 
+      ontouml:name "Person"@en ; 
+      ontouml:description "A human being."@en ;
+      ontouml:stereotype ontouml:subkind ;
+      ontouml:restrictedTo ontouml:functionalComplex ;
+      ontouml:isAbstract "false"^^xsd:boolean ;
+      ontouml:isDerived "false"^^xsd:boolean ;
+      ontouml:isExtensional "false"^^xsd:boolean ;
+      ontouml:isPowertype "false"^^xsd:boolean ;
+      ontouml:order "1"^^xsd:positiveInteger ;
+      ontouml:attribute ex:at1 ;
+      ontouml:project ex:p1 .
+
+ex:p1 a ontouml:Project .
+ex:at1 a ontouml:Property .
+        

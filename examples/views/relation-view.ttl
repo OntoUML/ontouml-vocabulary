@@ -1,0 +1,12 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:rv1 a ontouml:RelationView ;
+      ontouml:id "rv1" ; 
+      ontouml:isViewOf ex:r1 ;
+      ontouml:shape ex:path1 ; 
+      ontouml:project ex:p1 .
+
+ex:p1 a ontouml:Project .
+ex:r1 a ontouml:Relation .
+ex:path1 a ontouml:Path .
