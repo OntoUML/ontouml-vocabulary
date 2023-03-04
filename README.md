@@ -1,3 +1,11 @@
-# OntoUML Metamodel in OWL
+# OntoUML Metamodel Vocabulary
 
-The **OntoUML Metamodel in OWL** is a vocabulary to serialize and exchange OntoUML models compliant with [ontouml-schema](https://github.com/OntoUML/ontouml-schema). 
+An implementation of the OntoUML metamodel in the Web Ontology Language compliant with [ontouml-schema](https://github.com/OntoUML/ontouml-schema). 
+
+This vocabulary support the serialization, exchange, and publishing of OntoUML models as linked data. 
+
+Created by:
+
+- [Tiago Prince Sales](https://orcid.org/0000-0002-5385-5761)
+- [Claudenir M. Fonseca](https://orcid.org/0000-0003-2528-3118)
+
