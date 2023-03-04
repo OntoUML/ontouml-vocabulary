@@ -1,0 +1,12 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:txt1 a ontouml:Text ;
+         ontouml:id "txt1" ; 
+         ontouml:height "100" ; 
+         ontouml:width "200" ;
+         ontouml:topLeftPosition [
+            a ontouml:Point ;
+            ontouml:x "10" ;
+            ontouml:y "10" ;
+         ] .

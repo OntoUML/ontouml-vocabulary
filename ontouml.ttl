@@ -310,14 +310,14 @@ ontouml:width rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:positiveInteger .
 
 
-###  https://w3id.org/ontouml/xCoordinate
-ontouml:xCoordinate rdf:type owl:DatatypeProperty ;
-                    rdfs:domain ontouml:Point .
+###  https://w3id.org/ontouml/x
+ontouml:x rdf:type owl:DatatypeProperty ;
+          rdfs:domain ontouml:Point .
 
 
-###  https://w3id.org/ontouml/yCoordinate
-ontouml:yCoordinate rdf:type owl:DatatypeProperty ;
-                    rdfs:domain ontouml:Point .
+###  https://w3id.org/ontouml/y
+ontouml:y rdf:type owl:DatatypeProperty ;
+          rdfs:domain ontouml:Point .
 
 
 #################################################################
