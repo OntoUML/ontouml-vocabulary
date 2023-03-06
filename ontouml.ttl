@@ -8,24 +8,33 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix ontouml: <https://w3id.org/ontouml/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <https://w3id.org/ontouml> .
 
 <https://w3id.org/ontouml> rdf:type owl:Ontology ;
                            dct:identifier "https://w3id.org/ontouml"^^xsd:anyURI ;
-                           dct:title "OntoUML Metamodel Vocabulary" ;
+                           dct:title "OntoUML Metamodel Vocabulary"@en ;
+                           dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>; 
                            dct:description "A reference implementation of the OntoUML metamodel in OWL."@en ;
                            dcat:landingPage <https://github.com/OntoUML/ontouml-schema-owl> ; 
                            vann:preferredNamespacePrefix "ontouml"@en ;
                            vann:preferredNamespaceUri "https://w3id.org/ontouml/"^^xsd:anyURI ;
                            dct:creator <https://orcid.org/0000-0002-5385-5761> ,
                                        <https://orcid.org/0000-0003-2528-3118> ;
+                           dct:contributor <https://orcid.org/0000-0003-3385-4769>, 
+                                          <https://orcid.org/0000-0003-2736-7817>;
                            dct:publisher <https://www.utwente.nl/eemcs/scs/> ;
                            owl:versionIRI <https://w3id.org/ontouml/1.0> ;
                            owl:versionInfo "1.0"@en ;
                            dct:license <https://creativecommons.org/licenses/by-sa/3.0> ;
                            dct:issued "2022-04-03"^^xsd:date ;
-                           dct:modified "2023-03-03"^^xsd:date ;
-                           dcat:keyword "OntoUML", "Metamodel", "Ontology-Driven Conceptual Modeling" .
+                           dct:modified "2023-03-06"^^xsd:date ;
+                           dcat:keyword "OntoUML"@en, "Metamodel"@en, "Ontology-Driven Conceptual Modeling"@en ;
+                           skos:changeNote "file scope re-defined to contain only the OntoUML metamodel in OWL"@en ;
+                           skos:changeNote "skos:changeNote and dct:isReferencedBy metadata added. The former can be used to comment all the modifications applied over the file the latter can be used to add A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource"@en ;
+                           dct:isReferencedBy <https://doi.org/10.1007/978-3-031-17995-2_1> ,
+                                               <https://www.researchgate.net/publication/354076666_Ontology-Driven_Conceptual_Modeling_as_a_Service> ;
+                           dct:conformsTo: <https://github.com/ontouml/ontouml-schema> .
 
 
 #################################################################
@@ -772,4 +781,3 @@ ontouml:type rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/ontouml/typeNature
 ontouml:typeNature rdf:type owl:NamedIndividual ,
                             ontouml:OntologicalNature .
-
