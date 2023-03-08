@@ -16,7 +16,7 @@
                            dct:title "OntoUML Metamodel Vocabulary"@en ;
                            dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>; 
                            dct:description "A reference implementation of the OntoUML metamodel in OWL."@en ;
-                           dcat:landingPage <https://github.com/OntoUML/ontouml-schema-owl> ; 
+                           dcat:landingPage <https://w3id.org/ontouml> ; 
                            vann:preferredNamespacePrefix "ontouml"@en ;
                            vann:preferredNamespaceUri "https://w3id.org/ontouml/"^^xsd:anyURI ;
                            dct:creator <https://orcid.org/0000-0002-5385-5761> ,
@@ -34,7 +34,7 @@
                            skos:changeNote "skos:changeNote and dct:isReferencedBy metadata added. The former can be used to comment all the modifications applied over the file the latter can be used to add A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource"@en ;
                            dct:isReferencedBy <https://doi.org/10.1007/978-3-031-17995-2_1> ,
                                                <https://www.researchgate.net/publication/354076666_Ontology-Driven_Conceptual_Modeling_as_a_Service> ;
-                           dct:conformsTo: <https://github.com/ontouml/ontouml-schema> .
+                           dct:conformsTo: <https://purl.org/ontouml-schema> .
 
 
 #################################################################
