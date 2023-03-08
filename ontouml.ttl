@@ -27,7 +27,7 @@
                            owl:versionInfo "1.0"@en ;
                            dct:license <https://creativecommons.org/licenses/by-sa/3.0> ;
                            dct:issued "2022-04-03"^^xsd:date ;
-                           dct:modified "2023-03-06"^^xsd:date ;
+                           dct:modified "2023-03-08"^^xsd:date ;
                            dcat:keyword "OntoUML"@en, "Metamodel"@en, "Ontology-Driven Conceptual Modeling"@en ;
                            skos:changeNote "file scope re-defined to contain only the OntoUML metamodel in OWL"@en ;
                            skos:changeNote "skos:changeNote and dct:isReferencedBy metadata added. The former can be used to comment all the modifications applied over the file the latter can be used to add A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource"@en ;
