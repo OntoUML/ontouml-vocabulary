@@ -1,26 +1,26 @@
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <https://w3id.org/ontouml> .
 
 <https://w3id.org/ontouml> rdf:type owl:Ontology ;
                            dct:identifier "https://w3id.org/ontouml"^^xsd:anyURI ;
                            dct:title "OntoUML Metamodel Vocabulary"@en ;
-                           dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>; 
+                           dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>;
                            dct:description "A reference implementation of the OntoUML metamodel in OWL."@en ;
-                           dcat:landingPage <https://w3id.org/ontouml> ; 
+                           dcat:landingPage <https://w3id.org/ontouml/git> ;
                            vann:preferredNamespacePrefix "ontouml"@en ;
                            vann:preferredNamespaceUri "https://w3id.org/ontouml#"^^xsd:anyURI ;
                            dct:creator <https://orcid.org/0000-0002-5385-5761> ,
                                        <https://orcid.org/0000-0003-2528-3118> ;
-                           dct:contributor <https://orcid.org/0000-0003-3385-4769>, 
+                           dct:contributor <https://orcid.org/0000-0003-3385-4769>,
                                           <https://orcid.org/0000-0003-2736-7817>;
                            dct:publisher <https://www.utwente.nl/eemcs/scs/> ;
                            owl:versionIRI <https://w3id.org/ontouml#1.0> ;
