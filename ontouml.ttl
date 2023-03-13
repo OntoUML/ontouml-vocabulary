@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/ontouml#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -7,7 +7,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix ontouml: <https://w3id.org/ontouml/> .
 @base <https://w3id.org/ontouml> .
 
 <https://w3id.org/ontouml> rdf:type owl:Ontology ;
