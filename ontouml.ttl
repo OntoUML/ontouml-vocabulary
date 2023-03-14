@@ -22,7 +22,7 @@
                                           <https://orcid.org/0000-0003-2736-7817> ;
                            owl:versionIRI <https://w3id.org/ontouml/1.0> ;
                            owl:versionInfo "1.0"@en ;
-                           dct:license <https://creativecommons.org/licenses/by-sa/3.0> ;
+                           dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
                            dct:issued "2022-04-03"^^xsd:date ;
                            dct:modified "2023-03-14"^^xsd:date ;
                            dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>;
