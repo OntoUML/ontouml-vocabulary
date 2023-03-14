@@ -1,441 +1,296 @@
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @base <https://w3id.org/ontouml> .
 
-<https://w3id.org/ontouml> rdf:type owl:Ontology ;
+<https://w3id.org/ontouml> a owl:Ontology ;
                            dct:identifier "https://w3id.org/ontouml"^^xsd:anyURI ;
-                           dct:title "OntoUML Metamodel Vocabulary" ;
+                           dct:title "OntoUML Metamodel Vocabulary"@en ;
                            dct:description "A reference implementation of the OntoUML metamodel in OWL."@en ;
-                           dcat:landingPage <https://github.com/OntoUML/ontouml-schema-owl> ; 
+                           dcat:landingPage <https://w3id.org/ontouml/git> ;
                            vann:preferredNamespacePrefix "ontouml"@en ;
-                           vann:preferredNamespaceUri "https://w3id.org/ontouml/"^^xsd:anyURI ;
+                           vann:preferredNamespaceUri "https://w3id.org/ontouml#"^^xsd:anyURI ;
                            dct:creator <https://orcid.org/0000-0002-5385-5761> ,
                                        <https://orcid.org/0000-0003-2528-3118> ;
-                           dct:publisher <https://www.utwente.nl/eemcs/scs/> ;
+                           dct:contributor <https://orcid.org/0000-0003-3385-4769> ,
+                                          <https://orcid.org/0000-0003-2736-7817> ;
                            owl:versionIRI <https://w3id.org/ontouml/1.0> ;
                            owl:versionInfo "1.0"@en ;
                            dct:license <https://creativecommons.org/licenses/by-sa/3.0> ;
                            dct:issued "2022-04-03"^^xsd:date ;
-                           dct:modified "2023-03-03"^^xsd:date ;
-                           dcat:keyword "OntoUML", "Metamodel", "Ontology-Driven Conceptual Modeling" .
+                           dct:modified "2023-03-14"^^xsd:date ;
+                           dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>;
+                           dcat:keyword "OntoUML"@en, "Metamodel"@en, "Ontology-Driven Conceptual Modeling"@en ;
+                           dct:isReferencedBy <https://doi.org/10.1007/978-3-031-17995-2_1> ,
+                                               <https://dblp.org/rec/conf/jowo/FonsecaSVFGA21.html> ;
+                           dct:conformsTo: <https://purl.org/krdb-core/ontouml-js> .
 
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  https://w3id.org/ontouml/aggregationKind
-ontouml:aggregationKind rdf:type owl:ObjectProperty ;
+ontouml:aggregationKind a owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:AggregationKind .
 
-
-###  https://w3id.org/ontouml/attribute
-ontouml:attribute rdf:type owl:ObjectProperty ;
+ontouml:attribute a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:property ;
                   rdfs:domain ontouml:Class ;
                   rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/cardinality
-ontouml:cardinality rdf:type owl:ObjectProperty ;
+ontouml:cardinality a owl:ObjectProperty ;
                     rdfs:domain ontouml:Property ;
                     rdfs:range ontouml:Cardinality .
 
-
-###  https://w3id.org/ontouml/categorizer
-ontouml:categorizer rdf:type owl:ObjectProperty ;
+ontouml:categorizer a owl:ObjectProperty ;
                     rdfs:domain ontouml:GeneralizationSet ;
                     rdfs:range ontouml:Class .
 
-
-###  https://w3id.org/ontouml/containsModelElement
-ontouml:containsModelElement rdf:type owl:ObjectProperty ;
+ontouml:containsModelElement a owl:ObjectProperty ;
                              rdfs:domain ontouml:Package ;
                              rdfs:range ontouml:ModelElement .
 
-
-###  https://w3id.org/ontouml/containsView
-ontouml:containsView rdf:type owl:ObjectProperty ;
+ontouml:containsView a owl:ObjectProperty ;
                      rdfs:domain ontouml:Diagram ;
                      rdfs:range ontouml:ElementView .
 
-
-###  https://w3id.org/ontouml/diagram
-ontouml:diagram rdf:type owl:ObjectProperty ;
+ontouml:diagram a owl:ObjectProperty ;
                 rdfs:domain ontouml:Project ;
                 rdfs:range ontouml:Diagram .
 
-
-###  https://w3id.org/ontouml/general
-ontouml:general rdf:type owl:ObjectProperty ;
+ontouml:general a owl:ObjectProperty ;
                 rdfs:domain ontouml:Generalization ;
                 rdfs:range ontouml:Classifier .
 
-
-###  https://w3id.org/ontouml/generalization
-ontouml:generalization rdf:type owl:ObjectProperty ;
+ontouml:generalization a owl:ObjectProperty ;
                        rdfs:domain ontouml:GeneralizationSet ;
                        rdfs:range ontouml:Generalization .
 
-
-###  https://w3id.org/ontouml/isViewOf
-ontouml:isViewOf rdf:type owl:ObjectProperty ;
+ontouml:isViewOf a owl:ObjectProperty ;
                  rdfs:domain ontouml:ElementView ;
                  rdfs:range ontouml:ModelElement .
 
-
-###  https://w3id.org/ontouml/literal
-ontouml:literal rdf:type owl:ObjectProperty ;
+ontouml:literal a owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
                 rdfs:range ontouml:Literal .
 
-
-###  https://w3id.org/ontouml/model
-ontouml:model rdf:type owl:ObjectProperty ;
+ontouml:model a owl:ObjectProperty ;
               rdfs:domain ontouml:Project ;
               rdfs:range ontouml:Package .
 
-
-###  https://w3id.org/ontouml/owner
-ontouml:owner rdf:type owl:ObjectProperty ;
+ontouml:owner a owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
               rdfs:range ontouml:ModelElement .
 
-
-###  https://w3id.org/ontouml/point
-ontouml:point rdf:type owl:ObjectProperty ;
+ontouml:point a owl:ObjectProperty ;
               rdfs:domain ontouml:Path ;
               rdfs:range ontouml:Point .
 
-
-###  https://w3id.org/ontouml/property
-ontouml:property rdf:type owl:ObjectProperty ;
+ontouml:property a owl:ObjectProperty ;
                  rdfs:domain ontouml:Classifier ;
                  rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/propertyType
-ontouml:propertyType rdf:type owl:ObjectProperty ;
+ontouml:propertyType a owl:ObjectProperty ;
                      rdfs:domain ontouml:Property ;
                      rdfs:range ontouml:Classifier .
 
-
-###  https://w3id.org/ontouml/redefinesProperty
-ontouml:redefinesProperty rdf:type owl:ObjectProperty ;
+ontouml:redefinesProperty a owl:ObjectProperty ;
                           rdfs:domain ontouml:Property ;
                           rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/relationEnd
-ontouml:relationEnd rdf:type owl:ObjectProperty ;
+ontouml:relationEnd a owl:ObjectProperty ;
                     rdfs:subPropertyOf ontouml:property ;
                     rdfs:domain ontouml:Relation ;
                     rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/restrictedTo
-ontouml:restrictedTo rdf:type owl:ObjectProperty ;
+ontouml:restrictedTo a owl:ObjectProperty ;
                      rdfs:domain ontouml:Class ;
                      rdfs:range ontouml:OntologicalNature .
 
-
-###  https://w3id.org/ontouml/shape
-ontouml:shape rdf:type owl:ObjectProperty ;
+ontouml:shape a owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
               rdfs:range ontouml:Shape .
 
-
-###  https://w3id.org/ontouml/sourceEnd
-ontouml:sourceEnd rdf:type owl:ObjectProperty ;
+ontouml:sourceEnd a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
                   rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/sourceView
-ontouml:sourceView rdf:type owl:ObjectProperty ;
+ontouml:sourceView a owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
                    rdfs:range ontouml:ElementView .
 
-
-###  https://w3id.org/ontouml/specific
-ontouml:specific rdf:type owl:ObjectProperty ;
+ontouml:specific a owl:ObjectProperty ;
                  rdfs:domain ontouml:Generalization ;
                  rdfs:range ontouml:Classifier .
 
-
-###  https://w3id.org/ontouml/stereotype
-ontouml:stereotype rdf:type owl:ObjectProperty ;
-                   rdfs:domain [ rdf:type owl:Class ;
-                                 owl:unionOf ( ontouml:Class
-                                               ontouml:Property
-                                               ontouml:Relation
-                                             )
-                               ] ;
+ontouml:stereotype a owl:ObjectProperty ;
+                   rdfs:domain ontouml:Decoratable ;
                    rdfs:range ontouml:Stereotype .
 
-
-###  https://w3id.org/ontouml/subsetsProperty
-ontouml:subsetsProperty rdf:type owl:ObjectProperty ;
+ontouml:subsetsProperty a owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/targetEnd
-ontouml:targetEnd rdf:type owl:ObjectProperty ;
+ontouml:targetEnd a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
                   rdfs:range ontouml:Property .
 
-
-###  https://w3id.org/ontouml/targetView
-ontouml:targetView rdf:type owl:ObjectProperty ;
+ontouml:targetView a owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
                    rdfs:range ontouml:ElementView .
 
-
-###  https://w3id.org/ontouml/topLeftPosition
-ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
+ontouml:topLeftPosition a owl:ObjectProperty ;
                         rdfs:domain ontouml:RectangularShape ;
                         rdfs:range ontouml:Point .
 
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  https://w3id.org/ontouml/cardinalityValue
-ontouml:cardinalityValue rdf:type owl:DatatypeProperty ;
+ontouml:cardinalityValue a owl:DatatypeProperty ;
                          rdfs:domain ontouml:Cardinality .
 
+ontouml:description a owl:DatatypeProperty ;
+                    rdfs:domain ontouml:OntoumlElement ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:unionOf ( xsd:string
+                                               rdf:langString )
+                               ] .
 
-###  https://w3id.org/ontouml/description
-ontouml:description rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/ontouml/height
-ontouml:height rdf:type owl:DatatypeProperty ;
+ontouml:height a owl:DatatypeProperty ;
                rdfs:domain ontouml:RectangularShape ;
                rdfs:range xsd:positiveInteger .
 
+ontouml:id a owl:DatatypeProperty ;
+           rdfs:domain ontouml:OntoumlElement ;
+           rdfs:range xsd:string .
 
-###  https://w3id.org/ontouml/id
-ontouml:id rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/ontouml/isAbstract
-ontouml:isAbstract rdf:type owl:DatatypeProperty ;
+ontouml:isAbstract a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Classifier ;
                    rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isComplete
-ontouml:isComplete rdf:type owl:DatatypeProperty ;
+ontouml:isComplete a owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isDerived
-ontouml:isDerived rdf:type owl:DatatypeProperty ;
-                  rdfs:domain [ rdf:type owl:Class ;
+ontouml:isDerived a owl:DatatypeProperty ;
+                  rdfs:domain [ a owl:Class ;
                                 owl:unionOf ( ontouml:Classifier
                                               ontouml:Property
                                             )
                               ] ;
                   rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isDisjoint
-ontouml:isDisjoint rdf:type owl:DatatypeProperty ;
+ontouml:isDisjoint a owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isExtensional
-ontouml:isExtensional rdf:type owl:DatatypeProperty ;
+ontouml:isExtensional a owl:DatatypeProperty ;
                       rdfs:domain ontouml:Class ;
                       rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isOrdered
-ontouml:isOrdered rdf:type owl:DatatypeProperty ;
+ontouml:isOrdered a owl:DatatypeProperty ;
                   rdfs:domain ontouml:Property ;
                   rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isPowertype
-ontouml:isPowertype rdf:type owl:DatatypeProperty ;
+ontouml:isPowertype a owl:DatatypeProperty ;
                     rdfs:domain ontouml:Class ;
                     rdfs:range xsd:boolean .
 
-
-###  https://w3id.org/ontouml/isReadOnly
-ontouml:isReadOnly rdf:type owl:DatatypeProperty ;
+ontouml:isReadOnly a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Property ;
                    rdfs:range xsd:boolean .
 
+ontouml:lowerBound a owl:DatatypeProperty ;
+                   rdfs:domain ontouml:Cardinality ;
+                   rdfs:range xsd:positiveInteger .
 
-###  https://w3id.org/ontouml/lowerBound
-ontouml:lowerBound rdf:type owl:DatatypeProperty ;
-                   rdfs:domain ontouml:Cardinality .
+ontouml:name a owl:DatatypeProperty ;
+           rdfs:domain ontouml:OntoumlElement ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:unionOf ( xsd:string
+                                      rdf:langString )
+                      ] .
 
-
-###  https://w3id.org/ontouml/name
-ontouml:name rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/ontouml/order
-ontouml:order rdf:type owl:DatatypeProperty ;
+ontouml:order a owl:DatatypeProperty ;
               rdfs:domain ontouml:Class ;
               rdfs:range xsd:positiveInteger .
 
-
-###  https://w3id.org/ontouml/upperBound
-ontouml:upperBound rdf:type owl:DatatypeProperty ;
+ontouml:upperBound a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality .
 
-
-###  https://w3id.org/ontouml/width
-ontouml:width rdf:type owl:DatatypeProperty ;
+ontouml:width a owl:DatatypeProperty ;
               rdfs:domain ontouml:RectangularShape ;
               rdfs:range xsd:positiveInteger .
 
+ontouml:x a owl:DatatypeProperty ;
+          rdfs:domain ontouml:Point ;
+          rdfs:range xsd:decimal .
 
-###  https://w3id.org/ontouml/x
-ontouml:x rdf:type owl:DatatypeProperty ;
-          rdfs:domain ontouml:Point .
+ontouml:y a owl:DatatypeProperty ;
+          rdfs:domain ontouml:Point ;
+          rdfs:range xsd:decimal .
 
-
-###  https://w3id.org/ontouml/y
-ontouml:y rdf:type owl:DatatypeProperty ;
-          rdfs:domain ontouml:Point .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  https://w3id.org/ontouml/AggregationKind
-ontouml:AggregationKind rdf:type owl:Class ;
-                        owl:equivalentClass [ rdf:type owl:Class ;
+ontouml:AggregationKind a owl:Class ;
+                        owl:equivalentClass [ a owl:Class ;
                                               owl:oneOf ( ontouml:composite
                                                           ontouml:none
                                                           ontouml:shared
                                                         )
                                             ] .
 
+ontouml:Cardinality a owl:Class .
 
-###  https://w3id.org/ontouml/Cardinality
-ontouml:Cardinality rdf:type owl:Class .
-
-
-###  https://w3id.org/ontouml/Class
-ontouml:Class rdf:type owl:Class ;
+ontouml:Class a owl:Class ;
               rdfs:subClassOf ontouml:Classifier .
 
-
-###  https://w3id.org/ontouml/ClassStereotype
-ontouml:ClassStereotype rdf:type owl:Class ;
-                        owl:equivalentClass [ rdf:type owl:Class ;
-                                              owl:oneOf ( ontouml:abstract
-                                                          ontouml:category
-                                                          ontouml:collective
-                                                          ontouml:datatype
-                                                          ontouml:enumeration
-                                                          ontouml:event
-                                                          ontouml:historicalRole
-                                                          ontouml:historicalRoleMixin
-                                                          ontouml:kind
-                                                          ontouml:mixin
-                                                          ontouml:mode
-                                                          ontouml:phase
-                                                          ontouml:phaseMixin
-                                                          ontouml:quality
-                                                          ontouml:quantity
-                                                          ontouml:relator
-                                                          ontouml:role
-                                                          ontouml:roleMixin
-                                                          ontouml:situation
-                                                          ontouml:subkind
-                                                          ontouml:type
-                                                        )
-                                            ] ;
+ontouml:ClassStereotype a owl:Class ;
                         rdfs:subClassOf ontouml:Stereotype .
 
-
-###  https://w3id.org/ontouml/ClassView
-ontouml:ClassView rdf:type owl:Class ;
+ontouml:ClassView a owl:Class ;
                   rdfs:subClassOf ontouml:NodeView .
 
+ontouml:Classifier a owl:Class ;
+                   rdfs:subClassOf ontouml:Decoratable .
 
-###  https://w3id.org/ontouml/Classifier
-ontouml:Classifier rdf:type owl:Class ;
-                   rdfs:subClassOf ontouml:ModelElement .
-
-
-###  https://w3id.org/ontouml/ConnectorView
-ontouml:ConnectorView rdf:type owl:Class ;
+ontouml:ConnectorView a owl:Class ;
                       rdfs:subClassOf ontouml:ElementView .
 
+ontouml:Decoratable a owl:Class ;
+                   rdfs:subClassOf ontouml:ModelElement .
 
-###  https://w3id.org/ontouml/Diagram
-ontouml:Diagram rdf:type owl:Class .
+ontouml:Diagram a owl:Class ;
+                rdfs:subClassOf ontouml:OntoumlElement .
 
+ontouml:DiagramElement a owl:Class ;
+                rdfs:subClassOf ontouml:OntoumlElement .
 
-###  https://w3id.org/ontouml/DiagramElement
-ontouml:DiagramElement rdf:type owl:Class .
-
-
-###  https://w3id.org/ontouml/ElementView
-ontouml:ElementView rdf:type owl:Class ;
+ontouml:ElementView a owl:Class ;
                     rdfs:subClassOf ontouml:DiagramElement .
 
-
-###  https://w3id.org/ontouml/Generalization
-ontouml:Generalization rdf:type owl:Class ;
+ontouml:Generalization a owl:Class ;
                        rdfs:subClassOf ontouml:ModelElement .
 
-
-###  https://w3id.org/ontouml/GeneralizationSet
-ontouml:GeneralizationSet rdf:type owl:Class ;
+ontouml:GeneralizationSet a owl:Class ;
                           rdfs:subClassOf ontouml:ModelElement .
 
-
-###  https://w3id.org/ontouml/GeneralizationSetView
-ontouml:GeneralizationSetView rdf:type owl:Class ;
+ontouml:GeneralizationSetView a owl:Class ;
                               rdfs:subClassOf ontouml:NodeView .
 
-
-###  https://w3id.org/ontouml/GeneralizationView
-ontouml:GeneralizationView rdf:type owl:Class ;
+ontouml:GeneralizationView a owl:Class ;
                            rdfs:subClassOf ontouml:ConnectorView .
 
-
-###  https://w3id.org/ontouml/Literal
-ontouml:Literal rdf:type owl:Class ;
+ontouml:Literal a owl:Class ;
                 rdfs:subClassOf ontouml:ModelElement .
 
+ontouml:ModelElement a owl:Class ;
+                     rdfs:subClassOf ontouml:OntoumlElement .
 
-###  https://w3id.org/ontouml/ModelElement
-ontouml:ModelElement rdf:type owl:Class .
-
-
-###  https://w3id.org/ontouml/NodeView
-ontouml:NodeView rdf:type owl:Class ;
+ontouml:NodeView a owl:Class ;
                  rdfs:subClassOf ontouml:ElementView .
 
-
-###  https://w3id.org/ontouml/OntologicalNature
-ontouml:OntologicalNature rdf:type owl:Class ;
-                          owl:equivalentClass [ rdf:type owl:Class ;
+ontouml:OntologicalNature a owl:Class ;
+                          owl:equivalentClass [ a owl:Class ;
                                                 owl:oneOf ( ontouml:abstractNature
                                                             ontouml:collectiveNature
                                                             ontouml:eventNature
@@ -450,325 +305,197 @@ ontouml:OntologicalNature rdf:type owl:Class ;
                                                           )
                                               ] .
 
+ontouml:OntoumlElement a owl:Class .
 
-###  https://w3id.org/ontouml/Package
-ontouml:Package rdf:type owl:Class ;
+ontouml:Package a owl:Class ;
                 rdfs:subClassOf ontouml:ModelElement .
 
-
-###  https://w3id.org/ontouml/PackageView
-ontouml:PackageView rdf:type owl:Class ;
+ontouml:PackageView a owl:Class ;
                     rdfs:subClassOf ontouml:NodeView .
 
-
-###  https://w3id.org/ontouml/Path
-ontouml:Path rdf:type owl:Class ;
+ontouml:Path a owl:Class ;
              rdfs:subClassOf ontouml:Shape .
 
+ontouml:Point a owl:Class .
 
-###  https://w3id.org/ontouml/Point
-ontouml:Point rdf:type owl:Class .
+ontouml:Project a owl:Class ;
+                rdfs:subClassOf ontouml:OntoumlElement .
 
+ontouml:Property a owl:Class ;
+                 rdfs:subClassOf ontouml:Decoratable .
 
-###  https://w3id.org/ontouml/Project
-ontouml:Project rdf:type owl:Class .
-
-
-###  https://w3id.org/ontouml/Property
-ontouml:Property rdf:type owl:Class ;
-                 rdfs:subClassOf ontouml:ModelElement .
-
-
-###  https://w3id.org/ontouml/PropertyStereotype
-ontouml:PropertyStereotype rdf:type owl:Class ;
+ontouml:PropertyStereotype a owl:Class ;
                            rdfs:subClassOf ontouml:Stereotype .
 
-
-###  https://w3id.org/ontouml/Rectangle
-ontouml:Rectangle rdf:type owl:Class ;
+ontouml:Rectangle a owl:Class ;
                   rdfs:subClassOf ontouml:RectangularShape .
 
-
-###  https://w3id.org/ontouml/RectangularShape
-ontouml:RectangularShape rdf:type owl:Class ;
+ontouml:RectangularShape a owl:Class ;
                          rdfs:subClassOf ontouml:Shape .
 
-
-###  https://w3id.org/ontouml/Relation
-ontouml:Relation rdf:type owl:Class ;
+ontouml:Relation a owl:Class ;
                  rdfs:subClassOf ontouml:Classifier .
 
-
-###  https://w3id.org/ontouml/RelationStereotype
-ontouml:RelationStereotype rdf:type owl:Class ;
+ontouml:RelationStereotype a owl:Class ;
                            rdfs:subClassOf ontouml:Stereotype .
 
-
-###  https://w3id.org/ontouml/RelationView
-ontouml:RelationView rdf:type owl:Class ;
+ontouml:RelationView a owl:Class ;
                      rdfs:subClassOf ontouml:ConnectorView .
 
-
-###  https://w3id.org/ontouml/Shape
-ontouml:Shape rdf:type owl:Class ;
+ontouml:Shape a owl:Class ;
               rdfs:subClassOf ontouml:DiagramElement .
 
+ontouml:Stereotype a owl:Class .
 
-###  https://w3id.org/ontouml/Stereotype
-ontouml:Stereotype rdf:type owl:Class .
-
-
-###  https://w3id.org/ontouml/Text
-ontouml:Text rdf:type owl:Class ;
+ontouml:Text a owl:Class ;
              rdfs:subClassOf ontouml:RectangularShape .
 
 
-#################################################################
-#    Individuals
-#################################################################
+ontouml:abstract a owl:NamedIndividual ,
+                 ontouml:ClassStereotype .
 
+ontouml:abstractNature a owl:NamedIndividual ,
+                       ontouml:OntologicalNature .
 
-###  https://w3id.org/ontouml/abstract
-ontouml:abstract rdf:type owl:NamedIndividual ,
-                          ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/abstractNature
-ontouml:abstractNature rdf:type owl:NamedIndividual ,
-                                ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/begin
-ontouml:begin rdf:type owl:NamedIndividual ,
+ontouml:begin a owl:NamedIndividual ,
                        ontouml:PropertyStereotype .
 
-
-###  https://w3id.org/ontouml/category
-ontouml:category rdf:type owl:NamedIndividual ,
+ontouml:category a owl:NamedIndividual ,
                           ontouml:ClassStereotype .
 
-
-###  https://w3id.org/ontouml/characterization
-ontouml:characterization rdf:type owl:NamedIndividual ,
+ontouml:characterization a owl:NamedIndividual ,
                                   ontouml:RelationStereotype .
 
-
-###  https://w3id.org/ontouml/collective
-ontouml:collective rdf:type owl:NamedIndividual ,
+ontouml:collective a owl:NamedIndividual ,
                             ontouml:ClassStereotype .
 
-
-###  https://w3id.org/ontouml/collectiveNature
-ontouml:collectiveNature rdf:type owl:NamedIndividual ,
+ontouml:collectiveNature a owl:NamedIndividual ,
                                   ontouml:OntologicalNature .
 
-
-###  https://w3id.org/ontouml/comparative
-ontouml:comparative rdf:type owl:NamedIndividual ,
+ontouml:comparative a owl:NamedIndividual ,
                              ontouml:RelationStereotype .
 
-
-###  https://w3id.org/ontouml/componentOf
-ontouml:componentOf rdf:type owl:NamedIndividual ,
+ontouml:componentOf a owl:NamedIndividual ,
                              ontouml:RelationStereotype .
 
-
-###  https://w3id.org/ontouml/composite
-ontouml:composite rdf:type owl:NamedIndividual ,
+ontouml:composite a owl:NamedIndividual ,
                            ontouml:AggregationKind .
 
-
-###  https://w3id.org/ontouml/datatype
-ontouml:datatype rdf:type owl:NamedIndividual ,
+ontouml:datatype a owl:NamedIndividual ,
                           ontouml:ClassStereotype .
 
-
-###  https://w3id.org/ontouml/end
-ontouml:end rdf:type owl:NamedIndividual ,
+ontouml:end a owl:NamedIndividual ,
                      ontouml:PropertyStereotype .
 
-
-###  https://w3id.org/ontouml/enumeration
-ontouml:enumeration rdf:type owl:NamedIndividual ,
+ontouml:enumeration a owl:NamedIndividual ,
                              ontouml:ClassStereotype .
 
-
-###  https://w3id.org/ontouml/event
-ontouml:event rdf:type owl:NamedIndividual ,
+ontouml:event a owl:NamedIndividual ,
                        ontouml:ClassStereotype .
 
-
-###  https://w3id.org/ontouml/eventNature
-ontouml:eventNature rdf:type owl:NamedIndividual ,
+ontouml:eventNature a owl:NamedIndividual ,
                              ontouml:OntologicalNature .
 
-
-###  https://w3id.org/ontouml/externalDependency
-ontouml:externalDependency rdf:type owl:NamedIndividual ,
+ontouml:externalDependency a owl:NamedIndividual ,
                                     ontouml:RelationStereotype .
 
-
-###  https://w3id.org/ontouml/extrinsicModeNature
-ontouml:extrinsicModeNature rdf:type owl:NamedIndividual ,
-                                     ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/functionalComplexNature
-ontouml:functionalComplexNature rdf:type owl:NamedIndividual ,
-                                         ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/historicalDependence
-ontouml:historicalDependence rdf:type owl:NamedIndividual ,
-                                      ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/historicalRole
-ontouml:historicalRole rdf:type owl:NamedIndividual ,
-                                ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/historicalRoleMixin
-ontouml:historicalRoleMixin rdf:type owl:NamedIndividual ,
-                                     ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/intrinsicModeNature
-ontouml:intrinsicModeNature rdf:type owl:NamedIndividual ,
-                                     ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/kind
-ontouml:kind rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/material
-ontouml:material rdf:type owl:NamedIndividual ,
-                          ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/mediation
-ontouml:mediation rdf:type owl:NamedIndividual ,
-                           ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/memberOf
-ontouml:memberOf rdf:type owl:NamedIndividual ,
-                          ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/mixin
-ontouml:mixin rdf:type owl:NamedIndividual ,
-                       ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/mode
-ontouml:mode rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/none
-ontouml:none rdf:type owl:NamedIndividual ,
-                      ontouml:AggregationKind .
-
-
-###  https://w3id.org/ontouml/participation
-ontouml:participation rdf:type owl:NamedIndividual ,
-                               ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/participational
-ontouml:participational rdf:type owl:NamedIndividual ,
-                                 ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/phase
-ontouml:phase rdf:type owl:NamedIndividual ,
-                       ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/phaseMixin
-ontouml:phaseMixin rdf:type owl:NamedIndividual ,
-                            ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/quality
-ontouml:quality rdf:type owl:NamedIndividual ,
-                         ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/qualityNature
-ontouml:qualityNature rdf:type owl:NamedIndividual ,
-                               ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/quantity
-ontouml:quantity rdf:type owl:NamedIndividual ,
-                          ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/quantityNature
-ontouml:quantityNature rdf:type owl:NamedIndividual ,
-                                ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/relator
-ontouml:relator rdf:type owl:NamedIndividual ,
-                         ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/relatorNature
-ontouml:relatorNature rdf:type owl:NamedIndividual ,
-                               ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/role
-ontouml:role rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/roleMixin
-ontouml:roleMixin rdf:type owl:NamedIndividual ,
-                           ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/shared
-ontouml:shared rdf:type owl:NamedIndividual ,
-                        ontouml:AggregationKind .
-
-
-###  https://w3id.org/ontouml/situation
-ontouml:situation rdf:type owl:NamedIndividual ,
-                           ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/situationNature
-ontouml:situationNature rdf:type owl:NamedIndividual ,
-                                 ontouml:OntologicalNature .
-
-
-###  https://w3id.org/ontouml/subCollectionOf
-ontouml:subCollectionOf rdf:type owl:NamedIndividual ,
-                                 ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/subQuantityOf
-ontouml:subQuantityOf rdf:type owl:NamedIndividual ,
-                               ontouml:RelationStereotype .
-
-
-###  https://w3id.org/ontouml/subkind
-ontouml:subkind rdf:type owl:NamedIndividual ,
-                         ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/type
-ontouml:type rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype .
-
-
-###  https://w3id.org/ontouml/typeNature
-ontouml:typeNature rdf:type owl:NamedIndividual ,
+ontouml:extrinsicModeNature a owl:NamedIndividual ,
                             ontouml:OntologicalNature .
 
+ontouml:functionalComplexNature a owl:NamedIndividual ,
+                                ontouml:OntologicalNature .
+
+ontouml:historicalDependence a owl:NamedIndividual ,
+                             ontouml:RelationStereotype .
+
+ontouml:historicalRole a owl:NamedIndividual ,
+                                ontouml:ClassStereotype .
+
+ontouml:historicalRoleMixin a owl:NamedIndividual ,
+                                     ontouml:ClassStereotype .
+
+ontouml:intrinsicModeNature a owl:NamedIndividual ,
+                                     ontouml:OntologicalNature .
+
+ontouml:kind a owl:NamedIndividual ,
+                      ontouml:ClassStereotype .
+
+ontouml:material a owl:NamedIndividual ,
+                          ontouml:RelationStereotype .
+
+ontouml:mediation a owl:NamedIndividual ,
+                           ontouml:RelationStereotype .
+
+ontouml:memberOf a owl:NamedIndividual ,
+                          ontouml:RelationStereotype .
+
+ontouml:mixin a owl:NamedIndividual ,
+                       ontouml:ClassStereotype .
+
+ontouml:mode a owl:NamedIndividual ,
+                      ontouml:ClassStereotype .
+
+ontouml:none a owl:NamedIndividual ,
+             ontouml:AggregationKind .
+
+ontouml:participation a owl:NamedIndividual ,
+                      ontouml:RelationStereotype .
+
+ontouml:participational a owl:NamedIndividual ,
+                        ontouml:RelationStereotype .
+
+ontouml:phase a owl:NamedIndividual ,
+              ontouml:ClassStereotype .
+
+ontouml:phaseMixin a owl:NamedIndividual ,
+                   ontouml:ClassStereotype .
+
+ontouml:quality a owl:NamedIndividual ,
+                ontouml:ClassStereotype .
+
+ontouml:qualityNature a owl:NamedIndividual ,
+                      ontouml:OntologicalNature .
+
+ontouml:quantity a owl:NamedIndividual ,
+                 ontouml:ClassStereotype .
+
+ontouml:quantityNature a owl:NamedIndividual ,
+                       ontouml:OntologicalNature .
+
+ontouml:relator a owl:NamedIndividual ,
+                ontouml:ClassStereotype .
+
+ontouml:relatorNature a owl:NamedIndividual ,
+                      ontouml:OntologicalNature .
+
+ontouml:role a owl:NamedIndividual ,
+             ontouml:ClassStereotype .
+
+ontouml:roleMixin a owl:NamedIndividual ,
+                  ontouml:ClassStereotype .
+
+ontouml:shared a owl:NamedIndividual ,
+               ontouml:AggregationKind .
+
+ontouml:situation a owl:NamedIndividual ,
+                  ontouml:ClassStereotype .
+
+ontouml:situationNature a owl:NamedIndividual ,
+                        ontouml:OntologicalNature .
+
+ontouml:subCollectionOf a owl:NamedIndividual ,
+                        ontouml:RelationStereotype .
+
+ontouml:subQuantityOf a owl:NamedIndividual ,
+                      ontouml:RelationStereotype .
+
+ontouml:subkind a owl:NamedIndividual ,
+                         ontouml:ClassStereotype .
+
+ontouml:type a owl:NamedIndividual ,
+             ontouml:ClassStereotype .
+
+ontouml:typeNature a owl:NamedIndividual ,
+                   ontouml:OntologicalNature .
+
+rdf:langString a rdfs:Datatype .
