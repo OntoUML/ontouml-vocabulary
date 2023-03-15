@@ -1,6 +1,6 @@
 # OntoUML Metamodel Vocabulary
 
-An implementation of the OntoUML metamodel in the Web Ontology Language compliant with [ontouml-js](https://github.com/OntoUML/ontouml-js) and the [ontouml-schema](https://github.com/OntoUML/ontouml-schema). 
+An implementation of the OntoUML metamodel in the Web Ontology Language compliant with the [ontouml-js](https://github.com/OntoUML/ontouml-js) and the [ontouml-schema](https://github.com/OntoUML/ontouml-schema). 
 
 This vocabulary support the serialization, exchange, and publishing of OntoUML models as linked data. 
 
