@@ -25,7 +25,7 @@
                            dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
                            dct:issued "2022-04-03"^^xsd:date ;
                            dct:modified "2023-03-14"^^xsd:date ;
-                           dct:language: <http://id.loc.gov/vocabulary/iso639-1/en>;
+                           dct:language: "en" ;
                            dcat:keyword "OntoUML"@en, "Metamodel"@en, "Ontology-Driven Conceptual Modeling"@en ;
                            dct:isReferencedBy <https://doi.org/10.1007/978-3-031-17995-2_1> ,
                                                <https://dblp.org/rec/conf/jowo/FonsecaSVFGA21.html> ;
