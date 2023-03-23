@@ -90,7 +90,8 @@ ontouml:point a owl:ObjectProperty ;
 
 ontouml:property a owl:ObjectProperty ;
                  rdfs:domain ontouml:Classifier ;
-                 rdfs:range ontouml:Property .
+                 rdfs:range ontouml:Property ;
+                 rdfs:comment "Identifies a property exhibited by instances of the classifier. If the classifier is a class, the property is an attribute. If the classifier is a relation, the property is a relation end."@en .
 
 ontouml:propertyType a owl:ObjectProperty ;
                      rdfs:domain ontouml:Property ;
@@ -107,7 +108,8 @@ ontouml:relationEnd a owl:ObjectProperty ;
 
 ontouml:restrictedTo a owl:ObjectProperty ;
                      rdfs:domain ontouml:Class ;
-                     rdfs:range ontouml:OntologicalNature .
+                     rdfs:range ontouml:OntologicalNature ;
+                     rdfs:comment "Identifies an ontological nature that the instances of the class may have."@en .
 
 ontouml:shape a owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
@@ -128,7 +130,8 @@ ontouml:specific a owl:ObjectProperty ;
 
 ontouml:stereotype a owl:ObjectProperty ;
                    rdfs:domain ontouml:Decoratable ;
-                   rdfs:range ontouml:Stereotype .
+                   rdfs:range ontouml:Stereotype ;
+                   rdfs:comment "Identifies the stereotype applied to the decoratable."@en .
 
 ontouml:subsetsProperty a owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
@@ -163,23 +166,22 @@ ontouml:height a owl:DatatypeProperty ;
 
 ontouml:id a owl:DatatypeProperty ;
            rdfs:domain ontouml:OntoumlElement ;
-           rdfs:range xsd:string .
+           rdfs:range xsd:string ;
+           rdfs:comment "A non-empty string that uniquely identifies an object of a given type (e.g. ontouml:Class, ontouml:Relation) in a project."@en .
 
 ontouml:isAbstract a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Classifier ;
-                   rdfs:range xsd:boolean .
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Identifies if the classifier can have direct instances. If set to true, the classifier must be specialized before being instantiated. Otherwise, it can have direct instances."@en .
 
 ontouml:isComplete a owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean .
 
 ontouml:isDerived a owl:DatatypeProperty ;
-                  rdfs:domain [ a owl:Class ;
-                                owl:unionOf ( ontouml:Classifier
-                                              ontouml:Property
-                                            )
-                              ] ;
-                  rdfs:range xsd:boolean .
+                  rdfs:domain ontouml:Decoratable ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "Identifies if the extension of the classifier or the value of a property can be \"computed\" by means of a derivation rule. For instance, the class Child can be modelled as a derived class if defined as a person whose age is less or equal to 10."@en .
 
 ontouml:isDisjoint a owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
@@ -187,7 +189,8 @@ ontouml:isDisjoint a owl:DatatypeProperty ;
 
 ontouml:isExtensional a owl:DatatypeProperty ;
                       rdfs:domain ontouml:Class ;
-                      rdfs:range xsd:boolean .
+                      rdfs:range xsd:boolean ;
+                      rdfs:comment "Identifies if a class decorated as «collective» is extensionally defined (i.e., it's parts cannot change)."@en .
 
 ontouml:isOrdered a owl:DatatypeProperty ;
                   rdfs:domain ontouml:Property ;
@@ -195,7 +198,11 @@ ontouml:isOrdered a owl:DatatypeProperty ;
 
 ontouml:isPowertype a owl:DatatypeProperty ;
                     rdfs:domain ontouml:Class ;
-                    rdfs:range xsd:boolean .
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment """Identifies if a class decorated as «type» is a powertype in the sense of Cardelli (1988).
+                    
+                    Cardelli, L.: Structural subtyping and the notion of power type. In: 15th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages. pp. 70–79 (1988). https://doi.org/10.1145/73560.73566
+                    """@en .
 
 ontouml:isReadOnly a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Property ;
@@ -214,7 +221,8 @@ ontouml:name a owl:DatatypeProperty ;
 
 ontouml:order a owl:DatatypeProperty ;
               rdfs:domain ontouml:Class ;
-              rdfs:range xsd:positiveInteger .
+              rdfs:range xsd:positiveInteger ;
+              rdfs:comment "Identifies the type-order of a class decorated as «type». Its minimum value is \"2\". Orderless types are represented with \"*\"."@en .
 
 ontouml:upperBound a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality .
