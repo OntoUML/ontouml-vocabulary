@@ -33,15 +33,18 @@
 ontouml:aggregationKind a owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:AggregationKind .
+                        
 
 ontouml:attribute a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:property ;
                   rdfs:domain ontouml:Class ;
-                  rdfs:range ontouml:Property .
+                  rdfs:range ontouml:Property ;
+                  rdfs:comment "What is used to determine a model element property."@en .
 
 ontouml:cardinality a owl:ObjectProperty ;
                     rdfs:domain ontouml:Property ;
-                    rdfs:range ontouml:Cardinality .
+                    rdfs:range ontouml:Cardinality ;
+                    rdfs:comment "The cardinalities associated to a given property. E.g. the number of elements allowed by the domain and/or range of that property."@en .
 
 ontouml:categorizer a owl:ObjectProperty ;
                     rdfs:domain ontouml:GeneralizationSet ;
@@ -49,27 +52,33 @@ ontouml:categorizer a owl:ObjectProperty ;
 
 ontouml:containsModelElement a owl:ObjectProperty ;
                              rdfs:domain ontouml:Package ;
-                             rdfs:range ontouml:ModelElement .
+                             rdfs:range ontouml:ModelElement ;
+                             rdfs:comment "Provides the elements contained by a given package, in a given model. A model element is an elementary component of a model. It will be created when you create a shape on a diagram. An example of model element is actor."@en .
 
 ontouml:containsView a owl:ObjectProperty ;
                      rdfs:domain ontouml:Diagram ;
-                     rdfs:range ontouml:ElementView .
+                     rdfs:range ontouml:ElementView ;
+                     rdfs:comment "Provides the views contained by a model. A view is created whenever a model element is used in a different model diagram."@en .
 
 ontouml:diagram a owl:ObjectProperty ;
                 rdfs:domain ontouml:Project ;
-                rdfs:range ontouml:Diagram .
+                rdfs:range ontouml:Diagram ;
+                rdfs:comment "Provides the diagrams used to visually represent the model."@en .
 
 ontouml:general a owl:ObjectProperty ;
                 rdfs:domain ontouml:Generalization ;
-                rdfs:range ontouml:Classifier .
+                rdfs:range ontouml:Classifier ;
+                rdfs:comment "Points to the target node of a generalization relation, namely it is used to link a generalization relation to the corresponding parent class."@en .
 
 ontouml:generalization a owl:ObjectProperty ;
                        rdfs:domain ontouml:GeneralizationSet ;
-                       rdfs:range ontouml:Generalization .
+                       rdfs:range ontouml:Generalization ;
+                       rdfs:comment "The relations used to associate a sublcass to its parent class, usually to be associated with a generalization set."@en .
 
 ontouml:isViewOf a owl:ObjectProperty ;
                  rdfs:domain ontouml:ElementView ;
-                 rdfs:range ontouml:ModelElement .
+                 rdfs:range ontouml:ModelElement ;
+                 rdfs:comment "Used to specify whether an element in a diagram is a view of a model element."@en .
 
 ontouml:literal a owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
@@ -77,7 +86,8 @@ ontouml:literal a owl:ObjectProperty ;
 
 ontouml:model a owl:ObjectProperty ;
               rdfs:domain ontouml:Project ;
-              rdfs:range ontouml:Package .
+              rdfs:range ontouml:Package ;
+              rdfs:comment "A component that can be created in a project to organize shapes and diagrams which acts like a folder."@en .
 
 ontouml:owner a owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
@@ -103,8 +113,9 @@ ontouml:redefinesProperty a owl:ObjectProperty ;
 ontouml:relationEnd a owl:ObjectProperty ;
                     rdfs:subPropertyOf ontouml:property ;
                     rdfs:domain ontouml:Relation ;
-                    rdfs:range ontouml:Property .
-
+                    rdfs:range ontouml:Property ;
+                    rdfs:comment "Determines the target of a given relation."@en .
+                    
 ontouml:restrictedTo a owl:ObjectProperty ;
                      rdfs:domain ontouml:Class ;
                      rdfs:range ontouml:OntologicalNature ;
@@ -112,12 +123,15 @@ ontouml:restrictedTo a owl:ObjectProperty ;
 
 ontouml:shape a owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
-              rdfs:range ontouml:Shape .
+              rdfs:range ontouml:Shape ;
+              rdfs:comment "Identifies the shape used to represent a model element."@en .
 
 ontouml:sourceEnd a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
-                  rdfs:range ontouml:Property .
+                  rdfs:range ontouml:Property ;
+                  rdfs:comment "Identifies the source class associated to a given relation."@en .
+                  
 
 ontouml:sourceView a owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
@@ -125,7 +139,8 @@ ontouml:sourceView a owl:ObjectProperty ;
 
 ontouml:specific a owl:ObjectProperty ;
                  rdfs:domain ontouml:Generalization ;
-                 rdfs:range ontouml:Classifier .
+                 rdfs:range ontouml:Classifier ;
+                 rdfs:comment "Points to the source node of a generalization relation, namely it is used to link a generalization relation to the corresponding subclass."@en .
 
 ontouml:stereotype a owl:ObjectProperty ;
                    rdfs:domain ontouml:Decoratable ;
@@ -139,7 +154,8 @@ ontouml:subsetsProperty a owl:ObjectProperty ;
 ontouml:targetEnd a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
-                  rdfs:range ontouml:Property .
+                  rdfs:range ontouml:Property ;
+                  rdfs:comment "Identifies the target class associated to a given relation."@en .
 
 ontouml:targetView a owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
@@ -150,14 +166,16 @@ ontouml:topLeftPosition a owl:ObjectProperty ;
                         rdfs:range ontouml:Point .
 
 ontouml:cardinalityValue a owl:DatatypeProperty ;
-                         rdfs:domain ontouml:Cardinality .
+                         rdfs:domain ontouml:Cardinality ;
+                         rdfs:comment "Identifies the values used to specify the cardinality constraints of a given relation."@en .
 
 ontouml:description a owl:DatatypeProperty ;
                     rdfs:domain ontouml:OntoumlElement ;
                     rdfs:range [ rdf:type rdfs:Datatype ;
                                  owl:unionOf ( xsd:string
                                                rdf:langString )
-                               ] .
+                               ] ;
+                    rdfs:comment "A non-empty nullable string representing the description of the object in free textual format."@en .
 
 ontouml:height a owl:DatatypeProperty ;
                rdfs:domain ontouml:RectangularShape ;
@@ -175,7 +193,8 @@ ontouml:isAbstract a owl:DatatypeProperty ;
 
 ontouml:isComplete a owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
-                   rdfs:range xsd:boolean .
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Describes if a generalization set is complete, namely it does not admit further generalizations."@en .
 
 ontouml:isDerived a owl:DatatypeProperty ;
                   rdfs:domain ontouml:Decoratable ;
@@ -184,7 +203,8 @@ ontouml:isDerived a owl:DatatypeProperty ;
 
 ontouml:isDisjoint a owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
-                   rdfs:range xsd:boolean .
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Describes if a generalization set is disjoint, namely it does not admit generalizations having overlapping subclasses."@en .
 
 ontouml:isExtensional a owl:DatatypeProperty ;
                       rdfs:domain ontouml:Class ;
@@ -209,14 +229,16 @@ ontouml:isReadOnly a owl:DatatypeProperty ;
 
 ontouml:lowerBound a owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality ;
-                   rdfs:range xsd:positiveInteger .
+                   rdfs:range xsd:positiveInteger ;
+                   rdfs:comment "Identifies the lower bound of some cardinalities values. E.g., if the cardinality set is [1..*] then the lower bound is 1."@en .
 
 ontouml:name a owl:DatatypeProperty ;
            rdfs:domain ontouml:OntoumlElement ;
            rdfs:range [ rdf:type rdfs:Datatype ;
                         owl:unionOf ( xsd:string
                                       rdf:langString )
-                      ] .
+                      ] ;
+                      rdfs:comment "A non-empty nullable string containing the object's name. It is allowed for two objects of the ontology to have identical names, even if they are of the same type."@en .
 
 ontouml:order a owl:DatatypeProperty ;
               rdfs:domain ontouml:Class ;
@@ -224,7 +246,8 @@ ontouml:order a owl:DatatypeProperty ;
               rdfs:comment "Identifies the type-order of a class decorated as «type». Its minimum value is \"2\". Orderless types are represented with \"*\"."@en .
 
 ontouml:upperBound a owl:DatatypeProperty ;
-                   rdfs:domain ontouml:Cardinality .
+                   rdfs:domain ontouml:Cardinality ;
+                   rdfs:comment "Identifies the upper bound of some cardinalities values. E.g., if the cardinality set is [1..*] then the upper bound is *."@en .
 
 ontouml:width a owl:DatatypeProperty ;
               rdfs:domain ontouml:RectangularShape ;
@@ -249,52 +272,66 @@ ontouml:AggregationKind a owl:Class ;
 ontouml:Cardinality a owl:Class .
 
 ontouml:Class a owl:Class ;
-              rdfs:subClassOf ontouml:Classifier .
+              rdfs:subClassOf ontouml:Classifier ;
+              rdfs:comment "An object representing a type defined in the ontology."@en .
 
 ontouml:ClassStereotype a owl:Class ;
-                        rdfs:subClassOf ontouml:Stereotype .
+                        rdfs:subClassOf ontouml:Stereotype ;
+                        rdfs:comment "A stereotype assigned to a class."@en .
 
 ontouml:ClassView a owl:Class ;
-                  rdfs:subClassOf ontouml:NodeView .
+                  rdfs:subClassOf ontouml:NodeView ;
+                  rdfs:comment "The view of a class in a given diagram of a given model."@en .
 
 ontouml:Classifier a owl:Class ;
                    rdfs:subClassOf ontouml:Decoratable .
 
 ontouml:ConnectorView a owl:Class ;
-                      rdfs:subClassOf ontouml:ElementView .
+                      rdfs:subClassOf ontouml:ElementView ;
+                      rdfs:comment "The view of a given connector ina given diagram of a given model."@en .
 
 ontouml:Decoratable a owl:Class ;
                    rdfs:subClassOf ontouml:ModelElement .
 
 ontouml:Diagram a owl:Class ;
-                rdfs:subClassOf ontouml:OntoumlElement .
+                rdfs:subClassOf ontouml:OntoumlElement ;
+                rdfs:comment "Identifies a diagram representing the model or a portion of it."@en .
 
 ontouml:DiagramElement a owl:Class ;
-                rdfs:subClassOf ontouml:OntoumlElement .
+                rdfs:subClassOf ontouml:OntoumlElement ;
+                rdfs:comment "Identifies a diagram model element."@en .
 
 ontouml:ElementView a owl:Class ;
-                    rdfs:subClassOf ontouml:DiagramElement .
+                    rdfs:subClassOf ontouml:DiagramElement ;
+                    rdfs:comment "Identifies a diagram model element view."@en .
 
 ontouml:Generalization a owl:Class ;
-                       rdfs:subClassOf ontouml:ModelElement .
+                       rdfs:subClassOf ontouml:ModelElement ;
+                       rdfs:comment "An object representing a generalization defined in the ontology."@en .
 
 ontouml:GeneralizationSet a owl:Class ;
-                          rdfs:subClassOf ontouml:ModelElement .
+                          rdfs:subClassOf ontouml:ModelElement ;
+                          rdfs:comment "An object representing a generalization set defined in the ontology."@en .
 
 ontouml:GeneralizationSetView a owl:Class ;
-                              rdfs:subClassOf ontouml:NodeView .
+                              rdfs:subClassOf ontouml:NodeView ;
+                              rdfs:comment "The view of a generalizationSet in a given diagram of a given model."@en .
 
 ontouml:GeneralizationView a owl:Class ;
-                           rdfs:subClassOf ontouml:ConnectorView .
+                           rdfs:subClassOf ontouml:ConnectorView ;
+                           rdfs:comment "The view of a generalization in a given diagram of a given model."@en .
 
 ontouml:Literal a owl:Class ;
-                rdfs:subClassOf ontouml:ModelElement .
+                rdfs:subClassOf ontouml:ModelElement ;
+                rdfs:comments "An object representing a value defined for an enumeration."@en .
 
 ontouml:ModelElement a owl:Class ;
-                     rdfs:subClassOf ontouml:OntoumlElement .
+                     rdfs:subClassOf ontouml:OntoumlElement ;
+                     rdfs:comment "Identifies a model element."@en .
 
 ontouml:NodeView a owl:Class ;
-                 rdfs:subClassOf ontouml:ElementView .
+                 rdfs:subClassOf ontouml:ElementView ;
+                 rdfs:comment "The view of a node in a given diagrapm of a given model."@en .
 
 ontouml:OntologicalNature a owl:Class ;
                           owl:equivalentClass [ a owl:Class ;
@@ -315,7 +352,8 @@ ontouml:OntologicalNature a owl:Class ;
 ontouml:OntoumlElement a owl:Class .
 
 ontouml:Package a owl:Class ;
-                rdfs:subClassOf ontouml:ModelElement .
+                rdfs:subClassOf ontouml:ModelElement ;
+                rdfs:comment "An object representing an ontology or an ontology sub-module. The package object instantiating the ontouml-schema is also referred to as root package and model, where the latter captures the notion of all container for all model elements in an ontology module."@en .
 
 ontouml:PackageView a owl:Class ;
                     rdfs:subClassOf ontouml:NodeView .
@@ -326,13 +364,16 @@ ontouml:Path a owl:Class ;
 ontouml:Point a owl:Class .
 
 ontouml:Project a owl:Class ;
-                rdfs:subClassOf ontouml:OntoumlElement .
+                rdfs:subClassOf ontouml:OntoumlElement ;
+                rdfs:comment "Identifies the project associated to a given model."@en .
 
 ontouml:Property a owl:Class ;
-                 rdfs:subClassOf ontouml:Decoratable .
+                 rdfs:subClassOf ontouml:Decoratable ;
+                 rdfs:comment "An object representing a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."@en .
 
 ontouml:PropertyStereotype a owl:Class ;
-                           rdfs:subClassOf ontouml:Stereotype .
+                           rdfs:subClassOf ontouml:Stereotype ;
+                           rdfs:comment "A stereotype assigned to a property."@en .
 
 ontouml:Rectangle a owl:Class ;
                   rdfs:subClassOf ontouml:RectangularShape .
@@ -341,10 +382,12 @@ ontouml:RectangularShape a owl:Class ;
                          rdfs:subClassOf ontouml:Shape .
 
 ontouml:Relation a owl:Class ;
-                 rdfs:subClassOf ontouml:Classifier .
+                 rdfs:subClassOf ontouml:Classifier ;
+                 rdfs:comment "An object representing a relation defined in the ontology."@en .
 
 ontouml:RelationStereotype a owl:Class ;
-                           rdfs:subClassOf ontouml:Stereotype .
+                           rdfs:subClassOf ontouml:Stereotype ;
+                           rdfs:comment "A stereotype assigned to a relation."@en .
 
 ontouml:RelationView a owl:Class ;
                      rdfs:subClassOf ontouml:ConnectorView .
@@ -352,11 +395,11 @@ ontouml:RelationView a owl:Class ;
 ontouml:Shape a owl:Class ;
               rdfs:subClassOf ontouml:DiagramElement .
 
-ontouml:Stereotype a owl:Class .
+ontouml:Stereotype a owl:Class ;
+              rdfs:comment "A non-empty array of non-empty strings representing stereotypes of its container object."@en .
 
 ontouml:Text a owl:Class ;
              rdfs:subClassOf ontouml:RectangularShape .
-
 
 ontouml:abstract a owl:NamedIndividual ,
                  ontouml:ClassStereotype .
@@ -368,13 +411,19 @@ ontouml:begin a owl:NamedIndividual ,
                        ontouml:PropertyStereotype .
 
 ontouml:category a owl:NamedIndividual ,
-                          ontouml:ClassStereotype .
-
+                          ontouml:ClassStereotype ;
+                          rdfs:comment "A rigid mixin that does not require a dependency to be specified. It is used to aggregate essential properties to individuals which following different identity principles."@en ;
+                          dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html>.
+ 
 ontouml:characterization a owl:NamedIndividual ,
-                                  ontouml:RelationStereotype .
+                                  ontouml:RelationStereotype ;
+                                  rdfs:comment "A relation between a bearer type and its feature. Feature is intrinsic (inherent) moment of its bearer type, and thus existentially dependent on the bearer. Feature may be stereotyped as Quality or Mode. Feature characterizes a bearer type iff every instance of bearer exemplifies the feature."@en ;
+                                  dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html> .
 
 ontouml:collective a owl:NamedIndividual ,
-                            ontouml:ClassStereotype .
+                            ontouml:ClassStereotype ;
+                            rdfs:comment "A construct used to represent rigid concepts that provide an identity principle for their instances. The main characteristic of a Collective is that it has an homogenous internal structure, i.e., all parts are perceived in the same way by the whole (see the MemberOf relation for more details about members of collections)."@en ;
+                            dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/collective/index.html> .
 
 ontouml:collectiveNature a owl:NamedIndividual ,
                                   ontouml:OntologicalNature .
@@ -383,37 +432,48 @@ ontouml:comparative a owl:NamedIndividual ,
                              ontouml:RelationStereotype .
 
 ontouml:componentOf a owl:NamedIndividual ,
-                             ontouml:RelationStereotype .
+                             ontouml:RelationStereotype ;
+                             rdfs:comment "A parthood relation between two complexes."@en ;
+                             dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/componentOf/index.html> .
 
 ontouml:composite a owl:NamedIndividual ,
                            ontouml:AggregationKind .
 
 ontouml:datatype a owl:NamedIndividual ,
-                          ontouml:ClassStereotype .
+                          ontouml:ClassStereotype ;
+                          rdfs:comment "A classification that specifies which type of value a variable has and what type of mathematical, relational or logical operations can be applied to it without causing an error."@en .
 
 ontouml:end a owl:NamedIndividual ,
                      ontouml:PropertyStereotype .
 
 ontouml:enumeration a owl:NamedIndividual ,
-                             ontouml:ClassStereotype .
+                             ontouml:ClassStereotype ;
+                             rdfs:comment "A class represented with the enumeration stereotype having values represented using the field literals."@en .
 
 ontouml:event a owl:NamedIndividual ,
-                       ontouml:ClassStereotype .
+                       ontouml:ClassStereotype ;
+                       rdfs:comment "Things that happen to or are performed by endurants (Casati and Varzi, 2015)."@en ;
+                       dcat:landingPage <https://plato.stanford.edu/archives/win2015/entries/events/> .
 
 ontouml:eventNature a owl:NamedIndividual ,
                              ontouml:OntologicalNature .
 
 ontouml:externalDependency a owl:NamedIndividual ,
-                                    ontouml:RelationStereotype .
+                                    ontouml:RelationStereotype ;
+                                    rdfs:comment "Identifies an endurant on which the extrinsicMode depends."@en ;
+                                    dcat:landingPage <https://nemo-ufes.github.io/gufo/#externallyDependsOn> .
 
 ontouml:extrinsicModeNature a owl:NamedIndividual ,
-                            ontouml:OntologicalNature .
+                            ontouml:OntologicalNature ;
+                            rdfs:comment "Identifies what inheres in a concrete individual and depends on others for its existence."@en .
 
 ontouml:functionalComplexNature a owl:NamedIndividual ,
-                                ontouml:OntologicalNature .
+                                ontouml:OntologicalNature ;
+                                rdfs:comment "Identifies the nature of a complex object whose parts (components) play different roles in its composition."@en .
 
 ontouml:historicalDependence a owl:NamedIndividual ,
-                             ontouml:RelationStereotype .
+                             ontouml:RelationStereotype ;
+                             rdfs:comment "Identifies a concrete individual on which another concrete individual depends historically."@en .
 
 ontouml:historicalRole a owl:NamedIndividual ,
                                 ontouml:ClassStereotype .
@@ -425,79 +485,114 @@ ontouml:intrinsicModeNature a owl:NamedIndividual ,
                                      ontouml:OntologicalNature .
 
 ontouml:kind a owl:NamedIndividual ,
-                      ontouml:ClassStereotype .
+                      ontouml:ClassStereotype ;
+                      rdfs:comment "A construct to be used in most of your models. It is used to represent rigid concepts that provide an identity principle for their instances and do not require a relational dependency. A Kind represent a Functional Complex, i.e., a whole that has parts contributing in different ways for its functionality (see the ComponentOf relation for more details about functional parts)."@en ;
+                      dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html> .
 
 ontouml:material a owl:NamedIndividual ,
-                          ontouml:RelationStereotype .
+                          ontouml:RelationStereotype ;
+                          rdfs:comment "Identifies relations that have material structure on their own and include examples such as employments, kisses, enrollments, flight, connections and commitments. The relata of a material relation are mediated by individuals that are called relators."@en ;
+                          dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/material/index.html> .
 
 ontouml:mediation a owl:NamedIndividual ,
-                           ontouml:RelationStereotype .
+                           ontouml:RelationStereotype ;
+                           rdfs:comment "a type of existential dependence relation (a form of nonfunctional inherence). It can be derived from the relation between the relata and the qua individiuals that compose the relator and that inhere in the relata."@en ;
+                           dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/mediation/index.html> .
 
 ontouml:memberOf a owl:NamedIndividual ,
-                          ontouml:RelationStereotype .
+                          ontouml:RelationStereotype ;
+                          rdfs:comment "A parthood relation between a functional complex or a Collective (as a part) and a Collective (as a whole)."@en ;
+                          dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/memberOf/index.html> .
 
 ontouml:mixin a owl:NamedIndividual ,
-                       ontouml:ClassStereotype .
+                       ontouml:ClassStereotype ;
+                       rdfs:comment "A Mixin is a semi-rigid type, i.e., it behaves as a rigid type for some individuals and as an anti-rigid one for others (it’s the only stereotype with such feature in OntoUML)."@en ;
+                       dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/mixin/index.html> .
 
 ontouml:mode a owl:NamedIndividual ,
-                      ontouml:ClassStereotype .
+                      ontouml:ClassStereotype ;
+                      rdfs:comment "A particular type of intrinsic property that has no structured value."@en ;
+                      dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html> .
 
 ontouml:none a owl:NamedIndividual ,
              ontouml:AggregationKind .
 
 ontouml:participation a owl:NamedIndividual ,
-                      ontouml:RelationStereotype .
+                      ontouml:RelationStereotype ;
+                      rdfs:comment "A relations for representing when an event that depends on a single object."@en .
 
 ontouml:participational a owl:NamedIndividual ,
                         ontouml:RelationStereotype .
 
 ontouml:phase a owl:NamedIndividual ,
-              ontouml:ClassStereotype .
+              ontouml:ClassStereotype ;
+              rdfs:comment "Stereotype is used to represent anti-rigid subtypes of identity providers (Kind, Collective, Quantity, Relator, Mode and Quantity) that are instantiated by changes in intrinsic properties (e.g. the age of a person, the color of an object, the condition of a car). All instances of a particular Phase must follow the same identity principle. Phases always come in partitions."@en ;
+              dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/phase/index.html> .
 
 ontouml:phaseMixin a owl:NamedIndividual ,
-                   ontouml:ClassStereotype .
+                   ontouml:ClassStereotype ;
+                   rdfs:comment "The equivalent of Phase for types that aggregate instances with different identity principles. A class stereotyped as PhaseMixin is also an anti-rigid type. PhaseMixin is similar semantically to RoleMixin with the difference in relational dependency."@en ;
+                   dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/phasemixin/index.html> .
 
 ontouml:quality a owl:NamedIndividual ,
-                ontouml:ClassStereotype .
+                ontouml:ClassStereotype ;
+                rdfs:comment "A Quality is a particular type of intrinsic property which has a structured value. Qualities are things that are existentially dependent on the things they characterize, called their bearers."@en ;
+                dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/aspects/quality/index.html> .
 
 ontouml:qualityNature a owl:NamedIndividual ,
                       ontouml:OntologicalNature .
 
 ontouml:quantity a owl:NamedIndividual ,
-                 ontouml:ClassStereotype .
+                 ontouml:ClassStereotype ;
+                 rdfs:comment "Construct used to represent rigid concepts that provide an identity principle for their instances."@en ;
+                 dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/quantity/index.html> .
+
 
 ontouml:quantityNature a owl:NamedIndividual ,
                        ontouml:OntologicalNature .
 
 ontouml:relator a owl:NamedIndividual ,
-                ontouml:ClassStereotype .
+                ontouml:ClassStereotype ;
+                rdfs:comment "A construct used to represent truth-makers of material relations, i.e., the things that must exist in order for two or more individuals to be connected by material relations."@en ;
+                dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html> .
 
 ontouml:relatorNature a owl:NamedIndividual ,
                       ontouml:OntologicalNature .
 
 ontouml:role a owl:NamedIndividual ,
-             ontouml:ClassStereotype .
+             ontouml:ClassStereotype ;
+             rdfs:comment "A construct used to represent anti-rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode and Quantity) that are instantiated in relational contexts."@en ;
+             dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html> .
 
 ontouml:roleMixin a owl:NamedIndividual ,
-                  ontouml:ClassStereotype .
+                  ontouml:ClassStereotype ;
+                  rdfs:comment "The equivalent of Role for types that aggregate instances with different identity principles."@en ;
+                  dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html> .
 
 ontouml:shared a owl:NamedIndividual ,
                ontouml:AggregationKind .
 
 ontouml:situation a owl:NamedIndividual ,
-                  ontouml:ClassStereotype .
+                  ontouml:ClassStereotype ;
+                  rdfs:comment "Can be used to represent certain configurations of entities that can be comprehended as a whole."@en .
 
 ontouml:situationNature a owl:NamedIndividual ,
                         ontouml:OntologicalNature .
 
 ontouml:subCollectionOf a owl:NamedIndividual ,
-                        ontouml:RelationStereotype .
+                        ontouml:RelationStereotype ;
+                        rdfs:comment "Parthood relation between two collectives."@en ;
+                        dcat:landingpage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subCollectionOf/index.html> .
 
 ontouml:subQuantityOf a owl:NamedIndividual ,
-                      ontouml:RelationStereotype .
+                      ontouml:RelationStereotype ;
+                      rdfs:comment "A parthood relation between two quantities."@en ;
+                      dcat:landingpage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subQuantityOf/index.html> .
 
 ontouml:subkind a owl:NamedIndividual ,
-                         ontouml:ClassStereotype .
+                         ontouml:ClassStereotype ;
+                         rdfs:comment "A Subkind is a construct used to represent rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode and Quantity). By default, its usage do not require a relational dependency."@en ;
+                         dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/sortals/subkind/index.html> .
 
 ontouml:type a owl:NamedIndividual ,
              ontouml:ClassStereotype .
