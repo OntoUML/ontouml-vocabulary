@@ -32,19 +32,20 @@
 
 ontouml:aggregationKind a owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
-                        rdfs:range ontouml:AggregationKind .
+                        rdfs:range ontouml:AggregationKind ;
+                        rdfs:comment "Used to characterize a Property with the AggregationKind enumeration."@en.
                         
 
 ontouml:attribute a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:property ;
                   rdfs:domain ontouml:Class ;
                   rdfs:range ontouml:Property ;
-                  rdfs:comment "What is used to determine a model element property."@en .
+                  rdfs:comment "Used to determine the properties of a Class."@en .
 
 ontouml:cardinality a owl:ObjectProperty ;
                     rdfs:domain ontouml:Property ;
                     rdfs:range ontouml:Cardinality ;
-                    rdfs:comment "The cardinalities associated to a given property. E.g. the number of elements allowed by the domain and/or range of that property."@en .
+                    rdfs:comment "Used to provide the cardinalities of a given property. E.g. the number of elements allowed by the domain and/or range of that property."@en .
 
 ontouml:categorizer a owl:ObjectProperty ;
                     rdfs:domain ontouml:GeneralizationSet ;
@@ -73,7 +74,7 @@ ontouml:general a owl:ObjectProperty ;
 ontouml:generalization a owl:ObjectProperty ;
                        rdfs:domain ontouml:GeneralizationSet ;
                        rdfs:range ontouml:Generalization ;
-                       rdfs:comment "The relations used to associate a sublcass to its parent class, usually to be associated with a generalization set."@en .
+                       rdfs:comment "The relation used to associate a sublcass to its parent class, usually to be associated with a generalization set."@en .
 
 ontouml:isViewOf a owl:ObjectProperty ;
                  rdfs:domain ontouml:ElementView ;
@@ -82,7 +83,8 @@ ontouml:isViewOf a owl:ObjectProperty ;
 
 ontouml:literal a owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
-                rdfs:range ontouml:Literal .
+                rdfs:range ontouml:Literal ;
+                rdfs:comment "The property used to assign a literal label to a class."@en .
 
 ontouml:model a owl:ObjectProperty ;
               rdfs:domain ontouml:Project ;
@@ -95,7 +97,8 @@ ontouml:owner a owl:ObjectProperty ;
 
 ontouml:point a owl:ObjectProperty ;
               rdfs:domain ontouml:Path ;
-              rdfs:range ontouml:Point .
+              rdfs:range ontouml:Point ;
+              rdfs:comment "The property used to build geometric objects out of points as fundamental two-dimensional building block."@en .
 
 ontouml:property a owl:ObjectProperty ;
                  rdfs:domain ontouml:Classifier ;
@@ -124,7 +127,7 @@ ontouml:restrictedTo a owl:ObjectProperty ;
 ontouml:shape a owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
               rdfs:range ontouml:Shape ;
-              rdfs:comment "Identifies the shape used to represent a model element."@en .
+              rdfs:comment "The property used to associate a shape to a model element."@en .
 
 ontouml:sourceEnd a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
@@ -149,7 +152,8 @@ ontouml:stereotype a owl:ObjectProperty ;
 
 ontouml:subsetsProperty a owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
-                        rdfs:range ontouml:Property .
+                        rdfs:range ontouml:Property ;
+                        rdfs:comment "Links a porperty to its parent property."@en .
 
 ontouml:targetEnd a owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
@@ -251,15 +255,18 @@ ontouml:upperBound a owl:DatatypeProperty ;
 
 ontouml:width a owl:DatatypeProperty ;
               rdfs:domain ontouml:RectangularShape ;
-              rdfs:range xsd:positiveInteger .
+              rdfs:range xsd:positiveInteger ;
+              rdfs:comment "Defines the width of a given rectangular shape used in a diagram."@en .
 
 ontouml:x a owl:DatatypeProperty ;
           rdfs:domain ontouml:Point ;
-          rdfs:range xsd:decimal .
+          rdfs:range xsd:decimal ;
+          rdfs:comment "The data type denoting the specific x coordinate for building two-dimensional building-block geometric types."@en .
 
 ontouml:y a owl:DatatypeProperty ;
           rdfs:domain ontouml:Point ;
-          rdfs:range xsd:decimal .
+          rdfs:range xsd:decimal ;
+          rdfs:comment "The data type denoting the specific y coordinate for building two-dimensional building-block geometric types."@en .
 
 ontouml:AggregationKind a owl:Class ;
                         owl:equivalentClass [ a owl:Class ;
@@ -356,12 +363,15 @@ ontouml:Package a owl:Class ;
                 rdfs:comment "An object representing an ontology or an ontology sub-module. The package object instantiating the ontouml-schema is also referred to as root package and model, where the latter captures the notion of all container for all model elements in an ontology module."@en .
 
 ontouml:PackageView a owl:Class ;
-                    rdfs:subClassOf ontouml:NodeView .
+                    rdfs:subClassOf ontouml:NodeView ;
+                    rdfs:comment "A particular type fo node view."@en .
 
 ontouml:Path a owl:Class ;
-             rdfs:subClassOf ontouml:Shape .
+             rdfs:subClassOf ontouml:Shape ;
+             rdfs:comment "A list of connected points."@en .
 
-ontouml:Point a owl:Class .
+ontouml:Point a owl:Class ;
+              rdfs:comment "Fundamental two-dimensional building block for geometric types."@en . 
 
 ontouml:Project a owl:Class ;
                 rdfs:subClassOf ontouml:OntoumlElement ;
@@ -376,10 +386,12 @@ ontouml:PropertyStereotype a owl:Class ;
                            rdfs:comment "A stereotype assigned to a property."@en .
 
 ontouml:Rectangle a owl:Class ;
-                  rdfs:subClassOf ontouml:RectangularShape .
+                  rdfs:subClassOf ontouml:RectangularShape ;
+                  rdfs:comment "A particular type of rectangular shape."@en .
 
 ontouml:RectangularShape a owl:Class ;
-                         rdfs:subClassOf ontouml:Shape .
+                         rdfs:subClassOf ontouml:Shape ;
+                         rdfs:comment "The class representing rectangular shapes in a given diagram."@en .
 
 ontouml:Relation a owl:Class ;
                  rdfs:subClassOf ontouml:Classifier ;
@@ -393,19 +405,24 @@ ontouml:RelationView a owl:Class ;
                      rdfs:subClassOf ontouml:ConnectorView .
 
 ontouml:Shape a owl:Class ;
-              rdfs:subClassOf ontouml:DiagramElement .
+              rdfs:subClassOf ontouml:DiagramElement ;
+              rdfs:comment "The class representing the possible shapes that can be used in a given diagram."@en .
 
 ontouml:Stereotype a owl:Class ;
               rdfs:comment "A non-empty array of non-empty strings representing stereotypes of its container object."@en .
 
 ontouml:Text a owl:Class ;
-             rdfs:subClassOf ontouml:RectangularShape .
+             rdfs:subClassOf ontouml:RectangularShape ;
+             rdfs:comment "A rectangular shape used to introduce some text."@en .
 
 ontouml:abstract a owl:NamedIndividual ,
-                 ontouml:ClassStereotype .
+                 ontouml:ClassStereotype ;
+                 rdfs:comment "Represents the value of the ClassStereotype enumeration used to assign the corresponding stereotype Abstract to given Class."@en .
+
 
 ontouml:abstractNature a owl:NamedIndividual ,
-                       ontouml:OntologicalNature .
+                       ontouml:OntologicalNature ;
+                       rdfs:comment "Represents a value of the OnologicalNature enumeration."@en .
 
 ontouml:begin a owl:NamedIndividual ,
                        ontouml:PropertyStereotype .
@@ -476,10 +493,12 @@ ontouml:historicalDependence a owl:NamedIndividual ,
                              rdfs:comment "Identifies a concrete individual on which another concrete individual depends historically."@en .
 
 ontouml:historicalRole a owl:NamedIndividual ,
-                                ontouml:ClassStereotype .
+                                ontouml:ClassStereotype ;
+                                rdfs:comment "Denoting the role an endurant instantiates in virtue of having participated in an event of a particular type."@en .
 
 ontouml:historicalRoleMixin a owl:NamedIndividual ,
-                                     ontouml:ClassStereotype .
+                                     ontouml:ClassStereotype ;
+                                     rdfs:comment "Denoting the equivalent of historicalRole for types that aggregate instances with different identity principles."@en .
 
 ontouml:intrinsicModeNature a owl:NamedIndividual ,
                                      ontouml:OntologicalNature .
