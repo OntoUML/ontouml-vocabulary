@@ -330,7 +330,7 @@ ontouml:GeneralizationView a owl:Class ;
 
 ontouml:Literal a owl:Class ;
                 rdfs:subClassOf ontouml:ModelElement ;
-                rdfs:comments "An object representing a value defined for an enumeration."@en .
+                rdfs:comment "An object representing a value defined for an enumeration."@en .
 
 ontouml:ModelElement a owl:Class ;
                      rdfs:subClassOf ontouml:OntoumlElement ;
@@ -430,17 +430,17 @@ ontouml:begin a owl:NamedIndividual ,
 ontouml:category a owl:NamedIndividual ,
                           ontouml:ClassStereotype ;
                           rdfs:comment "A rigid mixin that does not require a dependency to be specified. It is used to aggregate essential properties to individuals which following different identity principles."@en ;
-                          dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html>.
+                          rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html"^^xsd:anyURI.
  
 ontouml:characterization a owl:NamedIndividual ,
                                   ontouml:RelationStereotype ;
                                   rdfs:comment "A relation between a bearer type and its feature. Feature is intrinsic (inherent) moment of its bearer type, and thus existentially dependent on the bearer. Feature may be stereotyped as Quality or Mode. Feature characterizes a bearer type iff every instance of bearer exemplifies the feature."@en ;
-                                  dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html> .
+                                  rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html"^^xsd:anyURI .
 
 ontouml:collective a owl:NamedIndividual ,
                             ontouml:ClassStereotype ;
                             rdfs:comment "A construct used to represent rigid concepts that provide an identity principle for their instances. The main characteristic of a Collective is that it has an homogenous internal structure, i.e., all parts are perceived in the same way by the whole (see the MemberOf relation for more details about members of collections)."@en ;
-                            dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/collective/index.html> .
+                            rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/collective/index.html"^^xsd:anyURI .
 
 ontouml:collectiveNature a owl:NamedIndividual ,
                                   ontouml:OntologicalNature .
@@ -451,7 +451,7 @@ ontouml:comparative a owl:NamedIndividual ,
 ontouml:componentOf a owl:NamedIndividual ,
                              ontouml:RelationStereotype ;
                              rdfs:comment "A parthood relation between two complexes."@en ;
-                             dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/componentOf/index.html> .
+                             rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/componentOf/index.html"^^xsd:anyURI .
 
 ontouml:composite a owl:NamedIndividual ,
                            ontouml:AggregationKind .
@@ -470,7 +470,7 @@ ontouml:enumeration a owl:NamedIndividual ,
 ontouml:event a owl:NamedIndividual ,
                        ontouml:ClassStereotype ;
                        rdfs:comment "Things that happen to or are performed by endurants (Casati and Varzi, 2015)."@en ;
-                       dcat:landingPage <https://plato.stanford.edu/archives/win2015/entries/events/> .
+                       rdfs:seeAlso "https://plato.stanford.edu/archives/win2015/entries/events/"^^xsd:anyURI .
 
 ontouml:eventNature a owl:NamedIndividual ,
                              ontouml:OntologicalNature .
@@ -478,7 +478,7 @@ ontouml:eventNature a owl:NamedIndividual ,
 ontouml:externalDependency a owl:NamedIndividual ,
                                     ontouml:RelationStereotype ;
                                     rdfs:comment "Identifies an endurant on which the extrinsicMode depends."@en ;
-                                    dcat:landingPage <https://nemo-ufes.github.io/gufo/#externallyDependsOn> .
+                                    rdfs:seeAlso "https://nemo-ufes.github.io/gufo/#externallyDependsOn"^^xsd:anyURI .
 
 ontouml:extrinsicModeNature a owl:NamedIndividual ,
                             ontouml:OntologicalNature ;
@@ -506,32 +506,32 @@ ontouml:intrinsicModeNature a owl:NamedIndividual ,
 ontouml:kind a owl:NamedIndividual ,
                       ontouml:ClassStereotype ;
                       rdfs:comment "A construct to be used in most of your models. It is used to represent rigid concepts that provide an identity principle for their instances and do not require a relational dependency. A Kind represent a Functional Complex, i.e., a whole that has parts contributing in different ways for its functionality (see the ComponentOf relation for more details about functional parts)."@en ;
-                      dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html> .
+                      rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html"^^xsd:anyURI .
 
 ontouml:material a owl:NamedIndividual ,
                           ontouml:RelationStereotype ;
                           rdfs:comment "Identifies relations that have material structure on their own and include examples such as employments, kisses, enrollments, flight, connections and commitments. The relata of a material relation are mediated by individuals that are called relators."@en ;
-                          dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/material/index.html> .
+                          rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/material/index.html"^^xsd:anyURI .
 
 ontouml:mediation a owl:NamedIndividual ,
                            ontouml:RelationStereotype ;
                            rdfs:comment "a type of existential dependence relation (a form of nonfunctional inherence). It can be derived from the relation between the relata and the qua individiuals that compose the relator and that inhere in the relata."@en ;
-                           dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/mediation/index.html> .
+                           rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/mediation/index.html"^^xsd:anyURI .
 
 ontouml:memberOf a owl:NamedIndividual ,
                           ontouml:RelationStereotype ;
                           rdfs:comment "A parthood relation between a functional complex or a Collective (as a part) and a Collective (as a whole)."@en ;
-                          dcat:landingPage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/memberOf/index.html> .
+                          rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/memberOf/index.html"^^xsd:anyURI .
 
 ontouml:mixin a owl:NamedIndividual ,
                        ontouml:ClassStereotype ;
                        rdfs:comment "A Mixin is a semi-rigid type, i.e., it behaves as a rigid type for some individuals and as an anti-rigid one for others (it’s the only stereotype with such feature in OntoUML)."@en ;
-                       dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/mixin/index.html> .
+                       rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/mixin/index.html"^^xsd:anyURI .
 
 ontouml:mode a owl:NamedIndividual ,
                       ontouml:ClassStereotype ;
                       rdfs:comment "A particular type of intrinsic property that has no structured value."@en ;
-                      dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html> .
+                      rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html"^^xsd:anyURI .
 
 ontouml:none a owl:NamedIndividual ,
              ontouml:AggregationKind .
@@ -546,17 +546,17 @@ ontouml:participational a owl:NamedIndividual ,
 ontouml:phase a owl:NamedIndividual ,
               ontouml:ClassStereotype ;
               rdfs:comment "Stereotype is used to represent anti-rigid subtypes of identity providers (Kind, Collective, Quantity, Relator, Mode and Quantity) that are instantiated by changes in intrinsic properties (e.g. the age of a person, the color of an object, the condition of a car). All instances of a particular Phase must follow the same identity principle. Phases always come in partitions."@en ;
-              dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/phase/index.html> .
+              rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/phase/index.html"^^xsd:anyURI .
 
 ontouml:phaseMixin a owl:NamedIndividual ,
                    ontouml:ClassStereotype ;
                    rdfs:comment "The equivalent of Phase for types that aggregate instances with different identity principles. A class stereotyped as PhaseMixin is also an anti-rigid type. PhaseMixin is similar semantically to RoleMixin with the difference in relational dependency."@en ;
-                   dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/phasemixin/index.html> .
+                   rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/phasemixin/index.html"^^xsd:anyURI .
 
 ontouml:quality a owl:NamedIndividual ,
                 ontouml:ClassStereotype ;
                 rdfs:comment "A Quality is a particular type of intrinsic property which has a structured value. Qualities are things that are existentially dependent on the things they characterize, called their bearers."@en ;
-                dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/aspects/quality/index.html> .
+                rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/aspects/quality/index.html"^^xsd:anyURI .
 
 ontouml:qualityNature a owl:NamedIndividual ,
                       ontouml:OntologicalNature .
@@ -564,7 +564,7 @@ ontouml:qualityNature a owl:NamedIndividual ,
 ontouml:quantity a owl:NamedIndividual ,
                  ontouml:ClassStereotype ;
                  rdfs:comment "Construct used to represent rigid concepts that provide an identity principle for their instances."@en ;
-                 dcat:landingPage <https://ontouml.readthedocs.io/en/latest/classes/sortals/quantity/index.html> .
+                 rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/quantity/index.html"^^xsd:anyURI .
 
 
 ontouml:quantityNature a owl:NamedIndividual ,
@@ -573,7 +573,7 @@ ontouml:quantityNature a owl:NamedIndividual ,
 ontouml:relator a owl:NamedIndividual ,
                 ontouml:ClassStereotype ;
                 rdfs:comment "A construct used to represent truth-makers of material relations, i.e., the things that must exist in order for two or more individuals to be connected by material relations."@en ;
-                dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html> .
+                rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html"^^xsd:anyURI .
 
 ontouml:relatorNature a owl:NamedIndividual ,
                       ontouml:OntologicalNature .
@@ -581,12 +581,12 @@ ontouml:relatorNature a owl:NamedIndividual ,
 ontouml:role a owl:NamedIndividual ,
              ontouml:ClassStereotype ;
              rdfs:comment "A construct used to represent anti-rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode and Quantity) that are instantiated in relational contexts."@en ;
-             dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html> .
+             rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html"^^xsd:anyURI .
 
 ontouml:roleMixin a owl:NamedIndividual ,
                   ontouml:ClassStereotype ;
                   rdfs:comment "The equivalent of Role for types that aggregate instances with different identity principles."@en ;
-                  dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html> .
+                  rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html"^^xsd:anyURI .
 
 ontouml:shared a owl:NamedIndividual ,
                ontouml:AggregationKind .
@@ -601,17 +601,17 @@ ontouml:situationNature a owl:NamedIndividual ,
 ontouml:subCollectionOf a owl:NamedIndividual ,
                         ontouml:RelationStereotype ;
                         rdfs:comment "Parthood relation between two collectives."@en ;
-                        dcat:landingpage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subCollectionOf/index.html> .
+                        rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subCollectionOf/index.html"^^xsd:anyURI .
 
 ontouml:subQuantityOf a owl:NamedIndividual ,
                       ontouml:RelationStereotype ;
                       rdfs:comment "A parthood relation between two quantities."@en ;
-                      dcat:landingpage <https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subQuantityOf/index.html> .
+                      rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subQuantityOf/index.html"^^xsd:anyURI .
 
 ontouml:subkind a owl:NamedIndividual ,
                          ontouml:ClassStereotype ;
                          rdfs:comment "A Subkind is a construct used to represent rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode and Quantity). By default, its usage do not require a relational dependency."@en ;
-                         dcat:landingpage <https://ontouml.readthedocs.io/en/latest/classes/sortals/subkind/index.html> .
+                         rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/subkind/index.html"^^xsd:anyURI .
 
 ontouml:type a owl:NamedIndividual ,
              ontouml:ClassStereotype .
