@@ -141,16 +141,20 @@ ontouml:categorizer rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ontouml#containsModelElement
 ontouml:containsModelElement rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf ontouml:contents ;
                              rdfs:domain ontouml:Package ;
-                             rdfs:range ontouml:ModelElement ;
-                             rdfs:comment "Provides the elements contained by a given package in a given model. A model element is an elementary component of a model. It will be created when you create a shape in a diagram. An example of a model element is \"actor\"."@en .
+                             rdfs:range ontouml:ModelElement .
 
 
 ###  https://w3id.org/ontouml#containsView
 ontouml:containsView rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf ontouml:contents ;
                      rdfs:domain ontouml:Diagram ;
-                     rdfs:range ontouml:ElementView ;
-                     rdfs:comment "Provides the views contained by a model. A view is created whenever a model element is used in a different model diagram."@en .
+                     rdfs:range ontouml:ElementView .
+
+
+###  https://w3id.org/ontouml#contents
+ontouml:contents rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/ontouml#diagram
@@ -577,6 +581,14 @@ ontouml:Literal rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#ModelElement
 ontouml:ModelElement rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:unionOf ( ontouml:Decoratable
+                                                         ontouml:Generalization
+                                                         ontouml:GeneralizationSet
+                                                         ontouml:Literal
+                                                         ontouml:Package
+                                                       )
+                                         ] ;
                      rdfs:subClassOf ontouml:OntoumlElement ;
                      rdfs:comment "Identifies a model element."@en .
 
@@ -614,18 +626,14 @@ ontouml:OntoumlElement rdf:type owl:Class ;
                                                            ontouml:ModelElement
                                                            ontouml:Project
                                                          )
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty ontouml:project ;
-                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                             owl:onClass ontouml:Project
                                            ] .
 
 
 ###  https://w3id.org/ontouml#Package
 ontouml:Package rdf:type owl:Class ;
                 rdfs:subClassOf ontouml:ModelElement ;
-                rdfs:comment "An object representing an ontology or an ontology sub-module. The package object instantiating the ontouml-schema is also referred to as the root package and model, where the latter captures the notion of all containers for all model elements in an ontology module."@en .
+                rdfs:comment "An object that aggregates (i) all ontology components or (ii) all components of an ontology module. It works as a container for model elements."@en ,
+                             "When using the ontouml-vp-plugin, a Package is created by default when a Project is created. This first-level Package is not represented in the vpp file. Hence, when a project is created by a user, this is going the be inside the mentioned first-level package."@en .
 
 
 ###  https://w3id.org/ontouml#PackageView
@@ -647,11 +655,6 @@ ontouml:Point rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#Project
 ontouml:Project rdf:type owl:Class ;
-                owl:equivalentClass [ rdf:type owl:Restriction ;
-                                      owl:onProperty ontouml:model ;
-                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                      owl:onClass ontouml:Package
-                                    ] ;
                 rdfs:subClassOf ontouml:OntoumlElement .
 
 
@@ -713,14 +716,26 @@ ontouml:Text rdf:type owl:Class ;
              rdfs:comment "A rectangular shape used to introduce some text."@en .
 
 
+###  https://w3id.org/ontouml#containsModelElement
+ontouml:containsModelElement rdf:type owl:Class .
+
+
+###  https://w3id.org/ontouml#containsView
+ontouml:containsView rdf:type owl:Class .
+
+
+###  https://w3id.org/ontouml#contents
+ontouml:contents rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:unionOf ( ontouml:containsModelElement
+                                                     ontouml:containsView
+                                                   )
+                                     ] .
+
+
 #################################################################
 #    Individuals
 #################################################################
-
-###  https://w3id.org/ontouml#Project
-ontouml:Project rdf:type owl:NamedIndividual ,
-                         ontouml:OntoumlElement .
-
 
 ###  https://w3id.org/ontouml#abstract
 ontouml:abstract rdf:type owl:NamedIndividual ,
@@ -1042,9 +1057,37 @@ ontouml:typeNature rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
-ontouml:Project rdfs:comment "Project is not a UML concept, but an implementation concept used by modeling editors."@en ,
-                             "It is the upper non-abstract (i.e., instantiable) concept in the OntoUML metamodel. "@en ,
-                             "Identifies the project associated with a given model."@en .
+ontouml:containsModelElement rdfs:comment "Provides the elements contained by a given package in a given model. A model element is an elementary component of a model. It will be created when you create a shape in a diagram. An example of a model element is \"actor\"."@en .
+
+
+ontouml:containsView rdfs:comment "Provides the views contained by a model. A view is created whenever a model element is used in a different model diagram."@en .
+
+
+ontouml:contents rdfs:comment "Equivalent to (containsModelElement or containsView)."@en ,
+                              "The OntoUML Metamodel contains two contents relations, which are mapped to two different object properties in this vocabulary: containsModelElement and containsView. The contents object property aggregates both mentioned sub-properties in order to keep a clear relation to the metamodel even though it must not be directly used."@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ontouml:Decoratable
+                ontouml:Generalization
+                ontouml:GeneralizationSet
+                ontouml:Literal
+                ontouml:Package
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( ontouml:Diagram
+                ontouml:DiagramElement
+                ontouml:ModelElement
+                ontouml:Project
+              )
+] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
