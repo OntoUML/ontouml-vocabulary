@@ -187,14 +187,6 @@ ontouml:literal rdf:type owl:ObjectProperty ;
                 rdfs:range ontouml:Literal ;
                 rdfs:comment "The property used to assign a literal label to a class."@en .
 
-###  https://w3id.org/ontouml#project
-ontouml:project rdf:type owl:ObjectProperty ;
-                rdfs:domain [ owl:unionOf ( ontouml:Diagram
-                                            ontouml:DiagramElement
-                                            ontouml:ModelElement )] ;
-              rdfs:range ontouml:Project ;
-              rdfs:comment "Is the property that relates every non-Project OntoumlElement to the Project that it composes."@en .
-
 
 ###  https://w3id.org/ontouml#model
 ontouml:model rdf:type owl:ObjectProperty ;
@@ -215,6 +207,24 @@ ontouml:point rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Path ;
               rdfs:range ontouml:Point ;
               rdfs:comment "The property used to build geometric objects out of points, a fundamental two-dimensional building block."@en .
+
+
+###  https://w3id.org/ontouml#project
+ontouml:project rdf:type owl:ObjectProperty ;
+                rdfs:domain [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                     owl:unionOf ( ontouml:Diagram
+                                                                   ontouml:DiagramElement
+                                                                   ontouml:ModelElement
+                                                                 )
+                                                   ]
+                                                   [ rdf:type owl:Class ;
+                                                     owl:complementOf ontouml:Project
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+                rdfs:range ontouml:Project ;
+                rdfs:comment "Is the property that relates every non-Project OntoumlElement to the Project that it composes."@en .
 
 
 ###  https://w3id.org/ontouml#property
@@ -597,7 +607,19 @@ ontouml:OntologicalNature rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ontouml#OntoumlElement
-ontouml:OntoumlElement rdf:type owl:Class .
+ontouml:OntoumlElement rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Class ;
+                                             owl:unionOf ( ontouml:Diagram
+                                                           ontouml:DiagramElement
+                                                           ontouml:ModelElement
+                                                           ontouml:Project
+                                                         )
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty ontouml:project ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass ontouml:Project
+                                           ] .
 
 
 ###  https://w3id.org/ontouml#Package
@@ -624,10 +646,13 @@ ontouml:Point rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ontouml#Project
-ontouml:Project rdf:type owl:Class, ontouml:OntoumlElement ;
-                rdfs:comment "Identifies the project associated with a given model."@en ,
-                             "It is the upper non-abstract (i.e., instantiable) concept in the OntoUML metamodel. "@en ,
-                             "Project is not a UML concept, but an implementation concept used by modeling editors."@en .
+ontouml:Project rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty ontouml:model ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass ontouml:Package
+                                    ] ;
+                rdfs:subClassOf ontouml:OntoumlElement .
 
 
 ###  https://w3id.org/ontouml#Property
@@ -691,6 +716,11 @@ ontouml:Text rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://w3id.org/ontouml#Project
+ontouml:Project rdf:type owl:NamedIndividual ,
+                         ontouml:OntoumlElement .
+
 
 ###  https://w3id.org/ontouml#abstract
 ontouml:abstract rdf:type owl:NamedIndividual ,
@@ -1006,6 +1036,15 @@ ontouml:type rdf:type owl:NamedIndividual ,
 ontouml:typeNature rdf:type owl:NamedIndividual ,
                             ontouml:OntologicalNature ;
                    rdfs:comment "Indicates that the restricted type includes type individuals among its instances."@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+ontouml:Project rdfs:comment "Project is not a UML concept, but an implementation concept used by modeling editors."@en ,
+                             "It is the upper non-abstract (i.e., instantiable) concept in the OntoUML metamodel. "@en ,
+                             "Identifies the project associated with a given model."@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
