@@ -158,10 +158,10 @@ ontouml:contents rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/ontouml#diagram
-ontouml:diagram rdf:type owl:ObjectProperty ;
-                rdfs:domain ontouml:Project ;
-                rdfs:range ontouml:Diagram ;
-                rdfs:comment "Provides the diagrams used to visually represent the model."@en .
+ontouml:diagram  rdf:type owl:ObjectProperty ;
+                 rdfs:domain ontouml:Project ;
+                 rdfs:range ontouml:Diagram ;
+                 rdfs:comment "Indicates which entities of type ontouml:Diagram are part of the ontouml:Project."@en .
 
 
 ###  https://w3id.org/ontouml#general
@@ -189,7 +189,7 @@ ontouml:isViewOf rdf:type owl:ObjectProperty ;
 ontouml:literal rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
                 rdfs:range ontouml:Literal ;
-                rdfs:comment "The property used to assign a literal label to a class."@en .
+                rdfs:comment "Identifies a literal within a ontouml:Class stereotyped as an ontouml:enumeration."@en .
 
 
 ###  https://w3id.org/ontouml#model
@@ -203,7 +203,7 @@ ontouml:model rdf:type owl:ObjectProperty ;
 ontouml:owner rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
               rdfs:range ontouml:ModelElement ;
-              rdfs:comment "Is a package that contains a given diagram."@en .
+              rdfs:comment "Identifies a ModelElement that contains a given diagram."@en .
 
 
 ###  https://w3id.org/ontouml#point
@@ -228,7 +228,7 @@ ontouml:project rdf:type owl:ObjectProperty ;
                               rdf:type owl:Class
                             ] ;
                 rdfs:range ontouml:Project ;
-                rdfs:comment "Is the property that relates every non-Project OntoumlElement to the Project that it composes."@en .
+                rdfs:comment "Relates every non-Project ontouml:OntoumlElement to the ontouml:Project that it composes."@en .
 
 
 ###  https://w3id.org/ontouml#property
