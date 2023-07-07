@@ -125,7 +125,7 @@ rdf:langString rdf:type rdfs:Datatype .
 ontouml:aggregationKind rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:AggregationKind ;
-                        rdfs:comment "Used to characterize a Property with the AggregationKind enumeration, i.e., whether the property is an aggregation or a composition property."@en .
+                        rdfs:comment "Characterizes an ontouml:Property with an ontouml:AggregationKind instance, i.e., indicates whether the ontouml:Property is a simple (ontouml:none), a shared (ontouml:shared), or a composite (ontouml:composite) property."@en .
 
 
 ###  https://w3id.org/ontouml#attribute
@@ -133,14 +133,14 @@ ontouml:attribute rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:property ;
                   rdfs:domain ontouml:Class ;
                   rdfs:range ontouml:Property ;
-                  rdfs:comment "Used to determine the properties of a Class."@en .
+                  rdfs:comment "Indicates the instances of type ontouml:Property that are attributes of an ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#cardinality
 ontouml:cardinality rdf:type owl:ObjectProperty ;
                     rdfs:domain ontouml:Property ;
                     rdfs:range ontouml:Cardinality ;
-                    rdfs:comment "Used to provide the cardinalities of a given property. E.g., the number of elements allowed by the domain and/or range of that property."@en .
+                    rdfs:comment "Identifies the individual that represents the cardinalities of an ontouml:Property."@en .
 
 
 ###  https://w3id.org/ontouml#categorizer
@@ -203,21 +203,21 @@ ontouml:isViewOf rdf:type owl:ObjectProperty ;
 ontouml:literal rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
                 rdfs:range ontouml:Literal ;
-                rdfs:comment "Identifies a literal within a ontouml:Class stereotyped as an ontouml:enumeration."@en .
+                rdfs:comment "Identifies an ontouml:Literal within an ontouml:Class that has ontouml:stereotype with ontouml:enumeration."@en .
 
 
 ###  https://w3id.org/ontouml#model
 ontouml:model rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Project ;
               rdfs:range ontouml:Package ;
-              rdfs:comment "Identifies an ontouml:Package that is part of a ontouml:Project."@en .
+              rdfs:comment "Identifies an ontouml:Package that is part of an ontouml:Project."@en .
 
 
 ###  https://w3id.org/ontouml#owner
 ontouml:owner rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
               rdfs:range ontouml:ModelElement ;
-              rdfs:comment "Relates a ontouml:Diagram with the ontouml:ModelElement that it is part of."@en .
+              rdfs:comment "Relates an ontouml:Diagram with the ontouml:ModelElement that it is part of."@en .
 
 
 ###  https://w3id.org/ontouml#point
@@ -256,7 +256,7 @@ ontouml:property rdf:type owl:ObjectProperty ;
 ontouml:propertyType rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Property ;
                      rdfs:range ontouml:Classifier ;
-                     rdfs:comment "A PropertyType represents a defined property that can be applied to elements as a Tagged Value."@en ;
+                     rdfs:comment "Identifies the individual of type ontouml:Class or ontouml:Relation (i.e., an ontouml:Classifier) to which the ontouml:Property refers to."@en ;
                      rdfs:seeAlso "https://sparxsystems.com/enterprise_architect_user_guide/15.2/automation/propertytype.html"^^xsd:anyURI .
 
 
@@ -286,7 +286,7 @@ ontouml:restrictedTo rdf:type owl:ObjectProperty ;
 ontouml:shape rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
               rdfs:range ontouml:Shape ;
-              rdfs:comment "Relates a ontouml:ElementView to the ontouml:Shape that contains the diagramation's data (size and position) about the ontouml:ModelElement it is a view of."@en .
+              rdfs:comment "Relates an ontouml:ElementView to the ontouml:Shape that contains the diagramation's data (size and position) about the ontouml:ModelElement it is a view of."@en .
 
 
 ###  https://w3id.org/ontouml#sourceEnd
@@ -340,6 +340,12 @@ ontouml:targetView rdf:type owl:ObjectProperty ;
                    rdfs:comment "Is a shape in the target end of a relationView or generalizationView."@en .
 
 
+###  https://w3id.org/ontouml#text
+ontouml:targetView rdf:type owl:ObjectProperty ;
+                   rdfs:domain ontouml:Text ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Relates a text message to its ontouml:Text container."@en .
+
 ###  https://w3id.org/ontouml#topLeftPosition
 ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:RectangularShape ;
@@ -355,7 +361,8 @@ ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ontouml#cardinalityValue
 ontouml:cardinalityValue rdf:type owl:DatatypeProperty ;
                          rdfs:domain ontouml:Cardinality ;
-                         rdfs:comment "Identifies the values used to specify the cardinality constraints of a given relation."@en .
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Provides the complete (i.e., both lower and upper cardinality's bounds) cardinalities of a given ontouml:Property via its related ontouml:Cardinality."@en .
 
 
 ###  https://w3id.org/ontouml#description
@@ -373,14 +380,7 @@ ontouml:description rdf:type owl:DatatypeProperty ;
 ontouml:height rdf:type owl:DatatypeProperty ;
                rdfs:domain ontouml:RectangularShape ;
                rdfs:range xsd:positiveInteger ;
-               rdfs:comment "Indicates the height of a ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
-
-
-###  https://w3id.org/ontouml#id
-ontouml:id rdf:type owl:DatatypeProperty ;
-           rdfs:domain ontouml:OntoumlElement ;
-           rdfs:range xsd:string ;
-           rdfs:comment "A non-empty string that uniquely identifies an object of a given type (e.g., ontouml:Class, ontouml:Relation) in a project."@en .
+               rdfs:comment "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#isAbstract
@@ -443,8 +443,10 @@ ontouml:isReadOnly rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/ontouml#lowerBound
 ontouml:lowerBound rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality ;
-                   rdfs:range xsd:positiveInteger ;
-                   rdfs:comment "Identifies the lower bound of some cardinalities' values. E.g., if the cardinality set is [1..*] then the lower bound is 1."@en .
+                   rdfs:range xsd:nonNegativeInteger ;
+                   rdfs:comment "Identifies the lower bound of a ontouml:Cardinality."@en,
+                   "A ontouml:Cardinality's lower bound must correspond to the one indicated by its ontouml:cardinalityValue property." ,
+                   "E.g., if the cardinality set is [1..*] then the lower bound is '1'."@en .
 
 
 ###  https://w3id.org/ontouml#name
@@ -462,22 +464,25 @@ ontouml:name rdf:type owl:DatatypeProperty ;
 ontouml:order rdf:type owl:DatatypeProperty ;
               rdfs:domain ontouml:Class ;
               rdfs:range xsd:nonNegativeInteger ;
-              rdfs:comment "Constraint: a ontouml:Class decorated with an ontouml:stereotype different than ontouml:type must have an ontouml:order value equal to 1."@en ,
-                           "Constraint: a ontouml:Class decorated with the ontouml:stereotype ontouml:type must have an ontouml:order value grater than 1."@en ,
+              rdfs:comment "Constraint: an ontouml:Class decorated with an ontouml:stereotype different than ontouml:type must have an ontouml:order value equal to 1."@en ,
+                           "Constraint: an ontouml:Class decorated with the ontouml:stereotype ontouml:type must have an ontouml:order value grater than 1."@en ,
                            "Identifies the order of a class enabling multi-level modeling."@en .
 
 
 ###  https://w3id.org/ontouml#upperBound
 ontouml:upperBound rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality ;
-                   rdfs:comment "Identifies the upper bound of some cardinalities' values. E.g., if the cardinality set is [1..*] then the upper bound is *."@en .
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Identifies the upper bound of a ontouml:Cardinality."@en,
+                   "A ontouml:Cardinality's upper bound must correspond to the one indicated by its ontouml:cardinalityValue property." ,
+                   "E.g., if the cardinality set is [1..*] then the upper bound is '*'."@en .
 
 
 ###  https://w3id.org/ontouml#width
 ontouml:width rdf:type owl:DatatypeProperty ;
               rdfs:domain ontouml:RectangularShape ;
               rdfs:range xsd:positiveInteger ;
-              rdfs:comment "Indicates the width of a ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
+              rdfs:comment "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#xCoordinate
@@ -485,7 +490,7 @@ ontouml:xCoordinate rdf:type owl:DatatypeProperty ;
           rdfs:domain ontouml:Point ;
           rdfs:range xsd:integer ;
           rdfs:comment "Is direct mapped to the metamodel's 'x' attribute of the Point class."@en ,
-                       "Relates an ontouml:Point to the value indicating the specific x (horizontal) coordinate of the top left position of a ontouml:RectangularShape."@en .
+                       "Relates an ontouml:Point to the value indicating the specific x (horizontal) coordinate of the top left position of an ontouml:RectangularShape."@en .
 
 
 ###  https://w3id.org/ontouml#yCoordinate
@@ -493,7 +498,7 @@ ontouml:yCoordinate rdf:type owl:DatatypeProperty ;
           rdfs:domain ontouml:Point ;
           rdfs:range xsd:integer ;
           rdfs:comment "Is direct mapped to the metamodel's 'y' attribute of the Point class."@en ,
-                       "Relates an ontouml:Point to the value indicating the specific y (vertical) coordinate of the top left position of a ontouml:RectangularShape."@en .
+                       "Relates an ontouml:Point to the value indicating the specific y (vertical) coordinate of the top left position of an ontouml:RectangularShape."@en .
 
 
 #################################################################
@@ -512,7 +517,9 @@ ontouml:AggregationKind rdf:type owl:Class ;
 
 
 ###  https://w3id.org/ontouml#Cardinality
-ontouml:Cardinality rdf:type owl:Class .
+ontouml:Cardinality rdf:type owl:Class ;
+              rdfs:comment "Represents the cardinality of an ontouml:Property throught its data property ontouml:cardinalityValue."@en .
+
 
 
 ###  https://w3id.org/ontouml#Class
@@ -555,7 +562,7 @@ ontouml:ClassStereotype rdf:type owl:Class ;
                                                         )
                                             ] ;
                         rdfs:subClassOf ontouml:Stereotype ;
-                        rdfs:comment "Aggregates all possible instances that can be assigned via ontouml:stereotype object property to an ontouml:Class."@en .
+                        rdfs:comment "Aggregates all possible instances that can be assigned vian ontouml:stereotype object property to an ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#ClassView
@@ -612,7 +619,7 @@ ontouml:ElementView rdf:type owl:Class ;
                                           ontouml:GeneralizationSetView
                                           ontouml:NodeView
                                         ) ;
-                    rdfs:comment "E.g., an ontouml:ClassView is created whenever a ontouml:ModelElement is represented in an ontouml:Diagram."@en ,
+                    rdfs:comment "E.g., an ontouml:ClassView is created whenever an ontouml:ModelElement is represented in an ontouml:Diagram."@en ,
                                  "Represents the diagramatical representation of an element in an ontouml:Diagram."@en .
 
 
@@ -715,7 +722,7 @@ ontouml:Path rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#Point
 ontouml:Point rdf:type owl:Class ;
-              rdfs:comment "Datatype that contains the ontouml:xCoordinate value and ontouml:yCoordinate value. These values represent the top left position of an ontouml:RectangularShape, to which the ontouml:Point is related via ontouml:topLeftPosition property."@en .
+              rdfs:comment "Datatype that contains the ontouml:xCoordinate value and ontouml:yCoordinate value. These values represent the top left position of an ontouml:RectangularShape, to which the ontouml:Point is related vian ontouml:topLeftPosition property."@en .
 
 
 ###  https://w3id.org/ontouml#Project
@@ -821,14 +828,6 @@ ontouml:Text rdf:type owl:Class ;
              rdfs:comment "TODO: STILL TO BE TREATED."@en .
 
 
-###  https://w3id.org/ontouml#containsModelElement
-ontouml:containsModelElement rdf:type owl:Class .
-
-
-###  https://w3id.org/ontouml#containsView
-ontouml:containsView rdf:type owl:Class .
-
-
 ###  https://w3id.org/ontouml#contents
 ontouml:contents rdf:type owl:Class ;
                  owl:equivalentClass [ rdf:type owl:Class ;
@@ -841,8 +840,6 @@ ontouml:contents rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
-
-# TODO: DESCRIPTIONS TO BE DONE!
 
 ###  https://w3id.org/ontouml#abstract
 ontouml:abstract rdf:type owl:NamedIndividual ,
@@ -910,7 +907,7 @@ ontouml:componentOf rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/ontouml#composite
 ontouml:composite rdf:type owl:NamedIndividual ,
                            ontouml:AggregationKind ;
-                  rdfs:comment "The value denoting that a property represents a composite aggregation, namely a strong form of aggregation."@en .
+                  rdfs:comment "The value denoting that an ontouml:Property represents a composite aggregation, namely a strong form of aggregation."@en .
 
 
 ###  https://w3id.org/ontouml#creation
@@ -1052,7 +1049,7 @@ ontouml:mode rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/ontouml#none
 ontouml:none rdf:type owl:NamedIndividual ,
                       ontouml:AggregationKind ;
-             rdfs:comment "Denotes that an aggregation property is neither share nor composite, but just an aggregation."@en .
+             rdfs:comment "Denotes that a ontouml:Property is neither ontouml:shared nor ontouml:composite, but just an aggregation."@en .
 
 
 ###  https://w3id.org/ontouml#participation
@@ -1137,7 +1134,8 @@ ontouml:roleMixin rdf:type owl:NamedIndividual ,
 ###  https://w3id.org/ontouml#shared
 ontouml:shared rdf:type owl:NamedIndividual ,
                         ontouml:AggregationKind ;
-               rdfs:comment "Indicates that the Property has shared aggregation semantics. The precise semantics of shared aggregation vary by application area and modeler."@en .
+               rdfs:comment "Indicates that the ontouml:Property has shared aggregation semantics."@en , 
+               "The precise semantics of shared aggregation vary by application area and modeler."@en .
 
 
 ###  https://w3id.org/ontouml#situation
