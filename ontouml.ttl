@@ -42,145 +42,136 @@
 #################################################################
 
 ###  https://w3id.org/ontouml#aggregationKind
-ontouml:aggregationKind rdfs:label "aggregationKind"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:aggregationKind rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:AggregationKind ;
+                        rdfs:label "aggregationKind"@en ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml#> ;
                         rdfs:comment "Characterizes an ontouml:Property with an ontouml:AggregationKind instance, i.e., indicates whether the ontouml:Property is a simple (ontouml:none), a shared (ontouml:shared), or a composite (ontouml:composite) property."@en .
 
 
 ###  https://w3id.org/ontouml#attribute
-ontouml:attribute rdfs:label "attribute"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:attribute rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:property ;
                   rdfs:domain ontouml:Class ;
                   rdfs:range ontouml:Property ;
-                  rdfs:comment "Indicates the instances of an ontouml:Property that are attributes of an ontouml:Class."@en .
+                  rdfs:label "attribute"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml#> ;
+                  rdfs:comment "Relates an instance of an ontouml:Class to its properties, which are instances of the ontouml:Property class."@en .
 
 
 ###  https://w3id.org/ontouml#cardinality
-ontouml:cardinality rdfs:label "cardinality"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:cardinality rdf:type owl:ObjectProperty ;
                     rdfs:domain ontouml:Property ;
                     rdfs:range ontouml:Cardinality ;
+                    rdfs:label "cardinality"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml#> ;
                     rdfs:comment "Identifies the individual of type ontouml:Cardinality that represents the cardinalities of an ontouml:Property."@en .
 
 
 ###  https://w3id.org/ontouml#categorizer
-ontouml:categorizer rdfs:label "categorizer"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:categorizer rdf:type owl:ObjectProperty ;
                     rdfs:domain ontouml:GeneralizationSet ;
                     rdfs:range ontouml:Class ;
-                    rdfs:comment "Identifies individuals of a ontoumL:GeneralizationSet that are instances of a higher order ontouml:Class."@en ;
+                    rdfs:label "categorizer"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml#> ;
+                    rdfs:comment "Identifies individuals of a ontouml:GeneralizationSet that are instances of a higher order ontouml:Class."@en ;
                     rdfs:seeAlso "https://doi.org/10.1007/978-3-319-39696-5_19"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#containsModelElement
-ontouml:containsModelElement rdfs:label "containsModelElement"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:containsModelElement rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf ontouml:contents ;
-                             rdfs:domain ontouml:Package ;
-                             rdfs:range ontouml:ModelElement .
+                              rdfs:subPropertyOf ontouml:contents ;
+                              rdfs:domain ontouml:Package ;
+                              rdfs:label "containsModelElement"@en ;
+                              rdfs:isDefinedBy <https://w3id.org/ontouml#> ;
+                              rdfs:range ontouml:ModelElement .
 
 
 ###  https://w3id.org/ontouml#containsView
-ontouml:containsView rdfs:label "containsView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:containsView rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf ontouml:contents ;
-                     rdfs:domain ontouml:Diagram ;
-                     rdfs:range ontouml:ElementView .
+                      rdfs:subPropertyOf ontouml:contents ;
+                      rdfs:domain ontouml:Diagram ;
+                      rdfs:range ontouml:ElementView ;
+                      rdfs:label "containsView"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 
 
 ###  https://w3id.org/ontouml#contents
-ontouml:contents rdfs:label "contents"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:contents rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Diagram ;
-                 rdfs:range ontouml:ElementView .
+                 rdfs:range ontouml:ElementView ;
+                 rdfs:label "contents"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 
 
 ###  https://w3id.org/ontouml#diagram
-ontouml:diagram rdfs:label "diagram"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:diagram rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Project ;
                 rdfs:range ontouml:Diagram ;
+                rdfs:label "diagram"@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                 rdfs:comment "Identifies which entities of type ontouml:Diagram are part of a given ontouml:Project."@en ,
                              "It is mapped to the OntoUML Metamodel's 'diagrams' relation betwen a Project and a Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#general
-ontouml:general rdfs:label "general"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:general rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Generalization ;
                 rdfs:range ontouml:Classifier ;
+                rdfs:label "general"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                 rdfs:comment "Points to the target node of a generalization relation, namely it is used to link a generalization relation to the corresponding parent class."@en .
 
 
 ###  https://w3id.org/ontouml#generalization
-ontouml:generalization rdfs:label "generalization"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:generalization rdf:type owl:ObjectProperty ;
                        rdfs:domain ontouml:GeneralizationSet ;
                        rdfs:range ontouml:Generalization ;
+                       rdfs:label "generalization"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                        rdfs:comment "The relation used to associate a subclass with its parent class, usually to be associated with a generalization set."@en .
 
 
 ###  https://w3id.org/ontouml#isViewOf
-ontouml:isViewOf rdfs:label "isViewOf"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:isViewOf rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:ElementView ;
                  rdfs:range ontouml:ModelElement ;
+                 rdfs:label "isViewOf"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                  rdfs:comment "Relates an ontouml:ElementView to the ontouml:ModelElement, indicating the representation of the latter's diagramation."@en .
 
 
 ###  https://w3id.org/ontouml#literal
-ontouml:literal rdfs:label "literal"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:literal rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
                 rdfs:range ontouml:Literal ;
+                rdfs:label "literal"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                 rdfs:comment "Identifies an ontouml:Literal within an ontouml:Class that has ontouml:stereotype with ontouml:enumeration."@en .
 
 
 ###  https://w3id.org/ontouml#model
-ontouml:model rdfs:label "model"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:model rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Project ;
               rdfs:range ontouml:Package ;
+              rdfs:label "model"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
               rdfs:comment "Identifies an ontouml:Package that is part of an ontouml:Project."@en .
 
 
 ###  https://w3id.org/ontouml#owner
-ontouml:owner rdfs:label "owner"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:owner rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
               rdfs:range ontouml:ModelElement ;
+              rdfs:label "owner"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
               rdfs:comment "Relates an ontouml:Diagram with the ontouml:ModelElement that it is part of."@en .
 
 
 ###  https://w3id.org/ontouml#point
-ontouml:point rdfs:label "point"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:point rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Path ;
               rdfs:range ontouml:Point ;
+              rdfs:label "point"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
               rdfs:comment "The property used to build geometric objects out of points, a fundamental two-dimensional building block."@en .
 
 
 ###  https://w3id.org/ontouml#project
-ontouml:project rdfs:label "project"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:project rdf:type owl:ObjectProperty ;
                 rdfs:domain [ owl:intersectionOf ( [ rdf:type owl:Class ;
                                                      owl:unionOf ( ontouml:Diagram
@@ -195,136 +186,123 @@ ontouml:project rdf:type owl:ObjectProperty ;
                               rdf:type owl:Class
                             ] ;
                 rdfs:range ontouml:Project ;
+                rdfs:label "project"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                 rdfs:comment "Relates every ontouml:OntoumlElement different than ontouml:Project to the ontouml:Project that it is part of."@en .
 
 
 ###  https://w3id.org/ontouml#property
-ontouml:property rdfs:label "property"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:property rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Classifier ;
                  rdfs:range ontouml:Property ;
+                 rdfs:label "property"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                  rdfs:comment "Identifies a property exhibited by instances of the classifier. If the classifier is a class, the property is an attribute. If the classifier is a relation, the property is a relation end."@en .
 
 
 ###  https://w3id.org/ontouml#propertyType
-ontouml:propertyType rdfs:label "propertyType"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:propertyType rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Property ;
                      rdfs:range ontouml:Classifier ;
+                     rdfs:label "propertyType"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                      rdfs:comment "Identifies the individual of type ontouml:Class or ontouml:Relation (i.e., an ontouml:Classifier) to which the ontouml:Property refers to."@en ;
                      rdfs:seeAlso "https://sparxsystems.com/enterprise_architect_user_guide/15.2/automation/propertytype.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#redefinesProperty
-ontouml:redefinesProperty rdfs:label "redefinesProperty"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:redefinesProperty rdf:type owl:ObjectProperty ;
                           rdfs:domain ontouml:Property ;
                           rdfs:range ontouml:Property ;
+                          rdfs:label "redefinesProperty"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                           rdfs:comment "Redefining property will replace any reference to a redefined property in the context of an instance of the specializing classifier. A property could be redefined to have a different name, visibility, type, and default value."@en .
 
 
 ###  https://w3id.org/ontouml#relationEnd
-ontouml:relationEnd rdfs:label "relationEnd"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:relationEnd rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf ontouml:property ;
                     rdfs:domain ontouml:Relation ;
                     rdfs:range ontouml:Property ;
+                    rdfs:label "relationEnd"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                     rdfs:comment "Determines the target of a given relation."@en .
 
 
 ###  https://w3id.org/ontouml#restrictedTo
-ontouml:restrictedTo rdfs:label "restrictedTo"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:restrictedTo rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Class ;
                      rdfs:range ontouml:OntologicalNature ;
+                     rdfs:label "restrictedTo"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                      rdfs:comment "Associates an ontouml:Class to an ontouml:OntologicalNature, restricting the allowed values for that ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#shape
-ontouml:shape rdfs:label "shape"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:shape rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
               rdfs:range ontouml:Shape ;
+              rdfs:label "shape"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
               rdfs:comment "Relates an ontouml:ElementView to the ontouml:Shape that contains the diagramation's data (size and position) about the ontouml:ModelElement it is a view of."@en .
 
 
 ###  https://w3id.org/ontouml#sourceEnd
-ontouml:sourceEnd rdfs:label "sourceEnd"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:sourceEnd rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
                   rdfs:range ontouml:Property ;
+                  rdfs:label "sourceEnd"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                   rdfs:comment "Identifies the source class associated with a given relation."@en .
 
 
 ###  https://w3id.org/ontouml#sourceView
-ontouml:sourceView rdfs:label "sourceView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:sourceView rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
                    rdfs:range ontouml:ElementView ;
+                   rdfs:label "sourceView"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                    rdfs:comment "Is a shape in the source end of a relationView or generalizationView."@en .
 
 
 ###  https://w3id.org/ontouml#specific
-ontouml:specific rdfs:label "specific"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:specific rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Generalization ;
                  rdfs:range ontouml:Classifier ;
+                 rdfs:label "specific"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                  rdfs:comment "Points to the source node of a generalization relation, namely it is used to link a generalization relation to the corresponding subclass."@en .
 
 
 ###  https://w3id.org/ontouml#stereotype
-ontouml:stereotype rdfs:label "stereotype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:stereotype rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:DecoratableElement ;
                    rdfs:range ontouml:Stereotype ;
+                   rdfs:label "stereotype"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                    rdfs:comment "Identifies the stereotype applied to the decoratable."@en .
 
 
 ###  https://w3id.org/ontouml#subsetsProperty
-ontouml:subsetsProperty rdfs:label "subsetsProperty"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:subsetsProperty rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:Property ;
+                        rdfs:label "subsetsProperty"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                         rdfs:comment "Links a property to its parent property."@en .
 
 
 ###  https://w3id.org/ontouml#targetEnd
-ontouml:targetEnd rdfs:label "targetEnd"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:targetEnd rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
                   rdfs:range ontouml:Property ;
+                  rdfs:label "targetEnd"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                   rdfs:comment "Identifies the target class associated with a given relation."@en .
 
 
 ###  https://w3id.org/ontouml#targetView
-ontouml:targetView rdfs:label "targetView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:targetView rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ,
                                ontouml:Text ;
-                   rdfs:range ontouml:ElementView .
+                   rdfs:range ontouml:ElementView ;
+                   rdfs:label "targetView"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  .
 
 
 ###  https://w3id.org/ontouml#topLeftPosition
-ontouml:topLeftPosition rdfs:label "topLeftPosition"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml#> .
 ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:RectangularShape ;
                         rdfs:range ontouml:Point ;
+                        rdfs:label "topLeftPosition"@en ; rdfs:isDefinedBy <https://w3id.org/ontouml#>  ;
                         rdfs:comment "Is direct mapped to the metamodel's 'topLeft' relationship between a RectangularShape and a Point."@en ,
                                      "Relates an ontouml:RectangularShape with an ontouml:Point that contains the horizontal (x) and vertical (y) coordinates representing the former's top left position."@en .
 
