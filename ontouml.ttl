@@ -12,10 +12,12 @@
 
 <https://w3id.org/ontouml> rdf:type owl:Ontology ;
                             owl:versionIRI <https://w3id.org/ontouml/1.1> ;
-                            dct:contributor <https://orcid.org/0000-0003-2736-7817> ,
-                                            <https://orcid.org/0000-0003-3385-4769> ;
+                            owl:versionInfo "1.1"@en ;
+                            owl:priorVersion <https://w3id.org/ontouml/1.0> ;
+                            dct:contributor <https://orcid.org/0000-0003-3385-4769> ;
                             dct:creator <https://orcid.org/0000-0002-5385-5761> ,
-                                        <https://orcid.org/0000-0003-2528-3118> ;
+                                        <https://orcid.org/0000-0003-2528-3118> ,
+                                        <https://orcid.org/0000-0003-2736-7817> ;
                             dct:description "A reference implementation of the OntoUML Metamodel in OWL."@en ;
                             dct:identifier "https://w3id.org/ontouml"^^xsd:anyURI ;
                             dct:isReferencedBy <https://dblp.org/rec/conf/jowo/FonsecaSVFGA21.html> ,
@@ -27,8 +29,7 @@
                             dct:conformsTo <https://purl.org/krdb-core/ontouml-js> ;
                             dct:language "en" ;
                             vann:preferredNamespacePrefix "ontouml"@en ;
-                            vann:preferredNamespaceUri "https://w3id.org/ontouml#"^^xsd:anyURI ;
-                            owl:versionInfo "1.1"@en ;
+                            vann:preferredNamespaceUri "https://w3id.org/ontouml#"^^xsd:anyURI ;                            
                             dcat:keyword "Metamodel"@en ,
                                          "OntoUML"@en ,
                                          "OntoUML-Metamodel"@en ,
