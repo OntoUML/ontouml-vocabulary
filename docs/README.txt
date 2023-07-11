@@ -1,0 +1,1 @@
+This folder's `ontouml.ttl` file is a HARD LINK for the one provided in the repository's root folder. Once one of these files is modified, the other will also be modified.
