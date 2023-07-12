@@ -339,12 +339,11 @@ ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/ontouml#cardinalityValue
 ontouml:cardinalityValue rdfs:label "cardinalityValue"@en ;
-              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
- rdf:type owl:DatatypeProperty ;
+                         rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                         rdf:type owl:DatatypeProperty ;
                          rdfs:domain ontouml:Cardinality ;
                          rdfs:range xsd:string ;
-                         rdfs:comment "Provides the complete (i.e., both lower and upper cardinality's bounds) cardinalities of an ontouml:Property via its related ontouml:Cardinality."@en ,
-                                      "A valid cardinalityValues format is <lowerBound><'..'><upperBound>. Examples are: '0..1', '0..*', '1..*', and '0..5'"@en .
+                         rdfs:comment "Provides the complete (i.e., both lower and upper cardinality's bounds) cardinalities of an ontouml:Property via its related ontouml:Cardinality."@en .
 
 
 
@@ -358,7 +357,7 @@ ontouml:description rdfs:label "description"@en ;
                                                xsd:string
                                              )
                                ] ;
-                    rdfs:comment "A non-empty nullable string representing the description of the object in free textual format."@en .
+                    rdfs:comment "Relates an ontouml:OntoumlElement to a string representing its description in free textual format."@en .
 
 
 ###  https://w3id.org/ontouml#height
