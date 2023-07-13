@@ -1,12 +1,15 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:txt1 a ontouml:Text ;
-         ontouml:id "txt1" ; 
-         ontouml:height "100" ; 
-         ontouml:width "200" ;
-         ontouml:topLeftPosition [
-            a ontouml:Point ;
-            ontouml:x "10" ;
-            ontouml:y "10" ;
-         ] .
+:GAJItt6GAqACCgqc_shape a ontouml:Text ;
+    ontouml:height "28"^^xsd:positiveInteger ;
+    ontouml:project :Nlnret6GAqACCgBO ;
+    ontouml:text "" ;
+    ontouml:topLeftPosition :GAJItt6GAqACCgqc_shape_point ;
+    ontouml:width "80"^^xsd:positiveInteger .
+
+:Nlnret6GAqACCgBO a ontouml:Project .
+:GAJItt6GAqACCgqc_shape_point a ontouml:Point .

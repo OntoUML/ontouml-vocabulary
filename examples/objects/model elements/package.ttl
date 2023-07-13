@@ -1,15 +1,15 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:pk1 a ontouml:Package ;
-      ontouml:id "pk1" ; 
-      ontouml:name "Main module"@en ; 
-      ontouml:description "The main module of my ontology."@en ;
-      ontouml:containsModelElement ex:pk2, ex:c1, ex:r1, ex:g1 ;
-      ontouml:project ex:p1 .
+:Rol55G6GAqACBAnR_root a ontouml:Package ;
+    ontouml:containsModelElement :8inz5G6GAqACBBez,
+        :yadBlG6GAqACBAl1 ;
+    ontouml:name "EMMSAD2022"@en ;
+    ontouml:project :Rol55G6GAqACBAnR .
 
-ex:p1 a ontouml:Project .
-ex:pk2 a ontouml:Package .
-ex:c1 a ontouml:Class .
-ex:r1 a ontouml:Relation .
-ex:g1 a ontouml:Generalization .
+:8inz5G6GAqACBBez a ontouml:Package .
+:yadBlG6GAqACBAl1 a ontouml:Package .
+:Rol55G6GAqACBAnR a ontouml:Project .

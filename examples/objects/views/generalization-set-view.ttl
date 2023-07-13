@@ -1,12 +1,14 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:gsv1 a ontouml:GeneralizationSetView ;
-      ontouml:id "gsv1" ; 
-      ontouml:isViewOf ex:c1 ;
-      ontouml:shape ex:txt1 ; 
-      ontouml:project ex:p1 .
+:0jRott6GAqACCgwp a ontouml:GeneralizationSetView ;
+    ontouml:isViewOf :gjRott6GAqACCgwn ;
+    ontouml:project :Nlnret6GAqACCgBO ;
+    ontouml:shape :0jRott6GAqACCgwp_shape .
 
-ex:p1 a ontouml:Project .
-ex:c1 a ontouml:GeneralizationSet .
-ex:txt1 a ontouml:Text .
+:gjRott6GAqACCgwn a ontouml:GeneralizationSet .
+:Nlnret6GAqACCgBO a ontouml:Project .
+:0jRott6GAqACCgwp_shape a ontouml:Text .

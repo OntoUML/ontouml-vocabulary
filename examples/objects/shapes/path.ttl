@@ -1,11 +1,16 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:path1 a ontouml:Path ;
-         ontouml:id "rect1" ; 
-         ontouml:point (
-            [ ontouml:x "10" ; ontouml:y "10"  ]
-            [ ontouml:x "10" ; ontouml:y "50"  ]
-            [ ontouml:x "90" ; ontouml:y "50"  ]
-            [ ontouml:x "100" ; ontouml:y "60"  ]
-         ) .
+:1HzxlG6GAqACBAyB_path a ontouml:Path ;
+    ontouml:point :1HzxlG6GAqACBAyB_path_point_0,
+        :1HzxlG6GAqACBAyB_path_point_1,
+        :1HzxlG6GAqACBAyB_path_point_2 ;
+    ontouml:project :Rol55G6GAqACBAnR .
+
+:1HzxlG6GAqACBAyB_path_point_0 a ontouml:Point .
+:1HzxlG6GAqACBAyB_path_point_1 a ontouml:Point .
+:1HzxlG6GAqACBAyB_path_point_2 a ontouml:Point .
+:Rol55G6GAqACBAnR a ontouml:Project .

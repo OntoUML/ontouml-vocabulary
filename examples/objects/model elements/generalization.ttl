@@ -1,11 +1,14 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:g1 a ontouml:Generalization;
-      ontouml:general ex:c1 ;
-      ontouml:specific ex:c2 ;
-      ontouml:project ex:p1 .
+:2N7BlG6GAqACBAo0 a ontouml:Generalization ;
+    ontouml:general :CV7BlG6GAqACBAnE ;
+    ontouml:project :Rol55G6GAqACBAnR ;
+    ontouml:specific :FF7BlG6GAqACBAmU .
 
-ex:c1 a ontouml:Class .
-ex:c2 a ontouml:Class .
-ex:p1 a ontouml:Project .
+:CV7BlG6GAqACBAnE a ontouml:Class .
+:Rol55G6GAqACBAnR a ontouml:Project .
+:FF7BlG6GAqACBAmU a ontouml:Class .

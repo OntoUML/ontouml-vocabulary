@@ -1,15 +1,19 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:dg1 a ontouml:Diagram ;
-      ontouml:name "Object at Risk"@en ;
-      ontouml:description "Diagram centered around the concept of \"Object at Risk\""@en ;
-      ontouml:containsView ex:cv1, ex:rv1, ex:gv1, ex:gsv1 ;
-      ontouml:project ex:p1 .
+# Other containsView properties ommited for brevity.
 
-ex:p1 a ontouml:Project .
-ex:cv1 a ontouml:ClassView .
-ex:rv1 a ontouml:RelationView .
-ex:gv1 a ontouml:GeneralizationView .
-ex:gsv1 a ontouml:GeneralizationSetView .
+:YQHz5G6GAqACBBeg a ontouml:Diagram ;
+    ontouml:containsView :2Sr35G6GAqACBCk0,
+        :3IXz5G6GAqACBBgm;        
+    ontouml:name "Ethical Requirements"@en ;
+    ontouml:owner :8inz5G6GAqACBBez ;
+    ontouml:project :Rol55G6GAqACBAnR .
 
+:2Sr35G6GAqACBCk0 a ontouml:RelationView .
+:3IXz5G6GAqACBBgm a ontouml:RelationView .
+:8inz5G6GAqACBBez a ontouml:Package .
+:Rol55G6GAqACBAnR a ontouml:Project .

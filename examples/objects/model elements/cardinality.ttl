@@ -1,0 +1,10 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:4dbJlG6GAqACBA1E_cardinality a ontouml:Cardinality ;
+    ontouml:cardinalityValue "0..*" ;
+    ontouml:lowerBound "0" ;
+    ontouml:upperBound "*" .

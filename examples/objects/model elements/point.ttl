@@ -1,0 +1,9 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:4w4hlG6GAqACBArg_shape_point a ontouml:Point ;
+    ontouml:xCoordinate 540 ;
+    ontouml:yCoordinate 68 .

@@ -1,12 +1,20 @@
 # The OntoUML Vocabulary
 
-The OntoUML Vocabulary is an implementation of the [OntoUML Metamodel](https://github.com/OntoUML/ontouml-metamodel) in the Web Ontology Language (OWL) compliant with the [ontouml-js](https://github.com/OntoUML/ontouml-js) and the [ontouml-schema](https://github.com/OntoUML/ontouml-schema).
+The [OntoUML Vocabulary](https://w3id.org/ontouml/vocabulary) is an implementation of the [OntoUML Metamodel](https://w3id.org/ontouml/metamodel) in the Web Ontology Language (OWL) compliant with the [ontouml-js](https://github.com/OntoUML/ontouml-js) and the [ontouml-schema](https://w3id.org/ontouml/schema).
 
 This vocabulary supports the serialization, exchange, and publishing of OntoUML models as linked data and is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
+This document is presented as follows:
+
+- [Documentation](#documentation)
+- [Employment in Projects](#employment-in-projects)
+- [Related Computational Tools](#related-computational-tools)
+- [Contributors](#contributors)
+- [Contact](#contact)
+
 ## Documentation
 
-The complete documentation of the OntoUML Vocabulary generated with [PyLODE](https://github.com/RDFLib/pyLODE) can be accessed here: **TO BE INCLUDED!**
+The complete documentation of the OntoUML Vocabulary generated with [PyLODE](https://github.com/RDFLib/pyLODE) is available on this link: https://w3id.org/ontouml/vocabulary/doc
 
 ## Employment in Projects
 

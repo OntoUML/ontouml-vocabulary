@@ -1,12 +1,18 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:gv1 a ontouml:GeneralizationView ;
-      ontouml:id "gv1" ; 
-      ontouml:isViewOf ex:g1 ;
-      ontouml:shape ex:path1 ; 
-      ontouml:project ex:p1 .
+:FoXz5G6GAqACBBhq a ontouml:GeneralizationView ;
+    ontouml:isViewOf :loXz5G6GAqACBBhs ;
+    ontouml:project :Rol55G6GAqACBAnR ;
+    ontouml:shape :FoXz5G6GAqACBBhq_path ;
+    ontouml:sourceView :oIXz5G6GAqACBBf1 ;
+    ontouml:targetView :JQXz5G6GAqACBBfG .
 
-ex:p1 a ontouml:Project .
-ex:g1 a ontouml:Generalization .
-ex:path1 a ontouml:Path .
+:loXz5G6GAqACBBhs a ontouml:Generalization .
+:Rol55G6GAqACBAnR a ontouml:Project .
+:FoXz5G6GAqACBBhq_path a ontouml:Path .
+:oIXz5G6GAqACBBf1 a ontouml:ClassView .
+:JQXz5G6GAqACBBfG a ontouml:ClassView .

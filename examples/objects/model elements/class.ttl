@@ -1,20 +1,17 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:c1 a ontouml:Class ;
-      ontouml:id "c1" ; 
-      ontouml:name "Person"@en ; 
-      ontouml:description "A human being."@en ;
-      ontouml:stereotype ontouml:subkind ;
-      ontouml:restrictedTo ontouml:functionalComplex ;
-      ontouml:isAbstract "false"^^xsd:boolean ;
-      ontouml:isDerived "false"^^xsd:boolean ;
-      ontouml:isExtensional "false"^^xsd:boolean ;
-      ontouml:isPowertype "false"^^xsd:boolean ;
-      ontouml:order "1"^^xsd:positiveInteger ;
-      ontouml:attribute ex:at1 ;
-      ontouml:project ex:p1 .
+:Ew4hlG6GAqACBArh a ontouml:Class ;
+    ontouml:isAbstract true ;
+    ontouml:isDerived false ;
+    ontouml:isPowertype false ;
+    ontouml:name "UFO:Agent"@en ;
+    ontouml:order "1"^^xsd:nonNegativeInteger ;
+    ontouml:project :Rol55G6GAqACBAnR ;
+    ontouml:restrictedTo ontouml:functionalComplexNature ;
+    ontouml:stereotype ontouml:category .
 
-ex:p1 a ontouml:Project .
-ex:at1 a ontouml:Property .
-        
+:Rol55G6GAqACBAnR a ontouml:Project .

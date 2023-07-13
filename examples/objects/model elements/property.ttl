@@ -1,22 +1,18 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:pr1 a ontouml:Property ;
-      ontouml:name "knower"@en;
-      ontouml:isDerived "false"^^xsd:boolean ;
-      ontouml:isReadOnly "false"^^xsd:boolean ;
-      ontouml:isOrdered "false"^^xsd:boolean ;
-      ontouml:aggregationKind ontouml:none ;
-      ontouml:cardinality ex:ca1 ;
-      ontouml:propertyType ex:c1 ;      
-      ontouml:project ex:p1 .
+:09935G6GAqACBCkY a ontouml:Property ;
+    ontouml:aggregationKind ontouml:shared ;
+    ontouml:cardinality :09935G6GAqACBCkY_cardinality ;
+    ontouml:isDerived false ;
+    ontouml:isOrdered false ;
+    ontouml:isReadOnly false ;
+    ontouml:project :Rol55G6GAqACBAnR ;
+    ontouml:propertyType :WD6X5G6GAqACBCex .
 
-ex:ca1 a ontouml:Cardinality;
-      ontouml:cardinalityValue "0..*";
-      ontouml:lowerBound "0";
-      ontouml:upperBound "*".
-
-ex:p1 a ontouml:Project .
-ex:c1 a ontouml:Class . 
-
-
+:09935G6GAqACBCkY_cardinality a ontouml:Cardinality .
+:Rol55G6GAqACBAnR a ontouml:Project .
+:WD6X5G6GAqACBCex a ontouml:Class .

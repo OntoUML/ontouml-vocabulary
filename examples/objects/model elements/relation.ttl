@@ -1,18 +1,20 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:r1 a ontouml:Relation ;
-      ontouml:id "r1" ; 
-      ontouml:name "knows"@en ; 
-      ontouml:description "Identifies people that one recognizes by name or picture."@en ;
-      ontouml:stereotype ontouml:material ;
-      ontouml:isDerived "true"^^xsd:boolean ;
-      ontouml:relationEnd ex:pr1, ex:pr2 ;
-      ontouml:sourceEnd ex:pr1 ;
-      ontouml:targetEnd ex:pr2 ;
-      ontouml:project ex:p1 .
+:0B0hlG6GAqACBArz a ontouml:Relation ;
+    ontouml:isAbstract false ;
+    ontouml:isDerived false ;
+    ontouml:name "inheres in"@en ;
+    ontouml:project :Rol55G6GAqACBAnR ;
+    ontouml:relationEnd :0B0hlG6GAqACBAr0,
+        :0B0hlG6GAqACBAr2 ;
+    ontouml:sourceEnd :0B0hlG6GAqACBAr0 ;
+    ontouml:stereotype ontouml:characterization ;
+    ontouml:targetEnd :0B0hlG6GAqACBAr2 .
 
-ex:p1 a ontouml:Project .
-ex:c1 a ontouml:Class . 
-ex:pr1 a ontouml:Property .
-ex:pr2 a ontouml:Property .
+:Rol55G6GAqACBAnR a ontouml:Project .
+:0B0hlG6GAqACBAr0 a ontouml:Property .
+:0B0hlG6GAqACBAr2 a ontouml:Property .

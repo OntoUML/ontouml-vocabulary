@@ -24,7 +24,7 @@
                                                <https://doi.org/10.1007/978-3-031-17995-2_1> ;
                             dct:issued "2022-04-03"^^xsd:date ;
                             dct:modified "2023-07-11"^^xsd:date ;
-                            dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;                            
+                            dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
                             dct:title "OntoUML Metamodel Vocabulary"@en ;
                             dct:conformsTo <https://w3id.org/ontouml/metamodel/v1.1.0> ;
                             dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
@@ -76,7 +76,7 @@ ontouml:categorizer rdf:type owl:ObjectProperty ;
                     rdfs:label "categorizer"@en ;
                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                     rdfs:comment "Identifies individuals of an ontouml:GeneralizationSet that are instances of a higher order ontouml:Class."@en ;
-                    rdfs:seeAlso "https://doi.org/10.1007/978-3-319-39696-5_19"^^xsd:anyURI .
+                    rdfs:seeAlso <https://doi.org/10.1007/978-3-319-39696-5_19> .
 
 
 ###  https://w3id.org/ontouml#containsModelElement
@@ -85,7 +85,7 @@ ontouml:containsModelElement rdf:type owl:ObjectProperty ;
                               rdfs:domain ontouml:Package ;
                               rdfs:range ontouml:ModelElement ;
                               rdfs:label "containsModelElement"@en ;
-                              rdfs:isDefinedBy <https://w3id.org/ontouml> ;                              
+                              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                               rdfs:comment "Identifies an instance of type ontouml:ModelElement that composes in an ontouml:Package."@en ,
                                           "It is mapped to the OntoUML Metamodel's 'contents' relation between the Package and ModelElement classes."@en .
 
@@ -114,17 +114,17 @@ ontouml:diagram rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Project ;
                 rdfs:range ontouml:Diagram ;
                 rdfs:label "diagram"@en ;
-                rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                 rdfs:comment "Identifies which entities of type ontouml:Diagram are part of an ontouml:Project."@en ,
-                             "It is mapped to the OntoUML Metamodel's 'diagrams' relation betwen the Project and Diagram classes."@en .
+                             "It is mapped to the OntoUML Metamodel's 'diagrams' relation between the Project and Diagram classes."@en .
 
 
 ###  https://w3id.org/ontouml#general
 ontouml:general rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Generalization ;
                 rdfs:range ontouml:Classifier ;
-                rdfs:label "general"@en ; 
-                rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                rdfs:label "general"@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                 rdfs:comment "Identifies the parent ontouml:Classifier (e.g., a superclass) that participates in an ontouml:Generalization relation."@en .
 
 
@@ -132,8 +132,8 @@ ontouml:general rdf:type owl:ObjectProperty ;
 ontouml:generalization rdf:type owl:ObjectProperty ;
                        rdfs:domain ontouml:GeneralizationSet ;
                        rdfs:range ontouml:Generalization ;
-                       rdfs:label "generalization"@en ; 
-                       rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                       rdfs:label "generalization"@en ;
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                        rdfs:comment "Identifies an ontouml:Generalization that participates in an ontouml:GeneralizationSet."@en .
 
 
@@ -141,8 +141,8 @@ ontouml:generalization rdf:type owl:ObjectProperty ;
 ontouml:isViewOf rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:ElementView ;
                  rdfs:range ontouml:ModelElement ;
-                 rdfs:label "isViewOf"@en ; 
-                 rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                 rdfs:label "isViewOf"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                  rdfs:comment "Relates an ontouml:ElementView to ontouml:ModelElement, indicating the diagrammatical representation of the latter in an ontouml:Diagram."@en .
 
 
@@ -150,8 +150,8 @@ ontouml:isViewOf rdf:type owl:ObjectProperty ;
 ontouml:literal rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
                 rdfs:range ontouml:Literal ;
-                rdfs:label "literal"@en ; 
-                rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                rdfs:label "literal"@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                 rdfs:comment "Relates an ontouml:Literal to its container enumeration class (an ontouml:Class that has the ontouml:stereotype property with ontouml:enumeration)."@en .
 
 
@@ -159,8 +159,8 @@ ontouml:literal rdf:type owl:ObjectProperty ;
 ontouml:model rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Project ;
               rdfs:range ontouml:Package ;
-              rdfs:label "model"@en ; 
-              rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+              rdfs:label "model"@en ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
               rdfs:comment "Relates an ontouml:Project to an ontouml:Package that is part of it."@en .
 
 
@@ -168,8 +168,8 @@ ontouml:model rdf:type owl:ObjectProperty ;
 ontouml:owner rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
               rdfs:range ontouml:ModelElement ;
-              rdfs:label "owner"@en ; 
-              rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+              rdfs:label "owner"@en ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
               rdfs:comment "Relates an ontouml:Diagram to an ontouml:ModelElement that is represented on it, i.e., to an ontouml:ModelElement that has an ontouml:ElementView on that ontouml:Diagram."@en .
 
 
@@ -177,9 +177,9 @@ ontouml:owner rdf:type owl:ObjectProperty ;
 ontouml:point rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Path ;
               rdfs:range ontouml:Point ;
-              rdfs:label "point"@en ; 
-              rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
-              rdfs:comment  "Relates an ontouml:Path to an ontouml:Point that composes it."@en .
+              rdfs:label "point"@en ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdfs:comment "Relates an ontouml:Path to an ontouml:Point that composes it."@en .
 
 
 ###  https://w3id.org/ontouml#project
@@ -197,8 +197,8 @@ ontouml:project rdf:type owl:ObjectProperty ;
                               rdf:type owl:Class
                             ] ;
                 rdfs:range ontouml:Project ;
-                rdfs:label "project"@en ; 
-                rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                rdfs:label "project"@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                 rdfs:comment "Relates an ontouml:OntoumlElement different than ontouml:Project to an ontouml:Project that it composes."@en .
 
 
@@ -206,8 +206,8 @@ ontouml:project rdf:type owl:ObjectProperty ;
 ontouml:property rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Classifier ;
                  rdfs:range ontouml:Property ;
-                 rdfs:label "property"@en ; 
-                 rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                 rdfs:label "property"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                  rdfs:comment "Aggregates its subproperties ontouml:attribute and ontouml:relationEnd. Should not be directly used."@en ,
                  "Identifies an ontouml:Property exhibited by an ontouml:Classifier. If the ontouml:Classifier is of type ontouml:Class, the ontouml:property is specialized in ontouml:attribute. If the ontouml:Classifier is an ontouml:Relation, the property is specialized in ontouml:relationEnd."@en .
 
@@ -216,8 +216,8 @@ ontouml:property rdf:type owl:ObjectProperty ;
 ontouml:propertyType rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Property ;
                      rdfs:range ontouml:Classifier ;
-                     rdfs:label "propertyType"@en ;  ;
-						         rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                     rdfs:label "propertyType"@en ;
+                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                      rdfs:comment "Identifies an ontouml:Class or ontouml:Relation (i.e., an ontouml:Classifier) to which an ontouml:Property refers."@en .
 
 
@@ -225,9 +225,9 @@ ontouml:propertyType rdf:type owl:ObjectProperty ;
 ontouml:redefinesProperty rdf:type owl:ObjectProperty ;
                           rdfs:domain ontouml:Property ;
                           rdfs:range ontouml:Property ;
-                          rdfs:label "redefinesProperty"@en ;  ;
-						              rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
-                          rdfs:comment  "Identifies a target ontouml:Property that is redefined by a source ontouml:Property."@en .
+                          rdfs:label "redefinesProperty"@en ;
+                          rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                          rdfs:comment "Identifies a target ontouml:Property that is redefined by a source ontouml:Property."@en .
 
 
 ###  https://w3id.org/ontouml#relationEnd
@@ -235,8 +235,8 @@ ontouml:relationEnd rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf ontouml:property ;
                     rdfs:domain ontouml:Relation ;
                     rdfs:range ontouml:Property ;
-                    rdfs:label "relationEnd"@en ;  ;
-						        rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                    rdfs:label "relationEnd"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                     rdfs:comment "Identifies a property that represents one end (source or target) of an ontouml:Relation."@en .
 
 
@@ -244,8 +244,8 @@ ontouml:relationEnd rdf:type owl:ObjectProperty ;
 ontouml:restrictedTo rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Class ;
                      rdfs:range ontouml:OntologicalNature ;
-                     rdfs:label "restrictedTo"@en ;  ;
-						         rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                     rdfs:label "restrictedTo"@en ;
+                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                      rdfs:comment "Associates an ontouml:Class to an ontouml:OntologicalNature, restricting its allowed values."@en .
 
 
@@ -253,8 +253,8 @@ ontouml:restrictedTo rdf:type owl:ObjectProperty ;
 ontouml:shape rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:ElementView ;
               rdfs:range ontouml:Shape ;
-              rdfs:label "shape"@en ;  ;
-              rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+              rdfs:label "shape"@en ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
               rdfs:comment "Relates an ontouml:ElementView to an ontouml:Shape that contains the diagramation's data (size and position) about the ontouml:ModelElement it is a view of."@en .
 
 
@@ -263,8 +263,8 @@ ontouml:sourceEnd rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
                   rdfs:range ontouml:Property ;
-                  rdfs:label "sourceEnd"@en ;  ;
-                  rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                  rdfs:label "sourceEnd"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                   rdfs:comment "Identifies an ontouml:Property that represents the source side of an ontouml:Relation."@en .
 
 
@@ -272,8 +272,8 @@ ontouml:sourceEnd rdf:type owl:ObjectProperty ;
 ontouml:sourceView rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
                    rdfs:range ontouml:ElementView ;
-                   rdfs:label "sourceView"@en ;  ;
-						       rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                   rdfs:label "sourceView"@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                    rdfs:comment "Identifies an ontouml:ElementView that participates as source of an ontouml:RelationView or ontouml:GeneralizationView."@en .
 
 
@@ -281,8 +281,8 @@ ontouml:sourceView rdf:type owl:ObjectProperty ;
 ontouml:specific rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Generalization ;
                  rdfs:range ontouml:Classifier ;
-                 rdfs:label "specific"@en ; 
-                 rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                 rdfs:label "specific"@en ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                  rdfs:comment "Identifies the child ontouml:Classifier (e.g., a subclass) that participates in an ontouml:Generalization relation."@en .
 
 
@@ -290,8 +290,8 @@ ontouml:specific rdf:type owl:ObjectProperty ;
 ontouml:stereotype rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:DecoratableElement ;
                    rdfs:range ontouml:Stereotype ;
-                   rdfs:label "stereotype"@en ;  ;
-						       rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                   rdfs:label "stereotype"@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                    rdfs:comment "Identifies an ontouml:Stereotype applied to an ontouml:DecoratableElement."@en .
 
 
@@ -299,8 +299,8 @@ ontouml:stereotype rdf:type owl:ObjectProperty ;
 ontouml:subsetsProperty rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:Property ;
-                        rdfs:label "subsetsProperty"@en ;  ;
-						            rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                        rdfs:label "subsetsProperty"@en ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                         rdfs:comment "Identifies a target ontouml:Property that is subsetted by a source ontouml:Property."@en .
 
 
@@ -309,8 +309,8 @@ ontouml:targetEnd rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf ontouml:relationEnd ;
                   rdfs:domain ontouml:Relation ;
                   rdfs:range ontouml:Property ;
-                  rdfs:label "targetEnd"@en ;  ;
-						      rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
+                  rdfs:label "targetEnd"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                   rdfs:comment "Identifies an ontouml:Property that represents the target side of an ontouml:Relation."@en .
 
 
@@ -318,18 +318,18 @@ ontouml:targetEnd rdf:type owl:ObjectProperty ;
 ontouml:targetView rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:ConnectorView ;
                    rdfs:range ontouml:ElementView ;
-                   rdfs:label "targetView"@en ;  ;
-						       rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
-                   rdfs:comment "Identifies an ontouml:ElementView that participates as target of an ontouml:RelationView or ontouml:GeneralizationView."@en .                   
+                   rdfs:label "targetView"@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                   rdfs:comment "Identifies an ontouml:ElementView that participates as target of an ontouml:RelationView or ontouml:GeneralizationView."@en .
 
 
 ###  https://w3id.org/ontouml#topLeftPosition
 ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:RectangularShape ;
                         rdfs:range ontouml:Point ;
-                        rdfs:label "topLeftPosition"@en ;  ;
-						            rdfs:isDefinedBy <https://w3id.org/ontouml>  ;
-                        rdfs:comment "Relates an ontouml:RectangularShape to an ontouml:Point that contains the horizontal and vertical coordinates (ontouml:xCoordinate and ontouml:yCoordinate, respectively) representing the former's top left position in an ontouml:Diagram."@en, 
+                        rdfs:label "topLeftPosition"@en ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                        rdfs:comment "Relates an ontouml:RectangularShape to an ontouml:Point that contains the horizontal and vertical coordinates (ontouml:xCoordinate and ontouml:yCoordinate, respectively) representing the former's top left position in an ontouml:Diagram."@en,
                                   "Is direct mapped to the OntoUML Metamodel's 'topLeft' relationship between the classes RectangularShape and Point."@en .
 
 
@@ -349,7 +349,7 @@ ontouml:cardinalityValue rdfs:label "cardinalityValue"@en ;
 
 ###  https://w3id.org/ontouml#description
 ontouml:description rdfs:label "description"@en ;
-                    rdfs:isDefinedBy <https://w3id.org/ontouml> ; 
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                     rdf:type owl:DatatypeProperty ;
                     rdfs:domain ontouml:OntoumlElement ;
                     rdfs:range [ rdf:type rdfs:Datatype ;
@@ -361,134 +361,136 @@ ontouml:description rdfs:label "description"@en ;
 
 
 ###  https://w3id.org/ontouml#height
-ontouml:height  rdfs:label "height"@en ;
-                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
-                rdf:type owl:DatatypeProperty ;
+ontouml:height rdfs:label "height"@en ;
+               rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+               rdf:type owl:DatatypeProperty ;
                rdfs:domain ontouml:RectangularShape ;
                rdfs:range xsd:positiveInteger ;
                rdfs:comment "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#isAbstract
-ontouml:isAbstract rdfs:label "isAbstract"@en ; 
-                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; 
+ontouml:isAbstract rdfs:label "isAbstract"@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                    rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Classifier ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Identifies if the classifier can have direct instances. If set to true, the classifier must be specialized before being instantiated. Otherwise, it can have direct instances."@en .
+                   rdfs:comment "Indicates if the ontouml:Classifier can have direct instances. If set to true, the classifier must be specialized before being instantiated. Otherwise, it can have direct instances."@en .
 
 
 ###  https://w3id.org/ontouml#isComplete
-ontouml:isComplete rdfs:label "isComplete"@en ; 
-                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; 
+ontouml:isComplete rdfs:label "isComplete"@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                    rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Describes if a generalization set is complete, namely it does not admit further generalizations."@en .
+                   rdfs:comment "Indicates if an ontouml:GeneralizationSet is complete, i.e., if it does not admit further generalizations."@en .
 
 
 ###  https://w3id.org/ontouml#isDerived
 ontouml:isDerived rdfs:label "isDerived"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                   rdfs:domain ontouml:DecoratableElement ;
                   rdfs:range xsd:boolean ;
-                  rdfs:comment "Identifies if the extension of the classifier or the value of a property can be \"computed\" through a derivation rule. For instance, the class Child can be modeled as a derived class if defined as a person whose age is less or equal to 10."@en .
+                  rdfs:comment "Indicates if an ontouml:DecoratableElement can be defined through a derivation rule."@en .
 
 
 ###  https://w3id.org/ontouml#isDisjoint
 ontouml:isDisjoint rdfs:label "isDisjoint"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Describes if a generalization set is disjoint, namely it does not admit generalizations having overlapping subclasses."@en .
+                   rdfs:comment "Indicates if an ontouml:GeneralizationSet is disjoint, i.e., it does not admit generalizations having overlapping subclasses."@en .
 
 
 ###  https://w3id.org/ontouml#isExtensional
 ontouml:isExtensional rdfs:label "isExtensional"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                       rdfs:domain ontouml:Class ;
                       rdfs:range xsd:boolean ;
-                      rdfs:comment "Identifies if an ontouml:CollectiveClass is extensionally defined (i.e., it's parts cannot change)."@en .
+                      rdfs:comment "Indicates if an ontouml:CollectiveClass is extensionally defined (i.e., it's parts cannot change)."@en .
 
 
 ###  https://w3id.org/ontouml#isOrdered
 ontouml:isOrdered rdfs:label "isOrdered"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                   rdfs:domain ontouml:Property ;
                   rdfs:range xsd:boolean ;
-                  rdfs:comment "Indicates if a collection is ordered or not. If the attribute represents a database column, this represents a primary key when set."@en .
+                  rdfs:comment "Indicates if an ontouml:Property is ordered or not, i.e., if it requires an exact order of its values or not."@en .
 
 
 ###  https://w3id.org/ontouml#isPowertype
 ontouml:isPowertype rdfs:label "isPowertype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                     rdfs:domain ontouml:Class ;
                     rdfs:range xsd:boolean ;
-                    rdfs:comment "Identifies if an ontouml:Class is a powertype in multi-level modeling."@en ,
-                                 "The ontouml:Class data property ontouml:isPowertype must not be true when it has an ontouml:order equal to one."@en .
+                    rdfs:comment "Indicates if an ontouml:Class is a powertype in multi-level modeling."@en ,
+                                 "The ontouml:Class data property ontouml:isPowertype must not be true when it has an ontouml:order equal to one."@en ;
+                    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> .
 
 
 ###  https://w3id.org/ontouml#isReadOnly
 ontouml:isReadOnly rdfs:label "isReadOnly"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Property ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Denotes when a property may or may not be updated or modified."@en .
+                   rdfs:comment "Indicates if an ontouml:Property can or cannot be updated or modified."@en .
 
 
 ###  https://w3id.org/ontouml#lowerBound
 ontouml:lowerBound rdfs:label "lowerBound"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality ;
                    rdfs:range xsd:nonNegativeInteger ;
                    rdfs:comment "An ontouml:Cardinality's lower bound must correspond to the one indicated by its ontouml:cardinalityValue property." ,
-                                "E.g., if the cardinality set is [1..*] then the lower bound is '1'."@en ,
+                                "E.g., if the ontouml:cardinalityValue set is [1..*] then the lower bound is '1'."@en ,
                                 "Identifies the lower bound of an ontouml:Cardinality."@en .
 
 
 ###  https://w3id.org/ontouml#name
 ontouml:name rdfs:label "name"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
              rdfs:domain ontouml:OntoumlElement ;
              rdfs:range [ rdf:type rdfs:Datatype ;
                           owl:unionOf ( rdf:langString
                                         xsd:string
                                       )
                         ] ;
-             rdfs:comment "A non-empty nullable string containing the object's name. It is allowed for two objects of the ontology to have identical names, even if they are of the same type."@en .
+             rdfs:comment "A string that identifies or names an ontouml:OntoumlElement."@en .
 
 
 ###  https://w3id.org/ontouml#order
 ontouml:order rdfs:label "order"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
               rdfs:domain ontouml:Class ;
               rdfs:range xsd:nonNegativeInteger ;
-              rdfs:comment "Constraint: an ontouml:Class decorated with an ontouml:stereotype different than ontouml:type must have an ontouml:order value equal to 1."@en ,
-                           "Constraint: an ontouml:Class decorated with the ontouml:stereotype ontouml:type must have an ontouml:order value grater than 1."@en ,
-                           "Identifies the order of a class enabling multi-level modeling."@en .
+              rdfs:comment "Constraint: an ontouml:Class that has an ontouml:stereotype property with an ontouml:Stereotype different than ontouml:type must have an ontouml:order value equal to 1."@en ,
+                           "Constraint: an ontouml:Class that has an ontouml:stereotype property with an ontouml:Stereotype ontouml:type must have an ontouml:order value grater than 1."@en ,
+                           "Indicates the order of an ontouml:Class, enabling multi-level modeling."@en ;
+              rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> .
 
 
 ###  https://w3id.org/ontouml#text
 ontouml:text rdfs:label "text"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
              rdfs:domain ontouml:Text ;
              rdfs:range xsd:string ;
-             rdfs:comment ""@en .
+             rdfs:comment "A string that register any information of an ontouml:Text"@en .
 
 
 ###  https://w3id.org/ontouml#upperBound
 ontouml:upperBound rdfs:label "upperBound"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Cardinality ;
                    rdfs:range rdfs:Literal ;
                    rdfs:comment "An ontouml:Cardinality's upper bound must correspond to the one indicated by its ontouml:cardinalityValue property." ,
-                                "E.g., if the cardinality set is [1..*] then the upper bound is '*'."@en ,
+                                "E.g., if the ontouml:cardinalityValue set is [1..*] then the upper bound is '*'."@en ,
                                 "Identifies the upper bound of an ontouml:Cardinality."@en .
 
 
 ###  https://w3id.org/ontouml#width
 ontouml:width rdfs:label "width"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
               rdfs:domain ontouml:RectangularShape ;
               rdfs:range xsd:positiveInteger ;
               rdfs:comment "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
@@ -496,7 +498,7 @@ rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/ontouml#xCoordinate
 ontouml:xCoordinate rdfs:label "xCoordinate"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
                     rdfs:domain ontouml:Point ;
                     rdfs:range xsd:integer ;
                     rdfs:comment "Is direct mapped to the metamodel's 'x' attribute of the Point class."@en ,
@@ -505,8 +507,8 @@ rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/ontouml#yCoordinate
 ontouml:yCoordinate rdfs:label "yCoordinate"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; 
-rdf:type owl:DatatypeProperty ;
+rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:DatatypeProperty ;
                     rdfs:domain ontouml:Point ;
                     rdfs:range xsd:integer ;
                     rdfs:comment "Is direct mapped to the metamodel's 'y' attribute of the Point class."@en ,
@@ -519,37 +521,41 @@ rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/ontouml#AggregationKind
 ontouml:AggregationKind rdfs:label "AggregationKind"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
+                        rdf:type owl:Class ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                         owl:equivalentClass [ rdf:type owl:Class ;
                                               owl:oneOf ( ontouml:composite
                                                           ontouml:none
                                                           ontouml:shared
                                                         )
                                             ] ;
-                        rdfs:comment "The class grouping the aggregation kinds of a given property."@en .
+                        rdfs:comment "Groups all possible aggregation kinds to which an ontouml:Property can be related."@en .
 
 
 ###  https://w3id.org/ontouml#Cardinality
-ontouml:Cardinality rdfs:label "Cardinality"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
-                    rdfs:comment "Represents the cardinality of an ontouml:Property throught its data property ontouml:cardinalityValue."@en .
+ontouml:Cardinality rdf:type owl:Class ;
+                    rdfs:label "Cardinality"@en ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdfs:comment "Represents the cardinality of an ontouml:Property through its data property ontouml:cardinalityValue."@en .
 
 
 ###  https://w3id.org/ontouml#Class
 ontouml:Class rdfs:label "Class"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
+              rdf:type owl:Class ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
               rdfs:subClassOf ontouml:Classifier ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty ontouml:stereotype ;
                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass ontouml:ClassStereotype
                               ] ;
-              rdfs:comment "An object representing a type defined in the ontology."@en .
+              rdfs:comment "Represents a type defined in the ontology."@en .
 
 
 ###  https://w3id.org/ontouml#ClassStereotype
 ontouml:ClassStereotype rdfs:label "ClassStereotype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
+                        rdf:type owl:Class ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                         owl:equivalentClass [ rdf:type owl:Class ;
                                               owl:oneOf ( ontouml:abstract
                                                           ontouml:category
@@ -575,30 +581,30 @@ rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
                                                         )
                                             ] ;
                         rdfs:subClassOf ontouml:Stereotype ;
-                        rdfs:comment "Aggregates all possible instances that can be assigned vian ontouml:stereotype object property to an ontouml:Class."@en .
+                        rdfs:comment "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#ClassView
 ontouml:ClassView rdfs:label "ClassView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
                   rdfs:subClassOf ontouml:NodeView ;
-                  rdfs:comment "Does not directly contain data about the visual representation (rectangular shape size and position) itself, but is related to this information via the ontouml:shape property."@en ,
+                  rdfs:comment "Does not directly contain data about the visual representation (rectangular shape's size and position) itself, but is related to this information via the ontouml:shape property."@en ,
                                "Represents the diagramation (i.e., the visual representation) of an ontouml:Class in a given ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#Classifier
 ontouml:Classifier rdfs:label "Classifier"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
                    rdfs:subClassOf ontouml:DecoratableElement ;
                    owl:disjointUnionOf ( ontouml:Class
                                          ontouml:Relation
                                        ) ;
-                  rdfs:comment ""@en .
+                  rdfs:comment "Abstract class that groups the classes ontouml:Class and ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#CollectiveClass
 ontouml:CollectiveClass rdfs:label "CollectiveClass"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
                         rdfs:subClassOf ontouml:Class ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty ontouml:isExtensional ;
@@ -610,102 +616,103 @@ rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#ConnectorView
 ontouml:ConnectorView rdfs:label "ConnectorView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:ConnectorView rdf:type owl:Class ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:Class ;
                       rdfs:subClassOf ontouml:ElementView ;
                       owl:disjointUnionOf ( ontouml:GeneralizationView
                                             ontouml:RelationView
                                           ) ;
-                      rdfs:comment "The view of a given connector in a given diagram of a given model."@en .
+                      rdfs:comment "Abstract class that groups the classes ontouml:RelationView and ontouml:GeneralizationView."@en .
 
 
 ###  https://w3id.org/ontouml#DecoratableElement
 ontouml:DecoratableElement rdfs:label "DecoratableElement"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:DecoratableElement rdf:type owl:Class ;
+                           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                           rdf:type owl:Class ;
                            rdfs:subClassOf ontouml:ModelElement ;
                            owl:disjointUnionOf ( ontouml:Classifier
                                                  ontouml:Property
                                                ) ;
-                          rdfs:comment ""@en .
+                          rdfs:comment "Abstract class that groups the classes ontouml:Classifier and the ontouml:Property."@en .
 
 
 ###  https://w3id.org/ontouml#Diagram
 ontouml:Diagram rdfs:label "Diagram"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Diagram rdf:type owl:Class ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:Class ;
                 rdfs:subClassOf ontouml:OntoumlElement ;
-                rdfs:comment "Identifies a visual representation of an OntoUML model or of a portion of it."@en .
+                rdfs:comment "A visual representation of an OntoUML model or of a portion of it."@en .
 
 
 ###  https://w3id.org/ontouml#DiagramElement
 ontouml:DiagramElement rdfs:label "DiagramElement"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:DiagramElement rdf:type owl:Class ;
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                       rdf:type owl:Class ;
                        rdfs:subClassOf ontouml:OntoumlElement ;
                        owl:disjointUnionOf ( ontouml:ElementView
                                              ontouml:Shape
                                            ) ;
-                       rdfs:comment "Identifies a diagram model element."@en .
+                       rdfs:comment "Abstract class that groups the classes ontouml:ElementView and the ontouml:Shape."@en .
 
 
 ###  https://w3id.org/ontouml#ElementView
 ontouml:ElementView rdfs:label "ElementView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:ElementView rdf:type owl:Class ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:Class ;
                     rdfs:subClassOf ontouml:DiagramElement ;
                     owl:disjointUnionOf ( ontouml:ConnectorView
                                           ontouml:GeneralizationSetView
                                           ontouml:NodeView
                                         ) ;
                     rdfs:comment "E.g., an ontouml:ClassView is created whenever an ontouml:ModelElement is represented in an ontouml:Diagram."@en ,
-                                 "Represents the diagramatical representation of an element in an ontouml:Diagram."@en .
+                                 "Represents the diagramatical representation of an element on an ontouml:Diagram."@en ,
+                                 "Abstract class that groups the classes ontouml:ConnectorView, ontouml:GeneralizationSetView, and ontouml:NodeView."@en .
 
 
 ###  https://w3id.org/ontouml#Generalization
 ontouml:Generalization rdfs:label "Generalization"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Generalization rdf:type owl:Class ;
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                       rdf:type owl:Class ;
                        rdfs:subClassOf ontouml:ModelElement ;
-                       rdfs:comment "An object representing a generalization defined in the ontology."@en .
+                       rdfs:comment "Represents a generalization defined in an ontology."@en .
 
 
 ###  https://w3id.org/ontouml#GeneralizationSet
 ontouml:GeneralizationSet rdfs:label "GeneralizationSet"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:GeneralizationSet rdf:type owl:Class ;
+                          rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                          rdf:type owl:Class ;
                           rdfs:subClassOf ontouml:ModelElement ;
-                          rdfs:comment "An object representing a generalization set defined in the ontology."@en .
+                          rdfs:comment "Represents a generalization set defined in the ontology."@en .
 
 
 ###  https://w3id.org/ontouml#GeneralizationSetView
 ontouml:GeneralizationSetView rdfs:label "GeneralizationSetView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:GeneralizationSetView rdf:type owl:Class ;
+                              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                              rdf:type owl:Class ;
                               rdfs:subClassOf ontouml:ElementView ;
-                              rdfs:comment "The view of a generalizationSet in a given diagram of a given model."@en .
+                              rdfs:comment "Represents the diagramation (i.e., the visual representation) of an ontouml:GeneralizationSet in a given ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#GeneralizationView
 ontouml:GeneralizationView rdfs:label "GeneralizationView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:GeneralizationView rdf:type owl:Class ;
+                           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                           rdf:type owl:Class ;
                            rdfs:subClassOf ontouml:ConnectorView ;
-                           rdfs:comment "The view of a generalization in a given diagram of a given model."@en .
+                           rdfs:comment "Represents the diagramation (i.e., the visual representation) of an ontouml:Generalization in a given ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#Literal
 ontouml:Literal rdfs:label "Literal"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Literal rdf:type owl:Class ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:Class ;
                 rdfs:subClassOf ontouml:ModelElement ;
-                rdfs:comment "An object representing a value defined for an enumeration."@en .
+                rdfs:comment "Represents a possible value for an ontouml:Class defined by an ontouml:enumeration."@en .
 
 
 ###  https://w3id.org/ontouml#ModelElement
 ontouml:ModelElement rdfs:label "ModelElement"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:ModelElement rdf:type owl:Class ;
+                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                     rdf:type owl:Class ;
                      rdfs:subClassOf ontouml:OntoumlElement ;
                      owl:disjointUnionOf ( ontouml:DecoratableElement
                                            ontouml:Generalization
@@ -714,41 +721,41 @@ ontouml:ModelElement rdf:type owl:Class ;
                                            ontouml:Note
                                            ontouml:Package
                                          ) ;
-                     rdfs:comment "Identifies a model element."@en .
+                     rdfs:comment "Abstract class that groups diverse elements that can be represented in on OntoUML model."@en .
 
 
 ###  https://w3id.org/ontouml#NodeView
 ontouml:NodeView rdfs:label "NodeView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:NodeView rdf:type owl:Class ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:Class ;
                  rdfs:subClassOf ontouml:ElementView ;
                  owl:disjointUnionOf ( ontouml:ClassView
                                        ontouml:NoteView
                                        ontouml:PackageView
                                      ) ;
-                 rdfs:comment "The view of a node in a given diagram of a given model."@en .
+                 rdfs:comment "Abstract class that groups the classes ontouml:NoteView, ontouml:ClassView, and ontouml:PackageView."@en .
 
 
 ###  https://w3id.org/ontouml#Note
 ontouml:Note rdfs:label "Note"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Note rdf:type owl:Class ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:Class ;
              rdfs:subClassOf ontouml:ModelElement ;
-             rdfs:comment ""@en .
+             rdfs:comment "Type of ontouml:ModelElement used to represent textual information."@en .
 
 
 ###  https://w3id.org/ontouml#NoteView
 ontouml:NoteView rdfs:label "NoteView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:NoteView rdf:type owl:Class ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:Class ;
                  rdfs:subClassOf ontouml:NodeView ;
-                 rdfs:comment ""@en .
+                 rdfs:comment "Represents the diagramation (i.e., the visual representation) of an ontouml:Note in a given ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#OntologicalNature
 ontouml:OntologicalNature rdfs:label "OntologicalNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:OntologicalNature rdf:type owl:Class ;
+                          rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                          rdf:type owl:Class ;
                           owl:equivalentClass [ rdf:type owl:Class ;
                                                 owl:oneOf ( ontouml:abstractNature
                                                             ontouml:collectiveNature
@@ -763,56 +770,57 @@ ontouml:OntologicalNature rdf:type owl:Class ;
                                                             ontouml:typeNature
                                                           )
                                               ] ;
-                          rdfs:comment "Indicates the ontological nature of the individuals that the restricted type includes among its instances."@en .
+                          rdfs:comment "Collection of individuals that represent fundamental conceptual modeling issues according to the Unified Foundational Ontology (UFO) theory."@en ;
+                          rdfs:seeAlso <https://doi.org/10.3233/AO-150157> .
 
 
 ###  https://w3id.org/ontouml#OntoumlElement
 ontouml:OntoumlElement rdfs:label "OntoumlElement"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:OntoumlElement rdf:type owl:Class ;
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                       rdf:type owl:Class ;
                        owl:disjointUnionOf ( ontouml:Diagram
                                              ontouml:DiagramElement
                                              ontouml:ModelElement
                                              ontouml:Project
                                            ) ;
-                      rdfs:comment ""@en .
+                      rdfs:comment "Abstract class that groups different elements an ontoUML model can have."@en .
 
 
 ###  https://w3id.org/ontouml#Package
 ontouml:Package rdfs:label "Package"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Package rdf:type owl:Class ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:Class ;
                 rdfs:subClassOf ontouml:ModelElement ;
-                rdfs:comment "Aggregates ontology components or components of an ontology module, working as a container."@en .
+                rdfs:comment "Aggregates ontology components, working as a container."@en .
 
 
 ###  https://w3id.org/ontouml#PackageView
 ontouml:PackageView rdfs:label "PackageView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:PackageView rdf:type owl:Class ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:Class ;
                     rdfs:subClassOf ontouml:NodeView ;
-                    rdfs:comment "A particular type of node view."@en .
+                    rdfs:comment "Represents the diagramation (i.e., the visual representation) of an ontouml:Package in a given ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#Path
 ontouml:Path rdfs:label "Path"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Path rdf:type owl:Class ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:Class ;
              rdfs:subClassOf ontouml:Shape ;
-             rdfs:comment "A list of connected points."@en .
+             rdfs:comment "A list of connected ontouml:Point values to represent an ontouml:ElementView's shape."@en .
 
 
 ###  https://w3id.org/ontouml#Point
 ontouml:Point rdfs:label "Point"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Point rdf:type owl:Class ;
-              rdfs:comment "Datatype that contains the ontouml:xCoordinate value and ontouml:yCoordinate value. These values represent the top left position of an ontouml:RectangularShape, to which the ontouml:Point is related vian ontouml:topLeftPosition property."@en .
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdf:type owl:Class ;
+              rdfs:comment "Contains the ontouml:xCoordinate value and ontouml:yCoordinate value. These values represent the top left position of an ontouml:RectangularShape, to which the ontouml:Point is related vian ontouml:topLeftPosition property."@en .
 
 
 ###  https://w3id.org/ontouml#Project
 ontouml:Project rdfs:label "Project"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Project rdf:type owl:Class ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:Class ;
                 rdfs:subClassOf ontouml:OntoumlElement ;
                 rdfs:comment "Aggregates all entities that are part of a same conceptual model, including concepts declaration and their visual representation."@en ,
                              "It is the upper non-abstract class available in the OntoUML Vocabulary."@en .
@@ -820,42 +828,42 @@ ontouml:Project rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#Property
 ontouml:Property rdfs:label "Property"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Property rdf:type owl:Class ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:Class ;
                  rdfs:subClassOf ontouml:DecoratableElement ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty ontouml:stereotype ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass ontouml:PropertyStereotype
                                  ] ;
-                 rdfs:comment "An object representing a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."@en .
+                 rdfs:comment "Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."@en .
 
 
 ###  https://w3id.org/ontouml#PropertyStereotype
 ontouml:PropertyStereotype rdfs:label "PropertyStereotype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:PropertyStereotype rdf:type owl:Class ;
+                           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                           rdf:type owl:Class ;
                            owl:equivalentClass [ rdf:type owl:Class ;
                                                  owl:oneOf ( ontouml:begin
                                                              ontouml:end
                                                            )
                                                ] ;
                            rdfs:subClassOf ontouml:Stereotype ;
-                           rdfs:comment "A stereotype assigned to a property."@en .
+                           rdfs:comment "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Property."@en .
 
 
 ###  https://w3id.org/ontouml#Rectangle
 ontouml:Rectangle rdfs:label "Rectangle"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Rectangle rdf:type owl:Class ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                  rdf:type owl:Class ;
                   rdfs:subClassOf ontouml:RectangularShape ;
                   rdfs:comment "A particular type of ontouml:RectangularShape, mainly used to represent entities of type ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#RectangularShape
 ontouml:RectangularShape rdfs:label "RectangularShape"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:RectangularShape rdf:type owl:Class ;
+                         rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                         rdf:type owl:Class ;
                          rdfs:subClassOf ontouml:Shape ;
                          owl:disjointUnionOf ( ontouml:Rectangle
                                                ontouml:Text
@@ -865,21 +873,21 @@ ontouml:RectangularShape rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#Relation
 ontouml:Relation rdfs:label "Relation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Relation rdf:type owl:Class ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:Class ;
                  rdfs:subClassOf ontouml:Classifier ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty ontouml:stereotype ;
                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass ontouml:RelationStereotype
                                  ] ;
-                 rdfs:comment "An object representing a relation defined in the ontology."@en .
+                 rdfs:comment "Represents a relation defined in the ontology."@en .
 
 
 ###  https://w3id.org/ontouml#RelationStereotype
 ontouml:RelationStereotype rdfs:label "RelationStereotype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:RelationStereotype rdf:type owl:Class ;
+                           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                           rdf:type owl:Class ;
                            owl:equivalentClass [ rdf:type owl:Class ;
                                                  owl:oneOf ( ontouml:bringsAbout
                                                              ontouml:characterization
@@ -903,32 +911,32 @@ ontouml:RelationStereotype rdf:type owl:Class ;
                                                            )
                                                ] ;
                            rdfs:subClassOf ontouml:Stereotype ;
-                           rdfs:comment "A stereotype assigned to a relation."@en .
+                           rdfs:comment "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#RelationView
 ontouml:RelationView rdfs:label "RelationView"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:RelationView rdf:type owl:Class ;
+                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                     rdf:type owl:Class ;
                      rdfs:subClassOf ontouml:ConnectorView ;
-                     rdfs:comment ""@en .
+                     rdfs:comment "Represents the diagramation (i.e., the visual representation) of an ontouml:Relation in a given ontouml:Diagram."@en .
 
 
 ###  https://w3id.org/ontouml#Shape
 ontouml:Shape rdfs:label "Shape"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Shape rdf:type owl:Class ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdf:type owl:Class ;
               rdfs:subClassOf ontouml:DiagramElement ;
               owl:disjointUnionOf ( ontouml:Path
                                     ontouml:RectangularShape
                                   ) ;
-              rdfs:comment "The ontouml:DiagramElement that contains information about the diagramation of an ontouml:ModelElement through its relation with an ontouml:ElementView."@en .
+              rdfs:comment "Contains information about the diagramation of an ontouml:ModelElement through its relation with an ontouml:ElementView."@en .
 
 
 ###  https://w3id.org/ontouml#Stereotype
 ontouml:Stereotype rdfs:label "Stereotype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Stereotype rdf:type owl:Class ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                   rdf:type owl:Class ;
                    owl:disjointUnionOf ( ontouml:ClassStereotype
                                          ontouml:PropertyStereotype
                                          ontouml:RelationStereotype
@@ -938,10 +946,10 @@ ontouml:Stereotype rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#Text
 ontouml:Text rdfs:label "Text"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:Text rdf:type owl:Class ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:Class ;
              rdfs:subClassOf ontouml:RectangularShape ;
-             rdfs:comment "A rectangular shape used to introduce some text."@en .
+             rdfs:comment "An ontouml:RectangularShape used to represent some textual information in an ontouml:Diagram."@en .
 
 
 #################################################################
@@ -950,465 +958,482 @@ ontouml:Text rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml#abstract
 ontouml:abstract rdfs:label "abstract"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:abstract rdf:type owl:NamedIndividual ,
-                          ontouml:ClassStereotype ;
-                 rdfs:comment "Represents the value of the ClassStereotype enumeration used to assign the corresponding stereotype Abstract to a given Class."@en .
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:ClassStereotype ;
+                 rdfs:comment "An individual of the ontouml:ClassStereotype used to assign the corresponding stereotype to a given ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#abstractNature
 ontouml:abstractNature rdfs:label "abstractNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:abstractNature rdf:type owl:NamedIndividual ,
-                                ontouml:OntologicalNature ;
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                       rdf:type owl:NamedIndividual ,
+                       ontouml:OntologicalNature ;
                        rdfs:comment "Indicates that the restricted type includes abstract individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#begin
 ontouml:begin rdfs:label "begin"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:begin rdf:type owl:NamedIndividual ,
-                       ontouml:PropertyStereotype ;
-              rdfs:comment "Identifies a stereotype that models the creation of an endurant."@en .
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdf:type owl:NamedIndividual ,
+              ontouml:PropertyStereotype ;
+              rdfs:comment "An individual of the ontouml:PropertyStereotype used to assign the corresponding stereotype to a given ontouml:Property."@en ;
+              rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#bringsAbout
 ontouml:bringsAbout rdfs:label "bringsAbout"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:bringsAbout rdf:type owl:NamedIndividual ,
-                             ontouml:RelationStereotype .
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:NamedIndividual ,
+                    ontouml:RelationStereotype ;
+                    rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en ;
+                    rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#category
 ontouml:category rdfs:label "category"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:category rdf:type owl:NamedIndividual ,
+                          rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                          rdf:type owl:NamedIndividual ,
                           ontouml:ClassStereotype ;
-                 rdfs:comment "A rigid mixin that does not require a dependency to be specified. It is used to aggregate essential properties of individuals following different identity principles."@en ;
-                 rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html"^^xsd:anyURI .
+                          rdfs:comment "A rigid mixin that does not require a dependency to be specified. It is used to aggregate essential properties of individuals following different identity principles."@en ;
+                          rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#characterization
 ontouml:characterization rdfs:label "characterization"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:characterization rdf:type owl:NamedIndividual ,
-                                  ontouml:RelationStereotype ;
-                         rdfs:comment "A relation between a bearer type and its feature. A feature is an intrinsic (inherent) moment of its bearer type, and thus existentially dependent on the bearer. A feature may be stereotyped as Quality or Mode. Feature characterizes a bearer type if and only if every instance of bearer exemplifies the feature."@en ;
+                         rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                         rdf:type owl:NamedIndividual ,
+                         ontouml:RelationStereotype ;
+                         rdfs:comment "An ontouml:RelationStereotype attributed to a relation between a bearer type and its feature."@en ;
                          rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#collective
 ontouml:collective rdfs:label "collective"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:collective rdf:type owl:NamedIndividual ,
-                            ontouml:ClassStereotype ;
-                   rdfs:comment "A construct used to represent rigid concepts that provide an identity principle for their instances. The main characteristic of a Collective is that it has a homogenous internal structure, i.e., all parts are perceived in the same way by the whole (see the MemberOf relation for more details about members of collections)."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                   rdf:type owl:NamedIndividual ,
+                   ontouml:ClassStereotype ;
+                   rdfs:comment "An ontouml:ClassStereotype used to represent rigid concepts that provide an identity principle for their instances."@en ;
                    rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/collective/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#collectiveNature
 ontouml:collectiveNature rdfs:label "collectiveNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:collectiveNature rdf:type owl:NamedIndividual ,
-                                  ontouml:OntologicalNature ;
+                         rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                         rdf:type owl:NamedIndividual ,
+                         ontouml:OntologicalNature ;
                          rdfs:comment "Indicates that the restricted type includes collective individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#comparative
 ontouml:comparative rdfs:label "comparative"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:comparative rdf:type owl:NamedIndividual ,
-                             ontouml:RelationStereotype ;
-                    rdfs:comment "The stereotype for comparative relations (e.g., heavier-than). Decorates functional relations that always hold between any two individuals bearing the same relevant quality."@en .
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:NamedIndividual ,
+                    ontouml:RelationStereotype ;
+                    rdfs:comment "The stereotype for comparative relations (e.g., heavier-than). Decorates relations that always hold between any two individuals bearing the same relevant quality."@en .
 
 
 ###  https://w3id.org/ontouml#componentOf
 ontouml:componentOf rdfs:label "componentOf"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:componentOf rdf:type owl:NamedIndividual ,
-                             ontouml:RelationStereotype ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:NamedIndividual ,
+                    ontouml:RelationStereotype ;
                     rdfs:comment "A parthood relation between two complexes."@en ;
                     rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/componentOf/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#composite
 ontouml:composite rdfs:label "composite"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:composite rdf:type owl:NamedIndividual ,
-                           ontouml:AggregationKind ;
-                  rdfs:comment "The value denoting that an ontouml:Property represents a composite aggregation, namely a strong form of aggregation."@en .
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                  rdf:type owl:NamedIndividual ,
+                  ontouml:AggregationKind ;
+                  rdfs:comment "The value denoting that an ontouml:Property represents a composite aggregation, i.e., a strong form of aggregation."@en .
 
 
 ###  https://w3id.org/ontouml#creation
 ontouml:creation rdfs:label "creation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:creation rdf:type owl:NamedIndividual ,
-                          ontouml:RelationStereotype .
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:RelationStereotype ;
+                 rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en ;
+                 rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#datatype
 ontouml:datatype rdfs:label "datatype"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:datatype rdf:type owl:NamedIndividual ,
-                          ontouml:ClassStereotype ;
-                 rdfs:comment "A classification that specifies which type of value a variable has and what type of mathematical, relational, or logical operations can be applied to it without causing an error."@en .
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:ClassStereotype ;
+                 rdfs:comment "An individual of the ontouml:ClassStereotype used to assign the corresponding stereotype to a given ontouml:Class."@en .
 
 
 ###  https://w3id.org/ontouml#derivation
 ontouml:derivation rdfs:label "derivation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:derivation rdf:type owl:NamedIndividual ,
-                            ontouml:RelationStereotype .
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                   rdf:type owl:NamedIndividual ,
+                   ontouml:RelationStereotype ;
+                   rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#end
 ontouml:end rdfs:label "end"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:end rdf:type owl:NamedIndividual ,
-                     ontouml:PropertyStereotype ;
-            rdfs:comment "Identifies a stereotype that models the termination of an endurant."@en .
+            rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+            rdf:type owl:NamedIndividual ,
+            ontouml:PropertyStereotype ;
+            rdfs:comment "An individual of the ontouml:PropertyStereotype used to assign the corresponding stereotype to a given ontouml:Property."@en ;
+            rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#enumeration
 ontouml:enumeration rdfs:label "enumeration"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:enumeration rdf:type owl:NamedIndividual ,
-                             ontouml:ClassStereotype ;
-                    rdfs:comment "A class represented with the enumeration stereotype having values represented using the field literals."@en .
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:NamedIndividual ,
+                    ontouml:ClassStereotype ;
+                    rdfs:comment "Represents the enumeration stereotype, having values represented using ontouml:Literal instances."@en .
 
 
 ###  https://w3id.org/ontouml#event
 ontouml:event rdfs:label "event"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:event rdf:type owl:NamedIndividual ,
-                       ontouml:ClassStereotype ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdf:type owl:NamedIndividual ,
+              ontouml:ClassStereotype ;
               rdfs:comment "Things that happen to or are performed by endurants (Casati and Varzi, 2015)."@en ;
-              rdfs:seeAlso "https://plato.stanford.edu/archives/win2015/entries/events/"^^xsd:anyURI .
+              rdfs:comment "An individual of the ontouml:ClassStereotype used to assign the corresponding stereotype to a given ontouml:Class."@en ;
+              rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#eventNature
 ontouml:eventNature rdfs:label "eventNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:eventNature rdf:type owl:NamedIndividual ,
-                             ontouml:OntologicalNature ;
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:NamedIndividual ,
+                    ontouml:OntologicalNature ;
                     rdfs:comment "Indicates that the restricted type includes event individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#externalDependence
 ontouml:externalDependence rdfs:label "externalDependence"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:externalDependence rdf:type owl:NamedIndividual ,
-                                    ontouml:RelationStereotype ;
+                           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                           rdf:type owl:NamedIndividual ,
+                           ontouml:RelationStereotype ;
                            rdfs:comment "Identifies an endurant on which the extrinsicMode depends."@en ;
                            rdfs:seeAlso "https://nemo-ufes.github.io/gufo/#externallyDependsOn"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#extrinsicModeNature
 ontouml:extrinsicModeNature rdfs:label "extrinsicModeNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:extrinsicModeNature rdf:type owl:NamedIndividual ,
-                                     ontouml:OntologicalNature ;
+                            rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                            rdf:type owl:NamedIndividual ,
+                            ontouml:OntologicalNature ;
                             rdfs:comment "Identifies what inheres in a concrete individual and depends on others for its existence."@en .
 
 
 ###  https://w3id.org/ontouml#functionalComplexNature
 ontouml:functionalComplexNature rdfs:label "functionalComplexNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:functionalComplexNature rdf:type owl:NamedIndividual ,
-                                         ontouml:OntologicalNature ;
+                                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                                rdf:type owl:NamedIndividual ,
+                                ontouml:OntologicalNature ;
                                 rdfs:comment "Identifies the nature of a complex object whose parts (components) play different roles in its composition."@en .
 
 
 ###  https://w3id.org/ontouml#historicalDependence
 ontouml:historicalDependence rdfs:label "historicalDependence"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:historicalDependence rdf:type owl:NamedIndividual ,
-                                      ontouml:RelationStereotype ;
-                             rdfs:comment "Identifies a concrete individual on which another concrete individual depends historically."@en .
+                             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                             rdf:type owl:NamedIndividual ,
+                             ontouml:RelationStereotype ;
+                             rdfs:comment "Identifies a concrete individual on which another concrete individual depends historically."@en ;
+                             rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#historicalRole
 ontouml:historicalRole rdfs:label "historicalRole"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:historicalRole rdf:type owl:NamedIndividual ,
-                                ontouml:ClassStereotype ;
-                       rdfs:comment "Denotes the role of an endurant in virtue of having participated in an event of a particular type."@en .
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                       rdf:type owl:NamedIndividual ,
+                       ontouml:ClassStereotype ;
+                       rdfs:comment "Denotes the role of an endurant in virtue of having participated in an event of a particular type."@en ;
+                       rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#historicalRoleMixin
 ontouml:historicalRoleMixin rdfs:label "historicalRoleMixin"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:historicalRoleMixin rdf:type owl:NamedIndividual ,
-                                     ontouml:ClassStereotype ;
-                            rdfs:comment "Denotes the equivalent of historicalRole for types that aggregate instances with different identity principles."@en .
+                            rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                            rdf:type owl:NamedIndividual ,
+                            ontouml:ClassStereotype ;
+                            rdfs:comment "Denotes the equivalent of historicalRole for types that aggregate instances with different identity principles."@en ;
+                            rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#instantiation
 ontouml:instantiation rdfs:label "instantiation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:instantiation rdf:type owl:NamedIndividual ,
-                               ontouml:RelationStereotype .
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:NamedIndividual ,
+                      ontouml:RelationStereotype ;
+                      rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#intrinsicModeNature
 ontouml:intrinsicModeNature rdfs:label "intrinsicModeNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:intrinsicModeNature rdf:type owl:NamedIndividual ,
-                                     ontouml:OntologicalNature ;
+                            rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                            rdf:type owl:NamedIndividual ,
+                            ontouml:OntologicalNature ;
                             rdfs:comment "Indicates that the restricted type includes intrinsic mode individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#kind
 ontouml:kind rdfs:label "kind"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:kind rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype ;
-             rdfs:comment "A construct to be used in most of your models. It is used to represent rigid concepts that provide an identity principle for their instances and do not require a relational dependency. A Kind represents a Functional Complex, i.e., a whole that has parts contributing in different ways to its functionality (see the ComponentOf relation for more details about functional parts)."@en ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:NamedIndividual ,
+             ontouml:ClassStereotype ;
+             rdfs:comment "Used to represent rigid concepts that provide an identity principle for their instances and do not require a relational dependency."@en ;
              rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#manifestation
 ontouml:manifestation rdfs:label "manifestation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:manifestation rdf:type owl:NamedIndividual ,
-                               ontouml:RelationStereotype .
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:NamedIndividual ,
+                      ontouml:RelationStereotype ;
+                      rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#material
 ontouml:material rdfs:label "material"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:material rdf:type owl:NamedIndividual ,
-                          ontouml:RelationStereotype ;
-                 rdfs:comment "Identifies relations that have material structure on their own and include examples such as employments, kisses, enrollments, flight, connections and commitments. The relata of a material relation are mediated by individuals that are called relators."@en ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:RelationStereotype ;
+                 rdfs:comment "Identifies relations that have material structure on their own and include examples such as employments, kisses, enrollments, flight, connections and commitments."@en ;
                  rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/material/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#mediation
 ontouml:mediation rdfs:label "mediation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:mediation rdf:type owl:NamedIndividual ,
-                           ontouml:RelationStereotype ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                  rdf:type owl:NamedIndividual ,
+                  ontouml:RelationStereotype ;
                   rdfs:comment "A type of existential dependence relation (a form of nonfunctional inherence). It can be derived from the relation between the relata and the qua individuals that compose the relator and that inhere in the relata."@en ;
                   rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/mediation/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#memberOf
 ontouml:memberOf rdfs:label "memberOf"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:memberOf rdf:type owl:NamedIndividual ,
-                          ontouml:RelationStereotype ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:RelationStereotype ;
                  rdfs:comment "A parthood relation between a functional complex or a Collective (as a part) and a Collective (as a whole)."@en ;
                  rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/memberOf/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#mixin
 ontouml:mixin rdfs:label "mixin"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:mixin rdf:type owl:NamedIndividual ,
-                       ontouml:ClassStereotype ;
-              rdfs:comment "A Mixin is a semi-rigid type, i.e., it behaves as a rigid type for some individuals and as an anti-rigid one for others (it’s the only stereotype with such a feature in OntoUML)."@en ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdf:type owl:NamedIndividual ,
+              ontouml:ClassStereotype ;
+              rdfs:comment "Represents a semi-rigid type, i.e., it behaves as a rigid type for some individuals and as an anti-rigid one for others."@en ;
               rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/mixin/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#mode
 ontouml:mode rdfs:label "mode"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:mode rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:NamedIndividual ,
+             ontouml:ClassStereotype ;
              rdfs:comment "A particular type of intrinsic property that has no structured value."@en ;
              rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#none
 ontouml:none rdfs:label "none"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:none rdf:type owl:NamedIndividual ,
-                      ontouml:AggregationKind ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:NamedIndividual ,
+             ontouml:AggregationKind ;
              rdfs:comment "Denotes that an ontouml:Property is neither ontouml:shared nor ontouml:composite, but just an aggregation."@en .
 
 
 ###  https://w3id.org/ontouml#participation
 ontouml:participation rdfs:label "participation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:participation rdf:type owl:NamedIndividual ,
-                               ontouml:RelationStereotype ;
-                      rdfs:comment "A relation for representing when an event depends on a single object."@en .
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:NamedIndividual ,
+                      ontouml:RelationStereotype ;
+                      rdfs:comment "A relation for representing when an event depends on a single object."@en ;
+                      rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#participational
 ontouml:participational rdfs:label "participational"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:participational rdf:type owl:NamedIndividual ,
-                                 ontouml:RelationStereotype ;
-                        rdfs:comment "Denotes a kind of event decomposition."@en .
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                        rdf:type owl:NamedIndividual ,
+                        ontouml:RelationStereotype ;
+                        rdfs:comment "Denotes a kind of event decomposition."@en ;
+                        rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_39> .
 
 
 ###  https://w3id.org/ontouml#phase
 ontouml:phase rdfs:label "phase"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:phase rdf:type owl:NamedIndividual ,
-                       ontouml:ClassStereotype ;
-              rdfs:comment "A stereotype used to represent anti-rigid subtypes of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity) that are instantiated by changes in intrinsic properties (e.g., the age of a person, the color of an object, the condition of a car). All instances of a particular Phase must follow the same identity principle. Phases always come in partitions."@en ;
+              rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+              rdf:type owl:NamedIndividual ,
+              ontouml:ClassStereotype ;
+              rdfs:comment "Used to represent anti-rigid subtypes of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity) that are instantiated by changes in intrinsic properties (e.g., the age of a person, the color of an object, the condition of a car).Phases always come in partitions."@en ;
               rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/phase/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#phaseMixin
 ontouml:phaseMixin rdfs:label "phaseMixin"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:phaseMixin rdf:type owl:NamedIndividual ,
-                            ontouml:ClassStereotype ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                   rdf:type owl:NamedIndividual ,
+                   ontouml:ClassStereotype ;
                    rdfs:comment "The equivalent of Phase for types that aggregate instances with different identity principles. A class stereotyped as PhaseMixin is also an anti-rigid type. PhaseMixin is similar semantically to RoleMixin with the difference in relational dependency."@en ;
                    rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/phasemixin/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#quality
 ontouml:quality rdfs:label "quality"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:quality rdf:type owl:NamedIndividual ,
-                         ontouml:ClassStereotype ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:NamedIndividual ,
+                ontouml:ClassStereotype ;
                 rdfs:comment "A Quality is a particular type of intrinsic property that has a structured value. Qualities are things that existentially depend on the things they characterize, called their bearers."@en ;
                 rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/aspects/quality/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#qualityNature
 ontouml:qualityNature rdfs:label "qualityNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:qualityNature rdf:type owl:NamedIndividual ,
-                               ontouml:OntologicalNature ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:NamedIndividual ,
+                      ontouml:OntologicalNature ;
                       rdfs:comment "Indicates that the restricted type includes quality individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#quantity
 ontouml:quantity rdfs:label "quantity"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:quantity rdf:type owl:NamedIndividual ,
-                          ontouml:ClassStereotype ;
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:ClassStereotype ;
                  rdfs:comment "Construct used to represent rigid concepts that provide an identity principle for their instances."@en ;
                  rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/quantity/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#quantityNature
 ontouml:quantityNature rdfs:label "quantityNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:quantityNature rdf:type owl:NamedIndividual ,
-                                ontouml:OntologicalNature ;
+                       rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                       rdf:type owl:NamedIndividual ,
+                       ontouml:OntologicalNature ;
                        rdfs:comment "Indicates that the restricted type includes quantity individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#relator
 ontouml:relator rdfs:label "relator"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:relator rdf:type owl:NamedIndividual ,
-                         ontouml:ClassStereotype ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:NamedIndividual ,
+                ontouml:ClassStereotype ;
                 rdfs:comment "A construct used to represent truth-makers of material relations, i.e., the things that must exist for two or more individuals to be connected by material relations."@en ;
                 rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#relatorNature
 ontouml:relatorNature rdfs:label "relatorNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:relatorNature rdf:type owl:NamedIndividual ,
-                               ontouml:OntologicalNature ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:NamedIndividual ,
+                      ontouml:OntologicalNature ;
                       rdfs:comment "Indicates that the restricted type includes relator individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#role
 ontouml:role rdfs:label "role"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:role rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype ;
-             rdfs:comment "A construct used to represent anti-rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity) that are instantiated in relational contexts."@en ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:NamedIndividual ,
+             ontouml:ClassStereotype ;
+             rdfs:comment "Used to represent anti-rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity) that are instantiated in relational contexts."@en ;
              rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#roleMixin
 ontouml:roleMixin rdfs:label "roleMixin"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:roleMixin rdf:type owl:NamedIndividual ,
-                           ontouml:ClassStereotype ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                  rdf:type owl:NamedIndividual ,
+                  ontouml:ClassStereotype ;
                   rdfs:comment "The equivalent of Role for types that aggregate instances with different identity principles."@en ;
                   rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#shared
 ontouml:shared rdfs:label "shared"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:shared rdf:type owl:NamedIndividual ,
-                        ontouml:AggregationKind ;
-               rdfs:comment "Indicates that the ontouml:Property has shared aggregation semantics."@en ,
-                            "The precise semantics of shared aggregation vary by application area and modeler."@en .
+               rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+               rdf:type owl:NamedIndividual ,
+               ontouml:AggregationKind ;
+               rdfs:comment "Indicates that the ontouml:Property has shared aggregation semantics."@en .
 
 
 ###  https://w3id.org/ontouml#situation
 ontouml:situation rdfs:label "situation"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:situation rdf:type owl:NamedIndividual ,
-                           ontouml:ClassStereotype ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                  rdf:type owl:NamedIndividual ,
+                  ontouml:ClassStereotype ;
                   rdfs:comment "Can be used to represent certain configurations of entities that can be comprehended as a whole."@en .
 
 
 ###  https://w3id.org/ontouml#situationNature
 ontouml:situationNature rdfs:label "situationNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:situationNature rdf:type owl:NamedIndividual ,
-                                 ontouml:OntologicalNature ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                        rdf:type owl:NamedIndividual ,
+                        ontouml:OntologicalNature ;
                         rdfs:comment "Indicates that the restricted type includes situation individuals among its instances."@en .
 
 
 ###  https://w3id.org/ontouml#subCollectionOf
 ontouml:subCollectionOf rdfs:label "subCollectionOf"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:subCollectionOf rdf:type owl:NamedIndividual ,
-                                 ontouml:RelationStereotype ;
+                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                        rdf:type owl:NamedIndividual ,
+                        ontouml:RelationStereotype ;
                         rdfs:comment "A parthood relation between two collectives."@en ;
                         rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subCollectionOf/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#subQuantityOf
 ontouml:subQuantityOf rdfs:label "subQuantityOf"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:subQuantityOf rdf:type owl:NamedIndividual ,
-                               ontouml:RelationStereotype ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                      rdf:type owl:NamedIndividual ,
+                      ontouml:RelationStereotype ;
                       rdfs:comment "A parthood relation between two quantities."@en ;
                       rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subQuantityOf/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#subkind
 ontouml:subkind rdfs:label "subkind"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:subkind rdf:type owl:NamedIndividual ,
-                         ontouml:ClassStereotype ;
-                rdfs:comment "A Subkind is a construct used to represent rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity). By default, its usage does not require a relational dependency."@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                rdf:type owl:NamedIndividual ,
+                ontouml:ClassStereotype ;
+                rdfs:comment "Used to represent rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity)."@en ;
                 rdfs:seeAlso "https://ontouml.readthedocs.io/en/latest/classes/sortals/subkind/index.html"^^xsd:anyURI .
 
 
 ###  https://w3id.org/ontouml#termination
 ontouml:termination rdfs:label "termination"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:termination rdf:type owl:NamedIndividual ,
-                             ontouml:RelationStereotype .
+                    rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                    rdf:type owl:NamedIndividual ,
+                    ontouml:RelationStereotype ;
+                    rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#triggers
 ontouml:triggers rdfs:label "triggers"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:triggers rdf:type owl:NamedIndividual ,
-                          ontouml:RelationStereotype .
+                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                 rdf:type owl:NamedIndividual ,
+                 ontouml:RelationStereotype ;
+                 rdfs:comment "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."@en .
 
 
 ###  https://w3id.org/ontouml#type
 ontouml:type rdfs:label "type"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:type rdf:type owl:NamedIndividual ,
-                      ontouml:ClassStereotype ;
-             rdfs:comment "The stereotype for high-order types in the OWL serialization."@en .
+             rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+             rdf:type owl:NamedIndividual ,
+             ontouml:ClassStereotype ;
+             rdfs:comment "The stereotype for high-order types."@en ;
+             rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> .
 
 
 ###  https://w3id.org/ontouml#typeNature
 ontouml:typeNature rdfs:label "typeNature"@en ;
-rdfs:isDefinedBy <https://w3id.org/ontouml> .
-ontouml:typeNature rdf:type owl:NamedIndividual ,
-                            ontouml:OntologicalNature ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml> ;
+                   rdf:type owl:NamedIndividual ,
+                   ontouml:OntologicalNature ;
                    rdfs:comment "Indicates that the restricted type includes type individuals among its instances."@en .
 
 

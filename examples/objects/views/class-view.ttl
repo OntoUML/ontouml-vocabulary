@@ -1,12 +1,14 @@
-@prefix ex: <http://example.com/>.
-@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:cv1 a ontouml:ClassView ;
-      ontouml:id "cv1" ; 
-      ontouml:isViewOf ex:c1 ;
-      ontouml:shape ex:rect1 ; 
-      ontouml:project ex:p1 .
+:BwXz5G6GAqACBBff a ontouml:ClassView ;
+    ontouml:isViewOf :hwXz5G6GAqACBBfh ;
+    ontouml:project :Rol55G6GAqACBAnR ;
+    ontouml:shape :BwXz5G6GAqACBBff_shape .
 
-ex:p1 a ontouml:Project .
-ex:c1 a ontouml:Class .
-ex:rect1 a ontouml:Rectangle .
+:hwXz5G6GAqACBBfh a ontouml:Class .
+:Rol55G6GAqACBAnR a ontouml:Project .
+:BwXz5G6GAqACBBff_shape a ontouml:Rectangle .
