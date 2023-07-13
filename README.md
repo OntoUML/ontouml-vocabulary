@@ -24,7 +24,7 @@ The FAIR Model Catalog for Ontology-Driven Conceptual Modeling Research, short-n
 
 ## Related Computational Tools
 
-The [OntoUML JSON2Graph Decoder](w3id.org/ontouml/json2graph) provides a transformation from data encoded as JSON according to the [ontouml-schema](https://github.com/OntoUML/ontouml-schema) to a graph format (e.g., TTL) in compliance with the OntoUML Vocabulary.
+The [OntoUML JSON2Graph Decoder](https://w3id.org/ontouml/json2graph) provides a transformation from data encoded as JSON according to the [ontouml-schema](https://github.com/OntoUML/ontouml-schema) to a graph format (e.g., TTL) in compliance with the OntoUML Vocabulary.
 
 ## Contributors
 
