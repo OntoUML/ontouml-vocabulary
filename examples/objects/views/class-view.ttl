@@ -1,0 +1,12 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:cv1 a ontouml:ClassView ;
+      ontouml:id "cv1" ; 
+      ontouml:isViewOf ex:c1 ;
+      ontouml:shape ex:rect1 ; 
+      ontouml:project ex:p1 .
+
+ex:p1 a ontouml:Project .
+ex:c1 a ontouml:Class .
+ex:rect1 a ontouml:Rectangle .

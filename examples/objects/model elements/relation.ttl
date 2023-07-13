@@ -1,0 +1,18 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:r1 a ontouml:Relation ;
+      ontouml:id "r1" ; 
+      ontouml:name "knows"@en ; 
+      ontouml:description "Identifies people that one recognizes by name or picture."@en ;
+      ontouml:stereotype ontouml:material ;
+      ontouml:isDerived "true"^^xsd:boolean ;
+      ontouml:relationEnd ex:pr1, ex:pr2 ;
+      ontouml:sourceEnd ex:pr1 ;
+      ontouml:targetEnd ex:pr2 ;
+      ontouml:project ex:p1 .
+
+ex:p1 a ontouml:Project .
+ex:c1 a ontouml:Class . 
+ex:pr1 a ontouml:Property .
+ex:pr2 a ontouml:Property .

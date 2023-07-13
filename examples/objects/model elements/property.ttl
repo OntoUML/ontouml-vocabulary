@@ -1,0 +1,22 @@
+@prefix ex: <http://example.com/>.
+@prefix ontouml: <https://purl.org/ontouml-models/vocabulary/>.
+
+ex:pr1 a ontouml:Property ;
+      ontouml:name "knower"@en;
+      ontouml:isDerived "false"^^xsd:boolean ;
+      ontouml:isReadOnly "false"^^xsd:boolean ;
+      ontouml:isOrdered "false"^^xsd:boolean ;
+      ontouml:aggregationKind ontouml:none ;
+      ontouml:cardinality ex:ca1 ;
+      ontouml:propertyType ex:c1 ;      
+      ontouml:project ex:p1 .
+
+ex:ca1 a ontouml:Cardinality;
+      ontouml:cardinalityValue "0..*";
+      ontouml:lowerBound "0";
+      ontouml:upperBound "*".
+
+ex:p1 a ontouml:Project .
+ex:c1 a ontouml:Class . 
+
+
