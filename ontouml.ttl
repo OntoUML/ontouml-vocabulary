@@ -10,7 +10,7 @@
 @prefix ontouml: <https://w3id.org/ontouml#> .
 @base <https://w3id.org/ontouml> .
 
-<https://w3id.org/ontouml> rdf:type owl:Ontology ;
+<https://w3id.org/ontouml> rdf:type owl:Ontology , dct:Standard ;
                             owl:versionIRI <https://w3id.org/ontouml/1.1.0> ;
                             owl:versionInfo "General review for compliance with the OntoUML Metamodel 1.1.0."@en ;
                             owl:priorVersion <https://w3id.org/ontouml/1.0.0> ;
@@ -27,7 +27,7 @@
                             dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;                            
                             dct:title "OntoUML Metamodel Vocabulary"@en ;
                             dct:conformsTo <https://w3id.org/ontouml/metamodel/v1.1.0> ;
-                            dct:language "en" ;
+                            dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
                             vann:preferredNamespacePrefix "ontouml" ;
                             vann:preferredNamespaceUri "https://w3id.org/ontouml#"^^xsd:anyURI ;
                             dcat:landingPage <https://w3id.org/ontouml/vocabulary> ;
