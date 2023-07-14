@@ -3,7 +3,7 @@
 
 :pk1 a ontouml:Package ;
     ontouml:containsModelElement :pk2, :pk3 ;
-    ontouml:name "My package"@en ;
+    ontouml:name "Person model"@en ;
     ontouml:project :p .
 
 :pk2 a ontouml:Package .

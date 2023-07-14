@@ -5,7 +5,7 @@
     ontouml:generalization :g1, :g2 ;
     ontouml:isComplete true ;
     ontouml:isDisjoint false ;
-    ontouml:name "my generalization"@en ;
+    ontouml:name "person type"@en ;
     ontouml:project :p .
 
 :g1 a ontouml:Generalization .
