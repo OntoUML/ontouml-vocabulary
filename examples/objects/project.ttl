@@ -1,15 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Rol55G6GAqACBAnR a ontouml:Project ;
-    ontouml:diagram :8jVBlG6GAqACBAli,
-        :YQHz5G6GAqACBBeg ;
-    ontouml:model :Rol55G6GAqACBAnR_root ;
-    ontouml:name "EMMSAD2022"@en .
+:p a ontouml:Project ;
+    ontouml:diagram :d1, :d2 ;
+    ontouml:model :pk ;
+    ontouml:name "My OntoUML Model"@en .
 
-:8jVBlG6GAqACBAli a ontouml:Diagram .
-:YQHz5G6GAqACBBeg a ontouml:Diagram .
-:Rol55G6GAqACBAnR_root a ontouml:Package .
+:d1 a ontouml:Diagram .
+:d2 a ontouml:Diagram .
+:pk a ontouml:Package .

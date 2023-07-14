@@ -1,17 +1,13 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:gKNItt6GAqACCgrA a ontouml:GeneralizationSet ;
-    ontouml:generalization :2REalt6GAqACChbb,
-        :JCkalt6GAqACChbf ;
+:gs a ontouml:GeneralizationSet ;
+    ontouml:generalization :g1, :g2 ;
     ontouml:isComplete true ;
     ontouml:isDisjoint false ;
-    ontouml:name ""@en ;
-    ontouml:project :Nlnret6GAqACCgBO .
+    ontouml:name "my generalization"@en ;
+    ontouml:project :p .
 
-:2REalt6GAqACChbb a ontouml:Generalization .
-:JCkalt6GAqACChbf a ontouml:Generalization .
-:Nlnret6GAqACCgBO a ontouml:Project .
+:g1 a ontouml:Generalization .
+:g2 a ontouml:Generalization .
+:p a ontouml:Project .

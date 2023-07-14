@@ -1,16 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:1HzxlG6GAqACBAyB_path a ontouml:Path ;
-    ontouml:point :1HzxlG6GAqACBAyB_path_point_0,
-        :1HzxlG6GAqACBAyB_path_point_1,
-        :1HzxlG6GAqACBAyB_path_point_2 ;
-    ontouml:project :Rol55G6GAqACBAnR .
+:pa a ontouml:Path ;
+    ontouml:point :pt1, :pt2, :pt3 ;
+    ontouml:project :p .
 
-:1HzxlG6GAqACBAyB_path_point_0 a ontouml:Point .
-:1HzxlG6GAqACBAyB_path_point_1 a ontouml:Point .
-:1HzxlG6GAqACBAyB_path_point_2 a ontouml:Point .
-:Rol55G6GAqACBAnR a ontouml:Project .
+:p1 a ontouml:Point .
+:p2 a ontouml:Point .
+:p3 a ontouml:Point .
+:p a ontouml:Project .

@@ -1,14 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0jRott6GAqACCgwp a ontouml:GeneralizationSetView ;
-    ontouml:isViewOf :gjRott6GAqACCgwn ;
-    ontouml:project :Nlnret6GAqACCgBO ;
-    ontouml:shape :0jRott6GAqACCgwp_shape .
+:gsv a ontouml:GeneralizationSetView ;
+    ontouml:isViewOf :gs ;
+    ontouml:shape :te ;
+    ontouml:project :p .
 
-:gjRott6GAqACCgwn a ontouml:GeneralizationSet .
-:Nlnret6GAqACCgBO a ontouml:Project .
-:0jRott6GAqACCgwp_shape a ontouml:Text .
+:gs a ontouml:GeneralizationSet .
+:te a ontouml:Text .
+:p a ontouml:Project .

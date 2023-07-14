@@ -1,17 +1,15 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Ew4hlG6GAqACBArh a ontouml:Class ;
-    ontouml:isAbstract true ;
-    ontouml:isDerived false ;
-    ontouml:isPowertype false ;
-    ontouml:name "UFO:Agent"@en ;
-    ontouml:order "1"^^xsd:nonNegativeInteger ;
-    ontouml:project :Rol55G6GAqACBAnR ;
-    ontouml:restrictedTo ontouml:functionalComplexNature ;
-    ontouml:stereotype ontouml:category .
+:c a ontouml:Class ;
+   ontouml:isAbstract true ;
+   ontouml:isDerived false ;
+   ontouml:isPowertype false ;
+   ontouml:name "Person"@en ;
+   ontouml:order "1"^^xsd:nonNegativeInteger ;
+   ontouml:project :p ;
+   ontouml:restrictedTo ontouml:functionalComplexNature ;
+   ontouml:stereotype ontouml:category .
 
-:Rol55G6GAqACBAnR a ontouml:Project .
+:p a ontouml:Project .

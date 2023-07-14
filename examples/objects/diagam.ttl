@@ -1,0 +1,15 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+# Other containsView properties ommited for brevity.
+
+:d a ontouml:Diagram ;
+    ontouml:containsView :rv1, :rv2;        
+    ontouml:name "My diagram"@en ;
+    ontouml:owner :pk ;
+    ontouml:project :p .
+
+:rv1 a ontouml:RelationView .
+:rv2 a ontouml:RelationView .
+:pk a ontouml:Package .
+:p a ontouml:Project .

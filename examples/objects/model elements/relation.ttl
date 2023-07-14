@@ -1,20 +1,16 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:0B0hlG6GAqACBArz a ontouml:Relation ;
+:r a ontouml:Relation ;
+    ontouml:name "inheres in"@en ;
+    ontouml:stereotype ontouml:characterization ;
     ontouml:isAbstract false ;
     ontouml:isDerived false ;
-    ontouml:name "inheres in"@en ;
-    ontouml:project :Rol55G6GAqACBAnR ;
-    ontouml:relationEnd :0B0hlG6GAqACBAr0,
-        :0B0hlG6GAqACBAr2 ;
-    ontouml:sourceEnd :0B0hlG6GAqACBAr0 ;
-    ontouml:stereotype ontouml:characterization ;
-    ontouml:targetEnd :0B0hlG6GAqACBAr2 .
+    ontouml:relationEnd :pr1, :pr2 ;
+    ontouml:sourceEnd :pr1 ;
+    ontouml:targetEnd :pr2 ;
+    ontouml:project :p .
 
-:Rol55G6GAqACBAnR a ontouml:Project .
-:0B0hlG6GAqACBAr0 a ontouml:Property .
-:0B0hlG6GAqACBAr2 a ontouml:Property .
+:pr1 a ontouml:Property .
+:pr2 a ontouml:Property .
+:p a ontouml:Project .

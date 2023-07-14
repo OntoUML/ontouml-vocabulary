@@ -1,0 +1,6 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+:pt a ontouml:Point ;
+    ontouml:xCoordinate 540 ;
+    ontouml:yCoordinate 68 .

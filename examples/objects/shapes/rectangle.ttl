@@ -1,14 +1,12 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:2GPBlG6GAqACBArN_shape a ontouml:Rectangle ;
+:re a ontouml:Rectangle ;
     ontouml:height "40"^^xsd:positiveInteger ;
-    ontouml:project :Rol55G6GAqACBAnR ;
-    ontouml:topLeftPosition :2GPBlG6GAqACBArN_shape_point ;
-    ontouml:width "80"^^xsd:positiveInteger .
+    ontouml:width "80"^^xsd:positiveInteger ;
+    ontouml:topLeftPosition :pt ;
+    ontouml:project :p .
 
-:Rol55G6GAqACBAnR a ontouml:Project .
-:2GPBlG6GAqACBArN_shape_point a ontouml:Point .
+:pt a ontouml:Point .
+:p a ontouml:Project .
