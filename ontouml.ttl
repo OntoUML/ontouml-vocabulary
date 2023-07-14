@@ -469,15 +469,6 @@ ontouml:order rdfs:label "order"@en ;
                            "Indicates the order of an ontouml:Class, enabling multi-level modeling."@en ;
               rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> .
 
-
-###  https://w3id.org/ontouml#text
-ontouml:text rdfs:label "text"@en ;
-             rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
-             rdfs:domain ontouml:Text ;
-             rdfs:range xsd:string ;
-             rdfs:comment "A string that register any information of an ontouml:Text"@en .
-
-
 ###  https://w3id.org/ontouml#upperBound
 ontouml:upperBound rdfs:label "upperBound"@en ;
                    rdfs:isDefinedBy <https://w3id.org/ontouml> ; rdf:type owl:DatatypeProperty ;
