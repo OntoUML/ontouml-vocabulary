@@ -1,11 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:gsv a ontouml:GeneralizationSetView ;
-    ontouml:isViewOf :gs ;
-    ontouml:shape :te ;
-    ontouml:project :p .
+:gtP a ontouml:GeneralizationSetView ;
+    ontouml:isViewOf :HNP ;
+    ontouml:project :XCY ;
+    ontouml:shape :gtP_shape .
 
-:gs a ontouml:GeneralizationSet .
-:te a ontouml:Text .
-:p a ontouml:Project .
+:HNP a ontouml:GeneralizationSet .
+:gtP_shape a ontouml:Text .
+:XCY a ontouml:Project .

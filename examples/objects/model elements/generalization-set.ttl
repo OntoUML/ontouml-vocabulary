@@ -1,13 +1,13 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:gs a ontouml:GeneralizationSet ;
-    ontouml:generalization :g1, :g2 ;
+:HNP a ontouml:GeneralizationSet ;
+    ontouml:generalization :DzD, :fGD ;
     ontouml:isComplete true ;
-    ontouml:isDisjoint false ;
-    ontouml:name "person type"@en ;
-    ontouml:project :p .
+    ontouml:isDisjoint true ;
+    ontouml:name "PersonGS"@en ;
+    ontouml:project :XCY .
 
-:g1 a ontouml:Generalization .
-:g2 a ontouml:Generalization .
-:p a ontouml:Project .
+:DzD a ontouml:Generalization .
+:fGD a ontouml:Generalization .
+:XCY a ontouml:Project .

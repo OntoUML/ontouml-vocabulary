@@ -65,28 +65,27 @@ $(function(){
           <dt>Previous version:</dt>
           <dd><a href="https://w3id.org/ontouml/1.0.0">https://w3id.org/ontouml/1.0.0</a></dd>
           <dt>Revision:</dt>
-          <dd>General review for compliance with the <a href="https://w3id.org/ontouml/metamodel/v1.1.0">OntoUML
-              Metamodel 1.1.0</a>.</dd>
+          <dd>General review for compliance with the OntoUML Metamodel 1.1.0.</dd>
           <dt>Issued on: </dt>
           <dd>2022-04-03</dd>
           <dt>Authors:</dt>
-          <dd>Tiago Prince Sales, (<a href="https://www.utwente.nl/en/eemcs/scs/">The
-              Semantics, Cybersecurity &amp; Services (SCS) Group, University of
-              Twente, the Netherlands</a>)</dd>
-          <dd>Claudenir M. Fonseca, (<a href="https://www.utwente.nl/en/eemcs/scs/">The
-              Semantics, Cybersecurity &amp; Services (SCS) Group, University of
-              Twente, the Netherlands</a>)</dd>
-          <dd>Pedro Paulo Favato Barcelos, (<a href="https://www.utwente.nl/en/eemcs/scs/">The
-              Semantics, Cybersecurity &amp; Services (SCS) Group, University of
-              Twente, the Netherlands</a>)</dd>
+          <dd>Tiago Prince Sales, (<a href="https://www.utwente.nl/en/eemcs/scs/">Semantics,
+              Cybersecurity &amp; Services (SCS), University of Twente, the
+              Netherlands</a>)</dd>
+          <dd>Claudenir M. Fonseca, (<a href="https://www.utwente.nl/en/eemcs/scs/">Semantics,
+              Cybersecurity &amp; Services (SCS), University of Twente, the
+              Netherlands</a>)</dd>
+          <dd>Pedro Paulo Favato Barcelos, (<a href="https://www.utwente.nl/en/eemcs/scs/">Semantics,
+              Cybersecurity &amp; Services (SCS), University of Twente, the
+              Netherlands</a>)</dd>
           <dt>Contributors:</dt>
-          <dd>Mattia Fumagalli, (<a href="https://www.inf.unibz.it/krdb/">The
-              KRDB Research Centre for Knowledge and Data, Free University of
+          <dd>Mattia Fumagalli, (<a href="https://www.inf.unibz.it/krdb/">KRDB
+              Research Centre for Knowledge and Data, Free University of
               Bozen-Bolzano, Italy</a>)</dd>
           <dt>Publisher:</dt>
-          <dd><a href="https://www.utwente.nl/en/eemcs/scs/">The Semantics,
-              Cybersecurity &amp; Services (SCS) Group, University of Twente,
-              the Netherlands</a></dd>
+          <dd><a href="https://www.utwente.nl/en/eemcs/scs/">Semantics,
+              Cybersecurity &amp; Services (SCS), University of Twente, the
+              Netherlands</a></dd>
           <dt>Download serialization:</dt>
           <dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg"
 
@@ -108,7 +107,8 @@ $(function(){
           </dd>
           <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite
             as:</dt>
-          <dd>Sales, T. P., Fonseca, C. M., Barcelos, P. P. F. (2022) OntoUML Vocabulary Specification - Version 1.1.0. Retrieved from: <a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</a></dd>
+          <dd>Sales, T. P., Fonseca, C. M., Barcelos, P. P. F. (2022) OntoUML
+            Vocabulary Specification - Version 1.1.0. <a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</a></dd>
         </dl>
         <a href="provenance/provenance-en.html" target="_blank">Provenance of
           this page</a>
@@ -116,7 +116,7 @@ $(function(){
       </div>
       <div class="status">
         <div>
-          <span>OntoUML Vocabulary Specification - Version 1.1.0</span>
+          <span>Ontology Specification Draft</span>
         </div>
       </div>
       <div id="abstract">
@@ -129,24 +129,20 @@ $(function(){
       <div id="introduction">
         <h2 id="intro" class="list">Introduction <span class="backlink"> back
             to <a href="#toc">ToC</a></span></h2>
-        <span class="markdown">
-          The OntoUML Vocabulary is a Web Ontology Language (OWL) implementation of the <a href="https://w3id.org/ontouml/metamodel">OntoUML Metamodel</a>. This vocabulary supports the serialization, exchange, and publishing of OntoUML models as linked data.</span>
+        The OntoUML Vocabulary is a Web Ontology Language (OWL) implementation
+        of the <a href="http://w3id.org/ontouml/metamodel">OntoUML Metamodel</a>.
+        This vocabulary supports the serialization, exchange, and publishing of
+        OntoUML models as linked data.<br>
         <div id="namespacedeclarations">
           <h3 id="ns" class="list">Namespace declarations</h3>
           <div id="ns" align="left">
             <table>
               <caption> <a href="#ns"> Table 1</a>: Namespaces used in the
-                document </caption>
+                document</caption>
               <tbody>
                 <tr>
-                  <td><b>ontouml</b></td>
-                  <td>&lt;https://w3id.org/ontouml#&gt;</td>
-                </tr>
-                <tr>
-                  <td><br>
-                  </td>
-                  <td><br>
-                  </td>
+                  <td><strong><b>ontouml</b></strong></td>
+                  <td><strong>&lt;https://w3id.org/ontouml#&gt;</strong></td>
                 </tr>
                 <tr>
                   <td><b>w3id</b></td>
@@ -740,9 +736,6 @@ $(function(){
             <div class="comment"> <span class="markdown">Represents a type
                 defined in the ontology.</span> </div>
             <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
             </dl>
             <dl class="description">
               <dt>has super-classes</dt>

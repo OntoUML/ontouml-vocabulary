@@ -1,33 +1,16 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
-<<<<<<< Updated upstream
 
-:pr a ontouml:Property ;
-    ontouml:name "father"@en ;
+:nf0 a ontouml:Property ;
     ontouml:aggregationKind ontouml:none ;
-    ontouml:cardinality :ca ;
+    ontouml:cardinality :nf0_cardinality ;
     ontouml:isDerived false ;
     ontouml:isOrdered false ;
     ontouml:isReadOnly false ;
-    ontouml:project :p ;
-    ontouml:propertyType :c .
+    ontouml:name "age"@en ;
+    ontouml:project :XCY ;
+    ontouml:propertyType :vCY .
 
-:ca a ontouml:Cardinality .
-:p a ontouml:Project .
-:c a ontouml:Class .
-=======
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-:09935G6GAqACBCkY a ontouml:Property ;
-    ontouml:aggregationKind ontouml:shared ;
-    ontouml:cardinality :09935G6GAqACBCkY_cardinality ;
-    ontouml:isDerived false ;
-    ontouml:isOrdered false ;
-    ontouml:isReadOnly false ;
-    ontouml:project :Rol55G6GAqACBAnR ;
-    ontouml:propertyType :WD6X5G6GAqACBCex .
-:09935G6GAqACBCkY_cardinality a ontouml:Cardinality .
-:Rol55G6GAqACBAnR a ontouml:Project .
-:WD6X5G6GAqACBCex a ontouml:Class .
->>>>>>> Stashed changes
+:nf0_cardinality a ontouml:Cardinality .
+:vCY a ontouml:Class .
+:XCY a ontouml:Project .

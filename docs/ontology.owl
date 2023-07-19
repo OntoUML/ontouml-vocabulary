@@ -2315,7 +2315,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.inf.unibz.it/krdb/">
         <rdf:type rdf:resource="https://schema.org/Organization"/>
-        <schema:name>The KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy</schema:name>
+        <schema:name>KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy</schema:name>
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.inf.unibz.it/krdb/</schema:url>
     </owl:NamedIndividual>
     
@@ -2326,7 +2326,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.utwente.nl/en/eemcs/scs/">
         <rdf:type rdf:resource="https://schema.org/Organization"/>
-        <schema:name>The Semantics, Cybersecurity &amp; Services (SCS) Group, University of Twente, the Netherlands</schema:name>
+        <schema:name>Semantics, Cybersecurity &amp; Services (SCS), University of Twente, the Netherlands</schema:name>
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.utwente.nl/en/eemcs/scs/</schema:url>
     </owl:NamedIndividual>
     

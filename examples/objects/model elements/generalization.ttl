@@ -1,11 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:g a ontouml:Generalization ;
-   ontouml:general :c1 ;
-   ontouml:specific :c2 ;
-   ontouml:project :p .
+:fGD a ontouml:Generalization ;
+    ontouml:general :Lj1 ;
+    ontouml:specific :uNZ ;
+    ontouml:project :XCY .
 
-:c1 a ontouml:Class .
-:c2 a ontouml:Class .
-:p a ontouml:Project .
+:Lj1 a ontouml:Class .
+:uNZ a ontouml:Class .
+:XCY a ontouml:Project .

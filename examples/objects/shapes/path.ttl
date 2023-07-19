@@ -1,11 +1,10 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:pa a ontouml:Path ;
-    ontouml:point :pt1, :pt2, :pt3 ;
-    ontouml:project :p .
+:M9S_path a ontouml:Path ;
+    ontouml:point :M9S_path_point_0, :M9S_path_point_1 ;
+    ontouml:project :XCY .
 
-:p1 a ontouml:Point .
-:p2 a ontouml:Point .
-:p3 a ontouml:Point .
-:p a ontouml:Project .
+:M9S_path_point_0 a ontouml:Point .
+:M9S_path_point_1 a ontouml:Point .
+:XCY a ontouml:Project .

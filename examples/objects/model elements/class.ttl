@@ -2,14 +2,25 @@
 @prefix ontouml: <https://w3id.org/ontouml#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:c a ontouml:Class ;
-   ontouml:isAbstract true ;
-   ontouml:isDerived false ;
-   ontouml:isPowertype false ;
-   ontouml:name "Person"@en ;
-   ontouml:order "1"^^xsd:nonNegativeInteger ;
-   ontouml:project :p ;
-   ontouml:restrictedTo ontouml:functionalComplexNature ;
-   ontouml:stereotype ontouml:category .
+:Lj1 a ontouml:Class ;
+    ontouml:attribute :nf0,
+        :xrq ;
+    ontouml:description "A Person is a human." ;
+    ontouml:isAbstract false ;
+    ontouml:isDerived false ;
+    ontouml:name "Person"@en ;
+    ontouml:order "1"^^xsd:nonNegativeInteger ;
+    ontouml:project :XCY ;
+    ontouml:restrictedTo ontouml:functionalComplexNature ;
+    ontouml:stereotype ontouml:kind .
 
-:p a ontouml:Project .
+:Lx5 a ontouml:Class ;
+    ontouml:isAbstract false ;
+    ontouml:isDerived false ;
+    ontouml:name "Adult"@en ;
+    ontouml:order "1"^^xsd:nonNegativeInteger ;
+    ontouml:project :XCY ;
+    ontouml:restrictedTo ontouml:functionalComplexNature ;
+    ontouml:stereotype ontouml:phase .
+
+:XCY a ontouml:Project .

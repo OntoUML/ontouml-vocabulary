@@ -1,15 +1,15 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:gv a ontouml:GeneralizationView ;
-    ontouml:isViewOf :g ;
-    ontouml:project :p ;
-    ontouml:shape :pa ;
-    ontouml:sourceView :cv1 ;
-    ontouml:targetView :cv2 .
+:rzD a ontouml:GeneralizationView ;
+    ontouml:isViewOf :DzD ;
+    ontouml:project :XCY ;
+    ontouml:shape :rzD_path ;
+    ontouml:sourceView :Ljp ;
+    ontouml:targetView :zx5 .
 
-:g a ontouml:Generalization .
-:pa a ontouml:Path .
-:cv1 a ontouml:ClassView .
-:cv2 a ontouml:ClassView .
-:p a ontouml:Project .
+:DzD a ontouml:Generalization .
+:rzD_path a ontouml:Path .
+:Ljp a ontouml:ClassView .
+:zx5 a ontouml:ClassView .
+:XCY a ontouml:Project .

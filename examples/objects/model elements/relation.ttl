@@ -1,16 +1,17 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:r a ontouml:Relation ;
-    ontouml:name "inheres in"@en ;
-    ontouml:stereotype ontouml:characterization ;
+:L78 a ontouml:Relation ;
+    ontouml:description "Every material association is derived." ;
     ontouml:isAbstract false ;
-    ontouml:isDerived false ;
-    ontouml:relationEnd :pr1, :pr2 ;
-    ontouml:sourceEnd :pr1 ;
-    ontouml:targetEnd :pr2 ;
-    ontouml:project :p .
+    ontouml:isDerived true ;
+    ontouml:name "studiesIn"@en ;
+    ontouml:project :XCY ;
+    ontouml:relationEnd :L7V, :L7C ;
+    ontouml:sourceEnd :L7V ;
+    ontouml:stereotype ontouml:material ;
+    ontouml:targetEnd :L7C .
 
-:pr1 a ontouml:Property .
-:pr2 a ontouml:Property .
-:p a ontouml:Project .
+:L7V a ontouml:Property .
+:L7C a ontouml:Property .
+:XCY a ontouml:Project .

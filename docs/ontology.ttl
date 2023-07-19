@@ -1571,14 +1571,14 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://www.inf.unibz.it/krdb/
 <https://www.inf.unibz.it/krdb/> rdf:type owl:NamedIndividual ,
                                           <https://schema.org/Organization> ;
-                                 <https://schema.org/name> "The KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy" ;
+                                 <https://schema.org/name> "KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy" ;
                                  <https://schema.org/url> "https://www.inf.unibz.it/krdb/"^^xsd:anyURI .
 
 
 ###  https://www.utwente.nl/en/eemcs/scs/
 <https://www.utwente.nl/en/eemcs/scs/> rdf:type owl:NamedIndividual ,
                                                 <https://schema.org/Organization> ;
-                                       <https://schema.org/name> "The Semantics, Cybersecurity & Services (SCS) Group, University of Twente, the Netherlands" ;
+                                       <https://schema.org/name> "Semantics, Cybersecurity & Services (SCS), University of Twente, the Netherlands" ;
                                        <https://schema.org/url> "https://www.utwente.nl/en/eemcs/scs/"^^xsd:anyURI .
 
 

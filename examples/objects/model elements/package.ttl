@@ -1,11 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:pk1 a ontouml:Package ;
-    ontouml:containsModelElement :pk2, :pk3 ;
-    ontouml:name "Person model"@en ;
-    ontouml:project :p .
+:myi a ontouml:Package ;
+    ontouml:containsModelElement :L78, :R24 ;
+    ontouml:name "My2ndPackage"@en ;
+    ontouml:project :XCY .
 
-:pk2 a ontouml:Package .
-:pk3 a ontouml:Package .
-:p a ontouml:Project .
+:L78 a ontouml:Relation .
+:R24 a ontouml:Class .
+:XCY a ontouml:Project .

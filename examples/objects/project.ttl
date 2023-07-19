@@ -1,11 +1,10 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:p a ontouml:Project ;
-    ontouml:diagram :d1, :d2 ;
-    ontouml:model :pk ;
-    ontouml:name "My OntoUML Model"@en .
+:XCY a ontouml:Project ;
+    ontouml:diagram :NyB ;
+    ontouml:model :XCY_root ;
+    ontouml:name "MyExample"@en .
 
-:d1 a ontouml:Diagram .
-:d2 a ontouml:Diagram .
-:pk a ontouml:Package .
+:NyB a ontouml:Diagram .
+:XCY_root a ontouml:Package .
