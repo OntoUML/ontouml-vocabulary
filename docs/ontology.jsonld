@@ -1,0 +1,3491 @@
+[ {
+  "@id" : "_:genid1",
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.inf.unibz.it/krdb/"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-3385-4769"
+  } ],
+  "https://schema.org/name" : [ {
+    "@language" : "en",
+    "@value" : "Mattia Fumagalli"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#AggregationKind"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Cardinality"
+    }, {
+      "@id" : "https://w3id.org/ontouml#OntologicalNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#OntoumlElement"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Point"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Stereotype"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml"
+    }, {
+      "@id" : "https://w3id.org/ontouml#abstract"
+    }, {
+      "@id" : "https://w3id.org/ontouml#abstractNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#begin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#bringsAbout"
+    }, {
+      "@id" : "https://w3id.org/ontouml#category"
+    }, {
+      "@id" : "https://w3id.org/ontouml#characterization"
+    }, {
+      "@id" : "https://w3id.org/ontouml#collective"
+    }, {
+      "@id" : "https://w3id.org/ontouml#collectiveNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#comparative"
+    }, {
+      "@id" : "https://w3id.org/ontouml#componentOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#composite"
+    }, {
+      "@id" : "https://w3id.org/ontouml#creation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#datatype"
+    }, {
+      "@id" : "https://w3id.org/ontouml#derivation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#end"
+    }, {
+      "@id" : "https://w3id.org/ontouml#enumeration"
+    }, {
+      "@id" : "https://w3id.org/ontouml#event"
+    }, {
+      "@id" : "https://w3id.org/ontouml#eventNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#externalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#extrinsicModeNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#functionalComplexNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalRole"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalRoleMixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#instantiation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#intrinsicModeNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#kind"
+    }, {
+      "@id" : "https://w3id.org/ontouml#manifestation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#material"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mediation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#memberOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mode"
+    }, {
+      "@id" : "https://w3id.org/ontouml#none"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participational"
+    }, {
+      "@id" : "https://w3id.org/ontouml#phase"
+    }, {
+      "@id" : "https://w3id.org/ontouml#phaseMixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#quality"
+    }, {
+      "@id" : "https://w3id.org/ontouml#qualityNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#quantity"
+    }, {
+      "@id" : "https://w3id.org/ontouml#quantityNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#relator"
+    }, {
+      "@id" : "https://w3id.org/ontouml#relatorNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#role"
+    }, {
+      "@id" : "https://w3id.org/ontouml#roleMixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#shared"
+    }, {
+      "@id" : "https://w3id.org/ontouml#situation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#situationNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subCollectionOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subQuantityOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subkind"
+    }, {
+      "@id" : "https://w3id.org/ontouml#termination"
+    }, {
+      "@id" : "https://w3id.org/ontouml#triggers"
+    }, {
+      "@id" : "https://w3id.org/ontouml#type"
+    }, {
+      "@id" : "https://w3id.org/ontouml#typeNature"
+    }, {
+      "@id" : "https://www.inf.unibz.it/krdb/"
+    }, {
+      "@id" : "https://www.utwente.nl/en/eemcs/scs/"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#composite"
+    }, {
+      "@id" : "https://w3id.org/ontouml#none"
+    }, {
+      "@id" : "https://w3id.org/ontouml#shared"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0002-5385-5761"
+  } ],
+  "https://schema.org/name" : [ {
+    "@language" : "en",
+    "@value" : "Tiago Prince Sales"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#abstract"
+    }, {
+      "@id" : "https://w3id.org/ontouml#category"
+    }, {
+      "@id" : "https://w3id.org/ontouml#collective"
+    }, {
+      "@id" : "https://w3id.org/ontouml#datatype"
+    }, {
+      "@id" : "https://w3id.org/ontouml#enumeration"
+    }, {
+      "@id" : "https://w3id.org/ontouml#event"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalRole"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalRoleMixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#kind"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mode"
+    }, {
+      "@id" : "https://w3id.org/ontouml#phase"
+    }, {
+      "@id" : "https://w3id.org/ontouml#phaseMixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#quality"
+    }, {
+      "@id" : "https://w3id.org/ontouml#quantity"
+    }, {
+      "@id" : "https://w3id.org/ontouml#relator"
+    }, {
+      "@id" : "https://w3id.org/ontouml#role"
+    }, {
+      "@id" : "https://w3id.org/ontouml#roleMixin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#situation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subkind"
+    }, {
+      "@id" : "https://w3id.org/ontouml#type"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-2528-3118"
+  } ],
+  "https://schema.org/name" : [ {
+    "@language" : "en",
+    "@value" : "Claudenir M. Fonseca"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0003-2736-7817"
+  } ],
+  "https://schema.org/name" : [ {
+    "@language" : "en",
+    "@value" : "Pedro Paulo Favato Barcelos"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#abstractNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#collectiveNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#eventNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#extrinsicModeNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#functionalComplexNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#intrinsicModeNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#qualityNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#quantityNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#relatorNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#situationNature"
+    }, {
+      "@id" : "https://w3id.org/ontouml#typeNature"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Project"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ontouml#PropertyStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#begin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#end"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#bringsAbout"
+    }, {
+      "@id" : "https://w3id.org/ontouml#characterization"
+    }, {
+      "@id" : "https://w3id.org/ontouml#comparative"
+    }, {
+      "@id" : "https://w3id.org/ontouml#componentOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#creation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#derivation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#externalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#instantiation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#manifestation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#material"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mediation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#memberOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participational"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subCollectionOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subQuantityOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#termination"
+    }, {
+      "@id" : "https://w3id.org/ontouml#triggers"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Diagram"
+    }, {
+      "@id" : "https://w3id.org/ontouml#DiagramElement"
+    }, {
+      "@id" : "https://w3id.org/ontouml#ModelElement"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Standard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/conformsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isReferencedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#landingPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/affiliation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/ontouml",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/conformsTo" : [ {
+    "@id" : "https://w3id.org/ontouml/metamodel/v1.1.0"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A reference implementation of the OntoUML Metamodel in OWL."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://w3id.org/ontouml"
+  } ],
+  "http://purl.org/dc/terms/isReferencedBy" : [ {
+    "@id" : "https://dblp.org/rec/conf/jowo/FonsecaSVFGA21.html"
+  }, {
+    "@id" : "https://doi.org/10.1007/978-3-031-17995-2_1"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-04-03"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/en"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by-sa/4.0"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2023-07-19"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "OntoUML Metamodel Vocabulary"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "ontouml"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://w3id.org/ontouml#"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/dc/terms/Standard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The OntoUML Vocabulary webpage may not be accurate because of technical limitations of the framework used to generate it. We advise users to access the Turtle syntax version of the specification to have access to the vocabulary's complete content."
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://w3id.org/ontouml/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/ontouml/1.1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "General review for compliance with the OntoUML Metamodel 1.1.0."
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@language" : "en",
+    "@value" : "OntoUML"
+  }, {
+    "@language" : "en",
+    "@value" : "OntoUML-Metamodel"
+  }, {
+    "@language" : "en",
+    "@value" : "OntoUML-Vocabulary"
+  }, {
+    "@language" : "en",
+    "@value" : "Ontology-Driven Conceptual Modeling"
+  } ],
+  "http://www.w3.org/ns/dcat#landingPage" : [ {
+    "@id" : "https://w3id.org/ontouml/vocabulary"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#AggregationKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Groups all possible aggregation kinds to which an ontouml:Property can be related."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is an enumeration of its individuals, which are: ontouml:composite, ontouml:none, and ontouml:shared."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AggregationKind"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Cardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the cardinality of an ontouml:Property through its data property ontouml:cardinalityValue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cardinality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a type defined in the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#ClassStereotype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Class."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is an enumeration of its individuals, which are: ontouml:abstract, ontouml:category, ontouml:collective, ontouml:datatype, ontouml:enumeration, ontouml:event, ontouml:historicalRole, ontouml:historicalRoleMixin, ontouml:kind, ontouml:mixin, ontouml:mode, ontouml:phase, ontouml:phaseMixin, ontouml:quality, ontouml:quantity, ontouml:relator, ontouml:role, ontouml:roleMixin, ontouml:situation, ontouml:subkind, and ontouml:type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#ClassView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Does not directly contain data about the visual representation (rectangular shape's size and position) itself, but is related to this information via the ontouml:shape property."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the diagramation (i.e., the visual representation) of an ontouml:Class in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ClassView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#NodeView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Classifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups the classes ontouml:Class and ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Classifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#DecoratableElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Class"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Relation"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#ConnectorView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups the classes ontouml:RelationView and ontouml:GeneralizationView."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ConnectorView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#GeneralizationView"
+    }, {
+      "@id" : "https://w3id.org/ontouml#RelationView"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#DecoratableElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups the classes ontouml:Classifier and the ontouml:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DecoratableElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Classifier"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Property"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Diagram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A visual representation of an OntoUML model or of a portion of it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#OntoumlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#DiagramElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups the classes ontouml:ElementView and the ontouml:Shape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DiagramElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#OntoumlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#ElementView"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Shape"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#ElementView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups the classes ontouml:ConnectorView, ontouml:GeneralizationSetView, and ontouml:NodeView."
+  }, {
+    "@language" : "en",
+    "@value" : "E.g., an ontouml:ClassView is created whenever an ontouml:ModelElement is represented in an ontouml:Diagram."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the diagramatical representation of an element on an ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ElementView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#DiagramElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#ConnectorView"
+    }, {
+      "@id" : "https://w3id.org/ontouml#GeneralizationSetView"
+    }, {
+      "@id" : "https://w3id.org/ontouml#NodeView"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Generalization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a generalization defined in an ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Generalization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#GeneralizationSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a generalization set defined in the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeneralizationSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#GeneralizationSetView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the diagramation (i.e., the visual representation) of an ontouml:GeneralizationSet in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeneralizationSetView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#GeneralizationView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the diagramation (i.e., the visual representation) of an ontouml:Generalization in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeneralizationView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ConnectorView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a possible value for an ontouml:Class defined by an ontouml:enumeration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#ModelElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups diverse elements that can be represented in on OntoUML model."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ModelElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#OntoumlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#DecoratableElement"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Generalization"
+    }, {
+      "@id" : "https://w3id.org/ontouml#GeneralizationSet"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Literal"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Note"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Package"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#NodeView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups the classes ontouml:NoteView, ontouml:ClassView, and ontouml:PackageView."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NodeView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#ClassView"
+    }, {
+      "@id" : "https://w3id.org/ontouml#NoteView"
+    }, {
+      "@id" : "https://w3id.org/ontouml#PackageView"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of ontouml:ModelElement used to represent textual information."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#NoteView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the diagramation (i.e., the visual representation) of an ontouml:Note in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NoteView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#NodeView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#OntologicalNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collection of individuals that represent fundamental conceptual modeling issues according to the Unified Foundational Ontology (UFO) theory."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is an enumeration of its individuals, which are: ontouml:abstractNature, ontouml:collectiveNature, ontouml:eventNature, ontouml:extrinsicModeNature, ontouml:functionalComplexNature, ontouml:intrinsicModeNature, ontouml:qualityNature, ontouml:quantityNature, ontouml:relatorNature, ontouml:situationNature, and ontouml:typeNature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.3233/AO-150157"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#OntoumlElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class that groups different elements an ontoUML model can have."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OntoumlElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Diagram"
+    }, {
+      "@id" : "https://w3id.org/ontouml#DiagramElement"
+    }, {
+      "@id" : "https://w3id.org/ontouml#ModelElement"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Project"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Package",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates ontology components, working as a container."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Package"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#PackageView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the diagramation (i.e., the visual representation) of an ontouml:Package in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PackageView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#NodeView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A list of connected ontouml:Point values to represent an ontouml:ElementView's shape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Path"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Shape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contains the ontouml:xCoordinate value and ontouml:yCoordinate value. These values represent the top left position of an ontouml:RectangularShape, to which the ontouml:Point is related vian ontouml:topLeftPosition property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Point"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates all entities that are part of a same conceptual model, including concepts declaration and their visual representation."
+  }, {
+    "@language" : "en",
+    "@value" : "It is the upper non-abstract class available in the OntoUML Vocabulary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#OntoumlElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#DecoratableElement"
+  }, {
+    "@id" : "_:genid82"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#PropertyStereotype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Property."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is an enumeration of its individuals, which are: ontouml:begin, and ontouml:end."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PropertyStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Rectangle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A particular type of ontouml:RectangularShape, mainly used to represent entities of type ontouml:Class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rectangle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#RectangularShape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#RectangularShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a rectangular shape in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RectangularShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Shape"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Rectangle"
+    }, {
+      "@id" : "https://w3id.org/ontouml#Text"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a relation defined in the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  }, {
+    "@id" : "_:genid88"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#RelationStereotype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Relation."
+  }, {
+    "@language" : "en",
+    "@value" : "This class is an enumeration of its individuals, which are: ontouml:bringsAbout, ontouml:characterization, ontouml:comparative, ontouml:componentOf, ontouml:creation, ontouml:derivation, ontouml:externalDependence, ontouml:historicalDependence, ontouml:instantiation, ontouml:manifestation, ontouml:material, ontouml:mediation, ontouml:memberOf, ontouml:participation, ontouml:participational, ontouml:subCollectionOf, ontouml:subQuantityOf, ontouml:termination, and ontouml:triggers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#RelationView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the diagramation (i.e., the visual representation) of an ontouml:Relation in a given ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RelationView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#ConnectorView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Shape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contains information about the diagramation of an ontouml:ModelElement through its relation with an ontouml:ElementView."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#DiagramElement"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Path"
+    }, {
+      "@id" : "https://w3id.org/ontouml#RectangularShape"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Stereotype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates meta-properties of classes, properties, or relations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#ClassStereotype"
+    }, {
+      "@id" : "https://w3id.org/ontouml#PropertyStereotype"
+    }, {
+      "@id" : "https://w3id.org/ontouml#RelationStereotype"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#Text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontouml:RectangularShape used to represent some textual information in an ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/ontouml#RectangularShape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:ClassStereotype used to assign the corresponding stereotype to a given ontouml:Class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "abstract"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#abstractNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes abstract individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "abstractNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#aggregationKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Characterizes an ontouml:Property with an ontouml:AggregationKind instance, i.e., indicates whether the ontouml:Property is a simple (ontouml:none), a shared (ontouml:shared), or a composite (ontouml:composite) property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "aggregationKind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#AggregationKind"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#attribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an instance of an ontouml:Class to its properties, which are instances of the ontouml:Property class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "attribute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ontouml#property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#begin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#PropertyStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:PropertyStereotype used to assign the corresponding stereotype to a given ontouml:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "begin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#bringsAbout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bringsAbout"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#cardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the individual of type ontouml:Cardinality that represents the cardinalities of an ontouml:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Cardinality"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#cardinalityValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Provides the complete (i.e., both lower and upper cardinality's bounds) cardinalities of an ontouml:Property via its related ontouml:Cardinality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cardinalityValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#categorizer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies individuals of an ontouml:GeneralizationSet that are instances of a higher order ontouml:Class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#GeneralizationSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "categorizer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-319-39696-5_19"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A rigid mixin that does not require a dependency to be specified. It is used to aggregate essential properties of individuals following different identity principles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/category/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#characterization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontouml:RelationStereotype attributed to a relation between a bearer type and its feature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "characterization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_4"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#collective",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontouml:ClassStereotype used to represent rigid concepts that provide an identity principle for their instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "collective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/collective/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#collectiveNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes collective individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "collectiveNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#comparative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The stereotype for comparative relations (e.g., heavier-than). Decorates relations that always hold between any two individuals bearing the same relevant quality."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "comparative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_4"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#componentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parthood relation between two complexes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "componentOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/componentOf/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#composite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#AggregationKind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value denoting that an ontouml:Property represents a composite aggregation, i.e., a strong form of aggregation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "composite"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#containsModelElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an instance of type ontouml:ModelElement that composes in an ontouml:Package."
+  }, {
+    "@language" : "en",
+    "@value" : "It is mapped to the OntoUML Metamodel's 'contents' relation between the Package and ModelElement classes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Package"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "containsModelElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ontouml#contents"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#containsView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an instance of type ontouml:ElementView that is contained in an ontouml:Diagram, representing the concrete diagramation of an ontouml:ModelElement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "containsView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ontouml#contents"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#contents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates its subproperties ontouml:containsModelElement and ontouml:containsView. Should not be directly used."
+  }, {
+    "@language" : "en",
+    "@value" : "The OntoUML Metamodel has two relations named 'contents', which are mapped to two different object properties in this vocabulary: ontouml:containsModelElement and ontouml:containsView. The ontouml:contents object property aggregates both mentioned sub-properties in order to keep a clear relation to the metamodel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contents"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#creation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "creation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:ClassStereotype used to assign the corresponding stereotype to a given ontouml:Class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "datatype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#derivation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "derivation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:OntoumlElement to a string representing its description in free textual format."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#OntoumlElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#diagram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies which entities of type ontouml:Diagram are part of an ontouml:Project."
+  }, {
+    "@language" : "en",
+    "@value" : "It is mapped to the OntoUML Metamodel's 'diagrams' relation between the Project and Diagram classes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Diagram"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#end",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#PropertyStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:PropertyStereotype used to assign the corresponding stereotype to a given ontouml:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "end"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#enumeration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the enumeration stereotype, having values represented using ontouml:Literal instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "enumeration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:ClassStereotype used to assign the corresponding stereotype to a given ontouml:Class."
+  }, {
+    "@language" : "en",
+    "@value" : "Things that happen to or are performed by endurants (Casati and Varzi, 2015)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#eventNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes event individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "eventNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#externalDependence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an endurant on which the extrinsicMode depends."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "externalDependence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_4"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://nemo-ufes.github.io/gufo/#externallyDependsOn"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#extrinsicModeNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies what inheres in a concrete individual and depends on others for its existence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "extrinsicModeNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#functionalComplexNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the nature of a complex object whose parts (components) play different roles in its composition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "functionalComplexNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#general",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the parent ontouml:Classifier (e.g., a superclass) that participates in an ontouml:Generalization relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Generalization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "general"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#generalization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:Generalization that participates in an ontouml:GeneralizationSet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#GeneralizationSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "generalization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Generalization"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#height",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#RectangularShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "height"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#historicalDependence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies a concrete individual on which another concrete individual depends historically."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "historicalDependence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#historicalRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Denotes the role of an endurant in virtue of having participated in an event of a particular type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "historicalRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#historicalRoleMixin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Denotes the equivalent of historicalRole for types that aggregate instances with different identity principles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "historicalRoleMixin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#instantiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "instantiation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#intrinsicModeNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes intrinsic mode individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "intrinsicModeNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isAbstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if the ontouml:Classifier can have direct instances. If set to true, the classifier must be specialized before being instantiated. Otherwise, it can have direct instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isAbstract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isComplete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:GeneralizationSet is complete, i.e., if it does not admit further generalizations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#GeneralizationSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isComplete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isDerived",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:DecoratableElement can be defined through a derivation rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#DecoratableElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isDerived"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isDisjoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:GeneralizationSet is disjoint, i.e., it does not admit generalizations having overlapping subclasses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#GeneralizationSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isDisjoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isExtensional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:Class is extensionally defined (i.e., it's parts cannot change)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isExtensional"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isOrdered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:Property is ordered or not, i.e., if it requires an exact order of its values or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isOrdered"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isPowertype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:Class is a powertype in multi-level modeling."
+  }, {
+    "@language" : "en",
+    "@value" : "The ontouml:Class data property ontouml:isPowertype must not be true when it has an ontouml:order equal to one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isPowertype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-031-17995-2_2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isReadOnly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates if an ontouml:Property can or cannot be updated or modified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isReadOnly"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#isViewOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:ElementView to ontouml:ModelElement, indicating the diagrammatical representation of the latter in an ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isViewOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#kind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to represent rigid concepts that provide an identity principle for their instances and do not require a relational dependency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "kind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:Literal to its container enumeration class (an ontouml:Class that has the ontouml:stereotype property with ontouml:enumeration)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#lowerBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "E.g., if the ontouml:cardinalityValue set is [1..*] then the lower bound is '1'."
+  }, {
+    "@language" : "en",
+    "@value" : "Identifies the lower bound of an ontouml:Cardinality."
+  }, {
+    "@value" : "An ontouml:Cardinality's lower bound must correspond to the one indicated by its ontouml:cardinalityValue property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "lowerBound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#manifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manifestation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies relations that have material structure on their own and include examples such as employments, kisses, enrollments, flight, connections and commitments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_4"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/material/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#mediation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A type of existential dependence relation (a form of nonfunctional inherence). It can be derived from the relation between the relata and the qua individuals that compose the relator and that inhere in the relata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mediation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_4"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/mediation/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#memberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parthood relation between a functional complex or a Collective (as a part) and a Collective (as a whole)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "memberOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/memberOf/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#mixin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents a semi-rigid type, i.e., it behaves as a rigid type for some individuals and as an anti-rigid one for others."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mixin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/mixin/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#mode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A particular type of intrinsic property that has no structured value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#model",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:Project to an ontouml:Package that is part of it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "model"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Package"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A string that identifies or names an ontouml:OntoumlElement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#OntoumlElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#none",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#AggregationKind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Denotes that an ontouml:Property is neither ontouml:shared nor ontouml:composite, but just an aggregation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "none"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Constraint: an ontouml:Class that has an ontouml:stereotype property with an ontouml:Stereotype different than ontouml:type must have an ontouml:order value equal to 1."
+  }, {
+    "@language" : "en",
+    "@value" : "Constraint: an ontouml:Class that has an ontouml:stereotype property with an ontouml:Stereotype ontouml:type must have an ontouml:order value grater than 1."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the order of an ontouml:Class, enabling multi-level modeling."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-031-17995-2_2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:Diagram to an ontouml:ModelElement that is represented on it, i.e., to an ontouml:ModelElement that has an ontouml:ElementView on that ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Diagram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ModelElement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#participation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A relation for representing when an event depends on a single object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "participation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#participational",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Denotes a kind of event decomposition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "participational"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-030-33223-5_39"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#phase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to represent anti-rigid subtypes of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity) that are instantiated by changes in intrinsic properties (e.g., the age of a person, the color of an object, the condition of a car).Phases always come in partitions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "phase"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/phase/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#phaseMixin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The equivalent of Phase for types that aggregate instances with different identity principles. A class stereotyped as PhaseMixin is also an anti-rigid type. PhaseMixin is similar semantically to RoleMixin with the difference in relational dependency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "phaseMixin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/phasemixin/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:Path to an ontouml:Point that composes it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Path"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Point"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#project",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:OntoumlElement different than ontouml:Project to an ontouml:Project that it composes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Project"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Aggregates its subproperties ontouml:attribute and ontouml:relationEnd. Should not be directly used."
+  }, {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:Property exhibited by an ontouml:Classifier. If the ontouml:Classifier is of type ontouml:Class, the ontouml:property is specialized in ontouml:attribute. If the ontouml:Classifier is an ontouml:Relation, the property is specialized in ontouml:relationEnd."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#propertyType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:Class or ontouml:Relation (i.e., an ontouml:Classifier) to which an ontouml:Property refers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "propertyType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#quality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Quality is a particular type of intrinsic property that has a structured value. Qualities are things that existentially depend on the things they characterize, called their bearers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/aspects/quality/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#qualityNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes quality individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "qualityNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Construct used to represent rigid concepts that provide an identity principle for their instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/quantity/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#quantityNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes quantity individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quantityNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#redefinesProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies a target ontouml:Property that is redefined by a source ontouml:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "redefinesProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#relationEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies a property that represents one end (source or target) of an ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relationEnd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ontouml#property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#relator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A construct used to represent truth-makers of material relations, i.e., the things that must exist for two or more individuals to be connected by material relations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/relator/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#relatorNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes relator individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relatorNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#restrictedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associates an ontouml:Class to an ontouml:OntologicalNature, restricting its allowed values."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "restrictedTo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to represent anti-rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity) that are instantiated in relational contexts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/role/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#roleMixin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The equivalent of Role for types that aggregate instances with different identity principles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "roleMixin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/nonsortals/rolemixin/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#shape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:ElementView to an ontouml:Shape that contains the diagramation's data (size and position) about the ontouml:ModelElement it is a view of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "shape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Shape"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#shared",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#AggregationKind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the ontouml:Property has shared aggregation semantics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "shared"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Can be used to represent certain configurations of entities that can be comprehended as a whole."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "situation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#situationNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes situation individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "situationNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#sourceEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:Property that represents the source side of an ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sourceEnd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ontouml#relationEnd"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#sourceView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:ElementView that participates as source of an ontouml:RelationView or ontouml:GeneralizationView."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#ConnectorView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sourceView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#specific",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies the child ontouml:Classifier (e.g., a subclass) that participates in an ontouml:Generalization relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Generalization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "specific"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Classifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#stereotype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:Stereotype applied to an ontouml:DecoratableElement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#DecoratableElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "stereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Stereotype"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#subCollectionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parthood relation between two collectives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subCollectionOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subCollectionOf/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#subQuantityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parthood relation between two quantities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subQuantityOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/relationships/aggregations/subQuantityOf/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#subkind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Used to represent rigid specializations of identity providers (Kind, Collective, Quantity, Relator, Mode, and Quantity)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subkind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://ontouml.readthedocs.io/en/latest/classes/sortals/subkind/index.html"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#subsetsProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies a target ontouml:Property that is subsetted by a source ontouml:Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "subsetsProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#targetEnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:Property that represents the target side of an ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Relation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "targetEnd"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/ontouml#relationEnd"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#targetView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies an ontouml:ElementView that participates as target of an ontouml:RelationView or ontouml:GeneralizationView."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#ConnectorView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "targetView"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#ElementView"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#termination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "termination"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#text",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A string that register any information of an ontouml:Note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#topLeftPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is direct mapped to the OntoUML Metamodel's 'topLeft' relationship between the classes RectangularShape and Point."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:RectangularShape to an ontouml:Point that contains the horizontal and vertical coordinates (ontouml:xCoordinate and ontouml:yCoordinate, respectively) representing the former's top left position in an ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#RectangularShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "topLeftPosition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/ontouml#Point"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#triggers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An individual of the ontouml:RelationStereotype used to assign the corresponding stereotype to a given ontouml:Relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "triggers"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The stereotype for high-order types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://doi.org/10.1007/978-3-031-17995-2_2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#typeNature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/ontouml#OntologicalNature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates that the restricted type includes type individuals among its instances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "typeNature"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#upperBound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "E.g., if the ontouml:cardinalityValue set is [1..*] then the upper bound is '*'."
+  }, {
+    "@language" : "en",
+    "@value" : "Identifies the upper bound of an ontouml:Cardinality."
+  }, {
+    "@value" : "An ontouml:Cardinality's upper bound must correspond to the one indicated by its ontouml:cardinalityValue property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Cardinality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "upperBound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#width",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#RectangularShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "width"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#xCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is direct mapped to the metamodel's 'x' attribute of the Point class."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:Point to the value indicating the specific x (horizontal) coordinate of the top left position of an ontouml:RectangularShape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "xCoordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontouml#yCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is direct mapped to the metamodel's 'y' attribute of the Point class."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an ontouml:Point to the value indicating the specific y (vertical) coordinate of the top left position of an ontouml:RectangularShape."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontouml#Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/ontouml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "yCoordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://www.inf.unibz.it/krdb/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "The KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy"
+  } ],
+  "https://schema.org/url" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://www.inf.unibz.it/krdb/"
+  } ]
+}, {
+  "@id" : "https://www.utwente.nl/en/eemcs/scs/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "The Semantics, Cybersecurity & Services (SCS) Group, University of Twente, the Netherlands"
+  } ],
+  "https://schema.org/url" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://www.utwente.nl/en/eemcs/scs/"
+  } ]
+} ]

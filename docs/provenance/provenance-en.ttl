@@ -1,0 +1,19 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/ontouml/1.1.0> a prov:Entity;
+	 dc:title "OntoUML Metamodel Vocabulary";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://w3id.org/ontouml#>;
+	 prov:wasRevisionOf <https://w3id.org/ontouml/1.0.0>;
+	 prov:wasGeneratedAt "2023-07-19";
+.
+:agent0 a prov:Agent; foaf:name "Tiago Prince Sales".
+:agent1 a prov:Agent; foaf:name "Claudenir M. Fonseca".
+:agent2 a prov:Agent; foaf:name "Pedro Paulo Favato Barcelos".
+:agent3 a prov:Agent; foaf:name "Mattia Fumagalli".
