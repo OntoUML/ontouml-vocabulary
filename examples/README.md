@@ -6,7 +6,7 @@ We created an OntoUML model at the [Visual Paradigm](https://www.visual-paradigm
 
 Both the OntoUML Schema and Vocabulary comply with the [OntoUML Metamodel](https://w3id.org/ontouml/metamodel), allowing their mapping and the formats transformation.
 
-The JSON file was converted to TTL using the [ontouml-json2ttl](https://w3id.org/ontouml/json2graph) decoder. This tool generates graph files that comply with the OntoUML Vocabulary and includes an optional basic verification and correction.
+The JSON file was converted to TTL using the [ontouml-json2ttl](https://w3id.org/ontouml/json2graph) decoder. This tool generates graph files that comply with the OntoUML Vocabulary and includes an optional basic verification and correction. For a better presentation, the IDs from the JSON file were manually reduced to create the TTL examples here available.
 
 This example is composed of the following files:
 - `MyExample.vpp`: OntoUML model editable file.
