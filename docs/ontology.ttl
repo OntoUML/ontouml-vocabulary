@@ -20,19 +20,19 @@
                             <http://purl.org/dc/terms/issued> "2022-04-03"^^xsd:date ;
                             <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0> ;
-                            <http://purl.org/dc/terms/modified> "2023-07-19"^^xsd:date ;
+                            <http://purl.org/dc/terms/modified> "2023-07-23"^^xsd:date ;
                             <http://purl.org/dc/terms/publisher> <https://www.utwente.nl/en/eemcs/scs/> ;
                             <http://purl.org/dc/terms/title> "OntoUML Metamodel Vocabulary"@en ;
                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "ontouml" ;
                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontouml#"^^xsd:anyURI ;
-                            rdfs:comment "The OntoUML Vocabulary webpage may not be accurate because of technical limitations of the framework used to generate it. We advise users to access the Turtle syntax version of the specification to have access to the vocabulary's complete content." ;
                             owl:priorVersion <https://w3id.org/ontouml/1.0.0> ;
                             owl:versionInfo "General review for compliance with the OntoUML Metamodel 1.1.0."@en ;
                             <http://www.w3.org/ns/dcat#keyword> "OntoUML"@en ,
                                                                 "OntoUML-Metamodel"@en ,
                                                                 "OntoUML-Vocabulary"@en ,
                                                                 "Ontology-Driven Conceptual Modeling"@en ;
-                            <http://www.w3.org/ns/dcat#landingPage> <https://w3id.org/ontouml/vocabulary> .
+                            <http://www.w3.org/ns/dcat#landingPage> <https://w3id.org/ontouml/vocabulary> ;
+                            <http://xmlns.com/foaf/0.1/homepage> <https://purl.org/> .
 
 _:genid1 <https://schema.org/affiliation> <https://www.inf.unibz.it/krdb/> ;
           <https://schema.org/identifier> <https://orcid.org/0000-0003-3385-4769> ;
@@ -118,6 +118,10 @@ _:genid4 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/>
 <http://www.w3.org/ns/dcat#landingPage> rdf:type owl:AnnotationProperty .
 
 
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/affiliation
 <https://schema.org/affiliation> rdf:type owl:AnnotationProperty .
 
@@ -186,7 +190,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ontouml#containsModelElement
 :containsModelElement rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :contents ;
                       rdfs:domain :Package ;
                       rdfs:range :ModelElement ;
                       rdfs:comment "Identifies an instance of type ontouml:ModelElement that composes in an ontouml:Package."@en ,
@@ -197,22 +200,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/ontouml#containsView
 :containsView rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :contents ;
               rdfs:domain :Diagram ;
               rdfs:range :ElementView ;
               rdfs:comment "Identifies an instance of type ontouml:ElementView that is contained in an ontouml:Diagram, representing the concrete diagramation of an ontouml:ModelElement."@en ;
               rdfs:isDefinedBy <https://w3id.org/ontouml> ;
               rdfs:label "containsView"@en .
-
-
-###  https://w3id.org/ontouml#contents
-:contents rdf:type owl:ObjectProperty ;
-          rdfs:domain :Diagram ;
-          rdfs:range :ElementView ;
-          rdfs:comment "Aggregates its subproperties ontouml:containsModelElement and ontouml:containsView. Should not be directly used."@en ,
-                       "The OntoUML Metamodel has two relations named 'contents', which are mapped to two different object properties in this vocabulary: ontouml:containsModelElement and ontouml:containsView. The ontouml:contents object property aggregates both mentioned sub-properties in order to keep a clear relation to the metamodel."@en ;
-          rdfs:isDefinedBy <https://w3id.org/ontouml> ;
-          rdfs:label "contents"@en .
 
 
 ###  https://w3id.org/ontouml#diagram
@@ -669,12 +661,20 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ontouml#Class
 :Class rdf:type owl:Class ;
        rdfs:subClassOf :Classifier ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :stereotype ;
-                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                         owl:onClass :ClassStereotype
+                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                owl:onProperty :stereotype ;
+                                                owl:allValuesFrom :ClassStereotype
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :stereotype ;
+                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onClass :ClassStereotype
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
                        ] ;
-       rdfs:comment "Represents a type defined in the ontology."@en ;
+       rdfs:comment "An ontouml:Class have exactly one ontouml:Stereotype (i.e., it is a mandatory property) of specific type ontouml:ClassStereotype. This information is formalized by the ontouml:stereotype property."@en ,
+                    "Represents a type defined in the ontology."@en ;
        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
        rdfs:label "Class"@en .
 
@@ -948,12 +948,20 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ontouml#Property
 :Property rdf:type owl:Class ;
           rdfs:subClassOf :DecoratableElement ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :stereotype ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :PropertyStereotype
+                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :stereotype ;
+                                                   owl:allValuesFrom :PropertyStereotype
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :stereotype ;
+                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onClass :PropertyStereotype
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
                           ] ;
-          rdfs:comment "Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."@en ;
+          rdfs:comment "An ontouml:Property may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:PropertyStereotype. This information is formalized by the ontouml:stereotype property."@en ,
+                       "Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."@en ;
           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
           rdfs:label "Property"@en .
 
@@ -994,12 +1002,20 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/ontouml#Relation
 :Relation rdf:type owl:Class ;
           rdfs:subClassOf :Classifier ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :stereotype ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :RelationStereotype
+                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :stereotype ;
+                                                   owl:allValuesFrom :RelationStereotype
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :stereotype ;
+                                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                   owl:onClass :RelationStereotype
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
                           ] ;
-          rdfs:comment "Represents a relation defined in the ontology."@en ;
+          rdfs:comment "An ontouml:Relation may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:RelationStereotype. This information is formalized by the ontouml:stereotype property."@en ,
+                       "Represents a relation defined in the ontology."@en ;
           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
           rdfs:label "Relation"@en .
 

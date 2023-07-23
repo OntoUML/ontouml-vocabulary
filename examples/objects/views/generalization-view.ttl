@@ -5,11 +5,11 @@
     ontouml:isViewOf :DzD ;
     ontouml:project :XCY ;
     ontouml:shape :rzD_path ;
-    ontouml:sourceView :Ljp ;
+    ontouml:sourceView :Ljw ;
     ontouml:targetView :zx5 .
 
 :DzD a ontouml:Generalization .
 :rzD_path a ontouml:Path .
-:Ljp a ontouml:ClassView .
+:Ljw a ontouml:ClassView .
 :zx5 a ontouml:ClassView .
 :XCY a ontouml:Project .

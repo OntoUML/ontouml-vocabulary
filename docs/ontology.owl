@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -24,12 +25,11 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-03</terms:issued>
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-19</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-23</terms:modified>
         <terms:publisher rdf:resource="https://www.utwente.nl/en/eemcs/scs/"/>
         <terms:title xml:lang="en">OntoUML Metamodel Vocabulary</terms:title>
         <vann:preferredNamespacePrefix>ontouml</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/ontouml#</vann:preferredNamespaceUri>
-        <rdfs:comment>The OntoUML Vocabulary webpage may not be accurate because of technical limitations of the framework used to generate it. We advise users to access the Turtle syntax version of the specification to have access to the vocabulary&apos;s complete content.</rdfs:comment>
         <owl:priorVersion rdf:resource="https://w3id.org/ontouml/1.0.0"/>
         <owl:versionInfo xml:lang="en">General review for compliance with the OntoUML Metamodel 1.1.0.</owl:versionInfo>
         <dcat:keyword xml:lang="en">OntoUML</dcat:keyword>
@@ -37,6 +37,7 @@
         <dcat:keyword xml:lang="en">OntoUML-Vocabulary</dcat:keyword>
         <dcat:keyword xml:lang="en">Ontology-Driven Conceptual Modeling</dcat:keyword>
         <dcat:landingPage rdf:resource="https://w3id.org/ontouml/vocabulary"/>
+        <foaf:homepage rdf:resource="https://purl.org/"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
         <schema:affiliation rdf:resource="https://www.inf.unibz.it/krdb/"/>
@@ -185,6 +186,13 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
     <!-- https://schema.org/affiliation -->
 
 
@@ -302,7 +310,6 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontouml#containsModelElement">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontouml#contents"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#Package"/>
         <rdfs:range rdf:resource="https://w3id.org/ontouml#ModelElement"/>
         <rdfs:comment xml:lang="en">Identifies an instance of type ontouml:ModelElement that composes in an ontouml:Package.</rdfs:comment>
@@ -317,26 +324,11 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontouml#containsView">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ontouml#contents"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#Diagram"/>
         <rdfs:range rdf:resource="https://w3id.org/ontouml#ElementView"/>
         <rdfs:comment xml:lang="en">Identifies an instance of type ontouml:ElementView that is contained in an ontouml:Diagram, representing the concrete diagramation of an ontouml:ModelElement.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">containsView</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontouml#contents -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontouml#contents">
-        <rdfs:domain rdf:resource="https://w3id.org/ontouml#Diagram"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontouml#ElementView"/>
-        <rdfs:comment xml:lang="en">Aggregates its subproperties ontouml:containsModelElement and ontouml:containsView. Should not be directly used.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The OntoUML Metamodel has two relations named &apos;contents&apos;, which are mapped to two different object properties in this vocabulary: ontouml:containsModelElement and ontouml:containsView. The ontouml:contents object property aggregates both mentioned sub-properties in order to keep a clear relation to the metamodel.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
-        <rdfs:label xml:lang="en">contents</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1009,12 +1001,21 @@
     <owl:Class rdf:about="https://w3id.org/ontouml#Class">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontouml#Classifier"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontouml#ClassStereotype"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontouml#ClassStereotype"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/ontouml#ClassStereotype"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An ontouml:Class have exactly one ontouml:Stereotype (i.e., it is a mandatory property) of specific type ontouml:ClassStereotype. This information is formalized by the ontouml:stereotype property.</rdfs:comment>
         <rdfs:comment xml:lang="en">Represents a type defined in the ontology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">Class</rdfs:label>
@@ -1404,12 +1405,21 @@
     <owl:Class rdf:about="https://w3id.org/ontouml#Property">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontouml#DecoratableElement"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontouml#PropertyStereotype"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontouml#PropertyStereotype"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/ontouml#PropertyStereotype"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An ontouml:Property may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:PropertyStereotype. This information is formalized by the ontouml:stereotype property.</rdfs:comment>
         <rdfs:comment xml:lang="en">Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">Property</rdfs:label>
@@ -1472,12 +1482,21 @@
     <owl:Class rdf:about="https://w3id.org/ontouml#Relation">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontouml#Classifier"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/ontouml#RelationStereotype"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontouml#RelationStereotype"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontouml#stereotype"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/ontouml#RelationStereotype"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An ontouml:Relation may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:RelationStereotype. This information is formalized by the ontouml:stereotype property.</rdfs:comment>
         <rdfs:comment xml:lang="en">Represents a relation defined in the ontology.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">Relation</rdfs:label>

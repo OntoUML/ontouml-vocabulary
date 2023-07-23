@@ -11,7 +11,60 @@
     "@value" : "Mattia Fumagalli"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#bringsAbout"
+    }, {
+      "@id" : "https://w3id.org/ontouml#characterization"
+    }, {
+      "@id" : "https://w3id.org/ontouml#comparative"
+    }, {
+      "@id" : "https://w3id.org/ontouml#componentOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#creation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#derivation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#externalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#instantiation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#manifestation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#material"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mediation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#memberOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participational"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subCollectionOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subQuantityOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#termination"
+    }, {
+      "@id" : "https://w3id.org/ontouml#triggers"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -29,7 +82,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid133",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
   "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
     "@list" : [ {
@@ -153,16 +216,6 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#string"
-    } ]
-  } ]
-}, {
   "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
@@ -198,6 +251,16 @@
   } ]
 }, {
   "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/ontouml#ClassStereotype"
@@ -210,7 +273,16 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/ontouml#ClassStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ]
+}, {
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -292,7 +364,13 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "https://w3id.org/ontouml#Project"
+  } ]
+}, {
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -320,90 +398,27 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#complementOf" : [ {
-    "@id" : "https://w3id.org/ontouml#Project"
-  } ]
-}, {
-  "@id" : "_:genid82",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ontouml#PropertyStereotype"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ontouml#stereotype"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid83",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/ontouml#begin"
+      "@id" : "_:genid90"
     }, {
-      "@id" : "https://w3id.org/ontouml#end"
+      "@id" : "_:genid88"
     } ]
   } ]
 }, {
   "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+    "@id" : "https://w3id.org/ontouml#PropertyStereotype"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ontouml#stereotype"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid89",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ontouml#bringsAbout"
-    }, {
-      "@id" : "https://w3id.org/ontouml#characterization"
-    }, {
-      "@id" : "https://w3id.org/ontouml#comparative"
-    }, {
-      "@id" : "https://w3id.org/ontouml#componentOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#creation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#derivation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#externalDependence"
-    }, {
-      "@id" : "https://w3id.org/ontouml#historicalDependence"
-    }, {
-      "@id" : "https://w3id.org/ontouml#instantiation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#manifestation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#material"
-    }, {
-      "@id" : "https://w3id.org/ontouml#mediation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#memberOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#participation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#participational"
-    }, {
-      "@id" : "https://w3id.org/ontouml#subCollectionOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#subQuantityOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#termination"
-    }, {
-      "@id" : "https://w3id.org/ontouml#triggers"
-    } ]
   } ]
 }, {
   "@id" : "_:genid9",
@@ -416,6 +431,48 @@
     }, {
       "@id" : "https://w3id.org/ontouml#ModelElement"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/ontouml#PropertyStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#begin"
+    }, {
+      "@id" : "https://w3id.org/ontouml#end"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid100"
+    }, {
+      "@id" : "_:genid98"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/Standard",
@@ -470,6 +527,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#landingPage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://schema.org/Organization",
@@ -527,7 +587,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-07-19"
+    "@value" : "2023-07-23"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://www.utwente.nl/en/eemcs/scs/"
@@ -545,9 +605,6 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/dc/terms/Standard"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The OntoUML Vocabulary webpage may not be accurate because of technical limitations of the framework used to generate it. We advise users to access the Turtle syntax version of the specification to have access to the vocabulary's complete content."
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://w3id.org/ontouml/1.0.0"
@@ -574,6 +631,9 @@
   } ],
   "http://www.w3.org/ns/dcat#landingPage" : [ {
     "@id" : "https://w3id.org/ontouml/vocabulary"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://purl.org/"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#AggregationKind",
@@ -614,6 +674,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
+    "@value" : "An ontouml:Class have exactly one ontouml:Stereotype (i.e., it is a mandatory property) of specific type ontouml:ClassStereotype. This information is formalized by the ontouml:stereotype property."
+  }, {
+    "@language" : "en",
     "@value" : "Represents a type defined in the ontology."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -649,7 +712,7 @@
     "@id" : "https://w3id.org/ontouml#Stereotype"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid28"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#ClassView",
@@ -1014,7 +1077,7 @@
     "@id" : "https://doi.org/10.3233/AO-150157"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid66"
+    "@id" : "_:genid70"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#OntoumlElement",
@@ -1131,6 +1194,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
+    "@value" : "An ontouml:Property may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:PropertyStereotype. This information is formalized by the ontouml:stereotype property."
+  }, {
+    "@language" : "en",
     "@value" : "Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -1143,7 +1209,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ontouml#DecoratableElement"
   }, {
-    "@id" : "_:genid82"
+    "@id" : "_:genid86"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#PropertyStereotype",
@@ -1166,7 +1232,7 @@
     "@id" : "https://w3id.org/ontouml#Stereotype"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid83"
+    "@id" : "_:genid91"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#Rectangle",
@@ -1214,6 +1280,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
+    "@value" : "An ontouml:Relation may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:RelationStereotype. This information is formalized by the ontouml:stereotype property."
+  }, {
+    "@language" : "en",
     "@value" : "Represents a relation defined in the ontology."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -1226,7 +1295,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ontouml#Classifier"
   }, {
-    "@id" : "_:genid88"
+    "@id" : "_:genid96"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#RelationStereotype",
@@ -1249,7 +1318,7 @@
     "@id" : "https://w3id.org/ontouml#Stereotype"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid89"
+    "@id" : "_:genid101"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#RelationView",
@@ -1674,9 +1743,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontouml#ModelElement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ontouml#contents"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#containsView",
@@ -1694,32 +1760,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "containsView"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ontouml#ElementView"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/ontouml#contents"
-  } ]
-}, {
-  "@id" : "https://w3id.org/ontouml#contents",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Aggregates its subproperties ontouml:containsModelElement and ontouml:containsView. Should not be directly used."
-  }, {
-    "@language" : "en",
-    "@value" : "The OntoUML Metamodel has two relations named 'contents', which are mapped to two different object properties in this vocabulary: ontouml:containsModelElement and ontouml:containsView. The ontouml:contents object property aggregates both mentioned sub-properties in order to keep a clear relation to the metamodel."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ontouml#Diagram"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://w3id.org/ontouml"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "contents"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontouml#ElementView"

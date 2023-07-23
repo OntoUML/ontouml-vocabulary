@@ -2,14 +2,14 @@
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
 :M9S a ontouml:RelationView ;
-    ontouml:isViewOf :KYZ ;
+    ontouml:isViewOf :Kzi ;
     ontouml:project :XCY ;
     ontouml:shape :M9S_path ;
-    ontouml:sourceView :ppk ;
-    ontouml:targetView :Ljp .
+    ontouml:sourceView :ppw ;
+    ontouml:targetView :Ljw .
 
-:KYZ a ontouml:Relation .
+:Kzi a ontouml:Relation .
 :M9S_path a ontouml:Path .
-:ppk a ontouml:ClassView .
-:Ljp a ontouml:ClassView .
+:ppw a ontouml:ClassView .
+:Ljw a ontouml:ClassView .
 :XCY a ontouml:Project .

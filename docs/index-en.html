@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="resources/owl.css" media="screen">
     <title>OntoUML Metamodel Vocabulary</title>
     <!-- SCHEMA.ORG METADATA -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontouml#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontouml#","name":"OntoUML Metamodel Vocabulary", "headline":"A reference implementation of the OntoUML Metamodel in OWL.", "datePublished":"2023-07-19", "version":"General review for compliance with the OntoUML Metamodel 1.1.0.", "license":"https://creativecommons.org/licenses/by-sa/4.0", "author":[{"@type":"Person","name":"Tiago Prince Sales"},{"@type":"Person","name":"Claudenir M. Fonseca"},{"@type":"Person","name":"Pedro Paulo Favato Barcelos"}], "contributor":[{"@type":"Person","name":"Mattia Fumagalli"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontouml#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontouml#","name":"OntoUML Metamodel Vocabulary", "headline":"A reference implementation of the OntoUML Metamodel in OWL.", "datePublished":"2023-07-23", "version":"General review for compliance with the OntoUML Metamodel 1.1.0.", "license":"https://creativecommons.org/licenses/by-sa/4.0", "author":[{"@type":"Person","name":"Tiago Prince Sales"},{"@type":"Person","name":"Claudenir M. Fonseca"},{"@type":"Person","name":"Pedro Paulo Favato Barcelos"}], "contributor":[{"@type":"Person","name":"Mattia Fumagalli"}]}</script>
     <script src="resources/jquery.js"></script>
     <script src="resources/marked.min.js"></script>
     <script> 
@@ -56,7 +56,7 @@ $(function(){
         <div style="float:right">language <a href="index-en.html"><b>en</b></a>
         </div>
         <h1>OntoUML Metamodel Vocabulary</h1>
-        <h2>Release 2023-07-19</h2>
+        <h2>Release 2023-07-23</h2>
         <dl>
           <dt>This version:</dt>
           <dd><a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</a></dd>
@@ -103,45 +103,39 @@ $(function(){
 
                 src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by_sa/4.0-blue.svg"
 
-                alt="https://creativecommons.org/licenses/by-sa/4.0"></a>
-          </dd>
+                alt="https://creativecommons.org/licenses/by-sa/4.0"></a> </dd>
           <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite
             as:</dt>
-          <dd>Sales, T. P., Fonseca, C. M., Barcelos, P. P. F. (2022) OntoUML
-            Vocabulary Specification - Version 1.1.0. <a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</a></dd>
+          <dd>Sales, T. P., Fonseca, C. M., Barcelos, P. P. F. (2022) OntoUML Vocabulary Specification - Version 1.1.0. <a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</dd>
         </dl>
         <a href="provenance/provenance-en.html" target="_blank">Provenance of
           this page</a>
-        <hr>
-      </div>
+        <hr> </div>
       <div class="status">
-        <div>
-          <span>Ontology Specification Draft</span>
-        </div>
+        <div> <span>OntoUML Vocabulary Specification - Version 1.1.0</span> </div>
       </div>
       <div id="abstract">
         <h2>Abstract</h2>
-        <span class="markdown">
-          A reference implementation of the OntoUML Metamodel in OWL.</span>
-      </div>
+        <span class="markdown"> A reference implementation of the OntoUML
+          Metamodel in OWL.</span> </div>
       <div id="toc"></div>
       <!--INTRODUCTION SECTION-->
       <div id="introduction">
         <h2 id="intro" class="list">Introduction <span class="backlink"> back
             to <a href="#toc">ToC</a></span></h2>
-        The OntoUML Vocabulary is a Web Ontology Language (OWL) implementation
-        of the <a href="http://w3id.org/ontouml/metamodel">OntoUML Metamodel</a>.
-        This vocabulary supports the serialization, exchange, and publishing of
-        OntoUML models as linked data.<br>
+        <span class="markdown">The OntoUML Vocabulary is a Web Ontology Language
+          (OWL) implementation of the <a href="http://w3id.org/ontouml/metamodel">OntoUML
+            Metamodel</a>. This vocabulary supports the serialization, exchange,
+          and publishing of OntoUML models as linked data.</span>
         <div id="namespacedeclarations">
           <h3 id="ns" class="list">Namespace declarations</h3>
           <div id="ns" align="left">
             <table>
               <caption> <a href="#ns"> Table 1</a>: Namespaces used in the
-                document</caption>
+                document </caption>
               <tbody>
                 <tr>
-                  <td><strong><b>ontouml</b></strong></td>
+                  <td><b>ontouml</b></td>
                   <td><strong>&lt;https://w3id.org/ontouml#&gt;</strong></td>
                 </tr>
                 <tr>
@@ -198,8 +192,8 @@ $(function(){
         <h2 id="overv" class="list">OntoUML Metamodel Vocabulary: Overview <span
 
             class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-        <span class="markdown">
-          This ontology has the following classes and properties.</span>
+        <span class="markdown"> This ontology has the following classes and
+          properties.</span>
         <h4>Classes</h4>
         <ul xmlns:extra="https://w3id.org/extra#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
@@ -291,8 +285,6 @@ $(function(){
           <li> <a href="#containsModelElement" title="https://w3id.org/ontouml#containsModelElement">containsModelElement</a>
           </li>
           <li> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-          </li>
-          <li> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
           </li>
           <li> <a href="#diagram" title="https://w3id.org/ontouml#diagram">diagram</a>
           </li>
@@ -396,6 +388,8 @@ $(function(){
               <span>creator</span> </a> </li>
           <li> <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
               <span>description</span> </a> </li>
+          <li> <a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage">
+              <span>homepage</span> </a> </li>
           <li> <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
               <span>identifier</span> </a> </li>
           <li> <a href="#https://schema.org/identifier" title="https://schema.org/identifier">
@@ -478,11 +472,7 @@ $(function(){
           </li>
           <li> <a href="#historicalRoleMixin" title="https://w3id.org/ontouml#historicalRoleMixin">historicalRoleMixin</a>
           </li>
-          <li> <a href="#https://www.inf.unibz.it/krdb/" title="https://www.inf.unibz.it/krdb/">
-              <span>https://www.inf.unibz.it/krdb/</span> </a> </li>
-          <li> <a href="#https://www.utwente.nl/en/eemcs/scs/" title="https://www.utwente.nl/en/eemcs/scs/">
-              <span>https://www.utwente.nl/en/eemcs/scs/</span> </a> </li>
-          <li> <a href="#instantiation" title="https://w3id.org/ontouml#instantiation">instantiation</a>
+          <li>&nbsp;<a href="#instantiation" title="https://w3id.org/ontouml#instantiation">instantiation</a>
           </li>
           <li> <a href="#intrinsicModeNature" title="https://w3id.org/ontouml#intrinsicModeNature">intrinsicModeNature</a>
           </li>
@@ -550,11 +540,10 @@ $(function(){
         <h2 id="desc" class="list">OntoUML Metamodel Vocabulary: Description <span
 
             class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-        <span class="markdown">
-          This is a placeholder text for the description of your ontology. The
-          description should include an explanation and a diagram explaining how
-          the classes are related, examples of usage, etc.</span>
-      </div>
+        <span class="markdown"> This is a placeholder text for the description
+          of your ontology. The description should include an explanation and a
+          diagram explaining how the classes are related, examples of usage,
+          etc.</span> </div>
       <!--CROSSREF SECTION-->
       <div id="crossref">
         <h2 id="crossreference" class="list">Cross-reference for OntoUML
@@ -650,10 +639,9 @@ $(function(){
                   ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#AggregationKind</p>
             <div class="comment"> <span class="markdown">Groups all possible
-                aggregation kinds to which an ontouml:Property can be related.</span>
+                aggregation kinds to which an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> can be related.</span>
             </div>
-            <dl class="definedBy">
-            </dl>
+            
             <dl class="description">
               <dt>is equivalent to</dt>
               <dd>{ <a href="#composite" title="https://w3id.org/ontouml#composite">composite</a>
@@ -693,10 +681,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Cardinality</p>
             <div class="comment"> <span class="markdown">Represents the
-                cardinality of an ontouml:Property through its data property
-                ontouml:cardinalityValue.</span> </div>
-            <dl class="definedBy">
-            </dl>
+                cardinality of an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> through its data property
+                <a href=#cardinalityValue title="https://w3id.org/ontouml#cardinalityValue">cardinalityValue</a>.</span> </div>
+            
             <dl class="description">
               <dt>is in domain of</dt>
               <dd> <a href="#cardinalityValue" title="https://w3id.org/ontouml#cardinalityValue">cardinalityValue</a>
@@ -733,10 +720,12 @@ $(function(){
                 back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Class</p>
-            <div class="comment"> <span class="markdown">Represents a type
-                defined in the ontology.</span> </div>
-            <dl class="definedBy">
-            </dl>
+            <div class="comment"> <span class="markdown">An <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> have
+                exactly one <a href=#Stereotype title="https://w3id.org/ontouml#Stereotype">Stereotype</a> (i.e., it is a mandatory
+                property) of specific type <a href=#ClassStereotype title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>. This
+                information is formalized by the <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property.</span>
+            </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#Classifier" title="https://w3id.org/ontouml#Classifier">Classifier</a>
@@ -770,12 +759,8 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Classifier</p>
             <div class="comment"> <span class="markdown">Abstract class that
-                groups the classes ontouml:Class and ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                groups the classes <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> and <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#DecoratableElement" title="https://w3id.org/ontouml#DecoratableElement">DecoratableElement</a>
@@ -814,12 +799,8 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#ClassStereotype</p>
             <div class="comment"> <span class="markdown">Aggregates all
                 possible instances that can be assigned via an
-                ontouml:stereotype property to an ontouml:Class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property to an <a href=#Class title="https://w3id.org/ontouml#Class">Class</a>.</span> </div>
+            
             <dl class="description">
               <dt>is equivalent to</dt>
               <dd>{ <a href="#abstract" title="https://w3id.org/ontouml#abstract">abstract</a>
@@ -917,12 +898,8 @@ $(function(){
             <div class="comment"> <span class="markdown">Does not directly
                 contain data about the visual representation (rectangular
                 shape's size and position) itself, but is related to this
-                information via the ontouml:shape property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                information via the <a href=#shape title="https://w3id.org/ontouml#shape">shape</a> property.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#NodeView" title="https://w3id.org/ontouml#NodeView">NodeView</a>
@@ -935,13 +912,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#ConnectorView</p>
             <div class="comment"> <span class="markdown">Abstract class that
-                groups the classes ontouml:RelationView and
-                ontouml:GeneralizationView.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                groups the classes <a href=#RelationView title="https://w3id.org/ontouml#RelationView">RelationView</a> and
+                <a href=#GeneralizationView title="https://w3id.org/ontouml#GeneralizationView">GeneralizationView</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ElementView" title="https://w3id.org/ontouml#ElementView">ElementView</a>
@@ -969,13 +942,9 @@ $(function(){
             <p> <strong>IRI:</strong>
               https://w3id.org/ontouml#DecoratableElement</p>
             <div class="comment"> <span class="markdown">Abstract class that
-                groups the classes ontouml:Classifier and the ontouml:Property.</span>
+                groups the classes <a href=#Classifier title="https://w3id.org/ontouml#Classifier">Classifier</a> and the <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ModelElement" title="https://w3id.org/ontouml#ModelElement">ModelElement</a>
@@ -1004,23 +973,18 @@ $(function(){
             <div class="comment"> <span class="markdown">A visual
                 representation of an OntoUML model or of a portion of it.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#OntoumlElement" title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a>
                 <sup class="type-c" title="class">c</sup> </dd>
               <dt>is in domain of</dt>
               <dd> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-                <sup class="type-op" title="object property">op</sup>, <a href="#contents"
+                <sup class="type-op" title="object property">op</sup>, <a href="#owner"
 
-                  title="https://w3id.org/ontouml#contents">contents</a> <sup class="type-op"
+                  title="https://w3id.org/ontouml#owner">owner</a> <sup class="type-op"
 
-                  title="object property">op</sup>, <a href="#owner" title="https://w3id.org/ontouml#owner">owner</a>
-                <sup class="type-op" title="object property">op</sup> </dd>
+                  title="object property">op</sup> </dd>
               <dt>is in range of</dt>
               <dd> <a href="#diagram" title="https://w3id.org/ontouml#diagram">diagram</a>
                 <sup class="type-op" title="object property">op</sup> </dd>
@@ -1032,13 +996,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#DiagramElement</p>
             <div class="comment"> <span class="markdown">Abstract class that
-                groups the classes ontouml:ElementView and the ontouml:Shape.</span>
+                groups the classes <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> and the <a href=#Shape title="https://w3id.org/ontouml#Shape">Shape</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#OntoumlElement" title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a>
@@ -1055,13 +1015,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#ElementView</p>
             <div class="comment"> <span class="markdown">Abstract class that
-                groups the classes ontouml:ConnectorView,
-                ontouml:GeneralizationSetView, and ontouml:NodeView.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                groups the classes <a href=#ConnectorView title="https://w3id.org/ontouml#ConnectorView">ConnectorView</a>,
+                <a href=#GeneralizationSetView title="https://w3id.org/ontouml#GeneralizationSetView">GeneralizationSetView</a>, and <a href=#NodeView title="https://w3id.org/ontouml#NodeView">NodeView</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#DiagramElement" title="https://w3id.org/ontouml#DiagramElement">DiagramElement</a>
@@ -1085,12 +1041,11 @@ $(function(){
                   title="object property">op</sup> </dd>
               <dt>is in range of</dt>
               <dd> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-                <sup class="type-op" title="object property">op</sup>, <a href="#contents"
+                <sup class="type-op" title="object property">op</sup>, <a href="#sourceView"
 
-                  title="https://w3id.org/ontouml#contents">contents</a> <sup class="type-op"
+                  title="https://w3id.org/ontouml#sourceView">sourceView</a> <sup
 
-                  title="object property">op</sup>, <a href="#sourceView" title="https://w3id.org/ontouml#sourceView">sourceView</a>
-                <sup class="type-op" title="object property">op</sup>, <a href="#targetView"
+                  class="type-op" title="object property">op</sup>, <a href="#targetView"
 
                   title="https://w3id.org/ontouml#targetView">targetView</a> <sup
 
@@ -1104,11 +1059,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Generalization</p>
             <div class="comment"> <span class="markdown">Represents a
                 generalization defined in an ontology.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ModelElement" title="https://w3id.org/ontouml#ModelElement">ModelElement</a>
@@ -1134,11 +1085,7 @@ $(function(){
               https://w3id.org/ontouml#GeneralizationSet</p>
             <div class="comment"> <span class="markdown">Represents a
                 generalization set defined in the ontology.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ModelElement" title="https://w3id.org/ontouml#ModelElement">ModelElement</a>
@@ -1168,12 +1115,8 @@ $(function(){
               https://w3id.org/ontouml#GeneralizationSetView</p>
             <div class="comment"> <span class="markdown">Represents the
                 diagramation (i.e., the visual representation) of an
-                ontouml:GeneralizationSet in a given ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#GeneralizationSet title="https://w3id.org/ontouml#GeneralizationSet">GeneralizationSet</a> in a given <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ElementView" title="https://w3id.org/ontouml#ElementView">ElementView</a>
@@ -1189,12 +1132,8 @@ $(function(){
               https://w3id.org/ontouml#GeneralizationView</p>
             <div class="comment"> <span class="markdown">Represents the
                 diagramation (i.e., the visual representation) of an
-                ontouml:Generalization in a given ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Generalization title="https://w3id.org/ontouml#Generalization">Generalization</a> in a given <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ConnectorView" title="https://w3id.org/ontouml#ConnectorView">ConnectorView</a>
@@ -1207,13 +1146,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Literal</p>
             <div class="comment"> <span class="markdown">Represents a possible
-                value for an ontouml:Class defined by an ontouml:enumeration.</span>
+                value for an <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> defined by an <a href=#enumeration title="https://w3id.org/ontouml#enumeration">enumeration</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ModelElement" title="https://w3id.org/ontouml#ModelElement">ModelElement</a>
@@ -1231,11 +1166,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Abstract class that
                 groups diverse elements that can be represented in on OntoUML
                 model.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#OntoumlElement" title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a>
@@ -1268,13 +1199,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#NodeView</p>
             <div class="comment"> <span class="markdown">Abstract class that
-                groups the classes ontouml:NoteView, ontouml:ClassView, and
-                ontouml:PackageView.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                groups the classes <a href=#NoteView title="https://w3id.org/ontouml#NoteView">NoteView</a>, <a href=#ClassView title="https://w3id.org/ontouml#ClassView">ClassView</a>, and
+                <a href=#PackageView title="https://w3id.org/ontouml#PackageView">PackageView</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ElementView" title="https://w3id.org/ontouml#ElementView">ElementView</a>
@@ -1295,13 +1222,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Note</p>
             <div class="comment"> <span class="markdown">Type of
-                ontouml:ModelElement used to represent textual information.</span>
+                <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a> used to represent textual information.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ModelElement" title="https://w3id.org/ontouml#ModelElement">ModelElement</a>
@@ -1318,12 +1241,8 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#NoteView</p>
             <div class="comment"> <span class="markdown">Represents the
                 diagramation (i.e., the visual representation) of an
-                ontouml:Note in a given ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Note title="https://w3id.org/ontouml#Note">Note</a> in a given <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#NodeView" title="https://w3id.org/ontouml#NodeView">NodeView</a>
@@ -1341,11 +1260,7 @@ $(function(){
                 individuals that represent fundamental conceptual modeling
                 issues according to the Unified Foundational Ontology (UFO)
                 theory.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>is equivalent to</dt>
               <dd>{ <a href="#abstractNature" title="https://w3id.org/ontouml#abstractNature">abstractNature</a>
@@ -1422,11 +1337,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#OntoumlElement</p>
             <div class="comment"> <span class="markdown">Abstract class that
                 groups different elements an ontoUML model can have.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has sub-classes</dt>
               <dd> <a href="#Diagram" title="https://w3id.org/ontouml#Diagram">Diagram</a>
@@ -1469,11 +1380,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Package</p>
             <div class="comment"> <span class="markdown">Aggregates ontology
                 components, working as a container.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ModelElement" title="https://w3id.org/ontouml#ModelElement">ModelElement</a>
@@ -1493,12 +1400,8 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#PackageView</p>
             <div class="comment"> <span class="markdown">Represents the
                 diagramation (i.e., the visual representation) of an
-                ontouml:Package in a given ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Package title="https://w3id.org/ontouml#Package">Package</a> in a given <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#NodeView" title="https://w3id.org/ontouml#NodeView">NodeView</a>
@@ -1511,13 +1414,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Path</p>
             <div class="comment"> <span class="markdown">A list of connected
-                ontouml:Point values to represent an ontouml:ElementView's
+                <a href=#Point title="https://w3id.org/ontouml#Point">Point</a> values to represent an <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a>'s
                 shape.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#Shape" title="https://w3id.org/ontouml#Shape">Shape</a>
@@ -1533,15 +1432,11 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Point</p>
             <div class="comment"> <span class="markdown">Contains the
-                ontouml:xCoordinate value and ontouml:yCoordinate value. These
+                <a href=#xCoordinate title="https://w3id.org/ontouml#xCoordinate">xCoordinate</a> value and <a href=#yCoordinate title="https://w3id.org/ontouml#yCoordinate">yCoordinate</a> value. These
                 values represent the top left position of an
-                ontouml:RectangularShape, to which the ontouml:Point is related
-                vian ontouml:topLeftPosition property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RectangularShape title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a>, to which the <a href=#Point title="https://w3id.org/ontouml#Point">Point</a> is related
+                vian <a href=#topLeftPosition title="https://w3id.org/ontouml#topLeftPosition">topLeftPosition</a> property.</span> </div>
+            
             <dl class="description">
               <dt>is in domain of</dt>
               <dd> <a href="#xCoordinate" title="https://w3id.org/ontouml#xCoordinate">xCoordinate</a>
@@ -1583,11 +1478,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Aggregates all
                 entities that are part of a same conceptual model, including
                 concepts declaration and their visual representation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#OntoumlElement" title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a>
@@ -1609,15 +1500,12 @@ $(function(){
                 back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Property</p>
-            <div class="comment"> <span class="markdown">Represents a property
-                defined in the ontology. Properties contained by classes are
-                deemed attributes and those contained by relations are deemed
-                association ends.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            <div class="comment"> <span class="markdown">An <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>
+                may have at most one <a href=#Stereotype title="https://w3id.org/ontouml#Stereotype">Stereotype</a> (i.e., it is an optional
+                property) of specific type <a href=#PropertyStereotype title="https://w3id.org/ontouml#PropertyStereotype">PropertyStereotype</a>. This
+                information is formalized by the <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property.</span>
+            </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#DecoratableElement" title="https://w3id.org/ontouml#DecoratableElement">DecoratableElement</a>
@@ -1682,12 +1570,8 @@ $(function(){
               https://w3id.org/ontouml#PropertyStereotype</p>
             <div class="comment"> <span class="markdown">Aggregates all
                 possible instances that can be assigned via an
-                ontouml:stereotype property to an ontouml:Property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property to an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span> </div>
+            
             <dl class="description">
               <dt>is equivalent to</dt>
               <dd>{ <a href="#begin" title="https://w3id.org/ontouml#begin">begin</a>
@@ -1710,13 +1594,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Rectangle</p>
             <div class="comment"> <span class="markdown">A particular type of
-                ontouml:RectangularShape, mainly used to represent entities of
-                type ontouml:Class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RectangularShape title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a>, mainly used to represent entities of
+                type <a href=#Class title="https://w3id.org/ontouml#Class">Class</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#RectangularShape" title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a>
@@ -1730,12 +1610,8 @@ $(function(){
                   ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#RectangularShape</p>
             <div class="comment"> <span class="markdown">Represents a
-                rectangular shape in a given ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                rectangular shape in a given <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#Shape" title="https://w3id.org/ontouml#Shape">Shape</a>
@@ -1761,13 +1637,12 @@ $(function(){
                 back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Relation</p>
-            <div class="comment"> <span class="markdown">Represents a relation
-                defined in the ontology.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            <div class="comment"> <span class="markdown">An <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>
+                may have at most one <a href=#Stereotype title="https://w3id.org/ontouml#Stereotype">Stereotype</a> (i.e., it is an optional
+                property) of specific type <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>. This
+                information is formalized by the <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property.</span>
+            </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#Classifier" title="https://w3id.org/ontouml#Classifier">Classifier</a>
@@ -1794,12 +1669,8 @@ $(function(){
               https://w3id.org/ontouml#RelationStereotype</p>
             <div class="comment"> <span class="markdown">Aggregates all
                 possible instances that can be assigned via an
-                ontouml:stereotype property to an ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property to an <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>is equivalent to</dt>
               <dd>{ <a href="#bringsAbout" title="https://w3id.org/ontouml#bringsAbout">bringsAbout</a>
@@ -1892,12 +1763,8 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#RelationView</p>
             <div class="comment"> <span class="markdown">Represents the
                 diagramation (i.e., the visual representation) of an
-                ontouml:Relation in a given ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a> in a given <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#ConnectorView" title="https://w3id.org/ontouml#ConnectorView">ConnectorView</a>
@@ -1910,13 +1777,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Shape</p>
             <div class="comment"> <span class="markdown">Contains information
-                about the diagramation of an ontouml:ModelElement through its
-                relation with an ontouml:ElementView.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                about the diagramation of an <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a> through its
+                relation with an <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#DiagramElement" title="https://w3id.org/ontouml#DiagramElement">DiagramElement</a>
@@ -1939,11 +1802,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Stereotype</p>
             <div class="comment"> <span class="markdown">Indicates
                 meta-properties of classes, properties, or relations.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>has sub-classes</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -1979,13 +1838,9 @@ $(function(){
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Text</p>
             <div class="comment"> <span class="markdown">An
-                ontouml:RectangularShape used to represent some textual
-                information in an ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RectangularShape title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a> used to represent some textual
+                information in an <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <dl class="description">
               <dt>has super-classes</dt>
               <dd> <a href="#RectangularShape" title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a>
@@ -2009,8 +1864,6 @@ $(function(){
             <li> <a href="#containsModelElement" title="https://w3id.org/ontouml#containsModelElement">containsModelElement</a>
             </li>
             <li> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-            </li>
-            <li> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
             </li>
             <li> <a href="#diagram" title="https://w3id.org/ontouml#diagram">diagram</a>
             </li>
@@ -2065,15 +1918,11 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#aggregationKind</p>
             <div class="comment"> <span class="markdown">Characterizes an
-                ontouml:Property with an ontouml:AggregationKind instance, i.e.,
-                indicates whether the ontouml:Property is a simple
-                (ontouml:none), a shared (ontouml:shared), or a composite
-                (ontouml:composite) property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> with an <a href=#AggregationKind title="https://w3id.org/ontouml#AggregationKind">AggregationKind</a> instance, i.e.,
+                indicates whether the <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> is a simple
+                (<a href=#none title="https://w3id.org/ontouml#none">none</a>), a shared (<a href=#shared title="https://w3id.org/ontouml#shared">shared</a>), or a composite
+                (<a href=#composite title="https://w3id.org/ontouml#composite">composite</a>) property.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2092,13 +1941,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#attribute</p>
             <div class="comment"> <span class="markdown">Relates an instance of
-                an ontouml:Class to its properties, which are instances of the
-                ontouml:Property class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                an <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> to its properties, which are instances of the
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> class.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has super-properties</dt>
@@ -2119,13 +1964,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#cardinality</p>
             <div class="comment"> <span class="markdown">Identifies the
-                individual of type ontouml:Cardinality that represents the
-                cardinalities of an ontouml:Property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                individual of type <a href=#Cardinality title="https://w3id.org/ontouml#Cardinality">Cardinality</a> that represents the
+                cardinalities of an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2143,13 +1984,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#categorizer</p>
             <div class="comment"> <span class="markdown">Identifies individuals
-                of an ontouml:GeneralizationSet that are instances of a higher
-                order ontouml:Class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                of an <a href=#GeneralizationSet title="https://w3id.org/ontouml#GeneralizationSet">GeneralizationSet</a> that are instances of a higher
+                order <a href=#Class title="https://w3id.org/ontouml#Class">Class</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2168,18 +2005,11 @@ $(function(){
             <p> <strong>IRI:</strong>
               https://w3id.org/ontouml#containsModelElement</p>
             <div class="comment"> <span class="markdown">Identifies an instance
-                of type ontouml:ModelElement that composes in an
-                ontouml:Package.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                of type <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a> that composes in an
+                <a href=#Package title="https://w3id.org/ontouml#Package">Package</a>.</span> </div>
+            
             <div class="description">
               <dl>
-                <dt>has super-properties</dt>
-                <dd> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
-                  <sup class="type-op" title="object property">op</sup> </dd>
                 <dt>has domain</dt>
                 <dd> <a href="#Package" title="https://w3id.org/ontouml#Package">Package</a>
                   <sup class="type-c" title="class">c</sup> </dd>
@@ -2195,50 +2025,12 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#containsView</p>
             <div class="comment"> <span class="markdown">Identifies an instance
-                of type ontouml:ElementView that is contained in an
-                ontouml:Diagram, representing the concrete diagramation of an
-                ontouml:ModelElement.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                of type <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> that is contained in an
+                <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>, representing the concrete diagramation of an
+                <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a>.</span> </div>
+            
             <div class="description">
               <dl>
-                <dt>has super-properties</dt>
-                <dd> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
-                  <sup class="type-op" title="object property">op</sup> </dd>
-                <dt>has domain</dt>
-                <dd> <a href="#Diagram" title="https://w3id.org/ontouml#Diagram">Diagram</a>
-                  <sup class="type-c" title="class">c</sup> </dd>
-                <dt>has range</dt>
-                <dd> <a href="#ElementView" title="https://w3id.org/ontouml#ElementView">ElementView</a>
-                  <sup class="type-c" title="class">c</sup> </dd>
-              </dl>
-            </div>
-          </div>
-          <div class="entity" id="contents">
-            <h3>contents<sup class="type-op" title="object property">op</sup> <span
-
-                class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object
-                  Property ToC</a> </span> </h3>
-            <p> <strong>IRI:</strong> https://w3id.org/ontouml#contents</p>
-            <div class="comment"> <span class="markdown">Aggregates its
-                subproperties ontouml:containsModelElement and
-                ontouml:containsView. Should not be directly used.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
-            <div class="description">
-              <dl>
-                <dt>has sub-properties</dt>
-                <dd> <a href="#containsModelElement" title="https://w3id.org/ontouml#containsModelElement">containsModelElement</a>
-                  <sup class="type-op" title="object property">op</sup>, <a href="#containsView"
-
-                    title="https://w3id.org/ontouml#containsView">containsView</a>
-                  <sup class="type-op" title="object property">op</sup> </dd>
                 <dt>has domain</dt>
                 <dd> <a href="#Diagram" title="https://w3id.org/ontouml#Diagram">Diagram</a>
                   <sup class="type-c" title="class">c</sup> </dd>
@@ -2255,13 +2047,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#diagram</p>
             <div class="comment"> <span class="markdown">Identifies which
-                entities of type ontouml:Diagram are part of an ontouml:Project.</span>
+                entities of type <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a> are part of an <a href=#Project title="https://w3id.org/ontouml#Project">Project</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2280,13 +2068,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#general</p>
             <div class="comment"> <span class="markdown">Identifies the parent
-                ontouml:Classifier (e.g., a superclass) that participates in an
-                ontouml:Generalization relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Classifier title="https://w3id.org/ontouml#Classifier">Classifier</a> (e.g., a superclass) that participates in an
+                <a href=#Generalization title="https://w3id.org/ontouml#Generalization">Generalization</a> relation.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2304,13 +2088,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#generalization</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:Generalization that participates in an
-                ontouml:GeneralizationSet.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Generalization title="https://w3id.org/ontouml#Generalization">Generalization</a> that participates in an
+                <a href=#GeneralizationSet title="https://w3id.org/ontouml#GeneralizationSet">GeneralizationSet</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2329,14 +2109,10 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isViewOf</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:ElementView to ontouml:ModelElement, indicating the
+                <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> to <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a>, indicating the
                 diagrammatical representation of the latter in an
-                ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2355,14 +2131,10 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#literal</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:Literal to its container enumeration class (an
-                ontouml:Class that has the ontouml:stereotype property with
-                ontouml:enumeration).</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Literal title="https://w3id.org/ontouml#Literal">Literal</a> to its container enumeration class (an
+                <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> that has the <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property with
+                <a href=#enumeration title="https://w3id.org/ontouml#enumeration">enumeration</a>).</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2381,13 +2153,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#model</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:Project to an ontouml:Package that is part of it.</span>
+                <a href=#Project title="https://w3id.org/ontouml#Project">Project</a> to an <a href=#Package title="https://w3id.org/ontouml#Package">Package</a> that is part of it.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2406,14 +2174,10 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#owner</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:Diagram to an ontouml:ModelElement that is represented
-                on it, i.e., to an ontouml:ModelElement that has an
-                ontouml:ElementView on that ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a> to an <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a> that is represented
+                on it, i.e., to an <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a> that has an
+                <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> on that <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2432,12 +2196,8 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#point</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:Path to an ontouml:Point that composes it.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Path title="https://w3id.org/ontouml#Path">Path</a> to an <a href=#Point title="https://w3id.org/ontouml#Point">Point</a> that composes it.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2456,13 +2216,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#project</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:OntoumlElement different than ontouml:Project to an
-                ontouml:Project that it composes.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#OntoumlElement title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a> different than <a href=#Project title="https://w3id.org/ontouml#Project">Project</a> to an
+                <a href=#Project title="https://w3id.org/ontouml#Project">Project</a> that it composes.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2487,13 +2243,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#property</p>
             <div class="comment"> <span class="markdown">Aggregates its
-                subproperties ontouml:attribute and ontouml:relationEnd. Should
+                subproperties <a href=#attribute title="https://w3id.org/ontouml#attribute">attribute</a> and <a href=#relationEnd title="https://w3id.org/ontouml#relationEnd">relationEnd</a>. Should
                 not be directly used.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has sub-properties</dt>
@@ -2517,13 +2269,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#propertyType</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:Class or ontouml:Relation (i.e., an ontouml:Classifier)
-                to which an ontouml:Property refers.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> or <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a> (i.e., an <a href=#Classifier title="https://w3id.org/ontouml#Classifier">Classifier</a>)
+                to which an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> refers.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2542,13 +2290,9 @@ $(function(){
             <p> <strong>IRI:</strong>
               https://w3id.org/ontouml#redefinesProperty</p>
             <div class="comment"> <span class="markdown">Identifies a target
-                ontouml:Property that is redefined by a source ontouml:Property.</span>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> that is redefined by a source <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2567,12 +2311,8 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#relationEnd</p>
             <div class="comment"> <span class="markdown">Identifies a property
                 that represents one end (source or target) of an
-                ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has super-properties</dt>
@@ -2600,13 +2340,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#restrictedTo</p>
             <div class="comment"> <span class="markdown">Associates an
-                ontouml:Class to an ontouml:OntologicalNature, restricting its
+                <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> to an <a href=#OntologicalNature title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>, restricting its
                 allowed values.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2625,14 +2361,10 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#shape</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:ElementView to an ontouml:Shape that contains the
+                <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> to an <a href=#Shape title="https://w3id.org/ontouml#Shape">Shape</a> that contains the
                 diagramation's data (size and position) about the
-                ontouml:ModelElement it is a view of.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#ModelElement title="https://w3id.org/ontouml#ModelElement">ModelElement</a> it is a view of.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2651,13 +2383,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#sourceEnd</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:Property that represents the source side of an
-                ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> that represents the source side of an
+                <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has super-properties</dt>
@@ -2678,13 +2406,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#sourceView</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:ElementView that participates as source of an
-                ontouml:RelationView or ontouml:GeneralizationView.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> that participates as source of an
+                <a href=#RelationView title="https://w3id.org/ontouml#RelationView">RelationView</a> or <a href=#GeneralizationView title="https://w3id.org/ontouml#GeneralizationView">GeneralizationView</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2703,13 +2427,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#specific</p>
             <div class="comment"> <span class="markdown">Identifies the child
-                ontouml:Classifier (e.g., a subclass) that participates in an
-                ontouml:Generalization relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Classifier title="https://w3id.org/ontouml#Classifier">Classifier</a> (e.g., a subclass) that participates in an
+                <a href=#Generalization title="https://w3id.org/ontouml#Generalization">Generalization</a> relation.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2727,13 +2447,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#stereotype</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:Stereotype applied to an ontouml:DecoratableElement.</span>
+                <a href=#Stereotype title="https://w3id.org/ontouml#Stereotype">Stereotype</a> applied to an <a href=#DecoratableElement title="https://w3id.org/ontouml#DecoratableElement">DecoratableElement</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2751,13 +2467,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#subsetsProperty</p>
             <div class="comment"> <span class="markdown">Identifies a target
-                ontouml:Property that is subsetted by a source ontouml:Property.</span>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> that is subsetted by a source <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2776,13 +2488,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#targetEnd</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:Property that represents the target side of an
-                ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> that represents the target side of an
+                <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has super-properties</dt>
@@ -2803,13 +2511,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#targetView</p>
             <div class="comment"> <span class="markdown">Identifies an
-                ontouml:ElementView that participates as target of an
-                ontouml:RelationView or ontouml:GeneralizationView.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#ElementView title="https://w3id.org/ontouml#ElementView">ElementView</a> that participates as target of an
+                <a href=#RelationView title="https://w3id.org/ontouml#RelationView">RelationView</a> or <a href=#GeneralizationView title="https://w3id.org/ontouml#GeneralizationView">GeneralizationView</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2829,11 +2533,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Is direct mapped to
                 the OntoUML Metamodel's 'topLeft' relationship between the
                 classes RectangularShape and Point.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2897,13 +2597,9 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#cardinalityValue</p>
             <div class="comment"> <span class="markdown">Provides the complete
                 (i.e., both lower and upper cardinality's bounds) cardinalities
-                of an ontouml:Property via its related ontouml:Cardinality.</span>
+                of an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> via its related <a href=#Cardinality title="https://w3id.org/ontouml#Cardinality">Cardinality</a>.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2923,13 +2619,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#description</p>
             <div class="comment"> <span class="markdown">Relates an
-                ontouml:OntoumlElement to a string representing its description
+                <a href=#OntoumlElement title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a> to a string representing its description
                 in free textual format.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2953,13 +2645,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#height</p>
             <div class="comment"> <span class="markdown">Indicates the height
-                of an ontouml:RectangularShape that is represented in an
-                ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                of an <a href=#RectangularShape title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a> that is represented in an
+                <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -2980,14 +2668,10 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isAbstract</p>
             <div class="comment"> <span class="markdown">Indicates if the
-                ontouml:Classifier can have direct instances. If set to true,
+                <a href=#Classifier title="https://w3id.org/ontouml#Classifier">Classifier</a> can have direct instances. If set to true,
                 the classifier must be specialized before being instantiated.
                 Otherwise, it can have direct instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3008,13 +2692,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isComplete</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:GeneralizationSet is complete, i.e., if it does not
+                <a href=#GeneralizationSet title="https://w3id.org/ontouml#GeneralizationSet">GeneralizationSet</a> is complete, i.e., if it does not
                 admit further generalizations.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3035,13 +2715,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isDerived</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:DecoratableElement can be defined through a derivation
+                <a href=#DecoratableElement title="https://w3id.org/ontouml#DecoratableElement">DecoratableElement</a> can be defined through a derivation
                 rule.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3062,13 +2738,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isDisjoint</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:GeneralizationSet is disjoint, i.e., it does not admit
+                <a href=#GeneralizationSet title="https://w3id.org/ontouml#GeneralizationSet">GeneralizationSet</a> is disjoint, i.e., it does not admit
                 generalizations having overlapping subclasses.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3088,13 +2760,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isExtensional</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:Class is extensionally defined (i.e., it's parts cannot
+                <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> is extensionally defined (i.e., it's parts cannot
                 change).</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3115,13 +2783,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isOrdered</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:Property is ordered or not, i.e., if it requires an
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> is ordered or not, i.e., if it requires an
                 exact order of its values or not.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3142,12 +2806,8 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isPowertype</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:Class is a powertype in multi-level modeling.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> is a powertype in multi-level modeling.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3168,12 +2828,8 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#isReadOnly</p>
             <div class="comment"> <span class="markdown">Indicates if an
-                ontouml:Property can or cannot be updated or modified.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> can or cannot be updated or modified.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3194,13 +2850,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#lowerBound</p>
             <div class="comment"> <span class="markdown">E.g., if the
-                ontouml:cardinalityValue set is [1..*] then the lower bound is
+                <a href=#cardinalityValue title="https://w3id.org/ontouml#cardinalityValue">cardinalityValue</a> set is [1..*] then the lower bound is
                 '1'.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3220,12 +2872,8 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#name</p>
             <div class="comment"> <span class="markdown">A string that
-                identifies or names an ontouml:OntoumlElement.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                identifies or names an <a href=#OntoumlElement title="https://w3id.org/ontouml#OntoumlElement">OntoumlElement</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3249,14 +2897,10 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#order</p>
             <div class="comment"> <span class="markdown">Constraint: an
-                ontouml:Class that has an ontouml:stereotype property with an
-                ontouml:Stereotype different than ontouml:type must have an
-                ontouml:order value equal to 1.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Class title="https://w3id.org/ontouml#Class">Class</a> that has an <a href=#stereotype title="https://w3id.org/ontouml#stereotype">stereotype</a> property with an
+                <a href=#Stereotype title="https://w3id.org/ontouml#Stereotype">Stereotype</a> different than <a href=#type title="https://w3id.org/ontouml#type">type</a> must have an
+                <a href=#order title="https://w3id.org/ontouml#order">order</a> value equal to 1.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3276,12 +2920,8 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#text</p>
             <div class="comment"> <span class="markdown">A string that register
-                any information of an ontouml:Note</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                any information of an <a href=#Note title="https://w3id.org/ontouml#Note">Note</a></span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3301,13 +2941,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#upperBound</p>
             <div class="comment"> <span class="markdown">E.g., if the
-                ontouml:cardinalityValue set is [1..*] then the upper bound is
+                <a href=#cardinalityValue title="https://w3id.org/ontouml#cardinalityValue">cardinalityValue</a> set is [1..*] then the upper bound is
                 '*'.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3328,13 +2964,9 @@ $(function(){
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#width</p>
             <div class="comment"> <span class="markdown">Indicates the width of
-                an ontouml:RectangularShape that is represented in an
-                ontouml:Diagram.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                an <a href=#RectangularShape title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a> that is represented in an
+                <a href=#Diagram title="https://w3id.org/ontouml#Diagram">Diagram</a>.</span> </div>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3356,11 +2988,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#xCoordinate</p>
             <div class="comment"> <span class="markdown">Is direct mapped to
                 the metamodel's 'x' attribute of the Point class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3382,11 +3010,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#yCoordinate</p>
             <div class="comment"> <span class="markdown">Is direct mapped to
                 the metamodel's 'y' attribute of the Point class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <div class="description">
               <dl>
                 <dt>has domain</dt>
@@ -3416,6 +3040,8 @@ $(function(){
                 <span>creator</span> </a> </li>
             <li> <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
                 <span>description</span> </a> </li>
+            <li> <a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage">
+                <span>homepage</span> </a> </li>
             <li> <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
                 <span>identifier</span> </a> </li>
             <li> <a href="#https://schema.org/identifier" title="https://schema.org/identifier">
@@ -3478,6 +3104,12 @@ $(function(){
               <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+          </div>
+          <div class="entity" id="http://xmlns.com/foaf/0.1/homepage">
+            <h3>homepage<sup class="type-ap" title="annotation property">ap</sup>
+              <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation
+                  Property ToC</a> </span> </h3>
+            <p> <strong>IRI:</strong> http://xmlns.com/foaf/0.1/homepage</p>
           </div>
           <div class="entity" id="http://purl.org/dc/terms/identifier">
             <h3>identifier<sup class="type-ap" title="annotation property">ap</sup>
@@ -3705,13 +3337,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#abstract</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:ClassStereotype used to assign the corresponding
-                stereotype to a given ontouml:Class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#ClassStereotype title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Class title="https://w3id.org/ontouml#Class">Class</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -3726,11 +3354,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes abstract individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -3744,13 +3368,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#begin</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:PropertyStereotype used to assign the corresponding
-                stereotype to a given ontouml:Property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#PropertyStereotype title="https://w3id.org/ontouml#PropertyStereotype">PropertyStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#PropertyStereotype" title="https://w3id.org/ontouml#PropertyStereotype">PropertyStereotype</a>
@@ -3763,13 +3383,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#bringsAbout</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -3786,11 +3402,7 @@ $(function(){
                 does not require a dependency to be specified. It is used to
                 aggregate essential properties of individuals following
                 different identity principles.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -3803,13 +3415,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#characterization</p>
             <div class="comment"> <span class="markdown">An
-                ontouml:RelationStereotype attributed to a relation between a
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> attributed to a relation between a
                 bearer type and its feature.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -3822,13 +3430,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#collective</p>
             <div class="comment"> <span class="markdown">An
-                ontouml:ClassStereotype used to represent rigid concepts that
+                <a href=#ClassStereotype title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a> used to represent rigid concepts that
                 provide an identity principle for their instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -3843,11 +3447,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes collective individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -3863,11 +3463,7 @@ $(function(){
                 comparative relations (e.g., heavier-than). Decorates relations
                 that always hold between any two individuals bearing the same
                 relevant quality.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -3881,11 +3477,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#componentOf</p>
             <div class="comment"> <span class="markdown">A parthood relation
                 between two complexes.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -3898,13 +3490,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#composite</p>
             <div class="comment"> <span class="markdown">The value denoting
-                that an ontouml:Property represents a composite aggregation,
+                that an <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> represents a composite aggregation,
                 i.e., a strong form of aggregation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#AggregationKind" title="https://w3id.org/ontouml#AggregationKind">AggregationKind</a>
@@ -3918,13 +3506,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#creation</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -3938,13 +3522,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#datatype</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:ClassStereotype used to assign the corresponding
-                stereotype to a given ontouml:Class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#ClassStereotype title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Class title="https://w3id.org/ontouml#Class">Class</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -3957,13 +3537,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#derivation</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -3977,13 +3553,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#end</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:PropertyStereotype used to assign the corresponding
-                stereotype to a given ontouml:Property.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#PropertyStereotype title="https://w3id.org/ontouml#PropertyStereotype">PropertyStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Property title="https://w3id.org/ontouml#Property">Property</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#PropertyStereotype" title="https://w3id.org/ontouml#PropertyStereotype">PropertyStereotype</a>
@@ -3997,12 +3569,8 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#enumeration</p>
             <div class="comment"> <span class="markdown">Represents the
                 enumeration stereotype, having values represented using
-                ontouml:Literal instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Literal title="https://w3id.org/ontouml#Literal">Literal</a> instances.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4016,13 +3584,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#event</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:ClassStereotype used to assign the corresponding
-                stereotype to a given ontouml:Class.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#ClassStereotype title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Class title="https://w3id.org/ontouml#Class">Class</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4037,11 +3601,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes event individuals among its instances.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4056,11 +3616,7 @@ $(function(){
               https://w3id.org/ontouml#externalDependence</p>
             <div class="comment"> <span class="markdown">Identifies an endurant
                 on which the extrinsicMode depends.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4076,11 +3632,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Identifies what
                 inheres in a concrete individual and depends on others for its
                 existence.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4096,11 +3648,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Identifies the nature
                 of a complex object whose parts (components) play different
                 roles in its composition.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4116,11 +3664,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Identifies a concrete
                 individual on which another concrete individual depends
                 historically.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4135,11 +3679,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Denotes the role of an
                 endurant in virtue of having participated in an event of a
                 particular type.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4155,37 +3695,11 @@ $(function(){
             <div class="comment"> <span class="markdown">Denotes the equivalent
                 of historicalRole for types that aggregate instances with
                 different identity principles.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
-                <sup class="type-c" title="class">c</sup> </dd>
-            </dl>
-          </div>
-          <div class="entity" id="https://www.inf.unibz.it/krdb/">
-            <h3>https://www.inf.unibz.it/krdb/<sup class="type-ni" title="named individual">ni</sup>
-              <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named
-                  Individual ToC</a> </span> </h3>
-            <p> <strong>IRI:</strong> https://www.inf.unibz.it/krdb/</p>
-            <dl class="description">
-              <dt>belongs to</dt>
-              <dd> <a href="https://schema.org/Organization" target="_blank" title="https://schema.org/Organization">organization</a>
-                <sup class="type-c" title="class">c</sup> </dd>
-            </dl>
-          </div>
-          <div class="entity" id="https://www.utwente.nl/en/eemcs/scs/">
-            <h3>https://www.utwente.nl/en/eemcs/scs/<sup class="type-ni" title="named individual">ni</sup>
-              <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named
-                  Individual ToC</a> </span> </h3>
-            <p> <strong>IRI:</strong> https://www.utwente.nl/en/eemcs/scs/</p>
-            <dl class="description">
-              <dt>belongs to</dt>
-              <dd> <a href="https://schema.org/Organization" target="_blank" title="https://schema.org/Organization">organization</a>
-                <sup class="type-c" title="class">c</sup> </dd>
+                <sup class="type-c" title="class">c</sup></dd>
             </dl>
           </div>
           <div class="entity" id="instantiation">
@@ -4194,13 +3708,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#instantiation</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4216,11 +3726,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes intrinsic mode individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4236,11 +3742,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Used to represent
                 rigid concepts that provide an identity principle for their
                 instances and do not require a relational dependency.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4253,13 +3755,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#manifestation</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4276,11 +3774,7 @@ $(function(){
                 that have material structure on their own and include examples
                 such as employments, kisses, enrollments, flight, connections
                 and commitments.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4297,11 +3791,7 @@ $(function(){
                 be derived from the relation between the relata and the qua
                 individuals that compose the relator and that inhere in the
                 relata.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4317,11 +3807,7 @@ $(function(){
             <div class="comment"> <span class="markdown">A parthood relation
                 between a functional complex or a Collective (as a part) and a
                 Collective (as a whole).</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4337,11 +3823,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Represents a
                 semi-rigid type, i.e., it behaves as a rigid type for some
                 individuals and as an anti-rigid one for others.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4356,11 +3838,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#mode</p>
             <div class="comment"> <span class="markdown">A particular type of
                 intrinsic property that has no structured value.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4374,13 +3852,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#none</p>
             <div class="comment"> <span class="markdown">Denotes that an
-                ontouml:Property is neither ontouml:shared nor
-                ontouml:composite, but just an aggregation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> is neither <a href=#shared title="https://w3id.org/ontouml#shared">shared</a> nor
+                <a href=#composite title="https://w3id.org/ontouml#composite">composite</a>, but just an aggregation.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#AggregationKind" title="https://w3id.org/ontouml#AggregationKind">AggregationKind</a>
@@ -4409,11 +3883,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#participation</p>
             <div class="comment"> <span class="markdown">A relation for
                 representing when an event depends on a single object.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4427,11 +3897,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#participational</p>
             <div class="comment"> <span class="markdown">Denotes a kind of
                 event decomposition.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4450,11 +3916,7 @@ $(function(){
                 changes in intrinsic properties (e.g., the age of a person, the
                 color of an object, the condition of a car).Phases always come
                 in partitions.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4471,11 +3933,7 @@ $(function(){
                 principles. A class stereotyped as PhaseMixin is also an
                 anti-rigid type. PhaseMixin is similar semantically to RoleMixin
                 with the difference in relational dependency.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4492,11 +3950,7 @@ $(function(){
                 particular type of intrinsic property that has a structured
                 value. Qualities are things that existentially depend on the
                 things they characterize, called their bearers.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4511,11 +3965,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes quality individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4531,11 +3981,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Construct used to
                 represent rigid concepts that provide an identity principle for
                 their instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4550,11 +3996,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes quantity individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4571,11 +4013,7 @@ $(function(){
                 represent truth-makers of material relations, i.e., the things
                 that must exist for two or more individuals to be connected by
                 material relations.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4590,11 +4028,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes relator individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4611,11 +4045,7 @@ $(function(){
                 anti-rigid specializations of identity providers (Kind,
                 Collective, Quantity, Relator, Mode, and Quantity) that are
                 instantiated in relational contexts.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4630,11 +4060,7 @@ $(function(){
             <div class="comment"> <span class="markdown">The equivalent of Role
                 for types that aggregate instances with different identity
                 principles.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4648,12 +4074,8 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#shared</p>
             <div class="comment"> <span class="markdown">Indicates that the
-                ontouml:Property has shared aggregation semantics.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#Property title="https://w3id.org/ontouml#Property">Property</a> has shared aggregation semantics.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#AggregationKind" title="https://w3id.org/ontouml#AggregationKind">AggregationKind</a>
@@ -4668,11 +4090,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Can be used to
                 represent certain configurations of entities that can be
                 comprehended as a whole.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4687,11 +4105,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes situation individuals among its
                 instances.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4705,11 +4119,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#subCollectionOf</p>
             <div class="comment"> <span class="markdown">A parthood relation
                 between two collectives.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4725,11 +4135,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Used to represent
                 rigid specializations of identity providers (Kind, Collective,
                 Quantity, Relator, Mode, and Quantity).</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4743,11 +4149,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#subQuantityOf</p>
             <div class="comment"> <span class="markdown">A parthood relation
                 between two quantities.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4760,13 +4162,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#termination</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4780,13 +4178,9 @@ $(function(){
                   Individual ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#triggers</p>
             <div class="comment"> <span class="markdown">An individual of the
-                ontouml:RelationStereotype used to assign the corresponding
-                stereotype to a given ontouml:Relation.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+                <a href=#RelationStereotype title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a> used to assign the corresponding
+                stereotype to a given <a href=#Relation title="https://w3id.org/ontouml#Relation">Relation</a>.</span> </div>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#RelationStereotype" title="https://w3id.org/ontouml#RelationStereotype">RelationStereotype</a>
@@ -4801,11 +4195,7 @@ $(function(){
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#type</p>
             <div class="comment"> <span class="markdown">The stereotype for
                 high-order types.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
@@ -4820,11 +4210,7 @@ $(function(){
             <div class="comment"> <span class="markdown">Indicates that the
                 restricted type includes type individuals among its instances.</span>
             </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
+            
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#OntologicalNature" title="https://w3id.org/ontouml#OntologicalNature">OntologicalNature</a>
@@ -4834,22 +4220,20 @@ $(function(){
         </div>
         <div id="legend">
           <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-          <div class="entity">
-            <sup class="type-c" title="Classes">c</sup>: Classes <br>
+          <div class="entity"> <sup class="type-c" title="Classes">c</sup>:
+            Classes <br>
             <sup class="type-op" title="Object Properties">op</sup>: Object
             Properties <br>
             <sup class="type-dp" title="Data Properties">dp</sup>: Data
             Properties <br>
             <sup class="type-ni" title="Named Individuals">ni</sup>: Named
-            Individuals
-          </div>
+            Individuals </div>
         </div>
       </div>
       <div id="acknowledgments">
         <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back
             to <a href="#toc">ToC</a></span></h2>
-        <p>
-          The authors would like to thank <a href="http://www.essepuntato.it/">Silvio
+        <p> The authors would like to thank <a href="http://www.essepuntato.it/">Silvio
             Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>,
           a Live OWL Documentation Environment, which is used for representing
           the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel

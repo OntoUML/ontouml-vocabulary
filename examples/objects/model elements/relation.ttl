@@ -1,17 +1,17 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:L78 a ontouml:Relation ;
+:L7a a ontouml:Relation ;
     ontouml:description "Every material association is derived." ;
     ontouml:isAbstract false ;
     ontouml:isDerived true ;
     ontouml:name "studiesIn"@en ;
-    ontouml:project :XCY ;
-    ontouml:relationEnd :L7V, :L7C ;
-    ontouml:sourceEnd :L7V ;
+    ontouml:relationEnd :L71, :L78 ;
+    ontouml:sourceEnd :L71 ;
     ontouml:stereotype ontouml:material ;
-    ontouml:targetEnd :L7C .
+    ontouml:targetEnd :L78 ;
+    ontouml:project :XCY .
 
-:L7V a ontouml:Property .
-:L7C a ontouml:Property .
+:L71 a ontouml:Property .
+:L78 a ontouml:Property .
 :XCY a ontouml:Project .

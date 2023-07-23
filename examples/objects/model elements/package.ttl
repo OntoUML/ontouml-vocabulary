@@ -2,10 +2,10 @@
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
 :myi a ontouml:Package ;
-    ontouml:containsModelElement :L78, :R24 ;
+    ontouml:containsModelElement :L7a, :R24 ;
     ontouml:name "My2ndPackage"@en ;
     ontouml:project :XCY .
 
-:L78 a ontouml:Relation .
+:L7a a ontouml:Relation .
 :R24 a ontouml:Class .
 :XCY a ontouml:Project .

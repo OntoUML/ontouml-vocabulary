@@ -1,11 +1,11 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:uNX a ontouml:ClassView ;
-    ontouml:isViewOf :uNZ ;
+:zx5 a ontouml:ClassView ;
+    ontouml:isViewOf :Lx5 ;
     ontouml:project :XCY ;
-    ontouml:shape :uNX_shape .
+    ontouml:shape :zx5_shape .
 
-:uNZ a ontouml:Class .
-:uNX_shape a ontouml:Rectangle .
+:Lx5 a ontouml:Class .
+:zx5_shape a ontouml:Rectangle .
 :XCY a ontouml:Project .

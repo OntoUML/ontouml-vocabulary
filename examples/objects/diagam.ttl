@@ -4,12 +4,12 @@
 # Other containsView properties ommited for brevity.
 
 :NyB a ontouml:Diagram ;
-    ontouml:containsView :DUX, :M9S, :gtP;
+    ontouml:containsView :DUa, :M9S, :gtP;
     ontouml:name "MyClassDiagram"@en ;
     ontouml:owner :yHW ;
     ontouml:project :XCY .
 
-:DUX a ontouml:ClassView .
+:DUa a ontouml:ClassView .
 :M9S a ontouml:RelationView .
 :gtP a ontouml:GeneralizationSetView .
 :yHW a ontouml:Package .

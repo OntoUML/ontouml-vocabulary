@@ -1,7 +1,7 @@
 @prefix : <https://example.org#> .
 @prefix ontouml: <https://w3id.org/ontouml#> .
 
-:0ea_cardinality a ontouml:Cardinality ;
-    ontouml:cardinalityValue "1..1" ;
+:L71_cardinality a ontouml:Cardinality ;
+    ontouml:cardinalityValue "1..*" ;
     ontouml:lowerBound "1" ;
-    ontouml:upperBound "1" .
+    ontouml:upperBound "*" .

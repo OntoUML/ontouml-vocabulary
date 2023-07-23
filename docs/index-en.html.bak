@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="resources/owl.css" media="screen">
     <title>OntoUML Metamodel Vocabulary</title>
     <!-- SCHEMA.ORG METADATA -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontouml#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontouml#","name":"OntoUML Metamodel Vocabulary", "headline":"A reference implementation of the OntoUML Metamodel in OWL.", "datePublished":"2023-07-19", "version":"General review for compliance with the OntoUML Metamodel 1.1.0.", "license":"https://creativecommons.org/licenses/by-sa/4.0", "author":[{"@type":"Person","name":"Tiago Prince Sales"},{"@type":"Person","name":"Claudenir M. Fonseca"},{"@type":"Person","name":"Pedro Paulo Favato Barcelos"}], "contributor":[{"@type":"Person","name":"Mattia Fumagalli"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontouml#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontouml#","name":"OntoUML Metamodel Vocabulary", "headline":"A reference implementation of the OntoUML Metamodel in OWL.", "datePublished":"2023-07-23", "version":"General review for compliance with the OntoUML Metamodel 1.1.0.", "license":"https://creativecommons.org/licenses/by-sa/4.0", "author":[{"@type":"Person","name":"Tiago Prince Sales"},{"@type":"Person","name":"Claudenir M. Fonseca"},{"@type":"Person","name":"Pedro Paulo Favato Barcelos"}], "contributor":[{"@type":"Person","name":"Mattia Fumagalli"}]}</script>
     <script src="resources/jquery.js"></script>
     <script src="resources/marked.min.js"></script>
     <script> 
@@ -56,7 +56,7 @@ $(function(){
         <div style="float:right">language <a href="index-en.html"><b>en</b></a>
         </div>
         <h1>OntoUML Metamodel Vocabulary</h1>
-        <h2>Release 2023-07-19</h2>
+        <h2>Release 2023-07-23</h2>
         <dl>
           <dt>This version:</dt>
           <dd><a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</a></dd>
@@ -97,45 +97,42 @@ $(function(){
           <dt>License:</dt>
           <dd><a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank"><img
                 src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by_sa/4.0-blue.svg"
-                alt="https://creativecommons.org/licenses/by-sa/4.0"></a>
-          </dd>
+                alt="https://creativecommons.org/licenses/by-sa/4.0"></a> </dd>
           <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite
             as:</dt>
-          <dd>Sales, T. P., Fonseca, C. M., Barcelos, P. P. F. (2022) OntoUML
-            Vocabulary Specification - Version 1.1.0. <a href="https://w3id.org/ontouml/1.1.0">https://w3id.org/ontouml/1.1.0</a></dd>
+          <dd>Tiago Prince Sales, Claudenir M. Fonseca, Pedro Paulo Favato
+            Barcelos. OntoUML Metamodel Vocabulary. Revision: General review for
+            compliance with the OntoUML Metamodel 1.1.0.. Retrieved from:
+            https://w3id.org/ontouml/1.1.0</dd>
         </dl>
         <a href="provenance/provenance-en.html" target="_blank">Provenance of
           this page</a>
-        <hr>
-      </div>
+        <hr> </div>
       <div class="status">
-        <div>
-          <span>Ontology Specification Draft</span>
-        </div>
+        <div> <span>OntoUML Vocabulary Specification - Version 1.1.0</span> </div>
       </div>
       <div id="abstract">
         <h2>Abstract</h2>
-        <span class="markdown">
-          A reference implementation of the OntoUML Metamodel in OWL.</span>
-      </div>
+        <span class="markdown"> A reference implementation of the OntoUML
+          Metamodel in OWL.</span> </div>
       <div id="toc"></div>
       <!--INTRODUCTION SECTION-->
       <div id="introduction">
         <h2 id="intro" class="list">Introduction <span class="backlink"> back
             to <a href="#toc">ToC</a></span></h2>
-        The OntoUML Vocabulary is a Web Ontology Language (OWL) implementation
-        of the <a href="http://w3id.org/ontouml/metamodel">OntoUML Metamodel</a>.
-        This vocabulary supports the serialization, exchange, and publishing of
-        OntoUML models as linked data.<br>
+        <span class="markdown">The OntoUML Vocabulary is a Web Ontology Language
+          (OWL) implementation of the <a href="http://w3id.org/ontouml/metamodel">OntoUML
+            Metamodel</a>. This vocabulary supports the serialization, exchange,
+          and publishing of OntoUML models as linked data.</span>
         <div id="namespacedeclarations">
           <h3 id="ns" class="list">Namespace declarations</h3>
-          <div id="ns" align="center">
+          <div id="ns" align="left">
             <table>
               <caption> <a href="#ns"> Table 1</a>: Namespaces used in the
-                document</caption>
+                document </caption>
               <tbody>
                 <tr>
-                  <td><strong><b>ontouml</b></strong></td>
+                  <td><b>ontouml</b></td>
                   <td><strong>&lt;https://w3id.org/ontouml#&gt;</strong></td>
                 </tr>
                 <tr>
@@ -191,8 +188,8 @@ $(function(){
       <div id="overview">
         <h2 id="overv" class="list">OntoUML Metamodel Vocabulary: Overview <span
             class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-        <span class="markdown">
-          This ontology has the following classes and properties.</span>
+        <span class="markdown"> This ontology has the following classes and
+          properties.</span>
         <h4>Classes</h4>
         <ul xmlns:extra="https://w3id.org/extra#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           class="hlist">
@@ -282,8 +279,6 @@ $(function(){
           <li> <a href="#containsModelElement" title="https://w3id.org/ontouml#containsModelElement">containsModelElement</a>
           </li>
           <li> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-          </li>
-          <li> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
           </li>
           <li> <a href="#diagram" title="https://w3id.org/ontouml#diagram">diagram</a>
           </li>
@@ -385,6 +380,8 @@ $(function(){
               <span>creator</span> </a> </li>
           <li> <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
               <span>description</span> </a> </li>
+          <li> <a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage">
+              <span>homepage</span> </a> </li>
           <li> <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
               <span>identifier</span> </a> </li>
           <li> <a href="#https://schema.org/identifier" title="https://schema.org/identifier">
@@ -466,11 +463,7 @@ $(function(){
           </li>
           <li> <a href="#historicalRoleMixin" title="https://w3id.org/ontouml#historicalRoleMixin">historicalRoleMixin</a>
           </li>
-          <li> <a href="#https://www.inf.unibz.it/krdb/" title="https://www.inf.unibz.it/krdb/">
-              <span>https://www.inf.unibz.it/krdb/</span> </a> </li>
-          <li> <a href="#https://www.utwente.nl/en/eemcs/scs/" title="https://www.utwente.nl/en/eemcs/scs/">
-              <span>https://www.utwente.nl/en/eemcs/scs/</span> </a> </li>
-          <li> <a href="#instantiation" title="https://w3id.org/ontouml#instantiation">instantiation</a>
+          <li>&nbsp;<a href="#instantiation" title="https://w3id.org/ontouml#instantiation">instantiation</a>
           </li>
           <li> <a href="#intrinsicModeNature" title="https://w3id.org/ontouml#intrinsicModeNature">intrinsicModeNature</a>
           </li>
@@ -537,11 +530,10 @@ $(function(){
       <div id="description">
         <h2 id="desc" class="list">OntoUML Metamodel Vocabulary: Description <span
             class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-        <span class="markdown">
-          This is a placeholder text for the description of your ontology. The
-          description should include an explanation and a diagram explaining how
-          the classes are related, examples of usage, etc.</span>
-      </div>
+        <span class="markdown"> This is a placeholder text for the description
+          of your ontology. The description should include an explanation and a
+          diagram explaining how the classes are related, examples of usage,
+          etc.</span> </div>
       <!--CROSSREF SECTION-->
       <div id="crossref">
         <h2 id="crossreference" class="list">Cross-reference for OntoUML
@@ -637,9 +629,6 @@ $(function(){
                 aggregation kinds to which an ontouml:Property can be related.</span>
             </div>
             <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
             </dl>
             <dl class="description">
               <dt>is equivalent to</dt>
@@ -677,9 +666,6 @@ $(function(){
                 cardinality of an ontouml:Property through its data property
                 ontouml:cardinalityValue.</span> </div>
             <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
             </dl>
             <dl class="description">
               <dt>is in domain of</dt>
@@ -709,8 +695,11 @@ $(function(){
                 back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Class</p>
-            <div class="comment"> <span class="markdown">Represents a type
-                defined in the ontology.</span> </div>
+            <div class="comment"> <span class="markdown">An ontouml:Class have
+                exactly one ontouml:Stereotype (i.e., it is a mandatory
+                property) of specific type ontouml:ClassStereotype. This
+                information is formalized by the ontouml:stereotype property.</span>
+            </div>
             <dl class="definedBy">
               <dt>Is defined by</dt>
               <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
@@ -948,10 +937,9 @@ $(function(){
                 <sup class="type-c" title="class">c</sup> </dd>
               <dt>is in domain of</dt>
               <dd> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-                <sup class="type-op" title="object property">op</sup>, <a href="#contents"
-                  title="https://w3id.org/ontouml#contents">contents</a> <sup class="type-op"
-                  title="object property">op</sup>, <a href="#owner" title="https://w3id.org/ontouml#owner">owner</a>
-                <sup class="type-op" title="object property">op</sup> </dd>
+                <sup class="type-op" title="object property">op</sup>, <a href="#owner"
+                  title="https://w3id.org/ontouml#owner">owner</a> <sup class="type-op"
+                  title="object property">op</sup> </dd>
               <dt>is in range of</dt>
               <dd> <a href="#diagram" title="https://w3id.org/ontouml#diagram">diagram</a>
                 <sup class="type-op" title="object property">op</sup> </dd>
@@ -1011,10 +999,9 @@ $(function(){
                   title="object property">op</sup> </dd>
               <dt>is in range of</dt>
               <dd> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
-                <sup class="type-op" title="object property">op</sup>, <a href="#contents"
-                  title="https://w3id.org/ontouml#contents">contents</a> <sup class="type-op"
-                  title="object property">op</sup>, <a href="#sourceView" title="https://w3id.org/ontouml#sourceView">sourceView</a>
-                <sup class="type-op" title="object property">op</sup>, <a href="#targetView"
+                <sup class="type-op" title="object property">op</sup>, <a href="#sourceView"
+                  title="https://w3id.org/ontouml#sourceView">sourceView</a> <sup
+                  class="type-op" title="object property">op</sup>, <a href="#targetView"
                   title="https://w3id.org/ontouml#targetView">targetView</a> <sup
                   class="type-op" title="object property">op</sup> </dd>
             </dl>
@@ -1477,10 +1464,11 @@ $(function(){
                 back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Property</p>
-            <div class="comment"> <span class="markdown">Represents a property
-                defined in the ontology. Properties contained by classes are
-                deemed attributes and those contained by relations are deemed
-                association ends.</span> </div>
+            <div class="comment"> <span class="markdown">An ontouml:Property
+                may have at most one ontouml:Stereotype (i.e., it is an optional
+                property) of specific type ontouml:PropertyStereotype. This
+                information is formalized by the ontouml:stereotype property.</span>
+            </div>
             <dl class="definedBy">
               <dt>Is defined by</dt>
               <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
@@ -1603,8 +1591,11 @@ $(function(){
                 back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
               </span> </h3>
             <p> <strong>IRI:</strong> https://w3id.org/ontouml#Relation</p>
-            <div class="comment"> <span class="markdown">Represents a relation
-                defined in the ontology.</span> </div>
+            <div class="comment"> <span class="markdown">An ontouml:Relation
+                may have at most one ontouml:Stereotype (i.e., it is an optional
+                property) of specific type ontouml:RelationStereotype. This
+                information is formalized by the ontouml:stereotype property.</span>
+            </div>
             <dl class="definedBy">
               <dt>Is defined by</dt>
               <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
@@ -1817,8 +1808,6 @@ $(function(){
             </li>
             <li> <a href="#containsView" title="https://w3id.org/ontouml#containsView">containsView</a>
             </li>
-            <li> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
-            </li>
             <li> <a href="#diagram" title="https://w3id.org/ontouml#diagram">diagram</a>
             </li>
             <li> <a href="#general" title="https://w3id.org/ontouml#general">general</a>
@@ -1983,9 +1972,6 @@ $(function(){
             </dl>
             <div class="description">
               <dl>
-                <dt>has super-properties</dt>
-                <dd> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
-                  <sup class="type-op" title="object property">op</sup> </dd>
                 <dt>has domain</dt>
                 <dd> <a href="#Package" title="https://w3id.org/ontouml#Package">Package</a>
                   <sup class="type-c" title="class">c</sup> </dd>
@@ -2011,38 +1997,6 @@ $(function(){
             </dl>
             <div class="description">
               <dl>
-                <dt>has super-properties</dt>
-                <dd> <a href="#contents" title="https://w3id.org/ontouml#contents">contents</a>
-                  <sup class="type-op" title="object property">op</sup> </dd>
-                <dt>has domain</dt>
-                <dd> <a href="#Diagram" title="https://w3id.org/ontouml#Diagram">Diagram</a>
-                  <sup class="type-c" title="class">c</sup> </dd>
-                <dt>has range</dt>
-                <dd> <a href="#ElementView" title="https://w3id.org/ontouml#ElementView">ElementView</a>
-                  <sup class="type-c" title="class">c</sup> </dd>
-              </dl>
-            </div>
-          </div>
-          <div class="entity" id="contents">
-            <h3>contents<sup class="type-op" title="object property">op</sup> <span
-                class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object
-                  Property ToC</a> </span> </h3>
-            <p> <strong>IRI:</strong> https://w3id.org/ontouml#contents</p>
-            <div class="comment"> <span class="markdown">Aggregates its
-                subproperties ontouml:containsModelElement and
-                ontouml:containsView. Should not be directly used.</span> </div>
-            <dl class="definedBy">
-              <dt>Is defined by</dt>
-              <dd> <a href="https://w3id.org/ontouml">https://w3id.org/ontouml</a>
-              </dd>
-            </dl>
-            <div class="description">
-              <dl>
-                <dt>has sub-properties</dt>
-                <dd> <a href="#containsModelElement" title="https://w3id.org/ontouml#containsModelElement">containsModelElement</a>
-                  <sup class="type-op" title="object property">op</sup>, <a href="#containsView"
-                    title="https://w3id.org/ontouml#containsView">containsView</a>
-                  <sup class="type-op" title="object property">op</sup> </dd>
                 <dt>has domain</dt>
                 <dd> <a href="#Diagram" title="https://w3id.org/ontouml#Diagram">Diagram</a>
                   <sup class="type-c" title="class">c</sup> </dd>
@@ -3166,6 +3120,8 @@ $(function(){
                 <span>creator</span> </a> </li>
             <li> <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
                 <span>description</span> </a> </li>
+            <li> <a href="#http://xmlns.com/foaf/0.1/homepage" title="http://xmlns.com/foaf/0.1/homepage">
+                <span>homepage</span> </a> </li>
             <li> <a href="#http://purl.org/dc/terms/identifier" title="http://purl.org/dc/terms/identifier">
                 <span>identifier</span> </a> </li>
             <li> <a href="#https://schema.org/identifier" title="https://schema.org/identifier">
@@ -3227,6 +3183,12 @@ $(function(){
               <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation
                   Property ToC</a> </span> </h3>
             <p> <strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+          </div>
+          <div class="entity" id="http://xmlns.com/foaf/0.1/homepage">
+            <h3>homepage<sup class="type-ap" title="annotation property">ap</sup>
+              <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation
+                  Property ToC</a> </span> </h3>
+            <p> <strong>IRI:</strong> http://xmlns.com/foaf/0.1/homepage</p>
           </div>
           <div class="entity" id="http://purl.org/dc/terms/identifier">
             <h3>identifier<sup class="type-ap" title="annotation property">ap</sup>
@@ -3901,29 +3863,7 @@ $(function(){
             <dl class="description">
               <dt>belongs to</dt>
               <dd> <a href="#ClassStereotype" title="https://w3id.org/ontouml#ClassStereotype">ClassStereotype</a>
-                <sup class="type-c" title="class">c</sup> </dd>
-            </dl>
-          </div>
-          <div class="entity" id="https://www.inf.unibz.it/krdb/">
-            <h3>https://www.inf.unibz.it/krdb/<sup class="type-ni" title="named individual">ni</sup>
-              <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named
-                  Individual ToC</a> </span> </h3>
-            <p> <strong>IRI:</strong> https://www.inf.unibz.it/krdb/</p>
-            <dl class="description">
-              <dt>belongs to</dt>
-              <dd> <a href="https://schema.org/Organization" target="_blank" title="https://schema.org/Organization">organization</a>
-                <sup class="type-c" title="class">c</sup> </dd>
-            </dl>
-          </div>
-          <div class="entity" id="https://www.utwente.nl/en/eemcs/scs/">
-            <h3>https://www.utwente.nl/en/eemcs/scs/<sup class="type-ni" title="named individual">ni</sup>
-              <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named
-                  Individual ToC</a> </span> </h3>
-            <p> <strong>IRI:</strong> https://www.utwente.nl/en/eemcs/scs/</p>
-            <dl class="description">
-              <dt>belongs to</dt>
-              <dd> <a href="https://schema.org/Organization" target="_blank" title="https://schema.org/Organization">organization</a>
-                <sup class="type-c" title="class">c</sup> </dd>
+                <sup class="type-c" title="class">c</sup></dd>
             </dl>
           </div>
           <div class="entity" id="instantiation">
@@ -4554,22 +4494,20 @@ $(function(){
         </div>
         <div id="legend">
           <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-          <div class="entity">
-            <sup class="type-c" title="Classes">c</sup>: Classes <br>
+          <div class="entity"> <sup class="type-c" title="Classes">c</sup>:
+            Classes <br>
             <sup class="type-op" title="Object Properties">op</sup>: Object
             Properties <br>
             <sup class="type-dp" title="Data Properties">dp</sup>: Data
             Properties <br>
             <sup class="type-ni" title="Named Individuals">ni</sup>: Named
-            Individuals
-          </div>
+            Individuals </div>
         </div>
       </div>
       <div id="acknowledgments">
         <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back
             to <a href="#toc">ToC</a></span></h2>
-        <p>
-          The authors would like to thank <a href="http://www.essepuntato.it/">Silvio
+        <p> The authors would like to thank <a href="http://www.essepuntato.it/">Silvio
             Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>,
           a Live OWL Documentation Environment, which is used for representing
           the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel

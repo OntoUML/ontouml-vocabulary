@@ -2,11 +2,11 @@
 @prefix ontouml: <https://w3id.org/ontouml#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:MEQ_shape a ontouml:Rectangle ;
+:ppw_shape a ontouml:Rectangle ;
+    ontouml:topLeftPosition :ppw_shape_point ;
     ontouml:height "40"^^xsd:positiveInteger ;
-    ontouml:project :XCY ;
-    ontouml:topLeftPosition :MEQ_shape_point ;
-    ontouml:width "80"^^xsd:positiveInteger .
+    ontouml:width "80"^^xsd:positiveInteger ;
+    ontouml:project :XCY .
 
-:MEQ_shape_point a ontouml:Point .
+:ppw_shape_point a ontouml:Point .
 :XCY a ontouml:Project .

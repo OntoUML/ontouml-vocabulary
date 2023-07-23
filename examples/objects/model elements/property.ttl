@@ -8,8 +8,8 @@
     ontouml:isOrdered false ;
     ontouml:isReadOnly false ;
     ontouml:name "age"@en ;
-    ontouml:project :XCY ;
-    ontouml:propertyType :vCY .
+    ontouml:propertyType :vCY ;
+    ontouml:project :XCY .
 
 :nf0_cardinality a ontouml:Cardinality .
 :vCY a ontouml:Class .
