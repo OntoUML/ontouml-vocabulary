@@ -66,7 +66,7 @@
                                                    <https://orcid.org/0000-0003-2736-7817> .
 
 <https://orcid.org/0000-0003-3385-4769> foaf:name "Mattia Fumagalli" ;
-                                        foaf:mbox "Mattia.Fumagalli@unibz.it" .
+                                        foaf:mbox "mattia.fumagalli@unibz.it" .
 <https://orcid.org/0000-0002-5385-5761> foaf:name "Tiago Prince Sales" ;
                                         foaf:mbox "t.princesales@utwente.nl" .
 <https://orcid.org/0000-0003-2528-3118> foaf:name "Claudenir M. Fonseca" ;
@@ -113,8 +113,9 @@ ontouml:categorizer rdf:type owl:ObjectProperty ;
                     rdfs:range ontouml:Class ;
                     rdfs:label "categorizer"@en ;
                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
-                    rdfs:comment "Identifies individuals of an ontouml:GeneralizationSet that are instances of a higher order ontouml:Class."@en ;
-                    rdfs:seeAlso <https://doi.org/10.1007/978-3-319-39696-5_19> .
+                    rdfs:comment "Specializes the basic type that is the powertype of the basic type at the order below (to which the categorized base type belongs)."@en ;
+                    rdfs:seeAlso <https://doi.org/10.1016/j.datak.2022.102012> ,
+                                 <https://doi.org/10.1007/978-3-031-17995-2_2> .
 
 
 ###  https://w3id.org/ontouml#containsModelElement
