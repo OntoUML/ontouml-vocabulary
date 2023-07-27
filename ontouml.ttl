@@ -113,7 +113,7 @@ ontouml:categorizer rdf:type owl:ObjectProperty ;
                     rdfs:range ontouml:Class ;
                     rdfs:label "categorizer"@en ;
                     rdfs:isDefinedBy <https://w3id.org/ontouml> ;
-                    rdfs:comment "Specializes the basic type that is the powertype of the basic type at the order below (to which the categorized base type belongs)."@en ;
+                    rdfs:comment " Identifies the ontouml:Class that is instantiated by the specific classes of the ontouml:Generalization type composing the ontouml:GeneralizationSet"@en ;
                     rdfs:seeAlso <https://doi.org/10.1016/j.datak.2022.102012> ,
                                  <https://doi.org/10.1007/978-3-031-17995-2_2> .
 
