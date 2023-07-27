@@ -9,56 +9,34 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/ontouml">
-        <owl:versionIRI rdf:resource="https://w3id.org/ontouml/1.1.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/ontouml/vocabulary/v1.1.0"/>
         <terms:conformsTo rdf:resource="https://w3id.org/ontouml/metamodel/v1.1.0"/>
-        <terms:contributor rdf:nodeID="genid1"/>
-        <terms:creator rdf:nodeID="genid2"/>
-        <terms:creator rdf:nodeID="genid3"/>
-        <terms:creator rdf:nodeID="genid4"/>
-        <terms:description xml:lang="en">A reference implementation of the OntoUML Metamodel in OWL.</terms:description>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-3385-4769"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-5385-5761"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0003-2528-3118"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0003-2736-7817"/>
+        <terms:description xml:lang="en">An OWL vocabulary to allow the serialization and exchanging of OntoUML models in conformance with the Ontouml Metamodel.</terms:description>
         <terms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/ontouml</terms:identifier>
         <terms:isReferencedBy rdf:resource="https://dblp.org/rec/conf/jowo/FonsecaSVFGA21.html"/>
         <terms:isReferencedBy rdf:resource="https://doi.org/10.1007/978-3-031-17995-2_1"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-03</terms:issued>
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-23</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-27</terms:modified>
         <terms:publisher rdf:resource="https://www.utwente.nl/en/eemcs/scs/"/>
-        <terms:title xml:lang="en">OntoUML Metamodel Vocabulary</terms:title>
+        <terms:title xml:lang="en">OntoUML Vocabulary</terms:title>
         <vann:preferredNamespacePrefix>ontouml</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/ontouml#</vann:preferredNamespaceUri>
-        <owl:priorVersion rdf:resource="https://w3id.org/ontouml/1.0.0"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/ontouml/vocabulary/v1.0.0"/>
         <owl:versionInfo xml:lang="en">General review for compliance with the OntoUML Metamodel 1.1.0.</owl:versionInfo>
         <dcat:keyword xml:lang="en">OntoUML</dcat:keyword>
         <dcat:keyword xml:lang="en">OntoUML-Metamodel</dcat:keyword>
-        <dcat:keyword xml:lang="en">OntoUML-Vocabulary</dcat:keyword>
         <dcat:keyword xml:lang="en">Ontology-Driven Conceptual Modeling</dcat:keyword>
         <dcat:landingPage rdf:resource="https://w3id.org/ontouml/vocabulary"/>
-        <foaf:homepage rdf:resource="https://purl.org/"/>
+        <foaf:homepage rdf:resource="https://w3id.org/ontouml/vocabulary/docs"/>
     </owl:Ontology>
-    <rdf:Description rdf:nodeID="genid1">
-        <schema:affiliation rdf:resource="https://www.inf.unibz.it/krdb/"/>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0003-3385-4769"/>
-        <schema:name xml:lang="en">Mattia Fumagalli</schema:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid2">
-        <schema:affiliation rdf:resource="https://www.utwente.nl/en/eemcs/scs/"/>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0002-5385-5761"/>
-        <schema:name xml:lang="en">Tiago Prince Sales</schema:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid3">
-        <schema:affiliation rdf:resource="https://www.utwente.nl/en/eemcs/scs/"/>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0003-2528-3118"/>
-        <schema:name xml:lang="en">Claudenir M. Fonseca</schema:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid4">
-        <schema:affiliation rdf:resource="https://www.utwente.nl/en/eemcs/scs/"/>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0003-2736-7817"/>
-        <schema:name xml:lang="en">Pedro Paulo Favato Barcelos</schema:name>
-    </rdf:Description>
     
 
 
@@ -193,31 +171,24 @@
     
 
 
-    <!-- https://schema.org/affiliation -->
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
 
 
-    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
     
 
 
-    <!-- https://schema.org/identifier -->
+    <!-- http://xmlns.com/foaf/0.1/member -->
 
 
-    <owl:AnnotationProperty rdf:about="https://schema.org/identifier"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/member"/>
     
 
 
-    <!-- https://schema.org/name -->
+    <!-- http://xmlns.com/foaf/0.1/name -->
 
 
-    <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
-    
-
-
-    <!-- https://schema.org/url -->
-
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/url"/>
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
     
 
 
@@ -298,10 +269,11 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/ontouml#categorizer">
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#GeneralizationSet"/>
         <rdfs:range rdf:resource="https://w3id.org/ontouml#Class"/>
-        <rdfs:comment xml:lang="en">Identifies individuals of an ontouml:GeneralizationSet that are instances of a higher order ontouml:Class.</rdfs:comment>
+        <rdfs:comment xml:lang="en"> Identifies the ontouml:Class that is instantiated by the specific classes of the ontouml:Generalization type composing the ontouml:GeneralizationSet</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">categorizer</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-319-39696-5_19"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-17995-2_2"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.datak.2022.102012"/>
     </owl:ObjectProperty>
     
 
@@ -592,7 +564,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/ontouml#stereotype">
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#DecoratableElement"/>
         <rdfs:range rdf:resource="https://w3id.org/ontouml#Stereotype"/>
-        <rdfs:comment xml:lang="en">Identifies an ontouml:Stereotype applied to an ontouml:DecoratableElement.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifies the ontouml:Stereotype applied to the ontouml:DecoratableElement.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">stereotype</rdfs:label>
     </owl:ObjectProperty>
@@ -632,7 +604,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/ontouml#targetView">
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#ConnectorView"/>
         <rdfs:range rdf:resource="https://w3id.org/ontouml#ElementView"/>
-        <rdfs:comment xml:lang="en">Identifies an ontouml:ElementView that participates as target of an ontouml:RelationView or ontouml:GeneralizationView.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Identifies an ontouml:ElementView that participates as target of an ontouml:ConnectorView.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">targetView</rdfs:label>
     </owl:ObjectProperty>
@@ -956,10 +928,10 @@
     
 
 
-    <!-- https://schema.org/Organization -->
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
 
 
-    <owl:Class rdf:about="https://schema.org/Organization"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
     
 
 
@@ -2333,9 +2305,10 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.inf.unibz.it/krdb/">
-        <rdf:type rdf:resource="https://schema.org/Organization"/>
-        <schema:name>KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.inf.unibz.it/krdb/</schema:url>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.inf.unibz.it/krdb/</foaf:homepage>
+        <foaf:member rdf:resource="https://orcid.org/0000-0003-3385-4769"/>
+        <foaf:name>KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy</foaf:name>
     </owl:NamedIndividual>
     
 
@@ -2344,10 +2317,41 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.utwente.nl/en/eemcs/scs/">
-        <rdf:type rdf:resource="https://schema.org/Organization"/>
-        <schema:name>Semantics, Cybersecurity &amp; Services (SCS), University of Twente, the Netherlands</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.utwente.nl/en/eemcs/scs/</schema:url>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.utwente.nl/en/eemcs/scs/</foaf:homepage>
+        <foaf:member rdf:resource="https://orcid.org/0000-0002-5385-5761"/>
+        <foaf:member rdf:resource="https://orcid.org/0000-0003-2528-3118"/>
+        <foaf:member rdf:resource="https://orcid.org/0000-0003-2736-7817"/>
+        <foaf:name>Semantics, Cybersecurity &amp; Services (SCS), University of Twente, the Netherlands</foaf:name>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://orcid.org/0000-0002-5385-5761">
+        <foaf:mbox>t.princesales@utwente.nl</foaf:mbox>
+        <foaf:name>Tiago Prince Sales</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-2528-3118">
+        <foaf:mbox>c.moraisfonseca@utwente.nl</foaf:mbox>
+        <foaf:name>Claudenir M. Fonseca</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-2736-7817">
+        <foaf:mbox>p.p.favatobarcelos@uwente.nl</foaf:mbox>
+        <foaf:name>Pedro Paulo Favato Barcelos</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://orcid.org/0000-0003-3385-4769">
+        <foaf:mbox>mattia.fumagalli@unibz.it</foaf:mbox>
+        <foaf:name>Mattia Fumagalli</foaf:name>
+    </rdf:Description>
     
 
 

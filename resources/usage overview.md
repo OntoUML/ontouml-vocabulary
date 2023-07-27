@@ -1,4 +1,4 @@
-# Brief User Guide
+# Vocabulary Usage Overview
 
 This section provides a comprehensive overview of the content that users will encounter when working with a graph that adheres to the OntoUML Vocabulary.
 

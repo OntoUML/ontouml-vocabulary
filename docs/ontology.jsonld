@@ -1,70 +1,25 @@
 [ {
   "@id" : "_:genid1",
-  "https://schema.org/affiliation" : [ {
-    "@id" : "https://www.inf.unibz.it/krdb/"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-3385-4769"
-  } ],
-  "https://schema.org/name" : [ {
-    "@language" : "en",
-    "@value" : "Mattia Fumagalli"
-  } ]
-}, {
-  "@id" : "_:genid100",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/ontouml#RelationStereotype"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/ontouml#stereotype"
-  } ]
-}, {
-  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/ontouml#bringsAbout"
+      "@id" : "_:genid5"
     }, {
-      "@id" : "https://w3id.org/ontouml#characterization"
-    }, {
-      "@id" : "https://w3id.org/ontouml#comparative"
-    }, {
-      "@id" : "https://w3id.org/ontouml#componentOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#creation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#derivation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#externalDependence"
-    }, {
-      "@id" : "https://w3id.org/ontouml#historicalDependence"
-    }, {
-      "@id" : "https://w3id.org/ontouml#instantiation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#manifestation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#material"
-    }, {
-      "@id" : "https://w3id.org/ontouml#mediation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#memberOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#participation"
-    }, {
-      "@id" : "https://w3id.org/ontouml#participational"
-    }, {
-      "@id" : "https://w3id.org/ontouml#subCollectionOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#subQuantityOf"
-    }, {
-      "@id" : "https://w3id.org/ontouml#termination"
-    }, {
-      "@id" : "https://w3id.org/ontouml#triggers"
+      "@id" : "_:genid3"
     } ]
   } ]
 }, {
-  "@id" : "_:genid126",
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid122",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -82,17 +37,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#string"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid133",
+  "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
   "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
     "@list" : [ {
@@ -216,17 +161,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#string"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -238,29 +173,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid2",
-  "https://schema.org/affiliation" : [ {
-    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-5385-5761"
-  } ],
-  "https://schema.org/name" : [ {
-    "@language" : "en",
-    "@value" : "Tiago Prince Sales"
-  } ]
-}, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid27"
+      "@id" : "_:genid23"
     }, {
-      "@id" : "_:genid25"
+      "@id" : "_:genid21"
     } ]
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://w3id.org/ontouml#ClassStereotype"
@@ -273,7 +196,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/ontouml#ClassStereotype"
@@ -282,7 +205,7 @@
     "@id" : "https://w3id.org/ontouml#stereotype"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -331,46 +254,24 @@
   } ]
 }, {
   "@id" : "_:genid3",
-  "https://schema.org/affiliation" : [ {
-    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-2528-3118"
-  } ],
-  "https://schema.org/name" : [ {
-    "@language" : "en",
-    "@value" : "Claudenir M. Fonseca"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "https://schema.org/affiliation" : [ {
-    "@id" : "https://www.utwente.nl/en/eemcs/scs/"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0003-2736-7817"
-  } ],
-  "https://schema.org/name" : [ {
-    "@language" : "en",
-    "@value" : "Pedro Paulo Favato Barcelos"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid9"
-    }, {
-      "@id" : "_:genid7"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#complementOf" : [ {
     "@id" : "https://w3id.org/ontouml#Project"
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#Diagram"
+    }, {
+      "@id" : "https://w3id.org/ontouml#DiagramElement"
+    }, {
+      "@id" : "https://w3id.org/ontouml#ModelElement"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -398,17 +299,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid90"
+      "@id" : "_:genid86"
     }, {
-      "@id" : "_:genid88"
+      "@id" : "_:genid84"
     } ]
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -421,19 +322,7 @@
     "@id" : "https://w3id.org/ontouml#stereotype"
   } ]
 }, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ontouml#Diagram"
-    }, {
-      "@id" : "https://w3id.org/ontouml#DiagramElement"
-    }, {
-      "@id" : "https://w3id.org/ontouml#ModelElement"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid90",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/ontouml#PropertyStereotype"
@@ -442,7 +331,7 @@
     "@id" : "https://w3id.org/ontouml#stereotype"
   } ]
 }, {
-  "@id" : "_:genid91",
+  "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -452,17 +341,27 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid96",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid100"
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     }, {
-      "@id" : "_:genid98"
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
     } ]
   } ]
 }, {
-  "@id" : "_:genid98",
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid96"
+    }, {
+      "@id" : "_:genid94"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -473,6 +372,59 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/ontouml#stereotype"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/ontouml#RelationStereotype"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/ontouml#stereotype"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ontouml#bringsAbout"
+    }, {
+      "@id" : "https://w3id.org/ontouml#characterization"
+    }, {
+      "@id" : "https://w3id.org/ontouml#comparative"
+    }, {
+      "@id" : "https://w3id.org/ontouml#componentOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#creation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#derivation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#externalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#historicalDependence"
+    }, {
+      "@id" : "https://w3id.org/ontouml#instantiation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#manifestation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#material"
+    }, {
+      "@id" : "https://w3id.org/ontouml#mediation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#memberOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participation"
+    }, {
+      "@id" : "https://w3id.org/ontouml#participational"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subCollectionOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#subQuantityOf"
+    }, {
+      "@id" : "https://w3id.org/ontouml#termination"
+    }, {
+      "@id" : "https://w3id.org/ontouml#triggers"
+    } ]
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/Standard",
@@ -529,23 +481,52 @@
   "@id" : "http://www.w3.org/ns/dcat#landingPage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://schema.org/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://schema.org/affiliation",
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://schema.org/identifier",
+  "@id" : "http://xmlns.com/foaf/0.1/member",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://schema.org/name",
+  "@id" : "http://xmlns.com/foaf/0.1/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://schema.org/url",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@id" : "https://orcid.org/0000-0002-5385-5761",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "t.princesales@utwente.nl"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Tiago Prince Sales"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-2528-3118",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "c.moraisfonseca@utwente.nl"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Claudenir M. Fonseca"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-2736-7817",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "p.p.favatobarcelos@uwente.nl"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Pedro Paulo Favato Barcelos"
+  } ]
+}, {
+  "@id" : "https://orcid.org/0000-0003-3385-4769",
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "mattia.fumagalli@unibz.it"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Mattia Fumagalli"
+  } ]
 }, {
   "@id" : "https://w3id.org/ontouml",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -553,18 +534,18 @@
     "@id" : "https://w3id.org/ontouml/metamodel/v1.1.0"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@id" : "_:genid1"
+    "@id" : "https://orcid.org/0000-0003-3385-4769"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid2"
+    "@id" : "https://orcid.org/0000-0002-5385-5761"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "https://orcid.org/0000-0003-2528-3118"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "https://orcid.org/0000-0003-2736-7817"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "A reference implementation of the OntoUML Metamodel in OWL."
+    "@value" : "An OWL vocabulary to allow the serialization and exchanging of OntoUML models in conformance with the Ontouml Metamodel."
   } ],
   "http://purl.org/dc/terms/identifier" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -587,14 +568,14 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-07-23"
+    "@value" : "2023-07-27"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://www.utwente.nl/en/eemcs/scs/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "OntoUML Metamodel Vocabulary"
+    "@value" : "OntoUML Vocabulary"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "ontouml"
@@ -607,10 +588,10 @@
     "@id" : "http://purl.org/dc/terms/Standard"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://w3id.org/ontouml/1.0.0"
+    "@id" : "https://w3id.org/ontouml/vocabulary/v1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/ontouml/1.1.0"
+    "@id" : "https://w3id.org/ontouml/vocabulary/v1.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
@@ -624,16 +605,13 @@
     "@value" : "OntoUML-Metamodel"
   }, {
     "@language" : "en",
-    "@value" : "OntoUML-Vocabulary"
-  }, {
-    "@language" : "en",
     "@value" : "Ontology-Driven Conceptual Modeling"
   } ],
   "http://www.w3.org/ns/dcat#landingPage" : [ {
     "@id" : "https://w3id.org/ontouml/vocabulary"
   } ],
   "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://purl.org/"
+    "@id" : "https://w3id.org/ontouml/vocabulary/docs"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#AggregationKind",
@@ -653,7 +631,7 @@
     "@value" : "AggregationKind"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#Cardinality",
@@ -689,7 +667,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ontouml#Classifier"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#ClassStereotype",
@@ -712,7 +690,7 @@
     "@id" : "https://w3id.org/ontouml#Stereotype"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid24"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#ClassView",
@@ -1077,7 +1055,7 @@
     "@id" : "https://doi.org/10.3233/AO-150157"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid66"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#OntoumlElement",
@@ -1209,7 +1187,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ontouml#DecoratableElement"
   }, {
-    "@id" : "_:genid86"
+    "@id" : "_:genid82"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#PropertyStereotype",
@@ -1232,7 +1210,7 @@
     "@id" : "https://w3id.org/ontouml#Stereotype"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid91"
+    "@id" : "_:genid87"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#Rectangle",
@@ -1295,7 +1273,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/ontouml#Classifier"
   }, {
-    "@id" : "_:genid96"
+    "@id" : "_:genid92"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#RelationStereotype",
@@ -1318,7 +1296,7 @@
     "@id" : "https://w3id.org/ontouml#Stereotype"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid101"
+    "@id" : "_:genid97"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#RelationView",
@@ -1563,7 +1541,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Identifies individuals of an ontouml:GeneralizationSet that are instances of a higher order ontouml:Class."
+    "@value" : " Identifies the ontouml:Class that is instantiated by the specific classes of the ontouml:Generalization type composing the ontouml:GeneralizationSet"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontouml#GeneralizationSet"
@@ -1579,7 +1557,9 @@
     "@id" : "https://w3id.org/ontouml#Class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://doi.org/10.1007/978-3-319-39696-5_19"
+    "@id" : "https://doi.org/10.1007/978-3-031-17995-2_2"
+  }, {
+    "@id" : "https://doi.org/10.1016/j.datak.2022.102012"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#category",
@@ -1836,7 +1816,7 @@
     "@value" : "description"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid9"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#diagram",
@@ -2565,7 +2545,7 @@
     "@value" : "name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid12"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#none",
@@ -2743,7 +2723,7 @@
     "@value" : "Relates an ontouml:OntoumlElement different than ontouml:Project to an ontouml:Project that it composes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://w3id.org/ontouml"
@@ -3156,7 +3136,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Identifies an ontouml:Stereotype applied to an ontouml:DecoratableElement."
+    "@value" : "Identifies the ontouml:Stereotype applied to the ontouml:DecoratableElement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontouml#DecoratableElement"
@@ -3282,7 +3262,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Identifies an ontouml:ElementView that participates as target of an ontouml:RelationView or ontouml:GeneralizationView."
+    "@value" : "Identifies an ontouml:ElementView that participates as target of an ontouml:ConnectorView."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontouml#ConnectorView"
@@ -3506,26 +3486,36 @@
   "@id" : "https://www.inf.unibz.it/krdb/",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://schema.org/Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
-  "https://schema.org/name" : [ {
-    "@value" : "KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy"
-  } ],
-  "https://schema.org/url" : [ {
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "@value" : "https://www.inf.unibz.it/krdb/"
+  } ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@id" : "https://orcid.org/0000-0003-3385-4769"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy"
   } ]
 }, {
   "@id" : "https://www.utwente.nl/en/eemcs/scs/",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://schema.org/Organization"
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
-  "https://schema.org/name" : [ {
-    "@value" : "Semantics, Cybersecurity & Services (SCS), University of Twente, the Netherlands"
-  } ],
-  "https://schema.org/url" : [ {
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "@value" : "https://www.utwente.nl/en/eemcs/scs/"
+  } ],
+  "http://xmlns.com/foaf/0.1/member" : [ {
+    "@id" : "https://orcid.org/0000-0002-5385-5761"
+  }, {
+    "@id" : "https://orcid.org/0000-0003-2528-3118"
+  }, {
+    "@id" : "https://orcid.org/0000-0003-2736-7817"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Semantics, Cybersecurity & Services (SCS), University of Twente, the Netherlands"
   } ]
 } ]

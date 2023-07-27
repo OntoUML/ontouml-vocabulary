@@ -1,4 +1,4 @@
-# Data Model
+# The OntoUML Metamodel
 
 The OntoUML Vocabulary's data model was structured to be in conformance with the [OntoUML Metamodel](https://w3id.org/ontouml/metamodel).
 
@@ -10,7 +10,7 @@ Being grounded on an explicit implementation-independent metamodel benefits Onto
 
 All OntoUML modeling elements are represented in the Metamodel's abstract syntax, which can be visualized in the following diagram.
 
-<p align="center"><img src="https://raw.githubusercontent.com/OntoUML/ontouml-metamodel/main/diagrams/Abstract%20Syntax.png">
+<p align="center"><img src="https://raw.githubusercontent.com/OntoUML/ontouml-metamodel/main/diagrams/Abstract%20Syntax.png" width=1000>
 
 The modeling elements are the ones that carry information about the domain being represented, not about the visual representation itself.
 
@@ -18,6 +18,6 @@ The modeling elements are the ones that carry information about the domain being
 
 The Metamodel's concrete syntax contains all diagramatic elements that are part of an OntoUML model. These elements are displayed in the diagram below.
 
-<p align="center"><img src="https://raw.githubusercontent.com/OntoUML/ontouml-metamodel/main/diagrams/Concrete%20Syntax.png">
+<p align="center"><img src="https://raw.githubusercontent.com/OntoUML/ontouml-metamodel/main/diagrams/Concrete%20Syntax.png" width=1000>
 
 The diagramatical representation are the views and shapes that forms the visual representation of the modeling elements. Every modeling element that can be visualized in a diagram has its corresponding view and shape.

@@ -1,42 +1,29 @@
 <https://w3id.org/ontouml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ontouml/1.1.0> .
+<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ontouml/vocabulary/v1.1.0> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/conformsTo> <https://w3id.org/ontouml/metamodel/v1.1.0> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/contributor> _:genid1 .
-_:genid1 <https://schema.org/name> "Mattia Fumagalli"@en .
-_:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0003-3385-4769> .
-_:genid1 <https://schema.org/affiliation> <https://www.inf.unibz.it/krdb/> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> _:genid2 .
-_:genid2 <https://schema.org/name> "Tiago Prince Sales"@en .
-_:genid2 <https://schema.org/identifier> <https://orcid.org/0000-0002-5385-5761> .
-_:genid2 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> _:genid3 .
-_:genid3 <https://schema.org/name> "Claudenir M. Fonseca"@en .
-_:genid3 <https://schema.org/identifier> <https://orcid.org/0000-0003-2528-3118> .
-_:genid3 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> _:genid4 .
-_:genid4 <https://schema.org/name> "Pedro Paulo Favato Barcelos"@en .
-_:genid4 <https://schema.org/identifier> <https://orcid.org/0000-0003-2736-7817> .
-_:genid4 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/description> "A reference implementation of the OntoUML Metamodel in OWL."@en .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-3385-4769> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-5385-5761> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0003-2528-3118> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0003-2736-7817> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/description> "An OWL vocabulary to allow the serialization and exchanging of OntoUML models in conformance with the Ontouml Metamodel."@en .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/identifier> "https://w3id.org/ontouml"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/isReferencedBy> <https://dblp.org/rec/conf/jowo/FonsecaSVFGA21.html> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/isReferencedBy> <https://doi.org/10.1007/978-3-031-17995-2_1> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/issued> "2022-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/modified> "2023-07-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/modified> "2023-07-27"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/publisher> <https://www.utwente.nl/en/eemcs/scs/> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/title> "OntoUML Metamodel Vocabulary"@en .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/title> "OntoUML Vocabulary"@en .
 <https://w3id.org/ontouml> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ontouml" .
 <https://w3id.org/ontouml> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontouml#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/ontouml/1.0.0> .
+<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/ontouml/vocabulary/v1.0.0> .
 <https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionInfo> "General review for compliance with the OntoUML Metamodel 1.1.0."@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "OntoUML"@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "OntoUML-Metamodel"@en .
-<https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "OntoUML-Vocabulary"@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "Ontology-Driven Conceptual Modeling"@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#landingPage> <https://w3id.org/ontouml/vocabulary> .
-<https://w3id.org/ontouml> <http://xmlns.com/foaf/0.1/homepage> <https://purl.org/> .
+<https://w3id.org/ontouml> <http://xmlns.com/foaf/0.1/homepage> <https://w3id.org/ontouml/vocabulary/docs> .
 # 
 # 
 # #################################################################
@@ -97,17 +84,14 @@ _:genid4 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/>
 # http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://schema.org/affiliation
-<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://schema.org/identifier
-<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://xmlns.com/foaf/0.1/member
+<http://xmlns.com/foaf/0.1/member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://schema.org/name
-<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/url
-<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -159,10 +143,11 @@ _:genid4 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/>
 <https://w3id.org/ontouml#categorizer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#GeneralizationSet> .
 <https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontouml#Class> .
-<https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies individuals of an ontouml:GeneralizationSet that are instances of a higher order ontouml:Class."@en .
+<https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#comment> " Identifies the ontouml:Class that is instantiated by the specific classes of the ontouml:Generalization type composing the ontouml:GeneralizationSet"@en .
 <https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#label> "categorizer"@en .
-<https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.1007/978-3-319-39696-5_19> .
+<https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.1007/978-3-031-17995-2_2> .
+<https://w3id.org/ontouml#categorizer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.1016/j.datak.2022.102012> .
 # 
 # https://w3id.org/ontouml#containsModelElement
 <https://w3id.org/ontouml#containsModelElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -248,28 +233,28 @@ _:genid4 <https://schema.org/affiliation> <https://www.utwente.nl/en/eemcs/scs/>
 # 
 # https://w3id.org/ontouml#project
 <https://w3id.org/ontouml#project> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/ontouml#project> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+<https://w3id.org/ontouml#project> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#complementOf> <https://w3id.org/ontouml#Project> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#complementOf> <https://w3id.org/ontouml#Project> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ModelElement> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ModelElement> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#DiagramElement> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Diagram> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#DiagramElement> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Diagram> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#project> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontouml#Project> .
 <https://w3id.org/ontouml#project> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an ontouml:OntoumlElement different than ontouml:Project to an ontouml:Project that it composes."@en .
 <https://w3id.org/ontouml#project> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
@@ -354,7 +339,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ontouml#stereotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontouml#stereotype> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#DecoratableElement> .
 <https://w3id.org/ontouml#stereotype> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontouml#Stereotype> .
-<https://w3id.org/ontouml#stereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies an ontouml:Stereotype applied to an ontouml:DecoratableElement."@en .
+<https://w3id.org/ontouml#stereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies the ontouml:Stereotype applied to the ontouml:DecoratableElement."@en .
 <https://w3id.org/ontouml#stereotype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#stereotype> <http://www.w3.org/2000/01/rdf-schema#label> "stereotype"@en .
 # 
@@ -379,7 +364,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://w3id.org/ontouml#targetView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/ontouml#targetView> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#ConnectorView> .
 <https://w3id.org/ontouml#targetView> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/ontouml#ElementView> .
-<https://w3id.org/ontouml#targetView> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies an ontouml:ElementView that participates as target of an ontouml:RelationView or ontouml:GeneralizationView."@en .
+<https://w3id.org/ontouml#targetView> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies an ontouml:ElementView that participates as target of an ontouml:ConnectorView."@en .
 <https://w3id.org/ontouml#targetView> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#targetView> <http://www.w3.org/2000/01/rdf-schema#label> "targetView"@en .
 # 
@@ -412,15 +397,15 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://w3id.org/ontouml#description
 <https://w3id.org/ontouml#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ontouml#description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#OntoumlElement> .
-<https://w3id.org/ontouml#description> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ontouml#description> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/ontouml#description> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an ontouml:OntoumlElement to a string representing its description in free textual format."@en .
 <https://w3id.org/ontouml#description> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
@@ -512,15 +497,15 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/ontouml#name
 <https://w3id.org/ontouml#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ontouml#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#OntoumlElement> .
-<https://w3id.org/ontouml#name> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<https://w3id.org/ontouml#name> <http://www.w3.org/2000/01/rdf-schema#range> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <https://w3id.org/ontouml#name> <http://www.w3.org/2000/01/rdf-schema#comment> "A string that identifies or names an ontouml:OntoumlElement."@en .
 <https://w3id.org/ontouml#name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
@@ -592,23 +577,23 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://purl.org/dc/terms/Standard
 <http://purl.org/dc/terms/Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# https://schema.org/Organization
-<https://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/ontouml#AggregationKind
 <https://w3id.org/ontouml#AggregationKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#AggregationKind> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#oneOf> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#shared> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#none> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#composite> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontouml#AggregationKind> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#oneOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#shared> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#none> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#composite> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#AggregationKind> <http://www.w3.org/2000/01/rdf-schema#comment> "Groups all possible aggregation kinds to which an ontouml:Property can be related."@en .
 <https://w3id.org/ontouml#AggregationKind> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is an enumeration of its individuals, which are: ontouml:composite, ontouml:none, and ontouml:shared."@en .
 <https://w3id.org/ontouml#AggregationKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
@@ -623,22 +608,22 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/ontouml#Class
 <https://w3id.org/ontouml#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#Classifier> .
-<https://w3id.org/ontouml#Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ontouml#ClassStereotype> .
-_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
-_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ontouml#ClassStereotype> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#Class> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ontouml#ClassStereotype> .
+_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ontouml#ClassStereotype> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#Class> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontouml:Class have exactly one ontouml:Stereotype (i.e., it is a mandatory property) of specific type ontouml:ClassStereotype. This information is formalized by the ontouml:stereotype property."@en .
 <https://w3id.org/ontouml#Class> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a type defined in the ontology."@en .
 <https://w3id.org/ontouml#Class> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
@@ -646,12 +631,8 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://w3id.org/ontouml#ClassStereotype
 <https://w3id.org/ontouml#ClassStereotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#ClassStereotype> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid28 .
-_:genid28 <http://www.w3.org/2002/07/owl#oneOf> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+<https://w3id.org/ontouml#ClassStereotype> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#oneOf> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
@@ -668,50 +649,54 @@ _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#type> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#type> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subkind> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situation> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#roleMixin> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#role> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subkind> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relator> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situation> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantity> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#roleMixin> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quality> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#role> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phaseMixin> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relator> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phase> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantity> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mode> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quality> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mixin> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phaseMixin> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#kind> .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phase> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRoleMixin> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mode> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRole> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mixin> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#event> .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#kind> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#enumeration> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRoleMixin> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#datatype> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRole> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collective> .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#event> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#category> .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#enumeration> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstract> .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#datatype> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collective> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#category> .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstract> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#ClassStereotype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#Stereotype> .
 <https://w3id.org/ontouml#ClassStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Class."@en .
 <https://w3id.org/ontouml#ClassStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is an enumeration of its individuals, which are: ontouml:abstract, ontouml:category, ontouml:collective, ontouml:datatype, ontouml:enumeration, ontouml:event, ontouml:historicalRole, ontouml:historicalRoleMixin, ontouml:kind, ontouml:mixin, ontouml:mode, ontouml:phase, ontouml:phaseMixin, ontouml:quality, ontouml:quantity, ontouml:relator, ontouml:role, ontouml:roleMixin, ontouml:situation, ontouml:subkind, and ontouml:type."@en .
@@ -729,13 +714,13 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/ontouml#Classifier
 <https://w3id.org/ontouml#Classifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#Classifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#DecoratableElement> .
-<https://w3id.org/ontouml#Classifier> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Relation> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Class> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#Classifier> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Relation> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Class> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#Classifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups the classes ontouml:Class and ontouml:Relation."@en .
 <https://w3id.org/ontouml#Classifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#Classifier> <http://www.w3.org/2000/01/rdf-schema#label> "Classifier"@en .
@@ -743,13 +728,13 @@ _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#ConnectorView
 <https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#ElementView> .
-<https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#RelationView> .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#GeneralizationView> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#RelationView> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#GeneralizationView> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups the classes ontouml:RelationView and ontouml:GeneralizationView."@en .
 <https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#ConnectorView> <http://www.w3.org/2000/01/rdf-schema#label> "ConnectorView"@en .
@@ -757,13 +742,13 @@ _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#DecoratableElement
 <https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#ModelElement> .
-<https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Property> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Classifier> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Property> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Classifier> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups the classes ontouml:Classifier and the ontouml:Property."@en .
 <https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#DecoratableElement> <http://www.w3.org/2000/01/rdf-schema#label> "DecoratableElement"@en .
@@ -778,13 +763,13 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#DiagramElement
 <https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#OntoumlElement> .
-<https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Shape> .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ElementView> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Shape> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ElementView> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups the classes ontouml:ElementView and the ontouml:Shape."@en .
 <https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#DiagramElement> <http://www.w3.org/2000/01/rdf-schema#label> "DiagramElement"@en .
@@ -792,16 +777,16 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#ElementView
 <https://w3id.org/ontouml#ElementView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#ElementView> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#DiagramElement> .
-<https://w3id.org/ontouml#ElementView> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#NodeView> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#GeneralizationSetView> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ConnectorView> .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#ElementView> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#NodeView> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#GeneralizationSetView> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ConnectorView> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#ElementView> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups the classes ontouml:ConnectorView, ontouml:GeneralizationSetView, and ontouml:NodeView."@en .
 <https://w3id.org/ontouml#ElementView> <http://www.w3.org/2000/01/rdf-schema#comment> "E.g., an ontouml:ClassView is created whenever an ontouml:ModelElement is represented in an ontouml:Diagram."@en .
 <https://w3id.org/ontouml#ElementView> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the diagramatical representation of an element on an ontouml:Diagram."@en .
@@ -846,25 +831,25 @@ _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#ModelElement
 <https://w3id.org/ontouml#ModelElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#ModelElement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#OntoumlElement> .
-<https://w3id.org/ontouml#ModelElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid66 .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+<https://w3id.org/ontouml#ModelElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid62 .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Package> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Package> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Note> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Literal> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#GeneralizationSet> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Generalization> .
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Note> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#DecoratableElement> .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Literal> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#GeneralizationSet> .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Generalization> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#DecoratableElement> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#ModelElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups diverse elements that can be represented in on OntoUML model."@en .
 <https://w3id.org/ontouml#ModelElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#ModelElement> <http://www.w3.org/2000/01/rdf-schema#label> "ModelElement"@en .
@@ -872,16 +857,16 @@ _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#NodeView
 <https://w3id.org/ontouml#NodeView> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#NodeView> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#ElementView> .
-<https://w3id.org/ontouml#NodeView> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#PackageView> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#NoteView> .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ClassView> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#NodeView> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#PackageView> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#NoteView> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ClassView> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#NodeView> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups the classes ontouml:NoteView, ontouml:ClassView, and ontouml:PackageView."@en .
 <https://w3id.org/ontouml#NodeView> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#NodeView> <http://www.w3.org/2000/01/rdf-schema#label> "NodeView"@en .
@@ -902,42 +887,42 @@ _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://w3id.org/ontouml#OntologicalNature
 <https://w3id.org/ontouml#OntologicalNature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#OntologicalNature> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid70 .
-_:genid70 <http://www.w3.org/2002/07/owl#oneOf> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+<https://w3id.org/ontouml#OntologicalNature> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#oneOf> _:genid77 .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
 _:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
 _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#typeNature> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#typeNature> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situationNature> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relatorNature> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantityNature> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#qualityNature> .
 _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situationNature> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#intrinsicModeNature> .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relatorNature> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#functionalComplexNature> .
 _:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantityNature> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#extrinsicModeNature> .
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#qualityNature> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#eventNature> .
 _:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#intrinsicModeNature> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collectiveNature> .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#functionalComplexNature> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstractNature> .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#extrinsicModeNature> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#eventNature> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collectiveNature> .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstractNature> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#OntologicalNature> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection of individuals that represent fundamental conceptual modeling issues according to the Unified Foundational Ontology (UFO) theory."@en .
 <https://w3id.org/ontouml#OntologicalNature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is an enumeration of its individuals, which are: ontouml:abstractNature, ontouml:collectiveNature, ontouml:eventNature, ontouml:extrinsicModeNature, ontouml:functionalComplexNature, ontouml:intrinsicModeNature, ontouml:qualityNature, ontouml:quantityNature, ontouml:relatorNature, ontouml:situationNature, and ontouml:typeNature."@en .
 <https://w3id.org/ontouml#OntologicalNature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
@@ -946,19 +931,19 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/ontouml#OntoumlElement
 <https://w3id.org/ontouml#OntoumlElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#OntoumlElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Project> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ModelElement> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#DiagramElement> .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Diagram> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#OntoumlElement> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Project> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ModelElement> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#DiagramElement> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Diagram> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#OntoumlElement> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class that groups different elements an ontoUML model can have."@en .
 <https://w3id.org/ontouml#OntoumlElement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#OntoumlElement> <http://www.w3.org/2000/01/rdf-schema#label> "OntoumlElement"@en .
@@ -1001,22 +986,22 @@ _:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#Property
 <https://w3id.org/ontouml#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#DecoratableElement> .
-<https://w3id.org/ontouml#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid86 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid88 .
-_:genid88 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ontouml#PropertyStereotype> .
-_:genid88 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
-_:genid90 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ontouml#PropertyStereotype> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid82 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ontouml#PropertyStereotype> .
+_:genid84 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ontouml#PropertyStereotype> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontouml:Property may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:PropertyStereotype. This information is formalized by the ontouml:stereotype property."@en .
 <https://w3id.org/ontouml#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a property defined in the ontology. Properties contained by classes are deemed attributes and those contained by relations are deemed association ends."@en .
 <https://w3id.org/ontouml#Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
@@ -1024,15 +1009,15 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://w3id.org/ontouml#PropertyStereotype
 <https://w3id.org/ontouml#PropertyStereotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#PropertyStereotype> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid91 .
-_:genid91 <http://www.w3.org/2002/07/owl#oneOf> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#end> .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#begin> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/ontouml#PropertyStereotype> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#oneOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#end> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#begin> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#PropertyStereotype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#Stereotype> .
 <https://w3id.org/ontouml#PropertyStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Property."@en .
 <https://w3id.org/ontouml#PropertyStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is an enumeration of its individuals, which are: ontouml:begin, and ontouml:end."@en .
@@ -1049,13 +1034,13 @@ _:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/ontouml#RectangularShape
 <https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#Shape> .
-<https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Text> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Rectangle> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Text> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Rectangle> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a rectangular shape in a given ontouml:Diagram."@en .
 <https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#RectangularShape> <http://www.w3.org/2000/01/rdf-schema#label> "RectangularShape"@en .
@@ -1063,22 +1048,22 @@ _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # https://w3id.org/ontouml#Relation
 <https://w3id.org/ontouml#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#Classifier> .
-<https://w3id.org/ontouml#Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid96 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ontouml#RelationStereotype> .
-_:genid98 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
-_:genid100 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ontouml#RelationStereotype> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/ontouml#RelationStereotype> .
+_:genid94 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
+_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/ontouml#RelationStereotype> .
+_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/ontouml#stereotype> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#Relation> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontouml:Relation may have at most one ontouml:Stereotype (i.e., it is an optional property) of specific type ontouml:RelationStereotype. This information is formalized by the ontouml:stereotype property."@en .
 <https://w3id.org/ontouml#Relation> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a relation defined in the ontology."@en .
 <https://w3id.org/ontouml#Relation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
@@ -1086,12 +1071,8 @@ _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # https://w3id.org/ontouml#RelationStereotype
 <https://w3id.org/ontouml#RelationStereotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#RelationStereotype> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid101 .
-_:genid101 <http://www.w3.org/2002/07/owl#oneOf> _:genid120 .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+<https://w3id.org/ontouml#RelationStereotype> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid97 .
+_:genid97 <http://www.w3.org/2002/07/owl#oneOf> _:genid116 .
 _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
 _:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
 _:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
@@ -1106,46 +1087,50 @@ _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid105 .
 _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
 _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
 _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#triggers> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#triggers> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#termination> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subQuantityOf> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subCollectionOf> .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participational> .
 _:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#termination> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participation> .
 _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subQuantityOf> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#memberOf> .
 _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subCollectionOf> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mediation> .
 _:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participational> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#material> .
 _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participation> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#manifestation> .
 _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#memberOf> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#instantiation> .
 _:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mediation> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalDependence> .
 _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#material> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#externalDependence> .
 _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#manifestation> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#derivation> .
 _:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#instantiation> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#creation> .
 _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalDependence> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#componentOf> .
 _:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#externalDependence> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#comparative> .
 _:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#derivation> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#characterization> .
 _:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#creation> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#bringsAbout> .
 _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#componentOf> .
-_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#comparative> .
-_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#characterization> .
-_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#bringsAbout> .
-_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#RelationStereotype> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#Stereotype> .
 <https://w3id.org/ontouml#RelationStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregates all possible instances that can be assigned via an ontouml:stereotype property to an ontouml:Relation."@en .
 <https://w3id.org/ontouml#RelationStereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is an enumeration of its individuals, which are: ontouml:bringsAbout, ontouml:characterization, ontouml:comparative, ontouml:componentOf, ontouml:creation, ontouml:derivation, ontouml:externalDependence, ontouml:historicalDependence, ontouml:instantiation, ontouml:manifestation, ontouml:material, ontouml:mediation, ontouml:memberOf, ontouml:participation, ontouml:participational, ontouml:subCollectionOf, ontouml:subQuantityOf, ontouml:termination, and ontouml:triggers."@en .
@@ -1162,29 +1147,29 @@ _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://w3id.org/ontouml#Shape
 <https://w3id.org/ontouml#Shape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/ontouml#Shape> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/ontouml#DiagramElement> .
-<https://w3id.org/ontouml#Shape> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid122 .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#RectangularShape> .
-_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Path> .
-_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#Shape> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#RectangularShape> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Path> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#Shape> <http://www.w3.org/2000/01/rdf-schema#comment> "Contains information about the diagramation of an ontouml:ModelElement through its relation with an ontouml:ElementView."@en .
 <https://w3id.org/ontouml#Shape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#Shape> <http://www.w3.org/2000/01/rdf-schema#label> "Shape"@en .
 # 
 # https://w3id.org/ontouml#Stereotype
 <https://w3id.org/ontouml#Stereotype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/ontouml#Stereotype> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid125 .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#RelationStereotype> .
-_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#PropertyStereotype> .
-_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ClassStereotype> .
-_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/ontouml#Stereotype> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#RelationStereotype> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#PropertyStereotype> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#ClassStereotype> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 <https://w3id.org/ontouml#Stereotype> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates meta-properties of classes, properties, or relations."@en .
 <https://w3id.org/ontouml#Stereotype> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#Stereotype> <http://www.w3.org/2000/01/rdf-schema#label> "Stereotype"@en .
@@ -1641,15 +1626,40 @@ _:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://www.inf.unibz.it/krdb/
 <https://www.inf.unibz.it/krdb/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.inf.unibz.it/krdb/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<https://www.inf.unibz.it/krdb/> <https://schema.org/name> "KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy" .
-<https://www.inf.unibz.it/krdb/> <https://schema.org/url> "https://www.inf.unibz.it/krdb/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.inf.unibz.it/krdb/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://www.inf.unibz.it/krdb/> <http://xmlns.com/foaf/0.1/homepage> "https://www.inf.unibz.it/krdb/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.inf.unibz.it/krdb/> <http://xmlns.com/foaf/0.1/member> <https://orcid.org/0000-0003-3385-4769> .
+<https://www.inf.unibz.it/krdb/> <http://xmlns.com/foaf/0.1/name> "KRDB Research Centre for Knowledge and Data, Free University of Bozen-Bolzano, Italy" .
 # 
 # https://www.utwente.nl/en/eemcs/scs/
 <https://www.utwente.nl/en/eemcs/scs/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.utwente.nl/en/eemcs/scs/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<https://www.utwente.nl/en/eemcs/scs/> <https://schema.org/name> "Semantics, Cybersecurity & Services (SCS), University of Twente, the Netherlands" .
-<https://www.utwente.nl/en/eemcs/scs/> <https://schema.org/url> "https://www.utwente.nl/en/eemcs/scs/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.utwente.nl/en/eemcs/scs/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<https://www.utwente.nl/en/eemcs/scs/> <http://xmlns.com/foaf/0.1/homepage> "https://www.utwente.nl/en/eemcs/scs/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.utwente.nl/en/eemcs/scs/> <http://xmlns.com/foaf/0.1/member> <https://orcid.org/0000-0002-5385-5761> .
+<https://www.utwente.nl/en/eemcs/scs/> <http://xmlns.com/foaf/0.1/member> <https://orcid.org/0000-0003-2528-3118> .
+<https://www.utwente.nl/en/eemcs/scs/> <http://xmlns.com/foaf/0.1/member> <https://orcid.org/0000-0003-2736-7817> .
+<https://www.utwente.nl/en/eemcs/scs/> <http://xmlns.com/foaf/0.1/name> "Semantics, Cybersecurity & Services (SCS), University of Twente, the Netherlands" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://orcid.org/0000-0002-5385-5761> <http://xmlns.com/foaf/0.1/mbox> "t.princesales@utwente.nl" .
+<https://orcid.org/0000-0002-5385-5761> <http://xmlns.com/foaf/0.1/name> "Tiago Prince Sales" .
+# 
+<https://orcid.org/0000-0003-2528-3118> <http://xmlns.com/foaf/0.1/mbox> "c.moraisfonseca@utwente.nl" .
+<https://orcid.org/0000-0003-2528-3118> <http://xmlns.com/foaf/0.1/name> "Claudenir M. Fonseca" .
+# 
+<https://orcid.org/0000-0003-2736-7817> <http://xmlns.com/foaf/0.1/mbox> "p.p.favatobarcelos@uwente.nl" .
+<https://orcid.org/0000-0003-2736-7817> <http://xmlns.com/foaf/0.1/name> "Pedro Paulo Favato Barcelos" .
+# 
+<https://orcid.org/0000-0003-3385-4769> <http://xmlns.com/foaf/0.1/mbox> "mattia.fumagalli@unibz.it" .
+<https://orcid.org/0000-0003-3385-4769> <http://xmlns.com/foaf/0.1/name> "Mattia Fumagalli" .
 # 
 # 
 # 
@@ -1660,33 +1670,29 @@ _:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # #################################################################
 # 
 # 
-_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid126 <http://www.w3.org/2002/07/owl#members> _:genid132 .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid128 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid122 <http://www.w3.org/2002/07/owl#members> _:genid128 .
 _:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Stereotype> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Stereotype> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Point> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#OntoumlElement> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#OntologicalNature> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Cardinality> .
 _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Point> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#AggregationKind> .
 _:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#OntoumlElement> .
-_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#OntologicalNature> .
-_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#Cardinality> .
-_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#AggregationKind> .
-_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
-_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
-_:genid133 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid192 .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid191 .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid190 .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid189 .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid188 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid129 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid188 .
 _:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid187 .
 _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid186 .
 _:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid185 .
@@ -1741,124 +1747,128 @@ _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid137 .
 _:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
 _:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
 _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid134 .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.utwente.nl/en/eemcs/scs/> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.utwente.nl/en/eemcs/scs/> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.unibz.it/krdb/> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#typeNature> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#type> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#triggers> .
 _:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.inf.unibz.it/krdb/> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#termination> .
 _:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#typeNature> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subkind> .
 _:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#type> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subQuantityOf> .
 _:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#triggers> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subCollectionOf> .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#termination> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situationNature> .
 _:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subkind> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situation> .
 _:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subQuantityOf> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#shared> .
 _:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#subCollectionOf> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#roleMixin> .
 _:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situationNature> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#role> .
 _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#situation> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relatorNature> .
 _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#shared> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relator> .
 _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#roleMixin> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantityNature> .
 _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#role> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantity> .
 _:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relatorNature> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#qualityNature> .
 _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#relator> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quality> .
 _:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantityNature> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phaseMixin> .
 _:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quantity> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phase> .
 _:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#qualityNature> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participational> .
 _:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#quality> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participation> .
 _:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phaseMixin> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#none> .
 _:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#phase> .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mode> .
 _:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participational> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mixin> .
 _:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#participation> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#memberOf> .
 _:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#none> .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mediation> .
 _:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mode> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#material> .
 _:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mixin> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#manifestation> .
 _:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#memberOf> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#kind> .
 _:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#mediation> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#intrinsicModeNature> .
 _:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#material> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#instantiation> .
 _:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#manifestation> .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRoleMixin> .
 _:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#kind> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRole> .
 _:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#intrinsicModeNature> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalDependence> .
 _:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#instantiation> .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#functionalComplexNature> .
 _:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRoleMixin> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#extrinsicModeNature> .
 _:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalRole> .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#externalDependence> .
 _:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#historicalDependence> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#eventNature> .
 _:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#functionalComplexNature> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#event> .
 _:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#extrinsicModeNature> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#enumeration> .
 _:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#externalDependence> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#end> .
 _:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#eventNature> .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#derivation> .
 _:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#event> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#datatype> .
 _:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#enumeration> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#creation> .
 _:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#end> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#composite> .
 _:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#derivation> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#componentOf> .
 _:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#datatype> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#comparative> .
 _:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#creation> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collectiveNature> .
 _:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#composite> .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collective> .
 _:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#componentOf> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#characterization> .
 _:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#comparative> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#category> .
 _:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collectiveNature> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#bringsAbout> .
 _:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#collective> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#begin> .
 _:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#characterization> .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstractNature> .
 _:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#category> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstract> .
 _:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#bringsAbout> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml> .
 _:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#begin> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstractNature> .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml#abstract> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ontouml> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
