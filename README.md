@@ -1,6 +1,6 @@
 # OntoUML Vocabulary
 
-<p align="center"><img src="docs/logo-vocabulary.png" width="512"></p>
+<p align="center"><img src="./resources/logo-vocabulary.png" width="512"></p>
 
 The [OntoUML Vocabulary](https://w3id.org/ontouml/vocabulary) is an implementation of the [OntoUML Metamodel](https://w3id.org/ontouml/metamodel) in the Web Ontology Language (OWL) that is easily interoperable with [ontouml-js](https://github.com/OntoUML/ontouml-js) and [ontouml-schema](https://w3id.org/ontouml/schema).
 
