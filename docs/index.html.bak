@@ -134,16 +134,15 @@ $(function(){
                   Concrete Syntax</a></li>
             </ol>
           </li>
-          <li> <a href="#mozTocId376551">Vocabulary Usage Overview</a>
-            <ol>
-              <li style="list-style-type: disc;"><a href="#mozTocId728434">Example
-                  Settings</a></li>
-              <li style="list-style-type: disc;"><a href="#mozTocId444832">Examples
-                  of Serialized Objects</a></li>
-              <li style="list-style-type: disc;"><a href="#mozTocId68228">Manipulating
-                  the Serialized Models with SPARQL</a></li>
-            </ol>
-          </li>
+          <li> <a href="#mozTocId376551">Vocabulary Usage Overview</a> </li>
+          <ol>
+            <li style="list-style-type: disc;"><a href="#mozTocId728434">Example
+                Settings</a></li>
+            <li style="list-style-type: disc;"><a href="#mozTocId444832">Examples
+                of Serialized Objects</a></li>
+            <li style="list-style-type: disc;"><a href="#mozTocId68228">Manipulating
+                the Serialized Models with SPARQL</a></li>
+          </ol>
           <li><a href="#mozTocId941900">OntoUML Vocabulary: Specification</a>
             <ol>
               <li style="list-style-type: disc;"><a href="#mozTocId629681">Classes</a></li>
