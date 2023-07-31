@@ -20,7 +20,7 @@
 ################################################################# VERSIONING
 
                             owl:versionIRI <https://w3id.org/ontouml/vocabulary/v1.1.0> ;
-                            owl:versionInfo "General review for compliance with the OntoUML Metamodel 1.1.0."@en ;
+                            owl:versionInfo "General review for compliance with the OntoUML Metamodel 1.1.1."@en ;
                             owl:priorVersion <https://w3id.org/ontouml/vocabulary/v1.0.0> ;
                             dct:issued "2022-04-03"^^xsd:date ;
                             dct:modified "2023-07-27"^^xsd:date ;
@@ -31,7 +31,7 @@
                             dct:description "An OWL vocabulary to allow the serialization and exchanging of OntoUML models in conformance with the Ontouml Metamodel."@en ;
                             dct:identifier "https://w3id.org/ontouml"^^xsd:anyURI ;
                             dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
-                            dct:conformsTo <https://w3id.org/ontouml/metamodel/v1.1.0> ;
+                            dct:conformsTo <https://w3id.org/ontouml/metamodel/v1.1.1> ;
                             dcat:landingPage <https://w3id.org/ontouml/vocabulary> ;
                             foaf:homepage <https://w3id.org/ontouml/vocabulary/docs> ;
                             vann:preferredNamespacePrefix "ontouml" ;
