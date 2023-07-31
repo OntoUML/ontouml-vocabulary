@@ -1,0 +1,11 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+:fGD a ontouml:Generalization ;
+    ontouml:general :Ljp ;
+    ontouml:specific :uNZ ;
+    ontouml:project :XCY .
+
+:Ljp a ontouml:Class .
+:uNZ a ontouml:Class .
+:XCY a ontouml:Project .

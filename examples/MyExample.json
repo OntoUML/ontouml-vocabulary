@@ -1,0 +1,863 @@
+{
+  "id" : "XCY",
+  "name" : "MyExample",
+  "description" : null,
+  "type" : "Project",
+  "model" : {
+    "id" : "XCY_root",
+    "name" : "MyExample",
+    "description" : null,
+    "type" : "Package",
+    "propertyAssignments" : null,
+    "contents" : [ {
+      "id" : "myi",
+      "name" : "My2ndPackage",
+      "description" : null,
+      "type" : "Package",
+      "propertyAssignments" : null,
+      "contents" : [ {
+        "id" : "R24",
+        "name" : "University",
+        "description" : null,
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "kind",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : null,
+        "isExtensional" : null,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "functional-complex" ]
+      }, {
+        "id" : "L7a",
+        "name" : "studiesIn",
+        "description" : "Every material association is derived.",
+        "type" : "Relation",
+        "propertyAssignments" : null,
+        "stereotype" : "material",
+        "isAbstract" : false,
+        "isDerived" : true,
+        "properties" : [ {
+          "id" : "L71",
+          "name" : "provider",
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1..*",
+          "propertyType" : {
+            "id" : "R24",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        }, {
+          "id" : "L78",
+          "name" : "customer",
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1..*",
+          "propertyType" : {
+            "id" : "MEQ",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        } ]
+      } ]
+    }, {
+      "id" : "yHW",
+      "name" : "MyPackage",
+      "description" : null,
+      "type" : "Package",
+      "propertyAssignments" : null,
+      "contents" : [ {
+        "id" : "Ljp",
+        "name" : "Person",
+        "description" : "A Person is a human.",
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "kind",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : [ {
+          "id" : "nf0",
+          "name" : "age",
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "vCY",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        }, {
+          "id" : "xrq",
+          "name" : "name",
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "fCY",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        } ],
+        "isExtensional" : null,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "functional-complex" ]
+      }, {
+        "id" : "uNZ",
+        "name" : "Child",
+        "description" : null,
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "phase",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : null,
+        "isExtensional" : false,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "functional-complex" ]
+      }, {
+        "id" : "Lx5",
+        "name" : "Adult",
+        "description" : null,
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "phase",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : null,
+        "isExtensional" : false,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "functional-complex" ]
+      }, {
+        "id" : "MEQ",
+        "name" : "Student",
+        "description" : null,
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "role",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : null,
+        "isExtensional" : false,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "functional-complex" ]
+      }, {
+        "id" : "DUo",
+        "name" : "Enrolment",
+        "description" : null,
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "relator",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : null,
+        "isExtensional" : null,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "relator" ]
+      }, {
+        "id" : "ppq",
+        "name" : "Brain",
+        "description" : null,
+        "type" : "Class",
+        "propertyAssignments" : null,
+        "stereotype" : "kind",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : null,
+        "isExtensional" : null,
+        "isPowertype" : null,
+        "order" : null,
+        "literals" : null,
+        "restrictedTo" : [ "functional-complex" ]
+      }, {
+        "id" : "fGD",
+        "name" : null,
+        "description" : null,
+        "type" : "Generalization",
+        "propertyAssignments" : null,
+        "general" : {
+          "id" : "Ljp",
+          "type" : "Class"
+        },
+        "specific" : {
+          "id" : "uNZ",
+          "type" : "Class"
+        }
+      }, {
+        "id" : "DzD",
+        "name" : null,
+        "description" : null,
+        "type" : "Generalization",
+        "propertyAssignments" : null,
+        "general" : {
+          "id" : "Ljp",
+          "type" : "Class"
+        },
+        "specific" : {
+          "id" : "Lx5",
+          "type" : "Class"
+        }
+      }, {
+        "id" : "ZY2",
+        "name" : null,
+        "description" : null,
+        "type" : "Generalization",
+        "propertyAssignments" : null,
+        "general" : {
+          "id" : "Ljp",
+          "type" : "Class"
+        },
+        "specific" : {
+          "id" : "MEQ",
+          "type" : "Class"
+        }
+      }, {
+        "id" : "HNP",
+        "name" : "PersonGS",
+        "description" : null,
+        "type" : "GeneralizationSet",
+        "propertyAssignments" : null,
+        "isDisjoint" : true,
+        "isComplete" : true,
+        "categorizer" : null,
+        "generalizations" : [ {
+          "id" : "DzD",
+          "type" : "Generalization"
+        }, {
+          "id" : "fGD",
+          "type" : "Generalization"
+        } ]
+      }, {
+        "id" : "XvM",
+        "name" : null,
+        "description" : null,
+        "type" : "Relation",
+        "propertyAssignments" : null,
+        "stereotype" : "mediation",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : [ {
+          "id" : "XvO",
+          "name" : null,
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1..*",
+          "propertyType" : {
+            "id" : "DUo",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        }, {
+          "id" : "XvL",
+          "name" : "",
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : true,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "MEQ",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        } ]
+      }, {
+        "id" : "tJs",
+        "name" : null,
+        "description" : null,
+        "type" : "Relation",
+        "propertyAssignments" : null,
+        "stereotype" : "mediation",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : [ {
+          "id" : "tJu",
+          "name" : null,
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "0..*",
+          "propertyType" : {
+            "id" : "DUo",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        }, {
+          "id" : "tJr",
+          "name" : "",
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : true,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "R24",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        } ]
+      }, {
+        "id" : "Kzi",
+        "name" : null,
+        "description" : null,
+        "type" : "Relation",
+        "propertyAssignments" : null,
+        "stereotype" : "componentOf",
+        "isAbstract" : false,
+        "isDerived" : false,
+        "properties" : [ {
+          "id" : "KYi",
+          "name" : null,
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : true,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "Ljp",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "NONE"
+        }, {
+          "id" : "KYz",
+          "name" : null,
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : true,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "ppq",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : "COMPOSITE"
+        } ]
+      }, {
+        "id" : "6Vq",
+        "name" : null,
+        "description" : null,
+        "type" : "Relation",
+        "propertyAssignments" : null,
+        "stereotype" : "derivation",
+        "isAbstract" : false,
+        "isDerived" : true,
+        "properties" : [ {
+          "id" : "0ea",
+          "name" : null,
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "DUo",
+            "type" : "Class"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : null
+        }, {
+          "id" : "31d",
+          "name" : null,
+          "description" : null,
+          "type" : "Property",
+          "propertyAssignments" : null,
+          "stereotype" : null,
+          "isDerived" : false,
+          "isReadOnly" : false,
+          "isOrdered" : false,
+          "cardinality" : "1",
+          "propertyType" : {
+            "id" : "L7a",
+            "type" : "Relation"
+          },
+          "subsettedProperties" : null,
+          "redefinedProperties" : null,
+          "aggregationKind" : null
+        } ]
+      } ]
+    }, {
+      "id" : "fCY",
+      "name" : "string",
+      "description" : null,
+      "type" : "Class",
+      "propertyAssignments" : null,
+      "stereotype" : "datatype",
+      "isAbstract" : false,
+      "isDerived" : false,
+      "properties" : null,
+      "isExtensional" : null,
+      "isPowertype" : null,
+      "order" : null,
+      "literals" : null,
+      "restrictedTo" : [ "abstract" ]
+    }, {
+      "id" : "vCY",
+      "name" : "int",
+      "description" : null,
+      "type" : "Class",
+      "propertyAssignments" : null,
+      "stereotype" : "datatype",
+      "isAbstract" : false,
+      "isDerived" : false,
+      "properties" : null,
+      "isExtensional" : null,
+      "isPowertype" : null,
+      "order" : null,
+      "literals" : null,
+      "restrictedTo" : [ "abstract" ]
+    } ]
+  },
+  "diagrams" : [ {
+    "id" : "NyB",
+    "name" : "MyClassDiagram",
+    "description" : null,
+    "type" : "Diagram",
+    "owner" : {
+      "id" : "yHW",
+      "type" : "Package"
+    },
+    "contents" : [ {
+      "id" : "DUa",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "DUo",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "DUa_shape",
+        "type" : "Rectangle",
+        "x" : 782,
+        "y" : 179,
+        "width" : 80,
+        "height" : 40
+      }
+    }, {
+      "id" : "uNZ",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "uNZ",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "uNZ_shape",
+        "type" : "Rectangle",
+        "x" : 274,
+        "y" : 374,
+        "width" : 80,
+        "height" : 40
+      }
+    }, {
+      "id" : "MEx",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "MEQ",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "MEx_shape",
+        "type" : "Rectangle",
+        "x" : 518,
+        "y" : 179,
+        "width" : 80,
+        "height" : 40
+      }
+    }, {
+      "id" : "mRZ",
+      "type" : "PackageView",
+      "modelElement" : {
+        "id" : "myi",
+        "type" : "Package"
+      },
+      "shape" : {
+        "id" : "mRZ_shape",
+        "type" : "Rectangle",
+        "x" : 998,
+        "y" : 83,
+        "width" : 274,
+        "height" : 220
+      }
+    }, {
+      "id" : "gfL",
+      "type" : "RelationView",
+      "modelElement" : {
+        "id" : "XvM",
+        "type" : "Relation"
+      },
+      "shape" : {
+        "id" : "gfL_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 781,
+          "y" : 199
+        }, {
+          "x" : 599,
+          "y" : 199
+        } ]
+      },
+      "source" : {
+        "id" : "DUa",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "MEx",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "rzD",
+      "type" : "GeneralizationView",
+      "modelElement" : {
+        "id" : "DzD",
+        "type" : "Generalization"
+      },
+      "shape" : {
+        "id" : "rzD_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 396,
+          "y" : 248
+        }, {
+          "x" : 396,
+          "y" : 331
+        }, {
+          "x" : 466,
+          "y" : 331
+        }, {
+          "x" : 466,
+          "y" : 373
+        } ]
+      },
+      "source" : {
+        "id" : "Ljw",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "zx5",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "gtP",
+      "type" : "GeneralizationSetView",
+      "modelElement" : {
+        "id" : "HNP",
+        "type" : "GeneralizationSet"
+      },
+      "shape" : {
+        "id" : "gtP_shape",
+        "type" : "Text",
+        "x" : 326,
+        "y" : 278,
+        "width" : 65,
+        "height" : 45,
+        "value" : ""
+      }
+    }, {
+      "id" : "R26",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "R24",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "R26_shape",
+        "type" : "Rectangle",
+        "x" : 1087,
+        "y" : 179,
+        "width" : 80,
+        "height" : 40
+      }
+    }, {
+      "id" : "Ljw",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "Ljp",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "Ljw_shape",
+        "type" : "Rectangle",
+        "x" : 299,
+        "y" : 179,
+        "width" : 137,
+        "height" : 68
+      }
+    }, {
+      "id" : "X78",
+      "type" : "RelationView",
+      "modelElement" : {
+        "id" : "L7a",
+        "type" : "Relation"
+      },
+      "shape" : {
+        "id" : "X78_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 1127,
+          "y" : 220
+        }, {
+          "x" : 1127,
+          "y" : 331
+        }, {
+          "x" : 558,
+          "y" : 331
+        }, {
+          "x" : 558,
+          "y" : 220
+        } ]
+      },
+      "source" : {
+        "id" : "R26",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "MEx",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "zJr",
+      "type" : "RelationView",
+      "modelElement" : {
+        "id" : "tJs",
+        "type" : "Relation"
+      },
+      "shape" : {
+        "id" : "zJr_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 863,
+          "y" : 199
+        }, {
+          "x" : 1086,
+          "y" : 199
+        } ]
+      },
+      "source" : {
+        "id" : "DUa",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "R26",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "OVq",
+      "type" : "RelationView",
+      "modelElement" : {
+        "id" : "6Vq",
+        "type" : "Relation"
+      },
+      "shape" : {
+        "id" : "OVq_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 828,
+          "y" : 220
+        }, {
+          "x" : 828,
+          "y" : 255
+        }, {
+          "x" : 828,
+          "y" : 331
+        } ]
+      },
+      "source" : {
+        "id" : "DUa",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "X78",
+        "type" : "RelationView"
+      }
+    }, {
+      "id" : "M9S",
+      "type" : "RelationView",
+      "modelElement" : {
+        "id" : "Kzi",
+        "type" : "Relation"
+      },
+      "shape" : {
+        "id" : "M9S_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 153,
+          "y" : 196
+        }, {
+          "x" : 298,
+          "y" : 196
+        } ]
+      },
+      "source" : {
+        "id" : "ppw",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "Ljw",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "UmD",
+      "type" : "GeneralizationView",
+      "modelElement" : {
+        "id" : "fGD",
+        "type" : "Generalization"
+      },
+      "shape" : {
+        "id" : "UmD_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 396,
+          "y" : 248
+        }, {
+          "x" : 396,
+          "y" : 331
+        }, {
+          "x" : 330,
+          "y" : 331
+        }, {
+          "x" : 330,
+          "y" : 373
+        } ]
+      },
+      "source" : {
+        "id" : "Ljw",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "uNZ",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "VY2",
+      "type" : "GeneralizationView",
+      "modelElement" : {
+        "id" : "ZY2",
+        "type" : "Generalization"
+      },
+      "shape" : {
+        "id" : "VY2_path",
+        "type" : "Path",
+        "points" : [ {
+          "x" : 437,
+          "y" : 199
+        }, {
+          "x" : 517,
+          "y" : 199
+        } ]
+      },
+      "source" : {
+        "id" : "Ljw",
+        "type" : "ClassView"
+      },
+      "target" : {
+        "id" : "MEx",
+        "type" : "ClassView"
+      }
+    }, {
+      "id" : "zx5",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "Lx5",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "zx5_shape",
+        "type" : "Rectangle",
+        "x" : 407,
+        "y" : 374,
+        "width" : 80,
+        "height" : 40
+      }
+    }, {
+      "id" : "ppw",
+      "type" : "ClassView",
+      "modelElement" : {
+        "id" : "ppq",
+        "type" : "Class"
+      },
+      "shape" : {
+        "id" : "ppw_shape",
+        "type" : "Rectangle",
+        "x" : 72,
+        "y" : 179,
+        "width" : 80,
+        "height" : 40
+      }
+    } ]
+  } ]
+}

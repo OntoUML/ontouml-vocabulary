@@ -1,0 +1,16 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+:nf0 a ontouml:Property ;
+    ontouml:aggregationKind ontouml:none ;
+    ontouml:cardinality :nf0_cardinality ;
+    ontouml:isDerived false ;
+    ontouml:isOrdered false ;
+    ontouml:isReadOnly false ;
+    ontouml:name "age"@en ;
+    ontouml:propertyType :vCY ;
+    ontouml:project :XCY .
+
+:nf0_cardinality a ontouml:Cardinality .
+:vCY a ontouml:Class .
+:XCY a ontouml:Project .

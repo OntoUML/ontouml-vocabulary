@@ -1,0 +1,16 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+# Other containsView properties ommited for brevity.
+
+:NyB a ontouml:Diagram ;
+    ontouml:containsView :DUa, :M9S, :gtP;
+    ontouml:name "MyClassDiagram"@en ;
+    ontouml:owner :yHW ;
+    ontouml:project :XCY .
+
+:DUa a ontouml:ClassView .
+:M9S a ontouml:RelationView .
+:gtP a ontouml:GeneralizationSetView .
+:yHW a ontouml:Package .
+:XCY a ontouml:Project .

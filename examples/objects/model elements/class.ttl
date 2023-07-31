@@ -1,0 +1,17 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Ljp a ontouml:Class ;
+    ontouml:attribute :nf0, :xrq ;
+    ontouml:description "A Person is a human." ;
+    ontouml:isAbstract false ;
+    ontouml:isDerived false ;
+    ontouml:isPowertype false ;
+    ontouml:name "Person"@en ;
+    ontouml:order "1"^^xsd:nonNegativeInteger ;
+    ontouml:project :XCY ;
+    ontouml:restrictedTo ontouml:functionalComplexNature ;
+    ontouml:stereotype ontouml:kind .
+
+:XCY a ontouml:Project .

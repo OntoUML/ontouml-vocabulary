@@ -1,0 +1,19 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/ontouml/vocabulary/v1.1.0> a prov:Entity;
+	 dc:title "OntoUML Vocabulary";
+	 prov:wasAttributedTo <https://orcid.org/0000-0002-5385-5761>;
+	 dc:creator <https://orcid.org/0000-0002-5385-5761>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-2528-3118>;
+	 dc:creator <https://orcid.org/0000-0003-2528-3118>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-2736-7817>;
+	 dc:creator <https://orcid.org/0000-0003-2736-7817>;
+	 prov:wasAttributedTo <https://orcid.org/0000-0003-3385-4769>;
+	 dc:contributor <https://orcid.org/0000-0003-3385-4769>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://w3id.org/ontouml#>;
+	 prov:wasRevisionOf <https://w3id.org/ontouml/vocabulary/v1.0.0>;
+	 prov:wasGeneratedAt "2023-07-27";
+.

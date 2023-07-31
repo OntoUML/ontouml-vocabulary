@@ -1,0 +1,11 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+:myi a ontouml:Package ;
+    ontouml:containsModelElement :L7a, :R24 ;
+    ontouml:name "My2ndPackage"@en ;
+    ontouml:project :XCY .
+
+:L7a a ontouml:Relation .
+:R24 a ontouml:Class .
+:XCY a ontouml:Project .

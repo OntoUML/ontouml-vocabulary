@@ -1,0 +1,15 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+:M9S a ontouml:RelationView ;
+    ontouml:isViewOf :Kzi ;
+    ontouml:project :XCY ;
+    ontouml:shape :M9S_path ;
+    ontouml:sourceView :ppw ;
+    ontouml:targetView :Ljw .
+
+:Kzi a ontouml:Relation .
+:M9S_path a ontouml:Path .
+:ppw a ontouml:ClassView .
+:Ljw a ontouml:ClassView .
+:XCY a ontouml:Project .

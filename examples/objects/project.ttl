@@ -1,0 +1,10 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+
+:XCY a ontouml:Project ;
+    ontouml:diagram :NyB ;
+    ontouml:model :XCY_root ;
+    ontouml:name "MyExample"@en .
+
+:NyB a ontouml:Diagram .
+:XCY_root a ontouml:Package .

@@ -1,0 +1,50 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: OntoUML Vocabulary
+message: >-
+  An OWL vocabulary to serialize and exchange OntoUML models
+  in conformance with the Ontouml Metamodel.
+type: software
+authors:
+  - given-names: Tiago
+    family-names: Prince Sales
+    email: t.princesales@utwente.nl
+    affiliation: University of Twente
+    orcid: 'https://orcid.org/0000-0002-5385-5761'
+  - given-names: Claudenir
+    family-names: M. Fonseca
+    email: c.moraisfonseca@utwente.nl
+    affiliation: University of Twente
+    orcid: 'https://orcid.org/0000-0003-2528-3118'
+  - given-names: Pedro Paulo
+    family-names: Favato Barcelos
+    email: p.p.favatobarcelos@utwente.nl
+    affiliation: University of Twente
+    orcid: 'https://orcid.org/0000-0003-2736-7817'
+identifiers:
+  - type: url
+    value: 'https://w3id.org/ontouml/vocabulary'
+    description: Git Repository
+repository-code: 'https://w3id.org/ontouml/vocabulary'
+url: 'https://w3id.org/ontouml/vocabulary/docs'
+abstract: >-
+  The OntoUML Vocabulary is an implementation of the OntoUML
+  Metamodel in the Web Ontology Language (OWL) that is
+  easily interoperable with the ontouml-js and the OntoUML
+  Schema.
+
+
+  This vocabulary supports the serialization, exchange, and
+  publishing of OntoUML models as linked data.
+keywords:
+  - schema
+  - semantic-web
+  - owl
+  - ontology
+  - ontouml
+  - ontology-driven-development
+  - ontouml-schema
+  - ' ontouml-metamodel'
+license: CC-BY-SA-4.0

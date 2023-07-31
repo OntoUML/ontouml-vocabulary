@@ -1,0 +1,13 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gtP_shape a ontouml:Text ;
+    ontouml:height "45"^^xsd:positiveInteger ;
+    ontouml:project :XCY ;
+    ontouml:text "" ;
+    ontouml:topLeftPosition :gtP_shape_point ;
+    ontouml:width "65"^^xsd:positiveInteger .
+
+:gtP_shape_point a ontouml:Point .
+:XCY a ontouml:Project .

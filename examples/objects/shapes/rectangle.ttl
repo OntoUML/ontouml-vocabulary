@@ -1,0 +1,12 @@
+@prefix : <https://example.org#> .
+@prefix ontouml: <https://w3id.org/ontouml#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ppw_shape a ontouml:Rectangle ;
+    ontouml:topLeftPosition :ppw_shape_point ;
+    ontouml:height "40"^^xsd:positiveInteger ;
+    ontouml:width "80"^^xsd:positiveInteger ;
+    ontouml:project :XCY .
+
+:ppw_shape_point a ontouml:Point .
+:XCY a ontouml:Project .
