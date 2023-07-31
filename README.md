@@ -8,7 +8,9 @@ This vocabulary supports the serialization, exchange, and publishing of OntoUML 
 
 ## Documentation
 
-The complete documentation of this vocabulary is available [here](https://w3id.org/ontouml/vocabulary/doc). 
+The complete documentation of this vocabulary is available [here](https://w3id.org/ontouml/vocabulary/doc).
+
+The OntoUML Vocabulary [is also available](https://lov.linkeddata.es/dataset/lov/vocabs/ontouml) in the Linked Open Vocabularies (LOV) dataset.
 
 ## Known uses
 
