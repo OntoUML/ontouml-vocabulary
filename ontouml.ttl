@@ -715,7 +715,9 @@ ontouml:Generalization rdfs:label "Generalization"@en ;
                        rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                        rdf:type owl:Class ;
                        rdfs:subClassOf ontouml:ModelElement ;
-                       rdfs:comment "Represents a generalization defined in an ontology."@en .
+                       rdfs:comment """A model element that represents the generalization of a specific classifier into a general classifier. When read in the inverse direction, a generalization is referred to as a specialization.
+
+A generalization can only connect two classifiers of the same type, i.e., it can either connect two class elements or two relation elements."""@en .
 
 
 ###  https://w3id.org/ontouml#GeneralizationSet
@@ -723,7 +725,11 @@ ontouml:GeneralizationSet rdfs:label "GeneralizationSet"@en ;
                           rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                           rdf:type owl:Class ;
                           rdfs:subClassOf ontouml:ModelElement ;
-                          rdfs:comment "Represents a generalization set defined in the ontology."@en .
+                          rdfs:comment """A ontouml:ModelElement that represents a group of connected ontouml:Generalization elements. A ontouml:GeneralizationSet can define disjoint and/or complete constraints over the generalizations it groups.
+
+Examples include the incomplete (i.e., non-complete) and overlapping (i.e., non-disjoint) generalization set of "Person" into "Student" and "Teacher", and the disjoint and complete generalization set of "Person" into "Child" and "Adult".
+
+All ontouml:Generalization element in the ontouml:GeneralizationSet must share a common general ontouml:Classifier."""@en .
 
 
 ###  https://w3id.org/ontouml#GeneralizationSetView
@@ -762,7 +768,7 @@ ontouml:ModelElement rdfs:label "ModelElement"@en ;
                                            ontouml:Note
                                            ontouml:Package
                                          ) ;
-                     rdfs:comment "Abstract class that groups diverse elements that can be represented in on OntoUML model."@en .
+                     rdfs:comment "An ontouml:OntoumlElement that represents an element of the language's abstract syntax (e.g., a ontouml:Class, a ontouml:Relation, or a ontouml:Generalization)."@en .
 
 
 ###  https://w3id.org/ontouml#NodeView
@@ -825,7 +831,7 @@ ontouml:OntoumlElement rdfs:label "OntoumlElement"@en ;
                                              ontouml:ModelElement
                                              ontouml:Project
                                            ) ;
-                      rdfs:comment "Abstract class that groups different elements an ontoUML model can have."@en .
+                      rdfs:comment "An identified element of an OntoUML ontology according to the OntoUML Metamodel, which includes projects, model elements, diagrams, and diagram elements."@en .
 
 
 ###  https://w3id.org/ontouml#Package
@@ -864,8 +870,7 @@ ontouml:Project rdfs:label "Project"@en ;
                 rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                 rdf:type owl:Class ;
                 rdfs:subClassOf ontouml:OntoumlElement ;
-                rdfs:comment "Aggregates all entities that are part of a same conceptual model, including concepts declaration and their visual representation."@en ,
-                             "It is the upper non-abstract class available in the OntoUML Vocabulary."@en .
+                rdfs:comment "An ontouml:OntoumlElement that serves as the container of an entire OntoUML ontology. A ontouml:Project provides a separation between model and diagram elements of an ontology, where the former are organized inside a ontouml:Package (referred to as ontouml:model), and the latter inside a list of diagrams."@en .
 
 
 ###  https://w3id.org/ontouml#Property
