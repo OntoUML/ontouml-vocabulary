@@ -768,7 +768,10 @@ ontouml:Diagram rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml/2.0.0#Diamond
 ontouml:Diamond rdf:type owl:Class ;
-                rdfs:subClassOf ontouml:RectangularShape .
+                rdfs:subClassOf ontouml:RectangularShape ;
+                rdfs:comment "An ontouml:RectangularShape that renders the joining diamond of an ontouml:NaryRelationView."@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                rdfs:label "Rectangular Shape"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#Generalization
@@ -949,7 +952,7 @@ ontouml:PackageView rdf:type owl:Class ;
 ###  https://w3id.org/ontouml/2.0.0#Path
 ontouml:Path rdf:type owl:Class ;
              rdfs:subClassOf ontouml:Shape ;
-             rdfs:comment "A list of connected ontouml:Point values to represent an ontouml:ElementView's shape."@en ;
+             rdfs:comment "An ontouml:Shape defined by a list of ontouml:Point values connecting two other ontouml:Shape elements."@en ;
              rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
              rdfs:label "Path"@en .
 
@@ -1010,7 +1013,7 @@ ontouml:PropertyStereotype rdf:type owl:Class ;
 ###  https://w3id.org/ontouml/2.0.0#Rectangle
 ontouml:Rectangle rdf:type owl:Class ;
                   rdfs:subClassOf ontouml:RectangularShape ;
-                  rdfs:comment "A particular type of ontouml:RectangularShape, mainly used to represent entities of type ontouml:Class."@en ;
+                  rdfs:comment "An ontouml:RectangularShape that renders the shape of an ontouml:ClassView or an ontouml:PackageView."@en ;
                   rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                   rdfs:label "Rectangle"@en .
 
@@ -1020,8 +1023,9 @@ ontouml:RectangularShape rdf:type owl:Class ;
                          rdfs:subClassOf ontouml:Shape ;
                          owl:disjointUnionOf ( ontouml:Rectangle
                                                ontouml:Text
+                                               ontouml:Diamond
                                              ) ;
-                         rdfs:comment "Represents a rectangular shape in a given ontouml:Diagram."@en ;
+                         rdfs:comment "An ontouml:Shape defined by an ontouml:topLeftPosition, an ontouml:height, and an ontouml:width."@en ;
                          rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                          rdfs:label "Rectangular Shape"@en .
 
@@ -1104,7 +1108,7 @@ ontouml:Stereotype rdf:type owl:Class ;
 ###  https://w3id.org/ontouml/2.0.0#Text
 ontouml:Text rdf:type owl:Class ;
              rdfs:subClassOf ontouml:RectangularShape ;
-             rdfs:comment "An ontouml:RectangularShape used to represent some textual information in an ontouml:Diagram."@en ;
+             rdfs:comment "An ontouml:RectangularShape that renders the shape of an ontouml:GeneralizationSetView or an ontouml:NoteView."@en ;
              rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
              rdfs:label "Text"@en .
 
