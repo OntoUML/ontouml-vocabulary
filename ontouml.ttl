@@ -1,14 +1,16 @@
 @prefix : <https://w3id.org/ontouml/2.0.0#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ontouml: <https://w3id.org/ontouml/2.0.0#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix vann: <http://purl.org/vocab/vann/> .
-@prefix ontouml: <https://w3id.org/ontouml/2.0.0#> .
 @base <https://w3id.org/ontouml/2.0.0> .
 
 <https://w3id.org/ontouml/2.0.0> rdf:type owl:Ontology ;
@@ -24,7 +26,6 @@
                                                      <https://doi.org/10.1007/978-3-031-17995-2_1> ;
                                   dct:issued "2022-04-03"^^xsd:date ;
                                   dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-                                  dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
                                   dct:modified "2023-08-14"^^xsd:date ;
                                   dct:publisher <https://www.utwente.nl/en/eemcs/scs/> ;
                                   dct:title "OntoUML Vocabulary"@en ;
@@ -35,7 +36,6 @@
                                   dcat:keyword "OntoUML"@en ,
                                                "OntoUML Metamodel"@en ,
                                                "Ontology-Driven Conceptual Modeling"@en ;
-                                  dcat:landingPage <https://w3id.org/ontouml/vocabulary> ;
                                   foaf:homepage <https://w3id.org/ontouml/vocabulary/docs> .
 
 #################################################################
@@ -47,11 +47,13 @@ dct:conformsTo rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/contributor
-dct:contributor rdf:type owl:AnnotationProperty .
+dct:contributor rdf:type owl:AnnotationProperty ;
+                rdfs:range rdfs:Literal .
 
 
 ###  http://purl.org/dc/terms/creator
-dct:creator rdf:type owl:AnnotationProperty .
+dct:creator rdf:type owl:AnnotationProperty ;
+            rdfs:range rdfs:Literal .
 
 
 ###  http://purl.org/dc/terms/description
@@ -83,7 +85,8 @@ dct:modified rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/publisher
-dct:publisher rdf:type owl:AnnotationProperty .
+dct:publisher rdf:type owl:AnnotationProperty ;
+              rdfs:range rdfs:Literal .
 
 
 ###  http://purl.org/dc/terms/title
@@ -122,27 +125,126 @@ foaf:member rdf:type owl:AnnotationProperty .
 foaf:name rdf:type owl:AnnotationProperty .
 
 
-#################################################################
-#    Datatypes
-#################################################################
+###  https://w3id.org/ontouml/2.0.0#description
+ontouml:description rdf:type owl:AnnotationProperty ;
+                    rdfs:subPropertyOf dct:description ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:domain ontouml:OntoumlElement .
 
-###  http://org.semanticweb.owlapi/error#Error3
-<http://org.semanticweb.owlapi/error#Error3> rdf:type rdfs:Datatype .
 
-
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type rdfs:Datatype .
+###  https://w3id.org/ontouml/2.0.0#name
+ontouml:name rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf dct:title ;
+             rdfs:range rdfs:Literal ;
+             rdfs:domain ontouml:NamedElement .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
+###  http://purl.org/dc/terms/accessRights
+dct:accessRights rdf:type owl:ObjectProperty ;
+                 rdfs:comment "Identifies a dct:RightsStatement or a text concerning who and how the ontouml:Project can be accessed. E.g., the statement <http://publications.europa.eu/resource/authority/access-right/PUBLIC> informs that something is \"publicly accessible by everyone.\""@en ;
+                 rdfs:isDefinedBy dct: ;
+                 rdfs:label "access rights"@en .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/source
+dct:source rdf:type owl:ObjectProperty ;
+           rdfs:comment "Identifies a resource that contain, present, or significantly influenced the development of the ontouml:Project. We recommend the use of persistent and resolvable identifiers to refer to these resources, such as the Digital Object Identifier (DOI) or DBLP''s URI, such as, <https://doi.org/10.3233/AO-150150>, or <https://dblp.org/rec/journals/ao/Morales-Ramirez15>."@en ;
+           rdfs:isDefinedBy dct: ;
+           rdfs:label "source"@en .
+
+
+###  http://www.w3.org/ns/dcat#landingPage
+dcat:landingPage rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/dcat#theme
+dcat:theme rdf:type owl:ObjectProperty ;
+           rdfs:comment "Identifies a central theme of the ontouml:Project according to a theme taxonomy. In the OntoUML/UFO Catalog Metadata Vocabulary (OCMV), for example, the theme of an ontouml:Project must be a skos:Concept from the Library of Congress Classification (LCC), such as, \"Class S - Agriculture\", or \"Class T - Technology.\""@en ;
+           rdfs:isDefinedBy <http://www.w3.org/ns/dcat> ;
+           rdfs:label "theme"@en .
+
+
+###  https://w3id.org/mod#designedForTask
+<https://w3id.org/mod#designedForTask> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain ontouml:SemanticArtefact ;
+                                       rdfs:range ontouml:SemanticArtefactTask ;
+                                       rdfs:comment """Identifies goals that motivated the development of the project. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a list recurrent modeling goals for reuse:
+
+- ocmv:ConceptualClarification: The project was created as the result of an ontological analysis of a concept, language, or domain of interest that sought to conceptually clarify and untangle complex notions and relations.
+
+- ocmv:DataPublication: The project was created to support the publication of some datasets. For instance, a conceptual model used to generate an OWL vocabulary to publish tabular data as linked open data on the web.
+
+- ocmv:DecisionSupportSystem: The project was created during the development of a decision support system.
+
+- ocmv:Example: The project was created to demonstrate how OntoUML can be used to solve a certain modeling challenge, to support an experiment involving OntoUML, or to exemplify how a generic model can be reused in more concrete scenarios.
+
+- ocmv:InformationRetrieval: The project was created to support the design of an information retrieval system.
+
+- ocmv:Interoperability: The project was created to support data integration, vocabulary alignment, or the interoperability of software systems.
+
+- ocmv:LanguageEngineering: The project was created for the design of a domain-specific modeling language.
+
+- ocmv:Learning: The project was created so that its authors could learn UFO and OntoUML. This usually applies to models developed by students as part of their course assignments.
+
+- ocmv:SoftwareEngineering: The project was created during the development of an information system. For instance, a conceptual model used to generate a relational database."""@en ;
+                                       rdfs:isDefinedBy <https://w3id.org/mod> ;
+                                       rdfs:label "designed for task"@en .
+
+
+###  https://w3id.org/ontouml-models/vocabulary#context
+<https://w3id.org/ontouml-models/vocabulary#context> rdf:type owl:ObjectProperty ;
+                                                     rdfs:comment """Identifies a context in which the ontouml:Project was developed. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a set of recurrent modelling contexts:
+          
+- ocmv:Research: The project was developed as part of a research project. This usually implies that the project was featured in a scientific publication.
+
+- ocmv:Industry: The project was developed for a public or private organization.
+
+- ocmv:Classroom: The project was developed within the context of a course on conceptual modelling, most likely as a course assignment."""@en ;
+                                                     rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
+                                                     rdfs:label "context"@en .
+
+
+###  https://w3id.org/ontouml-models/vocabulary#ontologyType
+<https://w3id.org/ontouml-models/vocabulary#ontologyType> rdf:type owl:ObjectProperty ;
+                                                          rdfs:comment """Identifies the classifications of the ontouml:Project according to its scope. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a set of recurrent modelling scopes based on the work of Roussey et al. (2011):
+          
+- ocmv:Core: An ontology that grasps the central concepts and relations of a given domain, possibly integrating several domain ontologies and being applicable in multiple scenarios. E.g., UFO-S, a commitment-based ontology of services, can be considered a core ontology because it applies to services in multiple domains, such as medical, financial, and legal services.
+
+- ocmv:Domain: An ontology that describes how a community conceptualizes a phenomenon of interest. In general, a domain ontology formally characterizes a much narrower domain than a core ontology does. E.g., OntoBio is a domain ontology of biodiversity.
+
+- ocmv:Application: An ontology that specializes a domain ontology where there could be no consensus or knowledge sharing. It represents the particular model of a domain according to a single viewpoint of a user or a developer."""@en ;
+                                                          rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
+                                                          rdfs:label "ontology type"@en .
+
+
+###  https://w3id.org/ontouml-models/vocabulary#representationStyle
+<https://w3id.org/ontouml-models/vocabulary#representationStyle> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:comment """Identifies the representation style adopted in the ontouml:Project between \"OntoUML Style\" and \"UFO Style\":
+          
+- ocmv:OntoumlStyle: Characterizes a project that contains at least one class, relation, or property using a valid OntoUML stereotype.
+
+- ocmv:UfoStyle: Characterizes a project that contains at least one class or relation from UFO without an OntoUML stereotype."""@en ;
+                                                                 rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
+                                                                 rdfs:label "representation style"@en .
+
+
 ###  https://w3id.org/ontouml/2.0.0#aggregationKind
 ontouml:aggregationKind rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:AggregationKind ;
-                        rdfs:comment "Characterizes an ontouml:Property with an ontouml:AggregationKind instance, i.e., indicates whether the ontouml:Property is a simple (ontouml:none), a shared (ontouml:shared), or a composite (ontouml:composite) property."@en ;
+                        rdfs:comment """Identifies the ontouml:AggregationKind of an ontouml:Property (a relation end) as a whole in a parthood (mereological) relation.
+
+Examples include \"Project Member\" as a \"shared\" part of a \"Project Team\" and an \"Engine\" as a \"composite\" part of a \"Vehicle.\"
+
+The possible values for aggregation kind are ontouml:composite (when parts are exclusive to one whole), ontouml:shared (when parts can be shared), and ontouml:none (for non-parthood relations)."""@en ;
                         rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                         rdfs:label "aggregation kind"@en .
 
@@ -170,7 +272,11 @@ ontouml:cardinality rdf:type owl:ObjectProperty ;
 ontouml:categorizer rdf:type owl:ObjectProperty ;
                     rdfs:domain ontouml:GeneralizationSet ;
                     rdfs:range ontouml:Class ;
-                    rdfs:comment " Identifies the ontouml:Class that is instantiated by the specific classes of the ontouml:Generalization type composing the ontouml:GeneralizationSet"@en ;
+                    rdfs:comment """Identifies the high-order ontouml:Class that classifies (i.e., is instantiated by) every specific ontouml:Class in the ontouml:GeneralizationSet.
+
+For example, \"Academic Role\" as the categorizer of the generalization set of \"Person\" into \"Student\" and \"Teacher\" representing the specific classes as instances of the categorizer.
+
+A categorizer can only be present in generalization sets involving exclusively classes."""@en ;
                     rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                     rdfs:label "categorizer"@en ;
                     rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> ,
@@ -180,9 +286,8 @@ ontouml:categorizer rdf:type owl:ObjectProperty ;
 ###  https://w3id.org/ontouml/2.0.0#containsModelElement
 ontouml:containsModelElement rdf:type owl:ObjectProperty ;
                              rdfs:domain ontouml:Package ;
-                             rdfs:range ontouml:ModelElement ;
-                             rdfs:comment "Identifies an instance of type ontouml:ModelElement that composes in an ontouml:Package."@en ,
-                                          "It is mapped to the OntoUML Metamodel's 'contents' relation between the Package and ModelElement classes."@en ;
+                             rdfs:range ontouml:PackageableElement ;
+                             rdfs:comment "Identifies an ontouml:PackageableElement that is a content of an ontouml:Package."@en ;
                              rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                              rdfs:label "contains model element"@en .
 
@@ -191,7 +296,7 @@ ontouml:containsModelElement rdf:type owl:ObjectProperty ;
 ontouml:containsView rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Diagram ;
                      rdfs:range ontouml:View ;
-                     rdfs:comment "Identifies an instance of type ontouml:ElementView that is contained in an ontouml:Diagram, representing the concrete diagramation of an ontouml:ModelElement."@en ;
+                     rdfs:comment "Identifies an ontouml:View contained in the ontouml:Diagram."@en ;
                      rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                      rdfs:label "contains view"@en .
 
@@ -206,11 +311,26 @@ ontouml:diagram rdf:type owl:ObjectProperty ;
                 rdfs:label "diagram"@en .
 
 
+###  https://w3id.org/ontouml/2.0.0#element
+ontouml:element rdf:type owl:ObjectProperty ;
+                owl:inverseOf ontouml:project ;
+                rdfs:domain ontouml:Project ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( ontouml:Diagram
+                                           ontouml:PackageableElement
+                                           ontouml:View
+                                         )
+                           ] ;
+                rdfs:comment "Identifies the ontouml:Diagram, ontouml:PackageableElement, or ontouml:View elements that is contained in the ontouml:Project."@en ;
+                rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                rdfs:label "element"@en .
+
+
 ###  https://w3id.org/ontouml/2.0.0#general
 ontouml:general rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Generalization ;
                 rdfs:range ontouml:Classifier ;
-                rdfs:comment "Identifies the parent ontouml:Classifier (e.g., a superclass) that participates in an ontouml:Generalization relation."@en ;
+                rdfs:comment "Identifies the general ontouml:Classifier of an ontouml:Generalization element. E.g., in the generalization of \"Student\" into \"Person\", \"Person\" is the general classifier."@en ;
                 rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                 rdfs:label "general"@en .
 
@@ -219,7 +339,7 @@ ontouml:general rdf:type owl:ObjectProperty ;
 ontouml:generalization rdf:type owl:ObjectProperty ;
                        rdfs:domain ontouml:GeneralizationSet ;
                        rdfs:range ontouml:Generalization ;
-                       rdfs:comment "Identifies an ontouml:Generalization that participates in an ontouml:GeneralizationSet."@en ;
+                       rdfs:comment "Identifies a ontouml:Generalization element that is involved in an ontouml:GeneralizationSet."@en ;
                        rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                        rdfs:label "generalization"@en .
 
@@ -228,16 +348,34 @@ ontouml:generalization rdf:type owl:ObjectProperty ;
 ontouml:isViewOf rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:View ;
                  rdfs:range ontouml:ModelElement ;
-                 rdfs:comment "Relates an ontouml:ElementView to ontouml:ModelElement, indicating the diagrammatical representation of the latter in an ontouml:Diagram."@en ;
+                 rdfs:comment "Identifies the ontouml:ModelElement that the ontouml:View represents in the ontouml:Diagram."@en ;
                  rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                  rdfs:label "is view of"@en .
+
+
+###  https://w3id.org/ontouml/2.0.0#linkedElement
+ontouml:linkedElement rdf:type owl:ObjectProperty ;
+                      rdfs:domain ontouml:Link ;
+                      rdfs:range ontouml:ModelElement ;
+                      rdfs:comment "Identifies the ontouml:ModelElement the ontouml:Link connects."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                      rdfs:label "linked element"@en .
+
+
+###  https://w3id.org/ontouml/2.0.0#linkedNote
+ontouml:linkedNote rdf:type owl:ObjectProperty ;
+                   rdfs:domain ontouml:Link ;
+                   rdfs:range ontouml:Note ;
+                   rdfs:comment "Identifies the ontouml:Note the ontouml:Link connects."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                   rdfs:label "linked note"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#literal
 ontouml:literal rdf:type owl:ObjectProperty ;
                 rdfs:domain ontouml:Class ;
                 rdfs:range ontouml:Literal ;
-                rdfs:comment "Relates an ontouml:Literal to its container enumeration class (an ontouml:Class that has the ontouml:stereotype property with ontouml:enumeration)."@en ;
+                rdfs:comment "Identifies an ontouml:Literal of an ontouml:Class decorated with the ontouml:Stereotype ontouml:enumeration."@en ;
                 rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                 rdfs:label "literal"@en .
 
@@ -255,7 +393,7 @@ ontouml:model rdf:type owl:ObjectProperty ;
 ontouml:owner rdf:type owl:ObjectProperty ;
               rdfs:domain ontouml:Diagram ;
               rdfs:range ontouml:ModelElement ;
-              rdfs:comment "Relates an ontouml:Diagram to an ontouml:ModelElement that is represented on it, i.e., to an ontouml:ModelElement that has an ontouml:ElementView on that ontouml:Diagram."@en ;
+              rdfs:comment "Identifies the ontouml:ModelElement that is the owner of the ontouml:Diagram."@en ;
               rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
               rdfs:label "owner"@en .
 
@@ -281,8 +419,7 @@ ontouml:project rdf:type owl:ObjectProperty ;
 ontouml:property rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Classifier ;
                  rdfs:range ontouml:Property ;
-                 rdfs:comment "Aggregates its subproperties ontouml:attribute and ontouml:relationEnd. Should not be directly used."@en ,
-                              "Identifies an ontouml:Property exhibited by an ontouml:Classifier. If the ontouml:Classifier is of type ontouml:Class, the ontouml:property is specialized in ontouml:attribute. If the ontouml:Classifier is an ontouml:Relation, the property is specialized in ontouml:relationEnd."@en ;
+                 rdfs:comment "Identifies the properties contained in a classifier. These properties are referred to as attributes, when contained by classes, and relation ends, when contained by relations."@en ;
                  rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                  rdfs:label "property"@en .
 
@@ -291,7 +428,7 @@ ontouml:property rdf:type owl:ObjectProperty ;
 ontouml:propertyType rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Property ;
                      rdfs:range ontouml:Classifier ;
-                     rdfs:comment "Identifies an ontouml:Class or ontouml:Relation (i.e., an ontouml:Classifier) to which an ontouml:Property refers."@en ;
+                     rdfs:comment "Identifies the ontouml:Classifier instantiated by the values assigned to the ontouml:Property."@en ;
                      rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                      rdfs:label "property type"@en .
 
@@ -300,9 +437,14 @@ ontouml:propertyType rdf:type owl:ObjectProperty ;
 ontouml:redefinesProperty rdf:type owl:ObjectProperty ;
                           rdfs:domain ontouml:Property ;
                           rdfs:range ontouml:Property ;
-                          rdfs:comment "Identifies a target ontouml:Property that is redefined by a source ontouml:Property."@en ;
+                          rdfs:comment """Identifies the relation end (an ontouml:Property) that provides redefinition constraints to the ontouml:Property.
+
+Examples include, in the relations (i) \"works in\" from \"Project Member\" to \"Project\", and (ii) \"leads\" from \"Project Leader\" to \"Project\", where the member end is redefined for the leader who can only be connected to the project through that specific relation.
+
+Redefinition can only occur on the relation ends when both sides of the involved relations are connected to the same classifiers or classifiers that are in the same generalization chain."""@en ;
                           rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
-                          rdfs:label "redefines property"@en .
+                          rdfs:label "redefines property"@en ;
+                          rdfs:seeAlso <https://doi.org/10.1007/978-3-642-24606-7_15> .
 
 
 ###  https://w3id.org/ontouml/2.0.0#relationEnd
@@ -319,9 +461,20 @@ ontouml:relationEnd rdf:type owl:ObjectProperty ;
 ontouml:restrictedTo rdf:type owl:ObjectProperty ;
                      rdfs:domain ontouml:Class ;
                      rdfs:range ontouml:OntologicalNature ;
-                     rdfs:comment "Associates an ontouml:Class to an ontouml:OntologicalNature, restricting its allowed values."@en ;
+                     rdfs:comment """Identifies a possible ontouml:OntologicalNature for the instances of an ontouml:Class.
+
+Examples include the class "Vehicle" restricted to having "functional-complex" instances, and the class "Insured Item" restricted to "functional-complex" and "relator" (e.g., employment insurance)."""@en ;
                      rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                      rdfs:label "restricted to"@en .
+
+
+###  https://w3id.org/ontouml/2.0.0#root
+ontouml:root rdf:type owl:ObjectProperty ;
+             rdfs:domain ontouml:Project ;
+             rdfs:range ontouml:Package ;
+             rdfs:comment "Identifies the root ontouml:Package of an ontouml:Project (the package containing all other model elements of the project) if present."@en ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+             rdfs:label "root"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#shape
@@ -356,7 +509,7 @@ ontouml:sourceView rdf:type owl:ObjectProperty ;
 ontouml:specific rdf:type owl:ObjectProperty ;
                  rdfs:domain ontouml:Generalization ;
                  rdfs:range ontouml:Classifier ;
-                 rdfs:comment "Identifies the child ontouml:Classifier (e.g., a subclass) that participates in an ontouml:Generalization relation."@en ;
+                 rdfs:comment "Identifies the specific ontouml:Classifier of an ontouml:Generalization element. E.g., in the generalization of \"Student\" into \"Person\", \"Student\" is the specific classifier."@en ;
                  rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                  rdfs:label "specific"@en .
 
@@ -365,7 +518,7 @@ ontouml:specific rdf:type owl:ObjectProperty ;
 ontouml:stereotype rdf:type owl:ObjectProperty ;
                    rdfs:domain ontouml:DecoratableElement ;
                    rdfs:range ontouml:Stereotype ;
-                   rdfs:comment "Identifies the ontouml:Stereotype applied to the ontouml:DecoratableElement."@en ;
+                   rdfs:comment "Identifies the type of an ontouml:DecoratableElement according to Unified Foundational Ontology (UFO)."@en ;
                    rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                    rdfs:label "stereotype"@en .
 
@@ -374,9 +527,16 @@ ontouml:stereotype rdf:type owl:ObjectProperty ;
 ontouml:subsetsProperty rdf:type owl:ObjectProperty ;
                         rdfs:domain ontouml:Property ;
                         rdfs:range ontouml:Property ;
-                        rdfs:comment "Identifies a target ontouml:Property that is subsetted by a source ontouml:Property."@en ;
+                        rdfs:comment """Identifies the relation end (an ontouml:Property) that provides subsetting constraints to the ontouml:Property.
+
+Examples include, in the relations (i) \"works for\" from \"Employee\" to \"Organization\", and (ii) \"teaches for\" from \"Teacher\" to \"University\", both relation ends of (ii) are subsets of their respect ends in (i).
+
+Subsetting can only occur on the relation ends when both sides of the involved relations are connected to the same classifiers or classifiers that are in the same generalization chain.
+
+Subsetting can also be represented through a generalization between relations."""@en ;
                         rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
-                        rdfs:label "subsets property"@en .
+                        rdfs:label "subsets property"@en ;
+                        rdfs:seeAlso <https://doi.org/10.1007/978-3-642-24606-7_15> .
 
 
 ###  https://w3id.org/ontouml/2.0.0#targetEnd
@@ -412,26 +572,75 @@ ontouml:topLeftPosition rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://purl.org/dc/terms/alternative
+dct:alternative rdf:type owl:DatatypeProperty ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Determines a dct:alternative name of the ontouml:NamedElement using a rdf:langString. Alternative names are not translations names, but indeed alternatives or synonyms to the name."@en ;
+                rdfs:isDefinedBy dct: ;
+                rdfs:label "alternative"@en .
+
+
+###  http://purl.org/dc/terms/bibliographicCitation
+dct:bibliographicCitation rdf:type owl:DatatypeProperty ;
+                          rdfs:comment "Determines a bibliographic reference for the ontouml:Project using a xsd:string or an rdf:langString literal. E.g., \"Weigand, H., Johannesson, P., & Andersson, B. (2021). An artifact ontology for design science research. Data & Knowledge Engineering, 133\"@en."@en ;
+                          rdfs:isDefinedBy dct: ;
+                          rdfs:label "bibliographic citation"@en .
+
+
+###  http://purl.org/dc/terms/contributor
+dct:contributor rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/language
+dct:language rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dct:publisher rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:range rdfs:Literal ;
+                                                    rdfs:comment "Determines a general note about the ontouml:NamedElement using an array of language strings. Editorial notes are typically notes on the development process and must not be confused with descriptions."@en ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                                    rdfs:label "editorial note"@en .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+dcat:keyword rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/mod#acronym
+<https://w3id.org/mod#acronym> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain ontouml:SemanticArtefact ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "Determines an acronym one can use to refer to the ontouml:Project using xsd:string literals. E.g., \"RDBS-O\", \"COVER\", \"ROT.\""@en ;
+                               rdfs:isDefinedBy <https://w3id.org/mod> ;
+                               rdfs:label "acronym"@en .
+
+
 ###  https://w3id.org/ontouml/2.0.0#cardinalityValue
 ontouml:cardinalityValue rdf:type owl:DatatypeProperty ;
                          rdfs:domain ontouml:Cardinality ;
                          rdfs:range xsd:string ;
-                         rdfs:comment "Provides the complete (i.e., both lower and upper cardinality's bounds) cardinalities of an ontouml:Property via its related ontouml:Cardinality."@en ;
+                         rdfs:comment """Determines the value of an ontouml:Cardinality using a string. 
+
+Examples include \"Person\" with cardinality \"1\" (exactly one) in the property (attribute) \"name\", and cardinality \"0..*\" (zero or more) in the property (related end) \"friends\" of the relation \"friends with\".
+
+The cardinality should follow the regular express \"^\\d+(\\.\\.(\\d+|\\*))?$\", where the number before \"..\" represents the lower bound, the number or \"*\" after represent the upper bound. In case the \"..\" is not present, a number represents an exact number of instances, and \"*\" represents \"zero or more\" instances.
+
+This regular expression is not enforced to accommodate theoretical ranges as expression, such as, \"a..b\"."""@en ;
                          rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                          rdfs:label "cardinality value"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#description
-ontouml:description rdf:type owl:DatatypeProperty ;
-                    rdfs:domain ontouml:OntoumlElement ;
-                    rdfs:range [ rdf:type rdfs:Datatype ;
-                                 owl:unionOf ( <http://org.semanticweb.owlapi/error#Error4>
-                                               xsd:string
-                                             )
-                               ] ;
-                    rdfs:comment "Relates an ontouml:OntoumlElement to a string representing its description in free textual format."@en ;
-                    rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
-                    rdfs:label "description"@en .
+ontouml:description rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/ontouml/2.0.0#height
@@ -447,7 +656,7 @@ ontouml:height rdf:type owl:DatatypeProperty ;
 ontouml:isAbstract rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Classifier ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Indicates if the ontouml:Classifier can have direct instances. If set to true, the classifier must be specialized before being instantiated. Otherwise, it can have direct instances."@en ;
+                   rdfs:comment "Determines whether the ontouml:Classifier can have direct instances using a xsd:boolean. Abstract classifiers can only have instances when these are also instances of some other classifier that is not abstract (i.e., concrete) and is a specialization of the abstract one."@en ;
                    rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                    rdfs:label "is abstract"@en .
 
@@ -456,7 +665,9 @@ ontouml:isAbstract rdf:type owl:DatatypeProperty ;
 ontouml:isComplete rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Indicates if an ontouml:GeneralizationSet is complete, i.e., if it does not admit further generalizations."@en ;
+                   rdfs:comment """Determines whether the specific ontouml:Classifier elements in the ontouml:GeneralizationSet completely cover the extension of the general ontouml:Classifier.
+
+Examples include the generalization set involving \"Child\" and \"Adult\" generalized into \"Person\", where the \"is complete\" as \"true\" indicates that every person is either an instance of \"Child\" or \"Adult.\""""@en ;
                    rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                    rdfs:label "is complete"@en .
 
@@ -465,16 +676,22 @@ ontouml:isComplete rdf:type owl:DatatypeProperty ;
 ontouml:isDerived rdf:type owl:DatatypeProperty ;
                   rdfs:domain ontouml:DecoratableElement ;
                   rdfs:range xsd:boolean ;
-                  rdfs:comment "Indicates if an ontouml:DecoratableElement can be defined through a derivation rule."@en ;
+                  rdfs:comment """Determines whether the ontouml:DecoratableElement is derived from a different ontouml:ModelElement, i.e., whether a different ontouml:ModelElement serves as its truthmaker.
+
+Examples include the comparative relation \"is heavier than\" between two physical objects which is derived from their \"Weight\" quality."""@en ;
                   rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
-                  rdfs:label "is derived"@en .
+                  rdfs:label "is derived"@en ;
+                  rdfs:seeAlso <https://doi.org/10.1007/978-3-030-00847-5_13> ,
+                               <https://doi.org/10.1007/978-3-030-33223-5_4> .
 
 
 ###  https://w3id.org/ontouml/2.0.0#isDisjoint
 ontouml:isDisjoint rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:GeneralizationSet ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Indicates if an ontouml:GeneralizationSet is disjoint, i.e., it does not admit generalizations having overlapping subclasses."@en ;
+                   rdfs:comment """Determines whether the specific ontouml:Classifier elements in the ontouml:GeneralizationSet have disjoint extensions.
+
+Examples include the generalization set involving \"Child\" and \"Adult\" generalized into \"Person\", where the \"is disjoint\" as \"true\" indicates that no person is simultaneously instance of \"Child\" and \"Adult.\""""@en ;
                    rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                    rdfs:label "is disjoint"@en .
 
@@ -492,7 +709,7 @@ ontouml:isExtensional rdf:type owl:DatatypeProperty ;
 ontouml:isOrdered rdf:type owl:DatatypeProperty ;
                   rdfs:domain ontouml:Property ;
                   rdfs:range xsd:boolean ;
-                  rdfs:comment "Indicates if an ontouml:Property is ordered or not, i.e., if it requires an exact order of its values or not."@en ;
+                  rdfs:comment "Determines whether the order of assignments of a property carries meaning using a xsd:boolean. This boolean only regards properties whose maximum cardinality greater than one."@en ;
                   rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                   rdfs:label "is ordered"@en .
 
@@ -501,8 +718,7 @@ ontouml:isOrdered rdf:type owl:DatatypeProperty ;
 ontouml:isPowertype rdf:type owl:DatatypeProperty ;
                     rdfs:domain ontouml:Class ;
                     rdfs:range xsd:boolean ;
-                    rdfs:comment "Indicates if an ontouml:Class is a powertype in multi-level modeling."@en ,
-                                 "The ontouml:Class data property ontouml:isPowertype must not be true when it has an ontouml:order equal to one."@en ;
+                    rdfs:comment "Determines whether the high-order ontouml:Class is a \"Cardelli powertype\" using a xsd:boolean. In other words, determines whether the high-order class is defined as the one whose instances are its base type plus all possible specializations of it."@en ;
                     rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                     rdfs:label "is powertype"@en ;
                     rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> .
@@ -512,7 +728,7 @@ ontouml:isPowertype rdf:type owl:DatatypeProperty ;
 ontouml:isReadOnly rdf:type owl:DatatypeProperty ;
                    rdfs:domain ontouml:Property ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Indicates if an ontouml:Property can or cannot be updated or modified."@en ;
+                   rdfs:comment "Determines whether the assignments of an ontouml:Property are immutable using a xsd:boolean."@en ;
                    rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                    rdfs:label "is read only"@en .
 
@@ -529,25 +745,23 @@ ontouml:lowerBound rdf:type owl:DatatypeProperty ;
 
 
 ###  https://w3id.org/ontouml/2.0.0#name
-ontouml:name rdf:type owl:DatatypeProperty ;
-             rdfs:domain ontouml:OntoumlElement ;
-             rdfs:range [ rdf:type rdfs:Datatype ;
-                          owl:unionOf ( <http://org.semanticweb.owlapi/error#Error3>
-                                        xsd:string
-                                      )
-                        ] ;
-             rdfs:comment "A string that identifies or names an ontouml:OntoumlElement."@en ;
-             rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
-             rdfs:label "name"@en .
+ontouml:name rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/ontouml/2.0.0#namespace
+ontouml:namespace rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ontouml:Project ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:comment "Determines the namespace (or \"base prefix\") for every ontouml:OntoumlElement in the ontouml:Project using a xsd:anyURI string. When present, the namespace should be the URI prefix of all elements in the project forming a globally unique resolvable URI for identification in the web as a FAIR Digital Object."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                  rdfs:label "namespace"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#order
 ontouml:order rdf:type owl:DatatypeProperty ;
               rdfs:domain ontouml:Class ;
-              rdfs:range xsd:nonNegativeInteger ;
-              rdfs:comment "Constraint: an ontouml:Class that has an ontouml:stereotype property with an ontouml:Stereotype different than ontouml:type must have an ontouml:order value equal to 1."@en ,
-                           "Constraint: an ontouml:Class that has an ontouml:stereotype property with an ontouml:Stereotype ontouml:type must have an ontouml:order value grater than 1."@en ,
-                           "Indicates the order of an ontouml:Class, enabling multi-level modeling."@en ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Determines the instantiation order of an ontouml:Class using a string. Examples include ordered classes such as first-order classes (order \"1\"), second-order classes (order \"2\"), and third-order classes (order \"3\"), and orderless classes (order \"*\")."@en ;
               rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
               rdfs:label "order"@en ;
               rdfs:seeAlso <https://doi.org/10.1007/978-3-031-17995-2_2> .
@@ -556,8 +770,8 @@ ontouml:order rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/ontouml/2.0.0#text
 ontouml:text rdf:type owl:DatatypeProperty ;
              rdfs:domain ontouml:Note ;
-             rdfs:range xsd:string ;
-             rdfs:comment "A string that register any information of an ontouml:Note"@en ;
+             rdfs:range rdfs:Literal ;
+             rdfs:comment "Determines the contents of an ontouml:Note using a xsd:string or an rdf:langString literal."@en ;
              rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
              rdfs:label "text"@en .
 
@@ -644,12 +858,13 @@ ontouml:BinaryRelation rdf:type owl:Class ;
                        rdfs:subClassOf ontouml:Relation ;
                        rdfs:comment """An ontouml:Relation that defines the properties of a set of binary relations of the subject domain.
 
-Examples include "studies in", and derivation relations (e.g., between material relations and relators).
+Examples include \"studies in\", and derivation relations (e.g., between material relations and relators).
 
-A binary relation may either connect two classes, or a relation (as source) and a class (as class) in the case of ontouml:derivation relations connecting descriptive relations to the classes that serve as their truthmakers (as in the relation between the material relation "studies in" and the "Enrollment" relator)."""@en ;
+A binary relation may either connect two classes, or a relation (as source) and a class (as class) in the case of ontouml:derivation relations connecting descriptive relations to the classes that serve as their truthmakers (as in the relation between the material relation \"studies in\" and the \"Enrollment\" relator)."""@en ;
                        rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                        rdfs:label "Binary Relation"@en ;
-                       rdfs:seeAlso ontouml:derivation, <https://doi.org/10.1007/978-3-030-33223-5_4> .
+                       rdfs:seeAlso <https://doi.org/10.1007/978-3-030-33223-5_4> ,
+                                    ontouml:derivation .
 
 
 ###  https://w3id.org/ontouml/2.0.0#BinaryRelationView
@@ -734,7 +949,8 @@ ontouml:ClassView rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml/2.0.0#Classifier
 ontouml:Classifier rdf:type owl:Class ;
-                   rdfs:subClassOf ontouml:DecoratableElement ;
+                   rdfs:subClassOf ontouml:DecoratableElement ,
+                                   ontouml:PackageableElement ;
                    owl:disjointUnionOf ( ontouml:Class
                                          ontouml:Relation
                                        ) ;
@@ -776,7 +992,8 @@ ontouml:Diamond rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml/2.0.0#Generalization
 ontouml:Generalization rdf:type owl:Class ;
-                       rdfs:subClassOf ontouml:ModelElement ;
+                       rdfs:subClassOf ontouml:ModelElement ,
+                                       ontouml:PackageableElement ;
                        rdfs:comment """An ontouml:ModelElement that represents the generalization of a specific classifier into a general classifier. When read in the inverse direction, an ontouml:Generalization is referred to as a specialization.
 
 Examples include the generalization of a specific class \"Student\" into a general class \"Person,\" and the generalization of a specific relation \"close friends with\" into a general relation \"friends with\".
@@ -788,7 +1005,8 @@ A generalization can only connect two classifiers of the same type, i.e., it can
 
 ###  https://w3id.org/ontouml/2.0.0#GeneralizationSet
 ontouml:GeneralizationSet rdf:type owl:Class ;
-                          rdfs:subClassOf ontouml:ModelElement ;
+                          rdfs:subClassOf ontouml:ModelElement ,
+                                          ontouml:PackageableElement ;
                           rdfs:comment """An ontouml:ModelElement that represents a group of connected ontouml:Generalization elements. An ontouml:GeneralizationSet can define disjoint and/or complete constraints over the generalizations it groups.
 
 Examples include the incomplete (i.e., non-complete) and overlapping (i.e., non-disjoint) generalization set of \"Person\" into \"Student\" and \"Teacher\", and the disjoint and complete generalization set of \"Person\" into \"Child\" and \"Adult\".
@@ -817,7 +1035,8 @@ ontouml:GeneralizationView rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml/2.0.0#Link
 ontouml:Link rdf:type owl:Class ;
-             rdfs:subClassOf ontouml:ModelElement ;
+             rdfs:subClassOf ontouml:ModelElement ,
+                             ontouml:PackageableElement ;
              rdfs:comment "An ontouml:ModelElement that connects an ontouml:Note to the ontouml:ModelElement it concerns."@en ;
              rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
              rdfs:label "Link"@en .
@@ -872,7 +1091,7 @@ ontouml:NaryRelation rdf:type owl:Class ;
                      rdfs:subClassOf ontouml:Relation ;
                      rdfs:comment """An ontouml:Relation that defines the properties of a set of relations of the subject domain that connect more than two members.
 
-Examples include "studies in", "buys product from" (ternary relation), and derivation relations (e.g., between material relations and relators)."""@en ;
+Examples include \"studies in\", \"buys product from\" (ternary relation), and derivation relations (e.g., between material relations and relators)."""@en ;
                      rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                      rdfs:label "N-ary Relation"@en .
 
@@ -887,7 +1106,8 @@ ontouml:NaryRelationView rdf:type owl:Class ;
 
 ###  https://w3id.org/ontouml/2.0.0#Note
 ontouml:Note rdf:type owl:Class ;
-             rdfs:subClassOf ontouml:ModelElement ;
+             rdfs:subClassOf ontouml:ModelElement ,
+                             ontouml:PackageableElement ;
              rdfs:comment "An ontouml:ModelElement that contains an annotation about the ontology or some of its elements. A note can also be used to represent a constraint in both natural or structured language (i.e., first-order logic, or OCL)."@en ;
              rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
              rdfs:label "Note"@en .
@@ -947,6 +1167,14 @@ ontouml:PackageView rdf:type owl:Class ;
                     rdfs:comment "An ontouml:View element that represents the single occurrence of an ontouml:Package in an ontouml:Diagram."@en ;
                     rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                     rdfs:label "Package View"@en .
+
+
+###  https://w3id.org/ontouml/2.0.0#PackageableElement
+ontouml:PackageableElement rdf:type owl:Class ;
+                           rdfs:subClassOf ontouml:ModelElement ;
+                           rdfs:comment "An ontouml:ModelElement that can be grouped into an ontouml:Package."@en ;
+                           rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                           rdfs:label "Packageable Element"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#Path
@@ -1021,9 +1249,9 @@ ontouml:Rectangle rdf:type owl:Class ;
 ###  https://w3id.org/ontouml/2.0.0#RectangularShape
 ontouml:RectangularShape rdf:type owl:Class ;
                          rdfs:subClassOf ontouml:Shape ;
-                         owl:disjointUnionOf ( ontouml:Rectangle
+                         owl:disjointUnionOf ( ontouml:Diamond
+                                               ontouml:Rectangle
                                                ontouml:Text
-                                               ontouml:Diamond
                                              ) ;
                          rdfs:comment "An ontouml:Shape defined by an ontouml:topLeftPosition, an ontouml:height, and an ontouml:width."@en ;
                          rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
@@ -1047,7 +1275,7 @@ ontouml:Relation rdf:type owl:Class ;
                                  ] ;
                  rdfs:comment """An ontouml:Classifier that defines the properties of a set of relations of the subject domain.
 
-Examples include "studies in", "buys product from" (ternary relation), and derivation relations (e.g., between material relations and relators)."""@en ;
+Examples include \"studies in\", \"buys product from\" (ternary relation), and derivation relations (e.g., between material relations and relators)."""@en ;
                  rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                  rdfs:label "Relation"@en .
 
@@ -1081,6 +1309,14 @@ ontouml:RelationStereotype rdf:type owl:Class ;
                                         "This class is an enumeration of its individuals, which are: ontouml:bringsAbout, ontouml:characterization, ontouml:comparative, ontouml:componentOf, ontouml:creation, ontouml:derivation, ontouml:externalDependence, ontouml:historicalDependence, ontouml:instantiation, ontouml:manifestation, ontouml:material, ontouml:mediation, ontouml:memberOf, ontouml:participation, ontouml:participational, ontouml:subCollectionOf, ontouml:subQuantityOf, ontouml:termination, and ontouml:triggers."@en ;
                            rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                            rdfs:label "Relation Stereotype"@en .
+
+
+###  https://w3id.org/ontouml/2.0.0#SemanticArtefact
+ontouml:SemanticArtefact rdf:type owl:Class .
+
+
+###  https://w3id.org/ontouml/2.0.0#SemanticArtefactTask
+ontouml:SemanticArtefactTask rdf:type owl:Class .
 
 
 ###  https://w3id.org/ontouml/2.0.0#Shape
@@ -1130,9 +1366,23 @@ A view element is responsible for what portions of a model element are present i
 #    Individuals
 #################################################################
 
+###  https://creativecommons.org/licenses/by-sa/4.0
+<https://creativecommons.org/licenses/by-sa/4.0> rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/ontouml
 <https://w3id.org/ontouml> rdf:type owl:NamedIndividual ,
                                     dct:Standard .
+
+
+###  https://w3id.org/ontouml/vocabulary
+<https://w3id.org/ontouml/vocabulary> rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/ontouml/2.0.0
+<https://w3id.org/ontouml/2.0.0> rdf:type owl:NamedIndividual ;
+                                 dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
+                                 dcat:landingPage <https://w3id.org/ontouml/vocabulary> .
 
 
 ###  https://w3id.org/ontouml/2.0.0#abstract
@@ -1643,6 +1893,41 @@ ontouml:typeNature rdf:type owl:NamedIndividual ,
 #    Annotations
 #################################################################
 
+dct:contributor rdfs:isDefinedBy dct: ;
+                rdfs:label "contributor"@en ;
+                rdfs:comment "Identifies a foaf:Agent who contributed to the development of the ontouml:NamedElement."@en .
+
+
+dct:creator rdfs:isDefinedBy dct: ;
+            rdfs:comment "Identifies a foaf:Agent who contributed to the creation of the ontouml:NamedElement."@en ;
+            rdfs:label "creator"@en .
+
+
+dct:language rdfs:label "language"@en ;
+             rdfs:comment "Determines a language in which the lexical labels of the ontouml:Project are written using strings. This field should use values listed in the IANA Language Sub Tag Registry, such as, \"en\" and \"pt\"."@en ;
+             rdfs:isDefinedBy dct: .
+
+
+dct:license rdfs:label "license"@en ;
+            rdfs:isDefinedBy dct: ;
+            rdfs:comment "Identifies a legal document under which the ontouml:Project is made available, e.g., \"CC BY 4.0\" <https://creativecommons.org/licenses/by/4.0/>."@en .
+
+
+dct:publisher rdfs:label "publisher"@en ;
+              rdfs:comment "Identifies the foaf:Agent responsible for making the ontouml:Project available. The publisher does not need to have created or contributed to the resource."@en ;
+              rdfs:isDefinedBy dct: .
+
+
+dcat:keyword rdfs:label "keyword"@en ;
+             rdfs:comment "Determines the domains (partially) described by the ontouml:Project using a xsd:string or a rdf:langString literal. E.g., the User Feedback Ontology can be described with the keywords \"online user feedback\", \"software engineering\", and \"requirements engineering.\""@en ;
+             rdfs:isDefinedBy <http://www.w3.org/ns/dcat> .
+
+
+dcat:landingPage rdfs:comment "Identifies a web page where one can access the ontouml:Project. E.g., <https://www.model-a-platform.com> is the landing page of the Digital Platform Ontology."@en ;
+                 rdfs:isDefinedBy <http://www.w3.org/ns/dcat> ;
+                 rdfs:label "landing page"@en .
+
+
 <https://orcid.org/0000-0002-5385-5761> foaf:name "Tiago Prince Sales" ;
                                         foaf:mbox "t.princesales@utwente.nl" .
 
@@ -1657,6 +1942,16 @@ ontouml:typeNature rdf:type owl:NamedIndividual ,
 
 <https://orcid.org/0000-0003-3385-4769> foaf:mbox "mattia.fumagalli@unibz.it" ;
                                         foaf:name "Mattia Fumagalli" .
+
+
+ontouml:description rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+                    rdfs:label "description"@en ;
+                    rdfs:comment "Determines a free-text account of the ontouml:NamedElement using a rdf:langString."@en .
+
+
+ontouml:name rdfs:label "name"@en ;
+             rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
+             rdfs:comment "Determines the ontouml:name of the ontouml:NamedElement using a rdf:langString."@en .
 
 
 #################################################################
