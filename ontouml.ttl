@@ -1,16 +1,17 @@
 @prefix : <https://w3id.org/ontouml/2.0.0#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ontouml: <https://w3id.org/ontouml/2.0.0#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ocmv: <https://w3id.org/ontouml-models/vocabulary#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ontouml: <https://w3id.org/ontouml/2.0.0#> .
 @base <https://w3id.org/ontouml/2.0.0> .
 
 <https://w3id.org/ontouml/2.0.0> rdf:type owl:Ontology ;
@@ -26,6 +27,7 @@
                                                      <https://doi.org/10.1007/978-3-031-17995-2_1> ;
                                   dct:issued "2022-04-03"^^xsd:date ;
                                   dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                  dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
                                   dct:modified "2023-08-14"^^xsd:date ;
                                   dct:publisher <https://www.utwente.nl/en/eemcs/scs/> ;
                                   dct:title "OntoUML Vocabulary"@en ;
@@ -36,6 +38,7 @@
                                   dcat:keyword "OntoUML"@en ,
                                                "OntoUML Metamodel"@en ,
                                                "Ontology-Driven Conceptual Modeling"@en ;
+                                  dcat:landingPage <https://w3id.org/ontouml/vocabulary> ;
                                   foaf:homepage <https://w3id.org/ontouml/vocabulary/docs> .
 
 #################################################################
@@ -173,10 +176,10 @@ dcat:theme rdf:type owl:ObjectProperty ;
 
 
 ###  https://w3id.org/mod#designedForTask
-<https://w3id.org/mod#designedForTask> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain ontouml:SemanticArtefact ;
-                                       rdfs:range ontouml:SemanticArtefactTask ;
-                                       rdfs:comment """Identifies goals that motivated the development of the project. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a list recurrent modeling goals for reuse:
+mod:designedForTask rdf:type owl:ObjectProperty ;
+                    rdfs:domain ontouml:SemanticArtefact ;
+                    rdfs:range ontouml:SemanticArtefactTask ;
+                    rdfs:comment """Identifies goals that motivated the development of the project. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a list recurrent modeling goals for reuse:
 
 - ocmv:ConceptualClarification: The project was created as the result of an ontological analysis of a concept, language, or domain of interest that sought to conceptually clarify and untangle complex notions and relations.
 
@@ -195,45 +198,45 @@ dcat:theme rdf:type owl:ObjectProperty ;
 - ocmv:Learning: The project was created so that its authors could learn UFO and OntoUML. This usually applies to models developed by students as part of their course assignments.
 
 - ocmv:SoftwareEngineering: The project was created during the development of an information system. For instance, a conceptual model used to generate a relational database."""@en ;
-                                       rdfs:isDefinedBy <https://w3id.org/mod> ;
-                                       rdfs:label "designed for task"@en .
+                    rdfs:isDefinedBy <https://w3id.org/mod> ;
+                    rdfs:label "designed for task"@en .
 
 
 ###  https://w3id.org/ontouml-models/vocabulary#context
-<https://w3id.org/ontouml-models/vocabulary#context> rdf:type owl:ObjectProperty ;
-                                                     rdfs:comment """Identifies a context in which the ontouml:Project was developed. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a set of recurrent modelling contexts:
+ocmv:context rdf:type owl:ObjectProperty ;
+             rdfs:comment """Identifies a context in which the ontouml:Project was developed. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a set of recurrent modelling contexts:
           
 - ocmv:Research: The project was developed as part of a research project. This usually implies that the project was featured in a scientific publication.
 
 - ocmv:Industry: The project was developed for a public or private organization.
 
 - ocmv:Classroom: The project was developed within the context of a course on conceptual modelling, most likely as a course assignment."""@en ;
-                                                     rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
-                                                     rdfs:label "context"@en .
+             rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
+             rdfs:label "context"@en .
 
 
 ###  https://w3id.org/ontouml-models/vocabulary#ontologyType
-<https://w3id.org/ontouml-models/vocabulary#ontologyType> rdf:type owl:ObjectProperty ;
-                                                          rdfs:comment """Identifies the classifications of the ontouml:Project according to its scope. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a set of recurrent modelling scopes based on the work of Roussey et al. (2011):
+ocmv:ontologyType rdf:type owl:ObjectProperty ;
+                  rdfs:comment """Identifies the classifications of the ontouml:Project according to its scope. The OntoUML/UFO Catalog Metadata Vocabulary (OCMV) provides a set of recurrent modelling scopes based on the work of Roussey et al. (2011):
           
 - ocmv:Core: An ontology that grasps the central concepts and relations of a given domain, possibly integrating several domain ontologies and being applicable in multiple scenarios. E.g., UFO-S, a commitment-based ontology of services, can be considered a core ontology because it applies to services in multiple domains, such as medical, financial, and legal services.
 
 - ocmv:Domain: An ontology that describes how a community conceptualizes a phenomenon of interest. In general, a domain ontology formally characterizes a much narrower domain than a core ontology does. E.g., OntoBio is a domain ontology of biodiversity.
 
 - ocmv:Application: An ontology that specializes a domain ontology where there could be no consensus or knowledge sharing. It represents the particular model of a domain according to a single viewpoint of a user or a developer."""@en ;
-                                                          rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
-                                                          rdfs:label "ontology type"@en .
+                  rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
+                  rdfs:label "ontology type"@en .
 
 
 ###  https://w3id.org/ontouml-models/vocabulary#representationStyle
-<https://w3id.org/ontouml-models/vocabulary#representationStyle> rdf:type owl:ObjectProperty ;
-                                                                 rdfs:comment """Identifies the representation style adopted in the ontouml:Project between \"OntoUML Style\" and \"UFO Style\":
+ocmv:representationStyle rdf:type owl:ObjectProperty ;
+                         rdfs:comment """Identifies the representation style adopted in the ontouml:Project between \"OntoUML Style\" and \"UFO Style\":
           
 - ocmv:OntoumlStyle: Characterizes a project that contains at least one class, relation, or property using a valid OntoUML stereotype.
 
 - ocmv:UfoStyle: Characterizes a project that contains at least one class or relation from UFO without an OntoUML stereotype."""@en ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
-                                                                 rdfs:label "representation style"@en .
+                         rdfs:isDefinedBy <https://w3id.org/ontouml-models/vocabulary> ;
+                         rdfs:label "representation style"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#aggregationKind
@@ -463,7 +466,7 @@ ontouml:restrictedTo rdf:type owl:ObjectProperty ;
                      rdfs:range ontouml:OntologicalNature ;
                      rdfs:comment """Identifies a possible ontouml:OntologicalNature for the instances of an ontouml:Class.
 
-Examples include the class "Vehicle" restricted to having "functional-complex" instances, and the class "Insured Item" restricted to "functional-complex" and "relator" (e.g., employment insurance)."""@en ;
+Examples include the class \"Vehicle\" restricted to having \"functional-complex\" instances, and the class \"Insured Item\" restricted to \"functional-complex\" and \"relator\" (e.g., employment insurance)."""@en ;
                      rdfs:isDefinedBy <https://w3id.org/ontouml/2.0.0> ;
                      rdfs:label "restricted to"@en .
 
@@ -604,11 +607,11 @@ dct:publisher rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
-<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:range rdfs:Literal ;
-                                                    rdfs:comment "Determines a general note about the ontouml:NamedElement using an array of language strings. Editorial notes are typically notes on the development process and must not be confused with descriptions."@en ;
-                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
-                                                    rdfs:label "editorial note"@en .
+skos:editorialNote rdf:type owl:DatatypeProperty ;
+                   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Determines a general note about the ontouml:NamedElement using an array of language strings. Editorial notes are typically notes on the development process and must not be confused with descriptions."@en ;
+                   rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                   rdfs:label "editorial note"@en .
 
 
 ###  http://www.w3.org/ns/dcat#keyword
@@ -616,12 +619,12 @@ dcat:keyword rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/mod#acronym
-<https://w3id.org/mod#acronym> rdf:type owl:DatatypeProperty ;
-                               rdfs:domain ontouml:SemanticArtefact ;
-                               rdfs:range xsd:string ;
-                               rdfs:comment "Determines an acronym one can use to refer to the ontouml:Project using xsd:string literals. E.g., \"RDBS-O\", \"COVER\", \"ROT.\""@en ;
-                               rdfs:isDefinedBy <https://w3id.org/mod> ;
-                               rdfs:label "acronym"@en .
+mod:acronym rdf:type owl:DatatypeProperty ;
+            rdfs:domain ontouml:SemanticArtefact ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Determines an acronym one can use to refer to the ontouml:Project using xsd:string literals. E.g., \"RDBS-O\", \"COVER\", \"ROT.\""@en ;
+            rdfs:isDefinedBy <https://w3id.org/mod> ;
+            rdfs:label "acronym"@en .
 
 
 ###  https://w3id.org/ontouml/2.0.0#cardinalityValue
@@ -1380,9 +1383,7 @@ A view element is responsible for what portions of a model element are present i
 
 
 ###  https://w3id.org/ontouml/2.0.0
-<https://w3id.org/ontouml/2.0.0> rdf:type owl:NamedIndividual ;
-                                 dct:license <https://creativecommons.org/licenses/by-sa/4.0> ;
-                                 dcat:landingPage <https://w3id.org/ontouml/vocabulary> .
+<https://w3id.org/ontouml/2.0.0> rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/ontouml/2.0.0#abstract
