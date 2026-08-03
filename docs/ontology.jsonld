@@ -531,7 +531,7 @@
   "@id" : "https://w3id.org/ontouml",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/conformsTo" : [ {
-    "@id" : "https://w3id.org/ontouml/metamodel/v1.1.0"
+    "@id" : "https://w3id.org/ontouml/metamodel/v1.1.1"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "https://orcid.org/0000-0003-3385-4769"
@@ -568,7 +568,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2023-07-27"
+    "@value" : "2026-08-03"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://www.utwente.nl/en/eemcs/scs/"
@@ -588,14 +588,14 @@
     "@id" : "http://purl.org/dc/terms/Standard"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://w3id.org/ontouml/vocabulary/v1.0.0"
+    "@id" : "https://w3id.org/ontouml/vocabulary/v1.1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/ontouml/vocabulary/v1.1.0"
+    "@id" : "https://w3id.org/ontouml/vocabulary/v1.1.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
-    "@value" : "General review for compliance with the OntoUML Metamodel 1.1.0."
+    "@value" : "Changes ontouml:height and ontouml:width ranges from xsd:positiveInteger to xsd:nonNegativeInteger, permitting zero-valued dimensions observed in OntoUML model data. Positive integer values remain valid, while negative and non-integer values remain invalid."
   } ],
   "http://www.w3.org/ns/dcat#keyword" : [ {
     "@language" : "en",
@@ -2020,7 +2020,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram."
+    "@value" : "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontouml#RectangularShape"
@@ -2033,7 +2033,7 @@
     "@value" : "height"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#historicalDependence",
@@ -3421,7 +3421,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram."
+    "@value" : "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontouml#RectangularShape"
@@ -3434,7 +3434,7 @@
     "@value" : "width"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
   } ]
 }, {
   "@id" : "https://w3id.org/ontouml#xCoordinate",

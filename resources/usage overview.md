@@ -175,6 +175,8 @@ Other containsView properties omitted for brevity.
 ```
 ### Shapes
 
+The `ontouml:height` and `ontouml:width` properties use non-negative integers, so zero-valued dimensions are permitted while negative and fractional values remain invalid.
+
 #### Path
 
 ```ttl
@@ -194,19 +196,19 @@ Other containsView properties omitted for brevity.
 ```ttl
 :ppw_shape a ontouml:Rectangle ;
     ontouml:topLeftPosition :ppw_shape_point ;
-    ontouml:height "40"^^xsd:positiveInteger ;
-    ontouml:width "80"^^xsd:positiveInteger ;
+    ontouml:height "40"^^xsd:nonNegativeInteger ;
+    ontouml:width "80"^^xsd:nonNegativeInteger ;
     ontouml:project :XCY .
 ```
 #### Text
 
 ```ttl
 :gtP_shape a ontouml:Text ;
-    ontouml:height "45"^^xsd:positiveInteger ;
+    ontouml:height "45"^^xsd:nonNegativeInteger ;
     ontouml:project :XCY ;
     ontouml:text "" ;
     ontouml:topLeftPosition :gtP_shape_point ;
-    ontouml:width "65"^^xsd:positiveInteger .
+    ontouml:width "65"^^xsd:nonNegativeInteger .
 ```
 
 ## Manipulating the Serialized Models with SPARQL

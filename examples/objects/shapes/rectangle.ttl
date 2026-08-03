@@ -4,8 +4,8 @@
 
 :ppw_shape a ontouml:Rectangle ;
     ontouml:topLeftPosition :ppw_shape_point ;
-    ontouml:height "40"^^xsd:positiveInteger ;
-    ontouml:width "80"^^xsd:positiveInteger ;
+    ontouml:height "40"^^xsd:nonNegativeInteger ;
+    ontouml:width "80"^^xsd:nonNegativeInteger ;
     ontouml:project :XCY .
 
 :ppw_shape_point a ontouml:Point .

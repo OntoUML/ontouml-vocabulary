@@ -1,6 +1,6 @@
 <https://w3id.org/ontouml> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ontouml/vocabulary/v1.1.0> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/conformsTo> <https://w3id.org/ontouml/metamodel/v1.1.0> .
+<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/ontouml/vocabulary/v1.1.1> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/conformsTo> <https://w3id.org/ontouml/metamodel/v1.1.1> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-3385-4769> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-5385-5761> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0003-2528-3118> .
@@ -12,13 +12,13 @@
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/issued> "2022-04-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0> .
-<https://w3id.org/ontouml> <http://purl.org/dc/terms/modified> "2023-07-27"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/ontouml> <http://purl.org/dc/terms/modified> "2026-08-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/publisher> <https://www.utwente.nl/en/eemcs/scs/> .
 <https://w3id.org/ontouml> <http://purl.org/dc/terms/title> "OntoUML Vocabulary"@en .
 <https://w3id.org/ontouml> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ontouml" .
 <https://w3id.org/ontouml> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontouml#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/ontouml/vocabulary/v1.0.0> .
-<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionInfo> "General review for compliance with the OntoUML Metamodel 1.1.0."@en .
+<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/ontouml/vocabulary/v1.1.0> .
+<https://w3id.org/ontouml> <http://www.w3.org/2002/07/owl#versionInfo> "Changes ontouml:height and ontouml:width ranges from xsd:positiveInteger to xsd:nonNegativeInteger, permitting zero-valued dimensions observed in OntoUML model data. Positive integer values remain valid, while negative and non-integer values remain invalid."@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "OntoUML"@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "OntoUML-Metamodel"@en .
 <https://w3id.org/ontouml> <http://www.w3.org/ns/dcat#keyword> "Ontology-Driven Conceptual Modeling"@en .
@@ -413,8 +413,8 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/ontouml#height
 <https://w3id.org/ontouml#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#RectangularShape> .
-<https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
+<https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted."@en .
 <https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
 # 
@@ -542,8 +542,8 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/ontouml#width
 <https://w3id.org/ontouml#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ontouml#RectangularShape> .
-<https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
-<https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
+<https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted."@en .
 <https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/ontouml> .
 <https://w3id.org/ontouml#width> <http://www.w3.org/2000/01/rdf-schema#label> "width"@en .
 # 

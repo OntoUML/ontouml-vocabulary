@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="resources/owl.css" media="screen">
     <title>OntoUML Vocabulary</title>
     <!-- SCHEMA.ORG METADATA -->
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontouml#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontouml#","name":"OntoUML Vocabulary", "headline":"An OWL vocabulary to allow the serialization and exchanging of OntoUML models in conformance with the Ontouml Metamodel.", "datePublished":"2023-07-27", "version":"General review for compliance with the OntoUML Metamodel 1.1.0.", "license":"https://creativecommons.org/licenses/by-sa/4.0", "author":[{"@type":"Person","name":"Tiago Prince Sales","url":"https://orcid.org/0000-0002-5385-5761"},{"@type":"Person","name":"Claudenir M. Fonseca","url":"https://orcid.org/0000-0003-2528-3118"},{"@type":"Person","name":"Pedro Paulo Favato Barcelos","url":"https://orcid.org/0000-0003-2736-7817"}], "contributor":[{"@type":"Person","name":"Mattia Fumagalli","url":"https://orcid.org/0000-0003-3385-4769"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/ontouml#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/ontouml#","name":"OntoUML Vocabulary", "headline":"An OWL vocabulary to allow the serialization and exchanging of OntoUML models in conformance with the Ontouml Metamodel.", "datePublished":"2026-08-03", "version":"Changes ontouml:height and ontouml:width ranges from xsd:positiveInteger to xsd:nonNegativeInteger, permitting zero-valued dimensions observed in OntoUML model data. Positive integer values remain valid, while negative and non-integer values remain invalid.", "license":"https://creativecommons.org/licenses/by-sa/4.0", "author":[{"@type":"Person","name":"Tiago Prince Sales","url":"https://orcid.org/0000-0002-5385-5761"},{"@type":"Person","name":"Claudenir M. Fonseca","url":"https://orcid.org/0000-0003-2528-3118"},{"@type":"Person","name":"Pedro Paulo Favato Barcelos","url":"https://orcid.org/0000-0003-2736-7817"}], "contributor":[{"@type":"Person","name":"Mattia Fumagalli","url":"https://orcid.org/0000-0003-3385-4769"}]}</script>
     <script src="resources/jquery.js"></script>
     <script src="resources/marked.min.js"></script>
     <script> 
@@ -54,20 +54,20 @@ $(function(){
     <div class="container">
       <div class="head">
         <h1>OntoUML Vocabulary Specification</h1>
-        <h2>Version 1.1.0</h2>
+        <h2>Version 1.1.1</h2>
         <dl>
           <dt>This version:</dt>
-          <dd><a href="https://w3id.org/ontouml/vocabulary/v1.1.0">https://w3id.org/ontouml/vocabulary/v1.1.0</a></dd>
+          <dd><a href="https://w3id.org/ontouml/vocabulary/v1.1.1">https://w3id.org/ontouml/vocabulary/v1.1.1</a></dd>
           <dt>Latest version:</dt>
           <dd><a href="https://w3id.org/ontouml#">https://w3id.org/ontouml#</a></dd>
           <dt>Previous version:</dt>
-          <dd><a href="https://w3id.org/ontouml/vocabulary/v1.0.0">https://w3id.org/ontouml/vocabulary/v1.0.0</a></dd>
+          <dd><a href="https://w3id.org/ontouml/vocabulary/v1.1.0">https://w3id.org/ontouml/vocabulary/v1.1.0</a></dd>
           <dt>Revision:</dt>
-          <dd>General review for compliance with the OntoUML Metamodel 1.1.1.</dd>
+          <dd>Changes ontouml:height and ontouml:width ranges from xsd:positiveInteger to xsd:nonNegativeInteger, permitting zero-valued dimensions observed in OntoUML model data. Positive integer values remain valid, while negative and non-integer values remain invalid.</dd>
           <dt>Issued on: </dt>
           <dd>2022-04-03</dd>
           <dt>Modified on:</dt>
-          <dd>2023-07-28</dd>
+          <dd>2026-08-03</dd>
           <dt>Authors:</dt>
           <dd><a href="https://orcid.org/0000-0002-5385-5761">Tiago Prince Sales</a>,
             (<a href="https://www.utwente.nl/en/eemcs/scs/">Semantics,
@@ -105,7 +105,7 @@ $(function(){
           <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite
             as:</dt>
           <dd>Sales, T. P., Fonseca, C. M., Barcelos, P. P. F. (2022) OntoUML
-            Vocabulary Specification - Version 1.1.0. <a href="https://w3id.org/ontouml/vocabulary/docs"
+            Vocabulary Specification - Version 1.1.1. <a href="https://w3id.org/ontouml/vocabulary/docs"
               title="OntoUML Vocabulary Specification">https://w3id.org/ontouml/vocabulary/docs</a></dd>
         </dl>
         <a href="provenance/provenance-en.html" target="_blank">Provenance of
@@ -716,6 +716,9 @@ $(function(){
     <a href="#targetView">ontouml:targetView</a> :Ljw .
 </code></pre>
           <h4 id="shapes">Shapes</h4>
+          <p>The <a href="#height">ontouml:height</a> and <a href="#width">ontouml:width</a>
+            properties use non-negative integers, so zero-valued dimensions are
+            permitted while negative and fractional values remain invalid.</p>
           <h5 id="path">Path</h5>
           <pre><code class="language-ttl">:M9S_path a <a href="#Path">ontouml:Path</a> ;
     <a href="#point">ontouml:point</a> :M9S_path_point_0, :M9S_path_point_1 ;
@@ -729,17 +732,17 @@ $(function(){
           <h5 id="rectangle">Rectangle</h5>
           <pre><code class="language-ttl">:ppw_shape a <a href="#Rectangle">ontouml:Rectangle</a> ;
     <a href="#topLeftPosition">ontouml:topLeftPosition</a> :ppw_shape_point ;
-    <a href="#height">ontouml:height</a> "40"^^xsd:positiveInteger ;
-    <a href="#width">ontouml:width</a> "80"^^xsd:positiveInteger ;
+    <a href="#height">ontouml:height</a> "40"^^xsd:nonNegativeInteger ;
+    <a href="#width">ontouml:width</a> "80"^^xsd:nonNegativeInteger ;
     <a href="#project">ontouml:project</a> :XCY .
 </code></pre>
           <h5 id="text">Text</h5>
           <pre><code class="language-ttl">:gtP_shape a <a href="#Text">ontouml:Text</a> ;
-    <a href="#height">ontouml:height</a> "45"^^xsd:positiveInteger ;
+    <a href="#height">ontouml:height</a> "45"^^xsd:nonNegativeInteger ;
     <a href="#project">ontouml:project</a> :XCY ;
     <a href="#text">ontouml:text</a> "" ;
     <a href="#topLeftPosition">ontouml:topLeftPosition</a> :gtP_shape_point ;
-    <a href="#width">ontouml:width</a> "65"^^xsd:positiveInteger .
+    <a href="#width">ontouml:width</a> "65"^^xsd:nonNegativeInteger .
 </code></pre>
           <h3 id="manipulating-the-serialized-models-with-sparql" class="list"><a
               id="mozTocId68228" class="mozTocH3"></a>Manipulating the
@@ -3033,7 +3036,8 @@ WHERE
               <p> <strong>IRI:</strong> https://w3id.org/ontouml#height</p>
               <div class="comment"> <span class="markdown">Indicates the height
                   of an <a href="#RectangularShape">ontouml:RectangularShape</a>
-                  that is represented in an <a href="#Diagram">ontouml:Diagram</a>.</span>
+                  that is represented in an <a href="#Diagram">ontouml:Diagram</a>
+                  as a non-negative integer; zero is permitted.</span>
               </div>
               <div class="description">
                 <dl>
@@ -3041,8 +3045,8 @@ WHERE
                   <dd> <a href="#RectangularShape" title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a>
                     <sup class="type-c" title="class">c</sup> </dd>
                   <dt>has range</dt>
-                  <dd> <a href="http://www.w3.org/2001/XMLSchema#positiveInteger"
-                      target="_blank" title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive
+                  <dd> <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                      target="_blank" title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non-negative
                       integer</a> </dd>
                 </dl>
               </div>
@@ -3307,7 +3311,8 @@ WHERE
               <p> <strong>IRI:</strong> https://w3id.org/ontouml#width</p>
               <div class="comment"> <span class="markdown">Indicates the width
                   of an <a href="#RectangularShape">ontouml:RectangularShape</a>
-                  that is represented in an <a href="#Diagram">ontouml:Diagram</a>.</span>
+                  that is represented in an <a href="#Diagram">ontouml:Diagram</a>
+                  as a non-negative integer; zero is permitted.</span>
               </div>
               <div class="description">
                 <dl>
@@ -3315,8 +3320,8 @@ WHERE
                   <dd> <a href="#RectangularShape" title="https://w3id.org/ontouml#RectangularShape">RectangularShape</a>
                     <sup class="type-c" title="class">c</sup> </dd>
                   <dt>has range</dt>
-                  <dd> <a href="http://www.w3.org/2001/XMLSchema#positiveInteger"
-                      target="_blank" title="http://www.w3.org/2001/XMLSchema#positiveInteger">positive
+                  <dd> <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                      target="_blank" title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non-negative
                       integer</a> </dd>
                 </dl>
               </div>
