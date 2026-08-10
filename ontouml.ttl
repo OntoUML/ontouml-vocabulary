@@ -19,11 +19,11 @@
 
 ################################################################# VERSIONING
 
-                            owl:versionIRI <https://w3id.org/ontouml/vocabulary/v1.1.0> ;
-                            owl:versionInfo "General review for compliance with the OntoUML Metamodel 1.1.1."@en ;
-                            owl:priorVersion <https://w3id.org/ontouml/vocabulary/v1.0.0> ;
+                            owl:versionIRI <https://w3id.org/ontouml/vocabulary/v1.1.1> ;
+                            owl:versionInfo "Changes ontouml:height and ontouml:width ranges from xsd:positiveInteger to xsd:nonNegativeInteger, permitting zero-valued dimensions observed in OntoUML model data. Positive integer values remain valid, while negative and non-integer values remain invalid."@en ;
+                            owl:priorVersion <https://w3id.org/ontouml/vocabulary/v1.1.0> ;
                             dct:issued "2022-04-03"^^xsd:date ;
-                            dct:modified "2023-07-27"^^xsd:date ;
+                            dct:modified "2026-08-03"^^xsd:date ;
 
 ################################################################# IDENTIFICATION
 
@@ -392,8 +392,8 @@ ontouml:height rdfs:label "height"@en ;
                rdfs:isDefinedBy <https://w3id.org/ontouml> ;
                rdf:type owl:DatatypeProperty ;
                rdfs:domain ontouml:RectangularShape ;
-               rdfs:range xsd:positiveInteger ;
-               rdfs:comment "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
+               rdfs:range xsd:nonNegativeInteger ;
+               rdfs:comment "Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted."@en .
 
 
 ###  https://w3id.org/ontouml#isAbstract
@@ -531,8 +531,8 @@ ontouml:width rdfs:label "width"@en ;
               rdfs:isDefinedBy <https://w3id.org/ontouml> ;
               rdf:type owl:DatatypeProperty ;
               rdfs:domain ontouml:RectangularShape ;
-              rdfs:range xsd:positiveInteger ;
-              rdfs:comment "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram."@en .
+              rdfs:range xsd:nonNegativeInteger ;
+              rdfs:comment "Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted."@en .
 
 
 ###  https://w3id.org/ontouml#xCoordinate

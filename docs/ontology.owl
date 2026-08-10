@@ -11,8 +11,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/ontouml">
-        <owl:versionIRI rdf:resource="https://w3id.org/ontouml/vocabulary/v1.1.0"/>
-        <terms:conformsTo rdf:resource="https://w3id.org/ontouml/metamodel/v1.1.0"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/ontouml/vocabulary/v1.1.1"/>
+        <terms:conformsTo rdf:resource="https://w3id.org/ontouml/metamodel/v1.1.1"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-3385-4769"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-5385-5761"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0003-2528-3118"/>
@@ -24,13 +24,13 @@
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-04-03</terms:issued>
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-27</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-08-03</terms:modified>
         <terms:publisher rdf:resource="https://www.utwente.nl/en/eemcs/scs/"/>
         <terms:title xml:lang="en">OntoUML Vocabulary</terms:title>
         <vann:preferredNamespacePrefix>ontouml</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/ontouml#</vann:preferredNamespaceUri>
-        <owl:priorVersion rdf:resource="https://w3id.org/ontouml/vocabulary/v1.0.0"/>
-        <owl:versionInfo xml:lang="en">General review for compliance with the OntoUML Metamodel 1.1.0.</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://w3id.org/ontouml/vocabulary/v1.1.0"/>
+        <owl:versionInfo xml:lang="en">Changes ontouml:height and ontouml:width ranges from xsd:positiveInteger to xsd:nonNegativeInteger, permitting zero-valued dimensions observed in OntoUML model data. Positive integer values remain valid, while negative and non-integer values remain invalid.</owl:versionInfo>
         <dcat:keyword xml:lang="en">OntoUML</dcat:keyword>
         <dcat:keyword xml:lang="en">OntoUML-Metamodel</dcat:keyword>
         <dcat:keyword xml:lang="en">Ontology-Driven Conceptual Modeling</dcat:keyword>
@@ -675,8 +675,8 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontouml#height">
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#RectangularShape"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-        <rdfs:comment xml:lang="en">Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Indicates the height of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">height</rdfs:label>
     </owl:DatatypeProperty>
@@ -873,8 +873,8 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontouml#width">
         <rdfs:domain rdf:resource="https://w3id.org/ontouml#RectangularShape"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-        <rdfs:comment xml:lang="en">Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Indicates the width of an ontouml:RectangularShape that is represented in an ontouml:Diagram as a non-negative integer; zero is permitted.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/ontouml"/>
         <rdfs:label xml:lang="en">width</rdfs:label>
     </owl:DatatypeProperty>

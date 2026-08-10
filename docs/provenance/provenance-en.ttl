@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://w3id.org/ontouml/vocabulary/v1.1.0> a prov:Entity;
+<https://w3id.org/ontouml/vocabulary/v1.1.1> a prov:Entity;
 	 dc:title "OntoUML Vocabulary";
 	 prov:wasAttributedTo <https://orcid.org/0000-0002-5385-5761>;
 	 dc:creator <https://orcid.org/0000-0002-5385-5761>;
@@ -14,6 +14,6 @@
 	 dc:contributor <https://orcid.org/0000-0003-3385-4769>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:specializationOf <https://w3id.org/ontouml#>;
-	 prov:wasRevisionOf <https://w3id.org/ontouml/vocabulary/v1.0.0>;
-	 prov:wasGeneratedAt "2023-07-27";
+	 prov:wasRevisionOf <https://w3id.org/ontouml/vocabulary/v1.1.0>;
+	 prov:wasGeneratedAt "2026-08-03";
 .
